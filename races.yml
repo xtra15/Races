@@ -2091,19 +2091,19 @@ races:
       KNOCKBACK_RESISTANCE: 0.2
       HEALTH_BONUS: 5
       HEALING_BONUS: -0.2
-  phantom:
+  spectral:
     position: 90
     icon: PHANTOM_MEMBRANE:-1
     icon_locked: BARRIER:-1
-    prefix: '&8[&bPhantom&8]'
-    display_name: '&bPhantom'
+    prefix: '&8[&bSpectral&8]'
+    display_name: '&bSpectral'
     description:
-      - '&bPhantoms&7, sleepless spirits that haunt'
+      - '&bSpectrals&7, sleepless spirits that haunt'
       - '&7the waking world. They slip through'
       - '&7matter, but they are'
       - '&7ephemeral and fragile.'
       - '&8&m                                       '
-      - '&bPhantom &7benefit from'
+      - '&bSpectral &7benefit from'
       - '&f- &a+20% &fMagic Damage Dealt'
       - '&f- &a+25% &fDodge Chance'
       - '&f- &a+15% &fCooldown Reduction'
@@ -3453,19 +3453,19 @@ races:
       HEALTH_BONUS: 5
       MOVEMENT_SPEED_BONUS: -0.2
       DODGE_CHANCE: -0.1
-  stone_warden:
+  monolith:
     position: 143
     icon: DEEPSLATE:-1
     icon_locked: BARRIER:-1
-    prefix: '&8[&8Stone Warden&8]'
-    display_name: '&8Stone Warden'
+    prefix: '&8[&8Monolith&8]'
+    display_name: '&8Monolith'
     description:
-      - '&8Stone Wardens&7, ancient guardians carved'
+      - '&8Monoliths&7, ancient guardians carved'
       - '&7from living rock. They protect sacred'
       - '&7places and never tire, but'
       - '&7are slow and unyielding.'
       - '&8&m                                       '
-      - '&8Stone Warden &7benefit from'
+      - '&8Monolith &7benefit from'
       - '&f- &a+25% &fArmor Multiplier Bonus'
       - '&f- &a+20% &fKnockback Resistance'
       - '&f- &a+10% &fDamage Resistance'
@@ -3796,19 +3796,19 @@ races:
       KNOCKBACK_RESISTANCE: 0.2
       MOVEMENT_SPEED_BONUS: -0.25
       DODGE_CHANCE: -0.15
-  blood_mage:
+  bloodkin:
     position: 156
     icon: REDSTONE:-1
     icon_locked: BARRIER:-1
-    prefix: '&8[&cBlood Mage&8]'
-    display_name: '&cBlood Mage'
+    prefix: '&8[&cBloodkin&8]'
+    display_name: '&cBloodkin'
     description:
-      - '&cBlood Mages&7, sorcerers who fuel their'
+      - '&cBloodkin&7, sorcerous folk who fuel their'
       - '&7spells with their own life force.'
       - '&7Their power is immense but their'
       - '&7bodies are weakened.'
       - '&8&m                                       '
-      - '&cBlood Mage &7benefit from'
+      - '&cBloodkin &7benefit from'
       - '&f- &a+25% &fMagic Damage Dealt'
       - '&f- &a+20% &fCooldown Reduction'
       - '&f- &a+15% &fNecrotic Damage Dealt'
@@ -3821,19 +3821,19 @@ races:
       NECROTIC_DAMAGE_DEALT: 0.15
       HEALTH_BONUS: -8
       HEALING_BONUS: -0.15
-  storm_caller:
+  storm_herald:
     position: 157
     icon: CONDUIT:-1
     icon_locked: BARRIER:-1
-    prefix: '&8[&9Storm Caller&8]'
-    display_name: '&9Storm Caller'
+    prefix: '&8[&9Storm Herald&8]'
+    display_name: '&9Storm Herald'
     description:
-      - '&9Storm Callers&7, mortals gifted with'
+      - '&9Storm Heralds&7, mortals gifted with'
       - '&7the fury of the tempest. They call'
       - '&7lightning and wind to their aid,'
       - '&7but calm stillness unsettles them.'
       - '&8&m                                       '
-      - '&9Storm Caller &7benefit from'
+      - '&9Storm Herald &7benefit from'
       - '&f- &a+20% &fLightning Damage Dealt'
       - '&f- &a+15% &fRanged Damage Dealt'
       - '&f- &a+10% &fMovement Speed Bonus'
@@ -5402,14 +5402,14 @@ races:
     position: 222
     icon: WITHER_SKELETON_SKULL:-1
     icon_locked: BARRIER:-1
-    prefix: '&8[&5Warlock&8]'
-    display_name: '&5Warlock'
+    prefix: '&8[&5Warlockkin&8]'
+    display_name: '&5Warlockkin'
     description:
-      - '&5Warlocks&7, dark magic users who draw'
+      - '&5Warlockkin&7, dark magic users who draw'
       - '&7on forbidden power. Their necrotic'
       - '&7spells are devastating.'
       - '&8&m                                       '
-      - '&5Warlock &7benefit from'
+      - '&5Warlockkin &7benefit from'
       - '&f- &a+25% &fNecrotic Damage Dealt'
       - '&f- &a+15% &fCooldown Reduction'
       - '&f- &a+15% &fMagic Damage Dealt'
