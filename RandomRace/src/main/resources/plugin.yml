@@ -1,0 +1,21 @@
+name: RandomRace
+version: 1.0.0
+main: com.yourname.randomrace.RandomRacePlugin
+api-version: 1.21
+depend: [ ValhallaMMO, ValhallaRaces ]
+
+commands:
+  claimrace:
+    description: Spin to claim your race
+    permission: randomrace.claim
+  randomrace:
+    description: Admin commands
+    permission: randomrace.admin
+
+permissions:
+  randomrace.claim:
+    default: true
+  randomrace.admin:
+    default: op
+  randomrace.admin.bypass:
+    default: op
