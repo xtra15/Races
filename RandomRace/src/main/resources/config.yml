@@ -12,9 +12,37 @@ race-materials:
 
 broadcast-enabled: true
 
+# Optional weight per class (by class id). Unlisted classes default to equal weight.
+class-weights: {}
+
+# Optional icon material override per class id. Else class icon; else PAPER.
+class-materials: {}
+
+# Display names for the class groups (1-10).
+groups:
+  1: "Warrior"
+  2: "Specialist"
+  3: "Adept"
+  4: "Healer"
+  5: "Guardian"
+  6: "Shadow"
+  7: "Warlord"
+  8: "Mystic"
+  9: "Artisan"
+  10: "Weaver"
+
+class-one-time-only: true
+broadcast-class: true
+
 messages:
   already-claimed: "&cYou have already claimed your race!"
   spin-start: "&eThe fates are deciding your race..."
   race-assigned: "&aYou have been chosen as a &e{race}&a!"
   no-permission: "&cYou don't have permission to use this."
   broadcast: "&e{player} &ahas been destined to be a &e{race}&a!"
+  class-no-permission: "&cYou don't have permission to use this."
+  class-already-claimed: "&cYou already have all your classes!"
+  class-spin-start: "&eThe fates are choosing your classes..."
+  class-assigned: "&eYou are now a &b{group} {class}&e!"
+  class-summary: "&aYour classes are now: &e{classes}&a!"
+  class-broadcast: "&e{player} &ahas been destined with their classes!"

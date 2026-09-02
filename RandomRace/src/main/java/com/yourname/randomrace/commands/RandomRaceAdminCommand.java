@@ -1,9 +1,13 @@
 package com.yourname.randomrace.commands;
 
 import com.yourname.randomrace.RandomRacePlugin;
+import com.yourname.randomrace.gui.ClassSpinAnimation;
 import com.yourname.randomrace.gui.SpinAnimation;
 import com.yourname.randomrace.managers.AssignmentManager;
+import com.yourname.randomrace.managers.ClassAssignmentManager;
 import com.yourname.randomrace.utils.MessageUtil;
+import me.athlaeos.valhallaraces.Class;
+import me.athlaeos.valhallaraces.ClassManager;
 import me.athlaeos.valhallaraces.Race;
 import me.athlaeos.valhallaraces.RaceManager;
 import org.bukkit.Bukkit;
@@ -12,6 +16,8 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -19,6 +25,7 @@ import java.util.Random;
 public class RandomRaceAdminCommand implements CommandExecutor {
     private final RandomRacePlugin plugin;
     private final AssignmentManager assignmentManager = new AssignmentManager();
+    private final ClassAssignmentManager classAssignmentManager = new ClassAssignmentManager();
     private final Random random = new Random();
 
     public RandomRaceAdminCommand(RandomRacePlugin plugin) {
@@ -32,7 +39,7 @@ public class RandomRaceAdminCommand implements CommandExecutor {
             return true;
         }
         if (args.length == 0) {
-            sender.sendMessage(MessageUtil.color("&cUsage: /randomrace <reset|reroll|setrace|reload|listrace>"));
+            sender.sendMessage(MessageUtil.color("&cUsage: /randomrace <reset|reroll|setrace|resetclass|rerollclass|setclass|listclass|reload|listrace>"));
             return true;
         }
         switch (args[0].toLowerCase()) {
@@ -82,10 +89,74 @@ public class RandomRaceAdminCommand implements CommandExecutor {
                 plugin.getPlayerDataManager().markClaimed(sp.getUniqueId());
                 sender.sendMessage(MessageUtil.color("&aSet " + sp.getName() + "'s race to " + stripColor(race.getDisplayName()) + "&a."));
                 return true;
+            case "resetclass":
+                if (args.length < 2) { sender.sendMessage(MessageUtil.color("&cUsage: /randomrace resetclass <player>")); return true; }
+                Player cp = Bukkit.getPlayerExact(args[1]);
+                if (cp == null) { sender.sendMessage(MessageUtil.color("&cPlayer not found.")); return true; }
+                classAssignmentManager.clear(cp);
+                sender.sendMessage(MessageUtil.color("&aReset " + cp.getName() + "'s classes."));
+                return true;
+            case "rerollclass":
+                if (args.length < 2) { sender.sendMessage(MessageUtil.color("&cUsage: /randomrace rerollclass <player>")); return true; }
+                Player rrp = Bukkit.getPlayerExact(args[1]);
+                if (rrp == null) { sender.sendMessage(MessageUtil.color("&cPlayer not found.")); return true; }
+                classAssignmentManager.clear(rrp);
+                plugin.getClassPoolManager().refresh();
+                Map<Integer, Class> winners = new LinkedHashMap<>();
+                String raceName = raceName(rrp);
+                for (int g = 1; g <= 10; g++) {
+                    Class c = plugin.getClassPoolManager().pickForGroup(random, g, rrp, raceName);
+                    if (c != null) winners.put(g, c);
+                }
+                if (winners.isEmpty()) { sender.sendMessage(MessageUtil.color("&cNo classes available.")); return true; }
+                new ClassSpinAnimation(plugin, rrp, winners).start();
+                return true;
+            case "setclass":
+                if (args.length < 4) { sender.sendMessage(MessageUtil.color("&cUsage: /randomrace setclass <player> <group> <class>")); return true; }
+                Player scp = Bukkit.getPlayerExact(args[1]);
+                if (scp == null) { sender.sendMessage(MessageUtil.color("&cPlayer not found.")); return true; }
+                int group;
+                try {
+                    group = Integer.parseInt(args[2]);
+                } catch (NumberFormatException e) {
+                    sender.sendMessage(MessageUtil.color("&cInvalid group."));
+                    return true;
+                }
+                Class sc = ClassManager.getRegisteredClasses().get(args[3]);
+                if (sc == null || sc.getGroup() != group) {
+                    sender.sendMessage(MessageUtil.color("&cClass '" + args[3] + "' not found or not in that group."));
+                    return true;
+                }
+                Map<Integer, Class> cur = new LinkedHashMap<>(ClassManager.getClasses(scp));
+                cur.put(group, sc);
+                classAssignmentManager.replaceAll(scp, new ArrayList<>(cur.values()));
+                sender.sendMessage(MessageUtil.color("&aSet " + scp.getName() + "'s " + groupName(group) + " class to " + stripColor(sc.getDisplayName()) + "&a."));
+                return true;
+            case "listclass":
+                plugin.getClassPoolManager().refresh();
+                Map<String, Class> classes = ClassManager.getRegisteredClasses();
+                if (classes == null || classes.isEmpty()) {
+                    sender.sendMessage(MessageUtil.color("&cNo classes loaded from ValhallaRaces."));
+                } else {
+                    sender.sendMessage(MessageUtil.color("&aLoaded " + classes.size() + " classes:"));
+                    for (Class c : classes.values()) {
+                        sender.sendMessage(MessageUtil.color("  [&b" + c.getGroup() + "&f] &7" + c.getName() + " &8- &f" + stripColor(c.getDisplayName())));
+                    }
+                }
+                return true;
             default:
-                sender.sendMessage(MessageUtil.color("&cUsage: /randomrace <reset|reroll|setrace|reload|listrace>"));
+                sender.sendMessage(MessageUtil.color("&cUsage: /randomrace <reset|reroll|setrace|resetclass|rerollclass|setclass|listclass|reload|listrace>"));
                 return true;
         }
+    }
+
+    private String raceName(Player p) {
+        Race r = RaceManager.getRace(p);
+        return r == null ? null : r.getName();
+    }
+
+    private String groupName(int g) {
+        return plugin.getConfig().getString("groups." + g, "Group " + g);
     }
 
     private String stripColor(String s) {
