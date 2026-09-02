@@ -1,7 +1,9 @@
 package com.yourname.randomrace;
 
+import com.yourname.randomrace.commands.ClaimClassCommand;
 import com.yourname.randomrace.commands.ClaimRaceCommand;
 import com.yourname.randomrace.commands.RandomRaceAdminCommand;
+import com.yourname.randomrace.managers.ClassPoolManager;
 import com.yourname.randomrace.managers.PlayerDataManager;
 import com.yourname.randomrace.managers.RacePoolManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -12,6 +14,7 @@ public final class RandomRacePlugin extends JavaPlugin {
     private static RandomRacePlugin instance;
     private PlayerDataManager playerDataManager;
     private RacePoolManager racePoolManager;
+    private ClassPoolManager classPoolManager;
 
     @Override
     public void onEnable() {
@@ -20,8 +23,11 @@ public final class RandomRacePlugin extends JavaPlugin {
         playerDataManager = new PlayerDataManager(this);
         racePoolManager = new RacePoolManager(this);
         racePoolManager.refresh();
+        classPoolManager = new ClassPoolManager(this);
+        classPoolManager.refresh();
 
         Objects.requireNonNull(getCommand("claimrace")).setExecutor(new ClaimRaceCommand(this));
+        Objects.requireNonNull(getCommand("claimclass")).setExecutor(new ClaimClassCommand(this));
         Objects.requireNonNull(getCommand("randomrace")).setExecutor(new RandomRaceAdminCommand(this));
     }
 
@@ -33,9 +39,11 @@ public final class RandomRacePlugin extends JavaPlugin {
     public void reload() {
         reloadConfig();
         racePoolManager.refresh();
+        classPoolManager.refresh();
     }
 
     public static RandomRacePlugin getInstance() { return instance; }
     public PlayerDataManager getPlayerDataManager() { return playerDataManager; }
     public RacePoolManager getRacePoolManager() { return racePoolManager; }
+    public ClassPoolManager getClassPoolManager() { return classPoolManager; }
 }

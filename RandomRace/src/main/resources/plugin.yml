@@ -8,12 +8,17 @@ commands:
   claimrace:
     description: Spin to claim your race
     permission: randomrace.claim
+  claimclass:
+    description: Roll your classes (one per group)
+    permission: randomrace.class
   randomrace:
     description: Admin commands
     permission: randomrace.admin
 
 permissions:
   randomrace.claim:
+    default: true
+  randomrace.class:
     default: true
   randomrace.admin:
     default: op
