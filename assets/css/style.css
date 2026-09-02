@@ -410,6 +410,25 @@ button {
   height: 100%;
 }
 
+/* Auto-generated monogram fallback for entries without a hand-drawn icon */
+.icon-mono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin: auto;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1;
+  border: 2px solid currentColor;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+  color: var(--brass);
+}
+.icon-mono--sm { font-size: 21px; }
+.icon-mono--lg { font-size: 34px; width: 112px; height: 112px; border-width: 2px; }
+
 .card-name {
   font-family: var(--font-display);
   font-size: 21px;

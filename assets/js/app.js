@@ -13,11 +13,45 @@
 
   /* ---- icon rendering ---- */
 
+  function customKeys() {
+    try { return window.ICONS && window.ICONS._custom && window.ICONS._custom.length ? window.ICONS._custom : null; }
+    catch (e) { return null; }
+  }
+
+  function monogramOf(key) {
+    // Build a two-letter monogram from the snake_case key (e.g. "fire_elemental" -> "FE")
+    const clean = key.replace(/[_-]+/g, " ").replace(/\d+/g, " ").replace(/\s+/g, " ").trim();
+    const words = clean.split(" ");
+    let letters = "";
+    const first = (words[0] || "?").charAt(0);
+    const second = words.length > 1 ? (words[1] || "").charAt(0) : "";
+    letters = (first + second).toUpperCase();
+    if (!letters) letters = key.charAt(0).toUpperCase() || "?";
+    return letters;
+  }
+
   function iconSVG(key, size = 64) {
-    const inner = (window.ICONS && ICONS[key]) || (window.ICONS && ICONS._default) || "";
-    return `<svg viewBox="0 0 64 64" width="${size}" height="${size}" fill="none"
-      stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
-      aria-hidden="true">${inner}</svg>`;
+    const custom = customKeys();
+    // Use a hand-drawn icon when the key is listed as custom.
+    if (custom) {
+      if (custom.includes(key) && window.ICONS[key]) {
+        const inner = window.ICONS[key];
+        return `<svg viewBox="0 0 64 64" width="${size}" height="${size}" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">${inner}</svg>`;
+      }
+    } else {
+      const inner = (window.ICONS && ICONS[key]) || "";
+      if (inner) {
+        return `<svg viewBox="0 0 64 64" width="${size}" height="${size}" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true">${inner}</svg>`;
+      }
+    }
+    // Fallback: monogram letter glyph
+    const letters = monogramOf(key);
+    const displaySize = size > 100 ? "lg" : "sm";
+    return `<span class="icon-mono icon-mono--${displaySize}" aria-hidden="true">${letters}</span>`;
   }
 
   /* ---- model helpers ---- */

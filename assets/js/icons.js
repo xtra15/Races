@@ -1688,6 +1688,18 @@ const ICONS = {
     `<path d="M32 8 L36 22 L50 26 L38 32 L42 46 L32 38 L22 46 L26 32 L14 26 L28 22 Z"/>
      <circle cx="32" cy="32" r="6"/>`,
 
+  /* Hand-drawn icons (these render as custom SVG). Any key NOT here falls
+     back to an auto-generated monogram letter glyph in app.js. */
+  _custom: [
+    "dragonkin","kitsune","titanborn","drow","celestial","abyssal","naga","djinn",
+    "satyr","treant","dryad","avian","tortle","golemkin","frostborne","wraith",
+    "dwarf","human","elf","orc","undead","vampire","werewolf","beastkin","fairy",
+    "brethren","hafis",
+    "warrior","barbarian","ranger","alchemist","enchanter","blacksmith","miner",
+    "farmer","terraformer","berserker","paladin","death_knight","spellbreaker",
+    "assassin","monk","mage","warlock","cleric","druid","shaman","void_knight",
+    "gunslinger","samurai","ninja","bard","warden","spellblade"
+  ],
 };
 
 window.ICONS = ICONS;

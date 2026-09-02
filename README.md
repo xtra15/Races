@@ -35,9 +35,13 @@ python -m http.server 8080 --directory .
 
 Then open `http://localhost:8080/races.html` and `http://localhost:8080/classes.html`.
 
-## Icon placeholders
+## Icons
 
-`assets/js/icons.js` ships with placeholder sigil SVGs for every race and class (350 total). Each entry is a set of SVG path/line primitives inside a 64×64 viewBox with `fill="none"` and `stroke="currentColor"`. Replace the placeholder under each key to customize the icon.
+`assets/js/icons.js` ships 54 hand-drawn sigil SVGs (the original races/classes) plus an `_custom` list marking which keys are hand-drawn. Every key **not** in `_custom` automatically falls back to a **monogram letter glyph** (two-letter initials in a brass frame) rendered by `app.js` — so all 354 entries always display a clean, on-theme mark with zero extra work.
+
+To replace a monogram with a hand-drawn SVG:
+1. Add the key to the `_custom` array in `icons.js`.
+2. Give that key an SVG entry (see the format in `assets/ICON_FORMAT.md`).
 
 ## Group structure
 
