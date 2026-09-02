@@ -37,16 +37,7 @@ public class RacePoolManager {
     }
 
     public Race pickWeighted(Random random, List<Race> available) {
-        if (available == null || available.isEmpty()) return null;
-        double total = 0;
-        for (Race r : available) total += weightFor(r);
-        double roll = random.nextDouble() * total;
-        double cumulative = 0;
-        for (Race r : available) {
-            cumulative += weightFor(r);
-            if (roll < cumulative) return r;
-        }
-        return available.get(available.size() - 1);
+        return WeightedPicker.pick(random, available, this::weightFor);
     }
 
     public double weightFor(Race r) {
