@@ -1,0 +1,20 @@
+# Race pool is pulled live from ValhallaRaces. No race definitions here.
+
+# Optional weight per race (by race id). Unlisted races default to equal weight.
+race-weights:
+  human: 40
+
+one-time-only: true
+
+# Optional icon material override per race id. Else race.getIcon(); else PAPER.
+race-materials:
+  human: PLAYER_HEAD
+
+broadcast-enabled: true
+
+messages:
+  already-claimed: "&cYou have already claimed your race!"
+  spin-start: "&eThe fates are deciding your race..."
+  race-assigned: "&aYou have been chosen as a &e{race}&a!"
+  no-permission: "&cYou don't have permission to use this."
+  broadcast: "&e{player} &ahas been destined to be a &e{race}&a!"
