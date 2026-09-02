@@ -335,6 +335,1357 @@ const ICONS = {
      <path d="M11 22 L8 18 M9 28 L5 30"/>`,
 
   /* fallback sigil */
+  fire_elemental: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  water_elemental: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  earth_elemental: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  air_elemental: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  lightning_elemental: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  magma_lord: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  stormborn: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  tidal_dancer: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  glacial: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  volcanic: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  dust_wraith: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  mistwalker: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  ashborn: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  cinder_spark: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  tempest_lord: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  sky_sovereign: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  inferno_touched: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  void_essence: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  ember_knight: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  frost_kin: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  ember_soul: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  wolf_blooded: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  bear_folk: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  hawk_kin: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  serpent_blooded: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  spider_kin: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  raven_folk: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  fox_blooded: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  stag_folk: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  shark_kin: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  lion_folk: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  owlkin: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  raptor_kin: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  boar_folk: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  bat_folk: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  lupine_hunter: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  serpent_sages: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  lich: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  banshee: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  revenant: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  phantom: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  shade: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  specter: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  poltergeist: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  ghost_kin: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  zombie_forged: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  seraph: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  archon: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  demigod: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  solar_angel: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  lunar_kin: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  starborn: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  cherub: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  aasimar: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  imp: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  cambion: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  pit_fiend: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  balor: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  tiefling: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  shadow_demon: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  nightmare: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  void_fiend: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  sprite: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  pixie: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  centaur: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  sylph: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  gnome: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  leshy: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  mushroom_folk: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  treant_sprout: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  faun: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  merfolk: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  sea_elf: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  kelpie: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  sahuagin: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  triton: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  deep_one: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  abyssal_serpent: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  pearl_mermaid: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  automaton: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  warforged: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  clockwork: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  crystal_golem: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  construct: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  soulforged: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  ogre: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  troll: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  jotun: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  cyclops: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  firbolg: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  goliath: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  half_giant: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  verdant_giant: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  stone_warden: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  astral: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  void_touched: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  ethereal: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  planar: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  chrono: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  rune_carved: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  soul_echo: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  dream_walker: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  aether_born: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  null_kin: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  sand_wraith: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  iron_bound: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  blood_mage: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  storm_caller: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  crystal_shard: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  twilight_elf: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  dust_djinn: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  ironheart: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  rune_sorcerer: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  storm_spirit: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  thornweaver: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  ember_drake: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  storm_dragon: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  void_serpent: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  iron_drake: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  frost_dragon: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  sandstorm_beast: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  wild_kin: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  abyssal_kraken: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  crystal_nymph: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  mossling: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  shadow_drake: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  bone_colossus: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  ash_knight: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  lava_walker: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  ice_witch: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  plague_bearer: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  flamecaller: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  glacierborn: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  stonecaller: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  windrider: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  thunderlord: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  ashwalker: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  tidecaller: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  dustfiend: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  ember_sprite: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  frost_spirit: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  storm_wraith: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  earth_shaper: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  sky_dancer: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  shadowcaster: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  plague_doctor: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  void_weaver: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  crystal_mage: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  moon_weaver: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  sunCaller: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  starCaller: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  abyss_walker: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  soul_reaper: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  bone_weaver: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  sand_serpent: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  tundra_wolf: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  swamp_hag: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  sky_dragon: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  iron_golem: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  dark_elf: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  high_elf: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  wood_elf: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  sea_dwarf: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  mountain_giant: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  hill_giant: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  fog_phantom: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  dust_devil: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  magma_sprite: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  frost_fairy: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  shadow_fairy: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  star_fairy: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  plague_witch: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  warlock_v2: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  demon_hunter: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  vampire_hunter: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  dragon_slayer: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  undead_hunter: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  giant_slayer: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  troll_kin: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  orc_raider: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  elven_ranger: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  dwarven_smith: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  human_mage: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  undead_mage: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  celestial_warrior: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  abyssal_warrior: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  magma_golem: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  frost_golem: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  storm_golem: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  void_golem: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  shadow_elf: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  flame_elf: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  ice_elf: /* TODO: race - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  mountain_dwarf: /* TODO: race - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  hill_dwarf: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  deep_dwarf: /* TODO: race - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  necro_undead: /* TODO: race - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  war_undead: /* TODO: race - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  spirit_undead: /* TODO: race - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  wight: /* TODO: race - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  champion: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  duelist: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  marauder: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  gladiator: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  lancer: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  warmonger: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  reaper: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  juggernaut: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  blade_dancer: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  pit_fighter: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  marksman: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  hunter: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  sniper: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  falconer: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  ballistae: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  slinger: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  arbalist: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  sharpshooter: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  beastmaster: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  trapper: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  sorcerer: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  elementalist: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  conjurer: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  illusionist: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  necromancer: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  witch: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  battle_mage: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  pyromancer: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  cryomancer: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  storm_caller: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  sage: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  apothecary: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  battle_medic: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  oracle: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  chanter: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  priest: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  spirit_walker: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  life_binder: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  confessor: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  sentinel: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  bulwark: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  guardian: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  fortress: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  aegis: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  stone_warden: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  ironclad: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  phalanx: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  colossus: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  shadow: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  infiltrator: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  nightblade: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  whisper: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  cutthroat: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  phantom: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  renegade: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  deadeye: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  scoundrel: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  trickster: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  beast_tamer: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  undead_commander: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  golemancer: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  banneret: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  warlord: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  commander: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  ritualist: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  binder: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  spellthief: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  blade_mage: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  runic_warrior: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  hexblade: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  arcane_archer: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  battle_cleric: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  spirit_knight: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  runepriest: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  mystic: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  adept: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  artificer: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  jeweler: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  tinker: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  herbalist: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  skinner: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  lumberjack: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  mason: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  weaver: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  brewer: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  cartographer: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  fate_weaver: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  void_walker: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  time_mage: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  dreamwalker: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  soul_binder: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  starweaver: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
+  chaos_mage: /* TODO: class - replace with custom SVG */
+    `<path d="M22 12 L42 12 L42 32 C42 44 36 51 32 55 C28 51 22 44 22 32 Z"/>
+     <path d="M27 30 L32 38 L38 26"/>`,
+
+  blood_mage: /* TODO: class - replace with custom SVG */
+    `<path d="M18 18 L46 46 M46 18 L18 46"/>
+     <circle cx="32" cy="32" r="6"/>
+     <path d="M32 22 L32 42 M22 32 L42 32"/>`,
+
+  thaumaturge: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L36 24 L50 24 L39 33 L43 47 L32 39 L21 47 L25 33 L14 24 L28 24 Z"/>
+     <circle cx="32" cy="32" r="5" opacity=".7"/>`,
+
+  geomancer: /* TODO: class - replace with custom SVG */
+    `<path d="M32 8 C38 18 44 24 44 36 C44 47 38 54 32 54 C26 54 20 47 20 36 C20 29 26 24 32 18 Z"/>
+     <path d="M32 24 C30 32 26 36 26 41 C26 46 29 49 32 49 C35 49 38 46 38 41 C38 38 35 34 32 28 Z" opacity=".55"/>`,
+
+  warden_of_woods: /* TODO: class - replace with custom SVG */
+    `<path d="M32 6 L42 14 L46 28 L40 44 L32 58 L24 44 L18 28 L22 14 Z"/>
+     <path d="M32 14 L32 50 M22 30 L42 30 M25 42 L39 42 M24 20 L40 20"/>
+     <circle cx="32" cy="32" r="6" opacity=".6"/>`,
+
+  shadow_blade: /* TODO: class - replace with custom SVG */
+    `<circle cx="32" cy="32" r="22"/>
+     <path d="M32 18 L32 46 M18 32 L46 32 M24 24 L40 40 M24 40 L40 24"/>`,
+
+  sky_knight: /* TODO: class - replace with custom SVG */
+    `<path d="M32 10 L52 52 L12 52 Z"/>
+     <path d="M32 22 L42 46 L22 46 Z" opacity=".5"/>
+     <path d="M32 44 L32 36"/>`,
+
+  runesmith: /* TODO: class - replace with custom SVG */
+    `<path d="M46 20 L52 32 L46 44 L32 50 L18 44 L12 32 L18 20 L32 14 Z"/>
+     <circle cx="32" cy="32" r="10"/>
+     <circle cx="32" cy="32" r="3"/>`,
+
   _default:
     `<path d="M32 8 L36 22 L50 26 L38 32 L42 46 L32 38 L22 46 L26 32 L14 26 L28 22 Z"/>
      <circle cx="32" cy="32" r="6"/>`,

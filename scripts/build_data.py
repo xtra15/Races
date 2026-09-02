@@ -12,8 +12,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = SCRIPT_DIR.parent
-RACES_PATH = SCRIPT_DIR.parent.parent / "races.yml"
-CLASSES_PATH = SCRIPT_DIR.parent.parent / "classes.yml"
+RACES_PATH = SCRIPT_DIR.parent / "races.yml"
+CLASSES_PATH = SCRIPT_DIR.parent / "classes.yml"
 OUT_PATH = ROOT / "assets" / "data" / "data.json"
 
 try:
@@ -330,7 +330,18 @@ def main():
     with open(CLASSES_PATH, encoding="utf-8") as f:
         classes_yaml = yaml.safe_load(f)
 
-    groups = {1: "Combat", 2: "Specialist", 3: "Harvester"}
+    groups = {
+        1: "Warrior",
+        2: "Specialist",
+        3: "Adept",
+        4: "Healer",
+        5: "Guardian",
+        6: "Shadow",
+        7: "Warlord",
+        8: "Mystic",
+        9: "Artisan",
+        10: "Weaver",
+    }
 
     races = [parse_entry(k, v) for k, v in (races_yaml.get("races") or {}).items()]
     classes = []

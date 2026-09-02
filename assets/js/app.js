@@ -262,9 +262,20 @@
       });
 
       const searchInput = el(".search input");
-      const filterBtns = els(".filter-btn");
+      const filtersHost = el("#group-filters") || el(".filters");
 
       const state = { activeFilter: null };
+
+      // Build group filter buttons dynamically from the dataset
+      if (page === "class" && filtersHost) {
+        const groups = [...new Set(items.map((i) => i.group).filter(Boolean))].sort((a, b) => a - b);
+        filtersHost.innerHTML = groups.map((g) => {
+          const label = (items.find((i) => i.group === g) || {}).group_name || ("Group " + g);
+          return `<button class="filter-btn" data-filter="${g}" aria-pressed="false">${label}</button>`;
+        }).join("");
+      }
+
+      const filterBtns = els(".filter-btn");
 
       function reapply() {
         applyFilters({ grid: container, items, type: page, searchInput, activeFilter: state.activeFilter });
