@@ -1,0 +1,4663 @@
+{
+  "races": {
+    "total": 227,
+    "existing": 27,
+    "new": 200,
+    "categories": {
+      "Elemental": [
+        "fire_elemental",
+        "water_elemental",
+        "earth_elemental",
+        "air_elemental",
+        "lightning_elemental",
+        "magma_lord",
+        "stormborn",
+        "tidal_dancer",
+        "glacial",
+        "volcanic",
+        "dust_wraith",
+        "mistwalker",
+        "ashborn",
+        "cinder_spark",
+        "tempest_lord",
+        "sky_sovereign",
+        "inferno_touched",
+        "void_essence",
+        "ember_knight",
+        "frost_kin",
+        "ember_soul",
+        "dust_djinn",
+        "storm_caller",
+        "storm_spirit",
+        "sandstorm_beast"
+      ],
+      "Beast": [
+        "wolf_blooded",
+        "bear_folk",
+        "hawk_kin",
+        "serpent_blooded",
+        "spider_kin",
+        "raven_folk",
+        "fox_blooded",
+        "stag_folk",
+        "shark_kin",
+        "lion_folk",
+        "owlkin",
+        "raptor_kin",
+        "boar_folk",
+        "bat_folk",
+        "lupine_hunter",
+        "serpent_sages",
+        "wild_kin"
+      ],
+      "Undead": [
+        "lich",
+        "banshee",
+        "revenant",
+        "phantom",
+        "shade",
+        "specter",
+        "poltergeist",
+        "ghost_kin",
+        "zombie_forged",
+        "bone_colossus",
+        "shadow_drake",
+        "soul_echo"
+      ],
+      "Divine": [
+        "seraph",
+        "archon",
+        "demigod",
+        "solar_angel",
+        "lunar_kin",
+        "starborn",
+        "cherub",
+        "aasimar",
+        "aether_born"
+      ],
+      "Demonic": [
+        "imp",
+        "cambion",
+        "pit_fiend",
+        "balor",
+        "tiefling",
+        "shadow_demon",
+        "nightmare",
+        "void_fiend",
+        "void_touched"
+      ],
+      "Nature/Fey": [
+        "sprite",
+        "pixie",
+        "centaur",
+        "sylph",
+        "gnome",
+        "leshy",
+        "mushroom_folk",
+        "treant_sprout",
+        "faun",
+        "mossling",
+        "thornweaver"
+      ],
+      "Aquatic": [
+        "merfolk",
+        "sea_elf",
+        "kelpie",
+        "sahuagin",
+        "triton",
+        "deep_one",
+        "abyssal_serpent",
+        "pearl_mermaid",
+        "abyssal_kraken"
+      ],
+      "Construct": [
+        "automaton",
+        "warforged",
+        "clockwork",
+        "crystal_golem",
+        "construct",
+        "soulforged",
+        "iron_bound",
+        "ironheart"
+      ],
+      "Giant": [
+        "ogre",
+        "troll",
+        "jotun",
+        "cyclops",
+        "firbolg",
+        "goliath",
+        "half_giant",
+        "verdant_giant",
+        "stone_warden"
+      ],
+      "Exotic": [
+        "astral",
+        "ethereal",
+        "planar",
+        "chrono",
+        "rune_carved",
+        "dream_walker",
+        "null_kin",
+        "sand_wraith",
+        "blood_mage",
+        "rune_sorcerer",
+        "crystal_shard",
+        "twilight_elf",
+        "crystal_nymph"
+      ],
+      "Dragon": [
+        "ember_drake",
+        "storm_dragon",
+        "void_serpent",
+        "iron_drake",
+        "frost_dragon",
+        "shadow_drake"
+      ]
+    },
+    "entries": {
+      "dwarf": {
+        "display_name": "Dwarf",
+        "color": "&e",
+        "category": "Humanoid",
+        "is_new": false
+      },
+      "human": {
+        "display_name": "Human",
+        "color": "&a",
+        "category": "Humanoid",
+        "is_new": false
+      },
+      "elf": {
+        "display_name": "Elf",
+        "color": "&b",
+        "category": "Fey",
+        "is_new": false
+      },
+      "orc": {
+        "display_name": "Orc",
+        "color": "&2",
+        "category": "Humanoid",
+        "is_new": false
+      },
+      "undead": {
+        "display_name": "Undead",
+        "color": "&7",
+        "category": "Undead",
+        "is_new": false
+      },
+      "vampire": {
+        "display_name": "Vampire",
+        "color": "&c",
+        "category": "Undead",
+        "is_new": false
+      },
+      "werewolf": {
+        "display_name": "Werewolf",
+        "color": "&6",
+        "category": "Beast",
+        "is_new": false
+      },
+      "beastkin": {
+        "display_name": "Beastkin",
+        "color": "&d",
+        "category": "Beast",
+        "is_new": false
+      },
+      "fairy": {
+        "display_name": "Fairy",
+        "color": "&b",
+        "category": "Fey",
+        "is_new": false
+      },
+      "brethren": {
+        "display_name": "Brethren",
+        "color": "&a",
+        "category": "Humanoid",
+        "is_new": false
+      },
+      "hafis": {
+        "display_name": "Hafis",
+        "color": "&a",
+        "category": "Humanoid",
+        "is_new": false
+      },
+      "dragonkin": {
+        "display_name": "Dragonkin",
+        "color": "&c",
+        "category": "Dragon",
+        "is_new": false
+      },
+      "kitsune": {
+        "display_name": "Kitsune",
+        "color": "&d",
+        "category": "Beast",
+        "is_new": false
+      },
+      "titanborn": {
+        "display_name": "Titanborn",
+        "color": "&9",
+        "category": "Giant",
+        "is_new": false
+      },
+      "drow": {
+        "display_name": "Drow",
+        "color": "&5",
+        "category": "Fey",
+        "is_new": false
+      },
+      "celestial": {
+        "display_name": "Celestial",
+        "color": "&e",
+        "category": "Divine",
+        "is_new": false
+      },
+      "abyssal": {
+        "display_name": "Abyssal",
+        "color": "&4",
+        "category": "Demonic",
+        "is_new": false
+      },
+      "naga": {
+        "display_name": "Naga",
+        "color": "&2",
+        "category": "Beast",
+        "is_new": false
+      },
+      "djinn": {
+        "display_name": "Djinn",
+        "color": "&b",
+        "category": "Elemental",
+        "is_new": false
+      },
+      "satyr": {
+        "display_name": "Satyr",
+        "color": "&6",
+        "category": "Fey",
+        "is_new": false
+      },
+      "treant": {
+        "display_name": "Treant",
+        "color": "&2",
+        "category": "Nature",
+        "is_new": false
+      },
+      "dryad": {
+        "display_name": "Dryad",
+        "color": "&a",
+        "category": "Nature",
+        "is_new": false
+      },
+      "avian": {
+        "display_name": "Avian",
+        "color": "&f",
+        "category": "Beast",
+        "is_new": false
+      },
+      "tortle": {
+        "display_name": "Tortle",
+        "color": "&a",
+        "category": "Beast",
+        "is_new": false
+      },
+      "golemkin": {
+        "display_name": "Golemkin",
+        "color": "&7",
+        "category": "Construct",
+        "is_new": false
+      },
+      "frostborne": {
+        "display_name": "Frostborne",
+        "color": "&b",
+        "category": "Elemental",
+        "is_new": false
+      },
+      "wraith": {
+        "display_name": "Wraith",
+        "color": "&f",
+        "category": "Undead",
+        "is_new": false
+      },
+      "fire_elemental": {
+        "display_name": "Fire Elemental",
+        "color": "&c",
+        "category": "Elemental",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.3,
+          "FIRE_RESISTANCE": 0.4,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "FREEZING_RESISTANCE": -0.25,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "water_elemental": {
+        "display_name": "Water Elemental",
+        "color": "&3",
+        "category": "Elemental",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.25,
+          "HEALING_BONUS": 0.2,
+          "MAGIC_RESISTANCE": 0.15,
+          "FIRE_RESISTANCE": -0.2
+        },
+        "is_new": true
+      },
+      "earth_elemental": {
+        "display_name": "Earth Elemental",
+        "color": "&6",
+        "category": "Elemental",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.25,
+          "DAMAGE_RESISTANCE": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.3,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.2,
+          "DODGE_CHANCE": -0.15
+        },
+        "is_new": true
+      },
+      "air_elemental": {
+        "display_name": "Air Elemental",
+        "color": "&f",
+        "category": "Elemental",
+        "stats": {
+          "MOVEMENT_SPEED_BONUS": 0.2,
+          "SPRINT_MOVEMENT_SPEED_BONUS": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "lightning_elemental": {
+        "display_name": "Lightning Elemental",
+        "color": "&e",
+        "category": "Elemental",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.3,
+          "COOLDOWN_REDUCTION": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "LIGHTNING_RESISTANCE": -0.15,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "magma_lord": {
+        "display_name": "Magma Lord",
+        "color": "&4",
+        "category": "Elemental",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.25,
+          "FIRE_RESISTANCE": 0.3,
+          "EXPLOSION_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": 5,
+          "FREEZING_RESISTANCE": -0.2,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "stormborn": {
+        "display_name": "Stormborn",
+        "color": "&9",
+        "category": "Elemental",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.2,
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "JUMP_HEIGHT_MULTIPLIER": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "tidal_dancer": {
+        "display_name": "Tidal Dancer",
+        "color": "&b",
+        "category": "Elemental",
+        "stats": {
+          "HEALING_BONUS": 0.25,
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "FISHING_LUCK": 2,
+          "FISHING_SPEED_MULTIPLIER": 0.15,
+          "MELEE_DAMAGE_DEALT": -0.1,
+          "FIRE_RESISTANCE": -0.05
+        },
+        "is_new": true
+      },
+      "glacial": {
+        "display_name": "Glacial",
+        "color": "&b",
+        "category": "Elemental",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.3,
+          "FREEZING_RESISTANCE": 0.35,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "HEALTH_BONUS": 3,
+          "FIRE_RESISTANCE": -0.25,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "volcanic": {
+        "display_name": "Volcanic",
+        "color": "&4",
+        "category": "Elemental",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "EXPLOSION_DAMAGE_DEALT": 0.15,
+          "FIRE_RESISTANCE": 0.2,
+          "HEALTH_BONUS": 4,
+          "FREEZING_RESISTANCE": -0.2,
+          "DODGE_CHANCE": -0.1
+        },
+        "is_new": true
+      },
+      "dust_wraith": {
+        "display_name": "Dust Wraith",
+        "color": "&e",
+        "category": "Elemental",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": -4,
+          "FREEZING_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "mistwalker": {
+        "display_name": "Mistwalker",
+        "color": "&7",
+        "category": "Elemental",
+        "stats": {
+          "DODGE_CHANCE": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "RADIANT_RESISTANCE": -0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "ashborn": {
+        "display_name": "Ashborn",
+        "color": "&8",
+        "category": "Elemental",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "FIRE_RESISTANCE": 0.3,
+          "NECROTIC_RESISTANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": -5,
+          "HEALING_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "cinder_spark": {
+        "display_name": "Cinder Spark",
+        "color": "&6",
+        "category": "Elemental",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.2,
+          "CRIT_CHANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": -5,
+          "FREEZING_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "tempest_lord": {
+        "display_name": "Tempest Lord",
+        "color": "&9",
+        "category": "Elemental",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.25,
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "MELEE_DAMAGE_DEALT": -0.1,
+          "DIG_SPEED": -0.1
+        },
+        "is_new": true
+      },
+      "sky_sovereign": {
+        "display_name": "Sky Sovereign",
+        "color": "&f",
+        "category": "Elemental",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "FALLING_RESISTANCE": 0.3,
+          "CRIT_CHANCE": 0.1,
+          "HEALTH_BONUS": -3,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "inferno_touched": {
+        "display_name": "Inferno Touched",
+        "color": "&4",
+        "category": "Elemental",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "FIRE_RESISTANCE": 0.25,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "FREEZING_RESISTANCE": -0.2,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "void_essence": {
+        "display_name": "Void Essence",
+        "color": "&5",
+        "category": "Elemental",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "RADIANT_RESISTANCE": -0.25,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "ember_knight": {
+        "display_name": "Ember Knight",
+        "color": "&c",
+        "category": "Elemental",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "FIRE_RESISTANCE": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.05,
+          "FREEZING_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "frost_kin": {
+        "display_name": "Frost-Kin",
+        "color": "&b",
+        "category": "Elemental",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.2,
+          "FREEZING_RESISTANCE": 0.25,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "FIRE_RESISTANCE": -0.2,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "ember_soul": {
+        "display_name": "Ember Soul",
+        "color": "&4",
+        "category": "Elemental",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "FIRE_RESISTANCE": 0.1,
+          "HEALTH_BONUS": -5,
+          "FREEZING_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "wolf_blooded": {
+        "display_name": "Wolf-Blooded",
+        "color": "&7",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "UNARMED_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "SPRINT_MOVEMENT_SPEED_BONUS": 0.1,
+          "RANGED_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "bear_folk": {
+        "display_name": "Bear-Folk",
+        "color": "&6",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "HEALTH_BONUS": 5,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "MOVEMENT_SPEED_BONUS": -0.15,
+          "DODGE_CHANCE": -0.1
+        },
+        "is_new": true
+      },
+      "hawk_kin": {
+        "display_name": "Hawk-Kin",
+        "color": "&e",
+        "category": "Beast",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "CRIT_CHANCE": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "FALLING_RESISTANCE": 0.25,
+          "HEALTH_BONUS": -4
+        },
+        "is_new": true
+      },
+      "serpent_blooded": {
+        "display_name": "Serpent-Blooded",
+        "color": "&2",
+        "category": "Beast",
+        "stats": {
+          "POISON_DAMAGE_DEALT": 0.25,
+          "POISON_RESISTANCE": 0.3,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "MAGIC_RESISTANCE": -0.1,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "spider_kin": {
+        "display_name": "Spider-Kin",
+        "color": "&5",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "POISON_DAMAGE_DEALT": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.1,
+          "HEALTH_BONUS": -3,
+          "RADIANT_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "raven_folk": {
+        "display_name": "Raven-Folk",
+        "color": "&8",
+        "category": "Beast",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -4,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "fox_blooded": {
+        "display_name": "Fox-Blooded",
+        "color": "&6",
+        "category": "Beast",
+        "stats": {
+          "CRIT_CHANCE": 0.15,
+          "DODGE_CHANCE": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "LUCK_BONUS": 0.1,
+          "HEALTH_BONUS": -3,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "stag_folk": {
+        "display_name": "Stag-Folk",
+        "color": "&2",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "FARMING_EXP_GAIN": 0.1,
+          "WOODCUTTING_EXP_GAIN": 0.1,
+          "HEAVY_WEAPONS_EXP_GAIN": -0.1
+        },
+        "is_new": true
+      },
+      "shark_kin": {
+        "display_name": "Shark-Kin",
+        "color": "&3",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "BLEED_RESISTANCE": 0.25,
+          "CRIT_CHANCE": 0.1,
+          "SNEAK_MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "lion_folk": {
+        "display_name": "Lion-Folk",
+        "color": "&e",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "UNARMED_DAMAGE_DEALT": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.1,
+          "CRIT_DAMAGE": 0.1,
+          "MAGIC_RESISTANCE": -0.1,
+          "DODGE_CHANCE": -0.05
+        },
+        "is_new": true
+      },
+      "owlkin": {
+        "display_name": "Owlkin",
+        "color": "&d",
+        "category": "Beast",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.15,
+          "CRIT_CHANCE": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "GLOBAL_EXP_GAIN": 0.1,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "raptor_kin": {
+        "display_name": "Raptor-Kin",
+        "color": "&2",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.2,
+          "CRIT_CHANCE": 0.1,
+          "SPRINT_MOVEMENT_SPEED_BONUS": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "boar_folk": {
+        "display_name": "Boar-Folk",
+        "color": "&6",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.15,
+          "MAGIC_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "bat_folk": {
+        "display_name": "Bat-Folk",
+        "color": "&8",
+        "category": "Beast",
+        "stats": {
+          "DODGE_CHANCE": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "MINING_EXP_GAIN": 0.1,
+          "DIG_SPEED": 0.1,
+          "HEALTH_BONUS": -4
+        },
+        "is_new": true
+      },
+      "lupine_hunter": {
+        "display_name": "Lupine Hunter",
+        "color": "&7",
+        "category": "Beast",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.15,
+          "CRIT_CHANCE": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.1,
+          "FISHING_LUCK": 1,
+          "HEALTH_BONUS": -3,
+          "TOTAL_HEAVY_ARMOR": -0.1
+        },
+        "is_new": true
+      },
+      "serpent_sages": {
+        "display_name": "Serpent Sage",
+        "color": "&2",
+        "category": "Beast",
+        "stats": {
+          "ALCHEMY_EXP_GAIN": 0.2,
+          "POISON_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "lich": {
+        "display_name": "Lich",
+        "color": "&5",
+        "category": "Undead",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.25,
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "COOLDOWN_REDUCTION": 0.2,
+          "POISON_RESISTANCE": 0.5,
+          "RADIANT_RESISTANCE": -0.3,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "banshee": {
+        "display_name": "Banshee",
+        "color": "&f",
+        "category": "Undead",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.2,
+          "NECROTIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "RADIANT_RESISTANCE": -0.25,
+          "HEALTH_BONUS": -6
+        },
+        "is_new": true
+      },
+      "revenant": {
+        "display_name": "Revenant",
+        "color": "&8",
+        "category": "Undead",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "NECROTIC_DAMAGE_DEALT": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "HEALTH_BONUS": 5,
+          "HEALING_BONUS": -0.2
+        },
+        "is_new": true
+      },
+      "phantom": {
+        "display_name": "Phantom",
+        "color": "&b",
+        "category": "Undead",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "DODGE_CHANCE": 0.25,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -6,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "shade": {
+        "display_name": "Shade",
+        "color": "&8",
+        "category": "Undead",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "RADIANT_RESISTANCE": -0.15,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "specter": {
+        "display_name": "Specter",
+        "color": "&7",
+        "category": "Undead",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "RADIANT_RESISTANCE": -0.2,
+          "HEALTH_BONUS": -4
+        },
+        "is_new": true
+      },
+      "poltergeist": {
+        "display_name": "Poltergeist",
+        "color": "&d",
+        "category": "Undead",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "EXPLOSION_DAMAGE_DEALT": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "MELEE_DAMAGE_DEALT": -0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "ghost_kin": {
+        "display_name": "Ghost-Kin",
+        "color": "&f",
+        "category": "Undead",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "FREEZING_DAMAGE_DEALT": 0.1,
+          "NECROTIC_RESISTANCE": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "zombie_forged": {
+        "display_name": "Zombie-Forged",
+        "color": "&2",
+        "category": "Undead",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "NECROTIC_RESISTANCE": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.1,
+          "HEALTH_BONUS": 5,
+          "HEALING_BONUS": -0.15,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "seraph": {
+        "display_name": "Seraph",
+        "color": "&e",
+        "category": "Divine",
+        "stats": {
+          "RADIANT_DAMAGE_DEALT": 0.25,
+          "HEALING_BONUS": 0.25,
+          "RADIANT_RESISTANCE": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "NECROTIC_RESISTANCE": -0.2,
+          "FOOD_BONUS_SPOILED": -1
+        },
+        "is_new": true
+      },
+      "archon": {
+        "display_name": "Archon",
+        "color": "&b",
+        "category": "Divine",
+        "stats": {
+          "RADIANT_DAMAGE_DEALT": 0.2,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "HEALING_BONUS": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.1,
+          "NECROTIC_DAMAGE_DEALT": -0.15
+        },
+        "is_new": true
+      },
+      "demigod": {
+        "display_name": "Demigod",
+        "color": "&6",
+        "category": "Divine",
+        "stats": {
+          "DAMAGE_DEALT": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "DAMAGE_RESISTANCE": 0.1,
+          "HEALTH_BONUS": 5,
+          "GLOBAL_EXP_GAIN": -0.15
+        },
+        "is_new": true
+      },
+      "solar_angel": {
+        "display_name": "Solar Angel",
+        "color": "&e",
+        "category": "Divine",
+        "stats": {
+          "RADIANT_DAMAGE_DEALT": 0.25,
+          "HEALING_BONUS": 0.2,
+          "FIRE_DAMAGE_DEALT": 0.15,
+          "NECROTIC_RESISTANCE": -0.2,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "lunar_kin": {
+        "display_name": "Lunar Kin",
+        "color": "&9",
+        "category": "Divine",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.1,
+          "FIRE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "starborn": {
+        "display_name": "Starborn",
+        "color": "&e",
+        "category": "Divine",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "RADIANT_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "CRIT_DAMAGE": 0.1,
+          "HEALTH_BONUS": -4
+        },
+        "is_new": true
+      },
+      "cherub": {
+        "display_name": "Cherub",
+        "color": "&d",
+        "category": "Divine",
+        "stats": {
+          "HEALING_BONUS": 0.3,
+          "RADIANT_DAMAGE_DEALT": 0.15,
+          "RADIANT_RESISTANCE": 0.2,
+          "MELEE_DAMAGE_DEALT": -0.15,
+          "HEALTH_BONUS": -4
+        },
+        "is_new": true
+      },
+      "aasimar": {
+        "display_name": "Aasimar",
+        "color": "&e",
+        "category": "Divine",
+        "stats": {
+          "RADIANT_DAMAGE_DEALT": 0.15,
+          "HEALING_BONUS": 0.15,
+          "MAGIC_RESISTANCE": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "NECROTIC_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "imp": {
+        "display_name": "Imp",
+        "color": "&4",
+        "category": "Demonic",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "HEALTH_BONUS": -6,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "cambion": {
+        "display_name": "Cambion",
+        "color": "&4",
+        "category": "Demonic",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "FIRE_DAMAGE_DEALT": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "pit_fiend": {
+        "display_name": "Pit Fiend",
+        "color": "&4",
+        "category": "Demonic",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.25,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "HEALTH_BONUS": 10,
+          "MOVEMENT_SPEED_BONUS": -0.2,
+          "MAGIC_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "balor": {
+        "display_name": "Balor",
+        "color": "&4",
+        "category": "Demonic",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.25,
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "EXPLOSION_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": 10,
+          "MOVEMENT_SPEED_BONUS": -0.15,
+          "DODGE_CHANCE": -0.1
+        },
+        "is_new": true
+      },
+      "tiefling": {
+        "display_name": "Tiefling",
+        "color": "&c",
+        "category": "Demonic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "FIRE_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "LUCK_BONUS": 0.1,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "shadow_demon": {
+        "display_name": "Shadow Demon",
+        "color": "&8",
+        "category": "Demonic",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "RADIANT_RESISTANCE": -0.15,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "nightmare": {
+        "display_name": "Nightmare",
+        "color": "&5",
+        "category": "Demonic",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "SPRINT_MOVEMENT_SPEED_BONUS": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "FREEZING_RESISTANCE": -0.15,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "void_fiend": {
+        "display_name": "Void Fiend",
+        "color": "&5",
+        "category": "Demonic",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "RADIANT_RESISTANCE": -0.2,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "sprite": {
+        "display_name": "Sprite",
+        "color": "&a",
+        "category": "Nature/Fey",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "ENCHANTING_EXP_GAIN": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -6,
+          "SCALE": -0.2
+        },
+        "is_new": true
+      },
+      "pixie": {
+        "display_name": "Pixie",
+        "color": "&d",
+        "category": "Nature/Fey",
+        "stats": {
+          "HEALING_BONUS": 0.25,
+          "LUCK_BONUS": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": -7,
+          "SCALE": -0.25
+        },
+        "is_new": true
+      },
+      "centaur": {
+        "display_name": "Centaur",
+        "color": "&6",
+        "category": "Nature/Fey",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.15,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "SPRINT_MOVEMENT_SPEED_BONUS": 0.1,
+          "SNEAK_MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "sylph": {
+        "display_name": "Sylph",
+        "color": "&f",
+        "category": "Nature/Fey",
+        "stats": {
+          "MOVEMENT_SPEED_BONUS": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "FALLING_RESISTANCE": 0.2,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -4,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "gnome": {
+        "display_name": "Gnome",
+        "color": "&a",
+        "category": "Nature/Fey",
+        "stats": {
+          "ENCHANTING_EXP_GAIN": 0.25,
+          "MINING_EXP_GAIN": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "LUCK_BONUS": 0.1,
+          "HEALTH_BONUS": -4,
+          "SCALE": -0.1
+        },
+        "is_new": true
+      },
+      "leshy": {
+        "display_name": "Leshy",
+        "color": "&2",
+        "category": "Nature/Fey",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "POISON_RESISTANCE": 0.2,
+          "FARMING_EXP_GAIN": 0.15,
+          "WOODCUTTING_EXP_GAIN": 0.1,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "mushroom_folk": {
+        "display_name": "Mushroom Folk",
+        "color": "&c",
+        "category": "Nature/Fey",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "POISON_RESISTANCE": 0.25,
+          "ALCHEMY_EXP_GAIN": 0.15,
+          "FARMING_EXP_GAIN": 0.1,
+          "FIRE_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "treant_sprout": {
+        "display_name": "Treant Sprout",
+        "color": "&2",
+        "category": "Nature/Fey",
+        "stats": {
+          "HEALING_BONUS": 0.15,
+          "POISON_RESISTANCE": 0.15,
+          "FARMING_EXP_GAIN": 0.1,
+          "WOODCUTTING_EXP_GAIN": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.05,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "faun": {
+        "display_name": "Faun",
+        "color": "&6",
+        "category": "Nature/Fey",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "LUCK_BONUS": 0.15,
+          "FARMING_EXP_GAIN": 0.1,
+          "GLOBAL_EXP_GAIN": 0.1,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "merfolk": {
+        "display_name": "Merfolk",
+        "color": "&b",
+        "category": "Aquatic",
+        "stats": {
+          "HEALING_BONUS": 0.25,
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "FISHING_LUCK": 2,
+          "FISHING_SPEED_MULTIPLIER": 0.15,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "sea_elf": {
+        "display_name": "Sea Elf",
+        "color": "&3",
+        "category": "Aquatic",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.2,
+          "HEALING_BONUS": 0.15,
+          "FISHING_LUCK": 2,
+          "MAGIC_RESISTANCE": 0.1,
+          "FIRE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "kelpie": {
+        "display_name": "Kelpie",
+        "color": "&2",
+        "category": "Aquatic",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "POISON_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "FIRE_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "sahuagin": {
+        "display_name": "Sahuagin",
+        "color": "&2",
+        "category": "Aquatic",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "POISON_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "BLEED_RESISTANCE": 0.15,
+          "FIRE_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "triton": {
+        "display_name": "Triton",
+        "color": "&b",
+        "category": "Aquatic",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "LIGHTNING_DAMAGE_DEALT": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "FISHING_LUCK": 1,
+          "FIRE_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "deep_one": {
+        "display_name": "Deep One",
+        "color": "&5",
+        "category": "Aquatic",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "abyssal_serpent": {
+        "display_name": "Abyssal Serpent",
+        "color": "&3",
+        "category": "Aquatic",
+        "stats": {
+          "POISON_DAMAGE_DEALT": 0.25,
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "FIRE_RESISTANCE": -0.2,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "pearl_mermaid": {
+        "display_name": "Pearl Mermaid",
+        "color": "&b",
+        "category": "Aquatic",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "FISHING_LUCK": 2,
+          "MOVEMENT_SPEED_BONUS": -0.1,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "automaton": {
+        "display_name": "Automaton",
+        "color": "&7",
+        "category": "Construct",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "DAMAGE_RESISTANCE": 0.15,
+          "DIG_SPEED": 0.1,
+          "HEALTH_BONUS": 3,
+          "HEALING_BONUS": -0.2,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "warforged": {
+        "display_name": "Warforged",
+        "color": "&8",
+        "category": "Construct",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 5,
+          "GLOBAL_EXP_GAIN": -0.2,
+          "HEALING_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "clockwork": {
+        "display_name": "Clockwork",
+        "color": "&6",
+        "category": "Construct",
+        "stats": {
+          "DIG_SPEED": 0.15,
+          "MINING_EXP_GAIN": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "CRAFTING_TIME_REDUCTION": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "crystal_golem": {
+        "display_name": "Crystal Golem",
+        "color": "&b",
+        "category": "Construct",
+        "stats": {
+          "MAGIC_RESISTANCE": 0.25,
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "DAMAGE_RESISTANCE": 0.1,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.15,
+          "HEALING_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "construct": {
+        "display_name": "Construct",
+        "color": "&4",
+        "category": "Construct",
+        "stats": {
+          "DAMAGE_RESISTANCE": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "DIG_SPEED": 0.1,
+          "GLOBAL_EXP_GAIN": -0.2,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "soulforged": {
+        "display_name": "Soulforged",
+        "color": "&8",
+        "category": "Construct",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALING_BONUS": -0.15,
+          "RADIANT_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "ogre": {
+        "display_name": "Ogre",
+        "color": "&6",
+        "category": "Giant",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 8,
+          "MAGIC_RESISTANCE": -0.2,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "troll": {
+        "display_name": "Troll",
+        "color": "&2",
+        "category": "Giant",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "HEALING_BONUS": 0.2,
+          "HEALTH_BONUS": 10,
+          "FREEZING_RESISTANCE": 0.2,
+          "FIRE_RESISTANCE": -0.25,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "jotun": {
+        "display_name": "Jotun",
+        "color": "&9",
+        "category": "Giant",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.2,
+          "FREEZING_RESISTANCE": 0.25,
+          "HEALTH_BONUS": 10,
+          "FIRE_RESISTANCE": -0.3,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "cyclops": {
+        "display_name": "Cyclops",
+        "color": "&e",
+        "category": "Giant",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.25,
+          "BLUDGEONING_DAMAGE_DEALT": 0.2,
+          "HEALTH_BONUS": 8,
+          "DODGE_CHANCE": -0.15,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "firbolg": {
+        "display_name": "Firbolg",
+        "color": "&d",
+        "category": "Giant",
+        "stats": {
+          "HEALING_BONUS": 0.15,
+          "POISON_RESISTANCE": 0.15,
+          "FARMING_EXP_GAIN": 0.1,
+          "HEALTH_BONUS": 10,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "goliath": {
+        "display_name": "Goliath",
+        "color": "&7",
+        "category": "Giant",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 8,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "MAGIC_RESISTANCE": -0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "half_giant": {
+        "display_name": "Half-Giant",
+        "color": "&6",
+        "category": "Giant",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.1,
+          "DODGE_CHANCE": -0.1
+        },
+        "is_new": true
+      },
+      "verdant_giant": {
+        "display_name": "Verdant Giant",
+        "color": "&2",
+        "category": "Giant",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "DAMAGE_RESISTANCE": 0.15,
+          "POISON_RESISTANCE": 0.2,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.2,
+          "DODGE_CHANCE": -0.1
+        },
+        "is_new": true
+      },
+      "stone_warden": {
+        "display_name": "Stone Warden",
+        "color": "&8",
+        "category": "Giant",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.25,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "DAMAGE_RESISTANCE": 0.1,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.2,
+          "DODGE_CHANCE": -0.1
+        },
+        "is_new": true
+      },
+      "astral": {
+        "display_name": "Astral",
+        "color": "&d",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "CRIT_DAMAGE": 0.15,
+          "LUCK_BONUS": 0.1,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "void_touched": {
+        "display_name": "Void-Touched",
+        "color": "&5",
+        "category": "Demonic",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "RADIANT_RESISTANCE": -0.2,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "ethereal": {
+        "display_name": "Ethereal",
+        "color": "&7",
+        "category": "Exotic",
+        "stats": {
+          "DODGE_CHANCE": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "planar": {
+        "display_name": "Planar",
+        "color": "&5",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "CRIT_DAMAGE": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "chrono": {
+        "display_name": "Chrono",
+        "color": "&e",
+        "category": "Exotic",
+        "stats": {
+          "COOLDOWN_REDUCTION": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "CRIT_CHANCE": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "rune_carved": {
+        "display_name": "Rune-Carved",
+        "color": "&6",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "ENCHANTING_EXP_GAIN": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "CRIT_DAMAGE": 0.1,
+          "HEALTH_BONUS": -4,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "soul_echo": {
+        "display_name": "Soul Echo",
+        "color": "&8",
+        "category": "Undead",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.1,
+          "RADIANT_RESISTANCE": -0.15,
+          "HEALTH_BONUS": -4
+        },
+        "is_new": true
+      },
+      "dream_walker": {
+        "display_name": "Dream Walker",
+        "color": "&d",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.1,
+          "HEALTH_BONUS": -4,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "aether_born": {
+        "display_name": "Aether-Born",
+        "color": "&f",
+        "category": "Divine",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "RADIANT_DAMAGE_DEALT": 0.15,
+          "CRIT_DAMAGE": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "null_kin": {
+        "display_name": "Null-Kin",
+        "color": "&8",
+        "category": "Exotic",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.25,
+          "DODGE_CHANCE": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -10,
+          "ARMOR_MULTIPLIER_BONUS": -0.2
+        },
+        "is_new": true
+      },
+      "sand_wraith": {
+        "display_name": "Sand Wraith",
+        "color": "&e",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.1,
+          "FIRE_RESISTANCE": 0.1,
+          "FREEZING_RESISTANCE": -0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "iron_bound": {
+        "display_name": "Iron-Bound",
+        "color": "&7",
+        "category": "Construct",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.25,
+          "DAMAGE_RESISTANCE": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "MOVEMENT_SPEED_BONUS": -0.25,
+          "DODGE_CHANCE": -0.15
+        },
+        "is_new": true
+      },
+      "blood_mage": {
+        "display_name": "Blood Mage",
+        "color": "&c",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.25,
+          "COOLDOWN_REDUCTION": 0.2,
+          "NECROTIC_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": -8,
+          "HEALING_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "storm_caller": {
+        "display_name": "Storm Caller",
+        "color": "&9",
+        "category": "Elemental",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.2,
+          "RANGED_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "CRIT_CHANCE": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "crystal_shard": {
+        "display_name": "Crystal Shard",
+        "color": "&d",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "ENCHANTING_EXP_GAIN": 0.15,
+          "LUCK_BONUS": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": -6,
+          "SCALE": -0.15
+        },
+        "is_new": true
+      },
+      "twilight_elf": {
+        "display_name": "Twilight Elf",
+        "color": "&5",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "ENCHANTING_EXP_GAIN": 0.1,
+          "CRIT_CHANCE": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "dust_djinn": {
+        "display_name": "Dust Djinn",
+        "color": "&e",
+        "category": "Elemental",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "FIRE_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -5,
+          "FREEZING_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "ironheart": {
+        "display_name": "Ironheart",
+        "color": "&7",
+        "category": "Construct",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "DAMAGE_RESISTANCE": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.1,
+          "HEALTH_BONUS": 3,
+          "HEALING_BONUS": -0.15,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "rune_sorcerer": {
+        "display_name": "Rune Sorcerer",
+        "color": "&5",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "ENCHANTING_EXP_GAIN": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "storm_spirit": {
+        "display_name": "Storm Spirit",
+        "color": "&9",
+        "category": "Elemental",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.25,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "thornweaver": {
+        "display_name": "Thornweaver",
+        "color": "&2",
+        "category": "Nature/Fey",
+        "stats": {
+          "POISON_DAMAGE_DEALT": 0.15,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "HEALING_BONUS": 0.1,
+          "FARMING_EXP_GAIN": 0.1,
+          "FIRE_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "ember_drake": {
+        "display_name": "Ember Drake",
+        "color": "&4",
+        "category": "Dragon",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "FIRE_RESISTANCE": 0.1,
+          "FREEZING_RESISTANCE": -0.1,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "storm_dragon": {
+        "display_name": "Storm Dragon",
+        "color": "&9",
+        "category": "Dragon",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.25,
+          "RANGED_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "HEALTH_BONUS": 5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "void_serpent": {
+        "display_name": "Void Serpent",
+        "color": "&5",
+        "category": "Dragon",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "RADIANT_RESISTANCE": -0.2,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "iron_drake": {
+        "display_name": "Iron Drake",
+        "color": "&7",
+        "category": "Dragon",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.25,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "DAMAGE_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 10,
+          "MOVEMENT_SPEED_BONUS": -0.2
+        },
+        "is_new": true
+      },
+      "frost_dragon": {
+        "display_name": "Frost Dragon",
+        "color": "&b",
+        "category": "Dragon",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.25,
+          "FREEZING_RESISTANCE": 0.3,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "HEALTH_BONUS": 5,
+          "FIRE_RESISTANCE": -0.2
+        },
+        "is_new": true
+      },
+      "sandstorm_beast": {
+        "display_name": "Sandstorm Beast",
+        "color": "&e",
+        "category": "Elemental",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "FIRE_RESISTANCE": 0.1,
+          "FREEZING_RESISTANCE": -0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "wild_kin": {
+        "display_name": "Wild Kin",
+        "color": "&2",
+        "category": "Beast",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "UNARMED_DAMAGE_DEALT": 0.1,
+          "FARMING_EXP_GAIN": 0.1,
+          "MAGIC_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "abyssal_kraken": {
+        "display_name": "Abyssal Kraken",
+        "color": "&5",
+        "category": "Aquatic",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "POISON_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": 10,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "FIRE_RESISTANCE": -0.15,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "crystal_nymph": {
+        "display_name": "Crystal Nymph",
+        "color": "&d",
+        "category": "Exotic",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "ENCHANTING_EXP_GAIN": 0.15,
+          "LUCK_BONUS": 0.1,
+          "CRIT_DAMAGE": 0.1,
+          "HEALTH_BONUS": -5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "mossling": {
+        "display_name": "Mossling",
+        "color": "&2",
+        "category": "Nature/Fey",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "FARMING_EXP_GAIN": 0.15,
+          "POISON_RESISTANCE": 0.1,
+          "HEALTH_BONUS": -6,
+          "SCALE": -0.2
+        },
+        "is_new": true
+      },
+      "shadow_drake": {
+        "display_name": "Shadow Drake",
+        "color": "&8",
+        "category": "Undead",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "bone_colossus": {
+        "display_name": "Bone Colossus",
+        "color": "&7",
+        "category": "Undead",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "BLUDGEONING_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": 10,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "MOVEMENT_SPEED_BONUS": -0.15,
+          "DODGE_CHANCE": -0.1
+        },
+        "is_new": true
+      },
+      "ash_knight": {
+        "display_name": "Ash Knight",
+        "color": "&8",
+        "category": "Other",
+        "stats": {
+          "FIRE_RESISTANCE": 0.2,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "HEALTH_BONUS": 3,
+          "FREEZING_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "lava_walker": {
+        "display_name": "Lava Walker",
+        "color": "&4",
+        "category": "Other",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.25,
+          "FIRE_RESISTANCE": 0.3,
+          "MOVEMENT_SPEED_BONUS": 0.05,
+          "HEALTH_BONUS": -3,
+          "FREEZING_RESISTANCE": -0.2
+        },
+        "is_new": true
+      },
+      "ice_witch": {
+        "display_name": "Ice Witch",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.25,
+          "FREEZING_RESISTANCE": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -3,
+          "FIRE_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "plague_bearer": {
+        "display_name": "Plague Bearer",
+        "color": "&2",
+        "category": "Other",
+        "stats": {
+          "POISON_DAMAGE_DEALT": 0.25,
+          "POISON_RESISTANCE": 0.4,
+          "HEALING_BONUS": 0.1,
+          "HEALTH_BONUS": -4,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "flamecaller": {
+        "display_name": "Flamecaller",
+        "color": "&c",
+        "category": "Other",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.3,
+          "COOLDOWN_REDUCTION": 0.1,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -3,
+          "FREEZING_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "glacierborn": {
+        "display_name": "Glacierborn",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.3,
+          "FREEZING_RESISTANCE": 0.35,
+          "HEALTH_BONUS": 5,
+          "FIRE_RESISTANCE": -0.25,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "stonecaller": {
+        "display_name": "Stonecaller",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "DAMAGE_RESISTANCE": 0.15,
+          "BLUDGEONING_DAMAGE_DEALT": 0.2,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "windrider": {
+        "display_name": "Windrider",
+        "color": "&f",
+        "category": "Other",
+        "stats": {
+          "MOVEMENT_SPEED_BONUS": 0.25,
+          "SPRINT_MOVEMENT_SPEED_BONUS": 0.15,
+          "DODGE_CHANCE": 0.15,
+          "HEALTH_BONUS": -4,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "thunderlord": {
+        "display_name": "Thunderlord",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.3,
+          "COOLDOWN_REDUCTION": 0.15,
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -3,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "ashwalker": {
+        "display_name": "Ashwalker",
+        "color": "&8",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "FIRE_RESISTANCE": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -3,
+          "RADIANT_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "tidecaller": {
+        "display_name": "Tidecaller",
+        "color": "&3",
+        "category": "Other",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.2,
+          "HEALING_BONUS": 0.2,
+          "FISHING_LUCK": 2,
+          "FIRE_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "dustfiend": {
+        "display_name": "Dustfiend",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -3,
+          "FREEZING_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "ember_sprite": {
+        "display_name": "Ember Sprite",
+        "color": "&c",
+        "category": "Other",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -5,
+          "SCALE": -0.15
+        },
+        "is_new": true
+      },
+      "frost_spirit": {
+        "display_name": "Frost Spirit",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.25,
+          "FREEZING_RESISTANCE": 0.25,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -4,
+          "FIRE_RESISTANCE": -0.2
+        },
+        "is_new": true
+      },
+      "storm_wraith": {
+        "display_name": "Storm Wraith",
+        "color": "&9",
+        "category": "Other",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.25,
+          "DODGE_CHANCE": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "HEALTH_BONUS": -4,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "earth_shaper": {
+        "display_name": "Earth Shaper",
+        "color": "&6",
+        "category": "Other",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "DAMAGE_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 5,
+          "DIG_SPEED": 0.15,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "sky_dancer": {
+        "display_name": "Sky Dancer",
+        "color": "&f",
+        "category": "Other",
+        "stats": {
+          "DODGE_CHANCE": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "shadowcaster": {
+        "display_name": "Shadowcaster",
+        "color": "&8",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -3,
+          "RADIANT_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "plague_doctor": {
+        "display_name": "Plague Doctor",
+        "color": "&2",
+        "category": "Other",
+        "stats": {
+          "HEALING_BONUS": 0.15,
+          "POISON_DAMAGE_DEALT": 0.2,
+          "ALCHEMY_EXP_GAIN": 0.2,
+          "COOLDOWN_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "void_weaver": {
+        "display_name": "Void Weaver",
+        "color": "&5",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "NECROTIC_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -4,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "crystal_mage": {
+        "display_name": "Crystal Mage",
+        "color": "&d",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "ENCHANTING_EXP_GAIN": 0.2,
+          "LUCK_BONUS": 0.1,
+          "COOLDOWN_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "moon_weaver": {
+        "display_name": "Moon Weaver",
+        "color": "&9",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "HEALING_BONUS": 0.1,
+          "DODGE_CHANCE": 0.1
+        },
+        "is_new": true
+      },
+      "sunCaller": {
+        "display_name": "Sun Caller",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "RADIANT_DAMAGE_DEALT": 0.25,
+          "HEALING_BONUS": 0.15,
+          "FIRE_DAMAGE_DEALT": 0.1,
+          "NECROTIC_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "starCaller": {
+        "display_name": "Star Caller",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "RADIANT_DAMAGE_DEALT": 0.15,
+          "CRIT_DAMAGE": 0.15,
+          "HEALTH_BONUS": -4
+        },
+        "is_new": true
+      },
+      "abyss_walker": {
+        "display_name": "Abyss Walker",
+        "color": "&5",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "DODGE_CHANCE": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "HEALTH_BONUS": -4,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "soul_reaper": {
+        "display_name": "Soul Reaper",
+        "color": "&8",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.25,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "HEALING_BONUS": 0.1,
+          "HEALTH_BONUS": -3,
+          "RADIANT_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "bone_weaver": {
+        "display_name": "Bone Weaver",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.15,
+          "SMITHING_QUALITY_GENERAL": 20,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "sand_serpent": {
+        "display_name": "Sand Serpent",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "POISON_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -3,
+          "FIRE_RESISTANCE": 0.05
+        },
+        "is_new": true
+      },
+      "tundra_wolf": {
+        "display_name": "Tundra Wolf",
+        "color": "&f",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "FREEZING_DAMAGE_DEALT": 0.1,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "SPRINT_MOVEMENT_SPEED_BONUS": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "swamp_hag": {
+        "display_name": "Swamp Hag",
+        "color": "&2",
+        "category": "Other",
+        "stats": {
+          "POISON_DAMAGE_DEALT": 0.2,
+          "ALCHEMY_EXP_GAIN": 0.2,
+          "HEALING_BONUS": 0.1,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "sky_dragon": {
+        "display_name": "Sky Dragon",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "FALLING_RESISTANCE": 0.3,
+          "HEALTH_BONUS": 5,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "iron_golem": {
+        "display_name": "Iron Golem",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.3,
+          "KNOCKBACK_RESISTANCE": 0.3,
+          "HEALTH_BONUS": 10,
+          "MOVEMENT_SPEED_BONUS": -0.2,
+          "DODGE_CHANCE": -0.15
+        },
+        "is_new": true
+      },
+      "dark_elf": {
+        "display_name": "Dark Elf",
+        "color": "&5",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "POISON_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "high_elf": {
+        "display_name": "High Elf",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "ENCHANTING_EXP_GAIN": 0.25,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -4,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "wood_elf": {
+        "display_name": "Wood Elf",
+        "color": "&2",
+        "category": "Other",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "WOODCUTTING_EXP_GAIN": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "sea_dwarf": {
+        "display_name": "Sea Dwarf",
+        "color": "&3",
+        "category": "Other",
+        "stats": {
+          "MINING_EXP_GAIN": 0.2,
+          "FISHING_LUCK": 2,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "mountain_giant": {
+        "display_name": "Mountain Giant",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "HEALTH_BONUS": 15,
+          "ARMOR_MULTIPLIER_BONUS": 0.25,
+          "KNOCKBACK_RESISTANCE": 0.3,
+          "MOVEMENT_SPEED_BONUS": -0.25,
+          "DODGE_CHANCE": -0.2
+        },
+        "is_new": true
+      },
+      "hill_giant": {
+        "display_name": "Hill Giant",
+        "color": "&6",
+        "category": "Other",
+        "stats": {
+          "HEALTH_BONUS": 10,
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "MOVEMENT_SPEED_BONUS": -0.15,
+          "MAGIC_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "fog_phantom": {
+        "display_name": "Fog Phantom",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "DODGE_CHANCE": 0.25,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -5,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "dust_devil": {
+        "display_name": "Dust Devil",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "HEALTH_BONUS": -4,
+          "FIRE_RESISTANCE": 0.05
+        },
+        "is_new": true
+      },
+      "magma_sprite": {
+        "display_name": "Magma Sprite",
+        "color": "&4",
+        "category": "Other",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -5,
+          "SCALE": -0.15
+        },
+        "is_new": true
+      },
+      "frost_fairy": {
+        "display_name": "Frost Fairy",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "HEALING_BONUS": 0.2,
+          "FREEZING_RESISTANCE": 0.15,
+          "HEALTH_BONUS": -6,
+          "SCALE": -0.2
+        },
+        "is_new": true
+      },
+      "shadow_fairy": {
+        "display_name": "Shadow Fairy",
+        "color": "&5",
+        "category": "Other",
+        "stats": {
+          "DODGE_CHANCE": 0.2,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": -6,
+          "SCALE": -0.2
+        },
+        "is_new": true
+      },
+      "star_fairy": {
+        "display_name": "Star Fairy",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "CRIT_DAMAGE": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -6,
+          "SCALE": -0.2
+        },
+        "is_new": true
+      },
+      "plague_witch": {
+        "display_name": "Plague Witch",
+        "color": "&2",
+        "category": "Other",
+        "stats": {
+          "POISON_DAMAGE_DEALT": 0.3,
+          "ALCHEMY_EXP_GAIN": 0.2,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -3,
+          "HEALING_BONUS": 0.05
+        },
+        "is_new": true
+      },
+      "warlock_v2": {
+        "display_name": "Warlock",
+        "color": "&5",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.25,
+          "COOLDOWN_REDUCTION": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "demon_hunter": {
+        "display_name": "Demon Hunter",
+        "color": "&4",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "FIRE_DAMAGE_DEALT": 0.1,
+          "DODGE_CHANCE": 0.1,
+          "RADIANT_RESISTANCE": 0.1
+        },
+        "is_new": true
+      },
+      "vampire_hunter": {
+        "display_name": "Vampire Hunter",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "RADIANT_DAMAGE_DEALT": 0.1,
+          "NECROTIC_RESISTANCE": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "HEALING_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "dragon_slayer": {
+        "display_name": "Dragon Slayer",
+        "color": "&c",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "CRIT_DAMAGE": 0.2,
+          "DAMAGE_RESISTANCE": 0.1,
+          "HEALTH_BONUS": 3,
+          "DODGE_CHANCE": -0.05
+        },
+        "is_new": true
+      },
+      "undead_hunter": {
+        "display_name": "Undead Hunter",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "RADIANT_DAMAGE_DEALT": 0.2,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "NECROTIC_RESISTANCE": 0.2,
+          "RADIANT_RESISTANCE": 0.15
+        },
+        "is_new": true
+      },
+      "giant_slayer": {
+        "display_name": "Giant Slayer",
+        "color": "&6",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "CRIT_DAMAGE": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -2
+        },
+        "is_new": true
+      },
+      "troll_kin": {
+        "display_name": "Troll-Kin",
+        "color": "&2",
+        "category": "Other",
+        "stats": {
+          "HEALTH_BONUS": 8,
+          "HEALING_BONUS": 0.15,
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "FIRE_RESISTANCE": -0.2,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "orc_raider": {
+        "display_name": "Orc Raider",
+        "color": "&2",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "SPRINT_MOVEMENT_SPEED_BONUS": 0.1,
+          "KNOCKBACK_RESISTANCE": 0.1,
+          "MAGIC_RESISTANCE": -0.1
+        },
+        "is_new": true
+      },
+      "elven_ranger": {
+        "display_name": "Elven Ranger",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.25,
+          "CRIT_CHANCE": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "WOODCUTTING_EXP_GAIN": 0.15,
+          "HEALTH_BONUS": -2
+        },
+        "is_new": true
+      },
+      "dwarven_smith": {
+        "display_name": "Dwarven Smith",
+        "color": "&6",
+        "category": "Other",
+        "stats": {
+          "SMITHING_QUALITY_GENERAL": 30,
+          "MINING_EXP_GAIN": 0.2,
+          "DURABILITY_BONUS": 0.2,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "human_mage": {
+        "display_name": "Human Mage",
+        "color": "&a",
+        "category": "Other",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "ENCHANTING_EXP_GAIN": 0.15,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "undead_mage": {
+        "display_name": "Undead Mage",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -4,
+          "HEALING_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "celestial_warrior": {
+        "display_name": "Celestial Warrior",
+        "color": "&e",
+        "category": "Other",
+        "stats": {
+          "RADIANT_DAMAGE_DEALT": 0.2,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "HEALING_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "abyssal_warrior": {
+        "display_name": "Abyssal Warrior",
+        "color": "&4",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "FIRE_DAMAGE_DEALT": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 5,
+          "RADIANT_RESISTANCE": -0.2
+        },
+        "is_new": true
+      },
+      "magma_golem": {
+        "display_name": "Magma Golem",
+        "color": "&4",
+        "category": "Other",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.2,
+          "FIRE_RESISTANCE": 0.3,
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "HEALTH_BONUS": 8,
+          "MOVEMENT_SPEED_BONUS": -0.2
+        },
+        "is_new": true
+      },
+      "frost_golem": {
+        "display_name": "Frost Golem",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.25,
+          "FREEZING_RESISTANCE": 0.3,
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "HEALTH_BONUS": 8,
+          "FIRE_RESISTANCE": -0.2
+        },
+        "is_new": true
+      },
+      "storm_golem": {
+        "display_name": "Storm Golem",
+        "color": "&9",
+        "category": "Other",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.25,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "HEALTH_BONUS": 5,
+          "DODGE_CHANCE": 0.1,
+          "MOVEMENT_SPEED_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "void_golem": {
+        "display_name": "Void Golem",
+        "color": "&5",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "HEALTH_BONUS": 8,
+          "DODGE_CHANCE": 0.1,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "shadow_elf": {
+        "display_name": "Shadow Elf",
+        "color": "&8",
+        "category": "Other",
+        "stats": {
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "flame_elf": {
+        "display_name": "Flame Elf",
+        "color": "&c",
+        "category": "Other",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.25,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "FIRE_RESISTANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "ice_elf": {
+        "display_name": "Ice Elf",
+        "color": "&b",
+        "category": "Other",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.25,
+          "FREEZING_RESISTANCE": 0.2,
+          "DODGE_CHANCE": 0.1,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "mountain_dwarf": {
+        "display_name": "Mountain Dwarf",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "MINING_EXP_GAIN": 0.25,
+          "DIG_SPEED": 0.2,
+          "HEALTH_BONUS": 5,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "hill_dwarf": {
+        "display_name": "Hill Dwarf",
+        "color": "&6",
+        "category": "Other",
+        "stats": {
+          "FARMING_EXP_GAIN": 0.2,
+          "HEALING_BONUS": 0.15,
+          "LUCK_BONUS": 0.1,
+          "HEALTH_BONUS": 3,
+          "MELEE_DAMAGE_DEALT": -0.05
+        },
+        "is_new": true
+      },
+      "deep_dwarf": {
+        "display_name": "Deep Dwarf",
+        "color": "&8",
+        "category": "Other",
+        "stats": {
+          "MINING_EXP_GAIN": 0.3,
+          "DIG_SPEED": 0.25,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": 3,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "necro_undead": {
+        "display_name": "Necrotic Undead",
+        "color": "&5",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.25,
+          "NECROTIC_RESISTANCE": 0.3,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": 3,
+          "RADIANT_RESISTANCE": -0.2
+        },
+        "is_new": true
+      },
+      "war_undead": {
+        "display_name": "War Undead",
+        "color": "&8",
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "HEALTH_BONUS": 8,
+          "HEALING_BONUS": -0.2,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "spirit_undead": {
+        "display_name": "Spirit Undead",
+        "color": "&f",
+        "category": "Other",
+        "stats": {
+          "DODGE_CHANCE": 0.25,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "HEALTH_BONUS": -5,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "wight": {
+        "display_name": "Wight",
+        "color": "&7",
+        "category": "Other",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -3,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      }
+    }
+  },
+  "classes": {
+    "total": 127,
+    "existing": 27,
+    "new": 100,
+    "categories": {
+      "Melee DPS": [
+        "champion",
+        "duelist",
+        "marauder",
+        "gladiator",
+        "lancer",
+        "warmonger",
+        "reaper",
+        "juggernaut",
+        "blade_dancer",
+        "pit_fighter"
+      ],
+      "Ranged DPS": [
+        "marksman",
+        "hunter",
+        "sniper",
+        "falconer",
+        "ballistae",
+        "slinger",
+        "arbalist",
+        "sharpshooter",
+        "beastmaster",
+        "trapper"
+      ],
+      "Magic DPS": [
+        "sorcerer",
+        "elementalist",
+        "conjurer",
+        "illusionist",
+        "necromancer",
+        "witch",
+        "battle_mage",
+        "pyromancer",
+        "cryomancer"
+      ],
+      "Healing/Support": [
+        "sage",
+        "apothecary",
+        "battle_medic",
+        "oracle",
+        "chanter",
+        "priest",
+        "spirit_walker",
+        "life_binder",
+        "confessor",
+        "herbalist"
+      ],
+      "Tank/Defense": [
+        "sentinel",
+        "bulwark",
+        "guardian",
+        "fortress",
+        "aegis",
+        "stone_warden",
+        "ironclad",
+        "phalanx",
+        "colossus"
+      ],
+      "Stealth": [
+        "shadow",
+        "infiltrator",
+        "nightblade",
+        "whisper",
+        "cutthroat",
+        "phantom",
+        "renegade",
+        "deadeye",
+        "scoundrel",
+        "trickster"
+      ],
+      "Summoner/Commander": [
+        "beast_tamer",
+        "undead_commander",
+        "golemancer",
+        "banneret",
+        "warlord",
+        "commander",
+        "ritualist",
+        "binder"
+      ],
+      "Hybrid": [
+        "spellthief",
+        "blade_mage",
+        "runic_warrior",
+        "hexblade",
+        "arcane_archer",
+        "battle_cleric",
+        "spirit_knight",
+        "runepriest",
+        "mystic",
+        "adept"
+      ],
+      "Crafting/Gathering": [
+        "artificer",
+        "jeweler",
+        "tinker",
+        "skinner",
+        "lumberjack",
+        "mason",
+        "weaver",
+        "brewer",
+        "cartographer"
+      ],
+      "Special/Unique": [
+        "fate_weaver",
+        "void_walker",
+        "time_mage",
+        "dreamwalker",
+        "soul_binder",
+        "starweaver",
+        "chaos_mage",
+        "blood_mage",
+        "thaumaturge",
+        "storm_caller"
+      ]
+    },
+    "entries": {
+      "warrior": {
+        "display_name": "Warrior",
+        "color": "&c",
+        "group": 1,
+        "category": "Melee",
+        "is_new": false
+      },
+      "barbarian": {
+        "display_name": "Barbarian",
+        "color": "&c",
+        "group": 1,
+        "category": "Melee",
+        "is_new": false
+      },
+      "ranger": {
+        "display_name": "Ranger",
+        "color": "&c",
+        "group": 1,
+        "category": "Ranged",
+        "is_new": false
+      },
+      "alchemist": {
+        "display_name": "Alchemist",
+        "color": "&d",
+        "group": 2,
+        "category": "Crafting",
+        "is_new": false
+      },
+      "enchanter": {
+        "display_name": "Enchanter",
+        "color": "&b",
+        "group": 2,
+        "category": "Magic",
+        "is_new": false
+      },
+      "blacksmith": {
+        "display_name": "Blacksmith",
+        "color": "&a",
+        "group": 2,
+        "category": "Crafting",
+        "is_new": false
+      },
+      "miner": {
+        "display_name": "Miner",
+        "color": "&e",
+        "group": 3,
+        "category": "Gathering",
+        "is_new": false
+      },
+      "farmer": {
+        "display_name": "Farmer-Fisherman",
+        "color": "&e",
+        "group": 3,
+        "category": "Gathering",
+        "is_new": false
+      },
+      "terraformer": {
+        "display_name": "Terraformer",
+        "color": "&e",
+        "group": 3,
+        "category": "Gathering",
+        "is_new": false
+      },
+      "berserker": {
+        "display_name": "Berserker",
+        "color": "&c",
+        "group": 1,
+        "category": "Melee",
+        "is_new": false
+      },
+      "paladin": {
+        "display_name": "Paladin",
+        "color": "&e",
+        "group": 1,
+        "category": "Melee",
+        "is_new": false
+      },
+      "death_knight": {
+        "display_name": "Death Knight",
+        "color": "&8",
+        "group": 1,
+        "category": "Melee",
+        "is_new": false
+      },
+      "spellbreaker": {
+        "display_name": "Spellbreaker",
+        "color": "&5",
+        "group": 1,
+        "category": "Melee",
+        "is_new": false
+      },
+      "assassin": {
+        "display_name": "Assassin",
+        "color": "&7",
+        "group": 1,
+        "category": "Stealth",
+        "is_new": false
+      },
+      "monk": {
+        "display_name": "Monk",
+        "color": "&e",
+        "group": 1,
+        "category": "Melee",
+        "is_new": false
+      },
+      "mage": {
+        "display_name": "Mage",
+        "color": "&b",
+        "group": 2,
+        "category": "Magic",
+        "is_new": false
+      },
+      "warlock": {
+        "display_name": "Warlock",
+        "color": "&5",
+        "group": 2,
+        "category": "Magic",
+        "is_new": false
+      },
+      "cleric": {
+        "display_name": "Cleric",
+        "color": "&e",
+        "group": 2,
+        "category": "Healer",
+        "is_new": false
+      },
+      "druid": {
+        "display_name": "Druid",
+        "color": "&2",
+        "group": 2,
+        "category": "Nature",
+        "is_new": false
+      },
+      "shaman": {
+        "display_name": "Shaman",
+        "color": "&3",
+        "group": 2,
+        "category": "Magic",
+        "is_new": false
+      },
+      "void_knight": {
+        "display_name": "Void Knight",
+        "color": "&5",
+        "group": 2,
+        "category": "Melee",
+        "is_new": false
+      },
+      "gunslinger": {
+        "display_name": "Gunslinger",
+        "color": "&6",
+        "group": 3,
+        "category": "Ranged",
+        "is_new": false
+      },
+      "samurai": {
+        "display_name": "Samurai",
+        "color": "&c",
+        "group": 3,
+        "category": "Melee",
+        "is_new": false
+      },
+      "ninja": {
+        "display_name": "Ninja",
+        "color": "&8",
+        "group": 3,
+        "category": "Stealth",
+        "is_new": false
+      },
+      "bard": {
+        "display_name": "Bard",
+        "color": "&d",
+        "group": 3,
+        "category": "Support",
+        "is_new": false
+      },
+      "warden": {
+        "display_name": "Warden",
+        "color": "&2",
+        "group": 3,
+        "category": "Defense",
+        "is_new": false
+      },
+      "spellblade": {
+        "display_name": "Spellblade",
+        "color": "&b",
+        "group": 3,
+        "category": "Hybrid",
+        "is_new": false
+      },
+      "champion": {
+        "display_name": "Champion",
+        "color": "&c",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "CRIT_DAMAGE": 0.1,
+          "KNOCKBACK_RESISTANCE": 0.1
+        },
+        "is_new": true
+      },
+      "duelist": {
+        "display_name": "Duelist",
+        "color": "&e",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": -0.05,
+          "CRIT_CHANCE": 0.15,
+          "DODGE_CHANCE": 0.1
+        },
+        "is_new": true
+      },
+      "marauder": {
+        "display_name": "Marauder",
+        "color": "&4",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "CRIT_DAMAGE": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": -0.05
+        },
+        "is_new": true
+      },
+      "gladiator": {
+        "display_name": "Gladiator",
+        "color": "&6",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "CRIT_CHANCE": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "lancer": {
+        "display_name": "Lancer",
+        "color": "&9",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "CRIT_CHANCE": 0.05
+        },
+        "is_new": true
+      },
+      "warmonger": {
+        "display_name": "Warmonger",
+        "color": "&4",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": 5,
+          "DAMAGE_RESISTANCE": 0.1,
+          "MOVEMENT_SPEED_BONUS": -0.05
+        },
+        "is_new": true
+      },
+      "reaper": {
+        "display_name": "Reaper",
+        "color": "&8",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "CRIT_CHANCE": 0.15,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "juggernaut": {
+        "display_name": "Juggernaut",
+        "color": "&7",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "HEALTH_BONUS": 8,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "blade_dancer": {
+        "display_name": "Blade Dancer",
+        "color": "&d",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "DODGE_CHANCE": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "MOVEMENT_SPEED_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "pit_fighter": {
+        "display_name": "Pit Fighter",
+        "color": "&c",
+        "group": 1,
+        "category": "Melee DPS",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "UNARMED_DAMAGE_DEALT": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": -0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "marksman": {
+        "display_name": "Marksman",
+        "color": "&e",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "CRIT_CHANCE": 0.15,
+          "RANGED_VELOCITY_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "hunter": {
+        "display_name": "Hunter",
+        "color": "&a",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.15,
+          "FARMING_DROP_MULTIPLIER": 0.15,
+          "FISHING_LUCK": 1,
+          "CRIT_CHANCE": 0.05
+        },
+        "is_new": true
+      },
+      "sniper": {
+        "display_name": "Sniper",
+        "color": "&8",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.25,
+          "CRIT_DAMAGE": 0.2,
+          "RANGED_VELOCITY_BONUS": 0.15,
+          "MELEE_DAMAGE_DEALT": -0.1
+        },
+        "is_new": true
+      },
+      "falconer": {
+        "display_name": "Falconer",
+        "color": "&6",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "DODGE_CHANCE": 0.1,
+          "FARMING_DROP_MULTIPLIER": 0.1
+        },
+        "is_new": true
+      },
+      "ballistae": {
+        "display_name": "Ballistae",
+        "color": "&7",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "BLUDGEONING_DAMAGE_DEALT": 0.1,
+          "CRIT_DAMAGE": 0.15,
+          "MOVEMENT_SPEED_BONUS": -0.05
+        },
+        "is_new": true
+      },
+      "slinger": {
+        "display_name": "Slinger",
+        "color": "&a",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "ATTACK_SPEED_BONUS": 0.15,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "CRIT_CHANCE": 0.05
+        },
+        "is_new": true
+      },
+      "arbalist": {
+        "display_name": "Arbalist",
+        "color": "&8",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "CRIT_DAMAGE": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.05
+        },
+        "is_new": true
+      },
+      "sharpshooter": {
+        "display_name": "Sharpshooter",
+        "color": "&e",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "CRIT_CHANCE": 0.2,
+          "CRIT_DAMAGE": 0.1,
+          "DODGE_CHANCE": 0.05
+        },
+        "is_new": true
+      },
+      "beastmaster": {
+        "display_name": "Beastmaster",
+        "color": "&6",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": 3,
+          "FARMING_DROP_MULTIPLIER": 0.15
+        },
+        "is_new": true
+      },
+      "trapper": {
+        "display_name": "Trapper",
+        "color": "&2",
+        "group": 2,
+        "category": "Ranged DPS",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "POISON_DAMAGE_DEALT": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "DIG_SPEED": 0.1
+        },
+        "is_new": true
+      },
+      "sorcerer": {
+        "display_name": "Sorcerer",
+        "color": "&b",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.25,
+          "COOLDOWN_REDUCTION": 0.15,
+          "CRIT_DAMAGE": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "elementalist": {
+        "display_name": "Elementalist",
+        "color": "&e",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.15,
+          "FREEZING_DAMAGE_DEALT": 0.15,
+          "LIGHTNING_DAMAGE_DEALT": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "conjurer": {
+        "display_name": "Conjurer",
+        "color": "&d",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "COOLDOWN_REDUCTION": 0.2,
+          "ARMOR_MULTIPLIER_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "illusionist": {
+        "display_name": "Illusionist",
+        "color": "&f",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "necromancer": {
+        "display_name": "Necromancer",
+        "color": "&8",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.25,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALING_BONUS": 0.1,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "witch": {
+        "display_name": "Witch",
+        "color": "&5",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "POISON_DAMAGE_DEALT": 0.2,
+          "ALCHEMY_EXP_GAIN": 0.2,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALING_BONUS": 0.05
+        },
+        "is_new": true
+      },
+      "battle_mage": {
+        "display_name": "Battle Mage",
+        "color": "&9",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "COOLDOWN_REDUCTION": 0.05
+        },
+        "is_new": true
+      },
+      "pyromancer": {
+        "display_name": "Pyromancer",
+        "color": "&c",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "FIRE_DAMAGE_DEALT": 0.3,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "FREEZING_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "cryomancer": {
+        "display_name": "Cryomancer",
+        "color": "&b",
+        "group": 3,
+        "category": "Magic DPS",
+        "stats": {
+          "FREEZING_DAMAGE_DEALT": 0.3,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "FREEZING_RESISTANCE": 0.15,
+          "FIRE_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "storm_caller": {
+        "display_name": "Stormcaller",
+        "color": "&9",
+        "group": 3,
+        "category": "Special/Unique",
+        "stats": {
+          "LIGHTNING_DAMAGE_DEALT": 0.3,
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "MOVEMENT_SPEED_BONUS": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "sage": {
+        "display_name": "Sage",
+        "color": "&e",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.3,
+          "RADIANT_DAMAGE_DEALT": 0.1,
+          "COOLDOWN_REDUCTION": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.05
+        },
+        "is_new": true
+      },
+      "apothecary": {
+        "display_name": "Apothecary",
+        "color": "&a",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.25,
+          "ALCHEMY_EXP_GAIN": 0.2,
+          "ALCHEMY_QUALITY_GENERAL": 20,
+          "COOLDOWN_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "battle_medic": {
+        "display_name": "Battle Medic",
+        "color": "&c",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "RADIANT_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "oracle": {
+        "display_name": "Oracle",
+        "color": "&d",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "COOLDOWN_REDUCTION": 0.2,
+          "LUCK_BONUS": 0.15,
+          "CRIT_CHANCE": 0.05
+        },
+        "is_new": true
+      },
+      "chanter": {
+        "display_name": "Chanter",
+        "color": "&b",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "COOLDOWN_REDUCTION": 0.15,
+          "DODGE_CHANCE": 0.1
+        },
+        "is_new": true
+      },
+      "priest": {
+        "display_name": "Priest",
+        "color": "&e",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.3,
+          "RADIANT_RESISTANCE": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "RADIANT_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "spirit_walker": {
+        "display_name": "Spirit Walker",
+        "color": "&3",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "NECROTIC_RESISTANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "life_binder": {
+        "display_name": "Life Binder",
+        "color": "&a",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.25,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": 3,
+          "ARMOR_MULTIPLIER_BONUS": 0.05
+        },
+        "is_new": true
+      },
+      "confessor": {
+        "display_name": "Confessor",
+        "color": "&7",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "HEALING_BONUS": 0.35,
+          "HEALTH_BONUS": -3,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "COOLDOWN_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "sentinel": {
+        "display_name": "Sentinel",
+        "color": "&e",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "DAMAGE_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 5,
+          "KNOCKBACK_RESISTANCE": 0.15
+        },
+        "is_new": true
+      },
+      "bulwark": {
+        "display_name": "Bulwark",
+        "color": "&7",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.25,
+          "KNOCKBACK_RESISTANCE": 0.3,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "guardian": {
+        "display_name": "Guardian",
+        "color": "&e",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "HEALING_BONUS": 0.15,
+          "HEALTH_BONUS": 5,
+          "DAMAGE_RESISTANCE": 0.1
+        },
+        "is_new": true
+      },
+      "fortress": {
+        "display_name": "Fortress",
+        "color": "&8",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.3,
+          "KNOCKBACK_RESISTANCE": 0.25,
+          "HEALTH_BONUS": 8,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "aegis": {
+        "display_name": "Aegis",
+        "color": "&e",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "RADIANT_RESISTANCE": 0.15,
+          "HEALING_BONUS": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "stone_warden": {
+        "display_name": "Stone Warden",
+        "color": "&7",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.25,
+          "DAMAGE_RESISTANCE": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "MOVEMENT_SPEED_BONUS": -0.15
+        },
+        "is_new": true
+      },
+      "ironclad": {
+        "display_name": "Ironclad",
+        "color": "&7",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "DAMAGE_RESISTANCE": 0.15,
+          "HEALTH_BONUS": 5,
+          "MOVEMENT_SPEED_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "phalanx": {
+        "display_name": "Phalanx",
+        "color": "&e",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.2,
+          "DAMAGE_RESISTANCE": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "colossus": {
+        "display_name": "Colossus",
+        "color": "&4",
+        "group": 5,
+        "category": "Tank/Defense",
+        "stats": {
+          "HEALTH_BONUS": 10,
+          "ARMOR_MULTIPLIER_BONUS": 0.2,
+          "KNOCKBACK_RESISTANCE": 0.25,
+          "MOVEMENT_SPEED_BONUS": -0.2
+        },
+        "is_new": true
+      },
+      "shadow": {
+        "display_name": "Shadow",
+        "color": "&8",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.25,
+          "DODGE_CHANCE": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "infiltrator": {
+        "display_name": "Infiltrator",
+        "color": "&7",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "CRIT_CHANCE": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "MELEE_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "nightblade": {
+        "display_name": "Nightblade",
+        "color": "&5",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "CRIT_CHANCE": 0.1
+        },
+        "is_new": true
+      },
+      "whisper": {
+        "display_name": "Whisper",
+        "color": "&7",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.25,
+          "CRIT_CHANCE": 0.2,
+          "CRIT_DAMAGE": 0.15,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "cutthroat": {
+        "display_name": "Cutthroat",
+        "color": "&c",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.2,
+          "CRIT_CHANCE": 0.15,
+          "BLEED_DAMAGE": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "phantom": {
+        "display_name": "Phantom",
+        "color": "&f",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "DODGE_CHANCE": 0.2,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "CRIT_CHANCE": 0.1,
+          "MAGIC_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "renegade": {
+        "display_name": "Renegade",
+        "color": "&8",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "DODGE_CHANCE": 0.15,
+          "CRIT_DAMAGE": 0.1
+        },
+        "is_new": true
+      },
+      "deadeye": {
+        "display_name": "Deadeye",
+        "color": "&e",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.2,
+          "CRIT_CHANCE": 0.2,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "scoundrel": {
+        "display_name": "Scoundrel",
+        "color": "&a",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "CRIT_CHANCE": 0.15,
+          "DODGE_CHANCE": 0.15,
+          "POISON_DAMAGE_DEALT": 0.1,
+          "LUCK_BONUS": 0.15
+        },
+        "is_new": true
+      },
+      "trickster": {
+        "display_name": "Trickster",
+        "color": "&d",
+        "group": 6,
+        "category": "Stealth",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.15,
+          "DODGE_CHANCE": 0.15,
+          "CRIT_CHANCE": 0.1
+        },
+        "is_new": true
+      },
+      "beast_tamer": {
+        "display_name": "Beast Tamer",
+        "color": "&6",
+        "group": 7,
+        "category": "Summoner/Commander",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": 5,
+          "DODGE_CHANCE": 0.1,
+          "FARMING_DROP_MULTIPLIER": 0.15
+        },
+        "is_new": true
+      },
+      "undead_commander": {
+        "display_name": "Undead Commander",
+        "color": "&8",
+        "group": 7,
+        "category": "Summoner/Commander",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.2,
+          "HEALTH_BONUS": 5,
+          "KNOCKBACK_RESISTANCE": 0.15,
+          "ARMOR_MULTIPLIER_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "golemancer": {
+        "display_name": "Golemancer",
+        "color": "&7",
+        "group": 7,
+        "category": "Summoner/Commander",
+        "stats": {
+          "HEALTH_BONUS": 5,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "DAMAGE_RESISTANCE": 0.1,
+          "MAGIC_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "banneret": {
+        "display_name": "Banneret",
+        "color": "&e",
+        "group": 7,
+        "category": "Summoner/Commander",
+        "stats": {
+          "HEALTH_BONUS": 3,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "DAMAGE_RESISTANCE": 0.1,
+          "CRIT_CHANCE": 0.1
+        },
+        "is_new": true
+      },
+      "warlord": {
+        "display_name": "Warlord",
+        "color": "&4",
+        "group": 7,
+        "category": "Summoner/Commander",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "HEALTH_BONUS": 5,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "KNOCKBACK_RESISTANCE": 0.15
+        },
+        "is_new": true
+      },
+      "commander": {
+        "display_name": "Commander",
+        "color": "&e",
+        "group": 7,
+        "category": "Summoner/Commander",
+        "stats": {
+          "DAMAGE_DEALT": 0.1,
+          "DAMAGE_RESISTANCE": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "ritualist": {
+        "display_name": "Ritualist",
+        "color": "&5",
+        "group": 7,
+        "category": "Summoner/Commander",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": -0.1
+        },
+        "is_new": true
+      },
+      "binder": {
+        "display_name": "Binder",
+        "color": "&8",
+        "group": 7,
+        "category": "Summoner/Commander",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "spellthief": {
+        "display_name": "Spellthief",
+        "color": "&5",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "DODGE_CHANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "blade_mage": {
+        "display_name": "Blade Mage",
+        "color": "&9",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "CRIT_CHANCE": 0.1,
+          "COOLDOWN_REDUCTION": 0.05
+        },
+        "is_new": true
+      },
+      "runic_warrior": {
+        "display_name": "Runic Warrior",
+        "color": "&6",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "hexblade": {
+        "display_name": "Hexblade",
+        "color": "&5",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALING_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "arcane_archer": {
+        "display_name": "Arcane Archer",
+        "color": "&b",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "RANGED_DAMAGE_DEALT": 0.15,
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "CRIT_CHANCE": 0.1,
+          "CRIT_DAMAGE": 0.1
+        },
+        "is_new": true
+      },
+      "battle_cleric": {
+        "display_name": "Battle Cleric",
+        "color": "&e",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "HEALING_BONUS": 0.15,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "RADIANT_DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "spirit_knight": {
+        "display_name": "Spirit Knight",
+        "color": "&3",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": 5,
+          "ARMOR_MULTIPLIER_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "runepriest": {
+        "display_name": "Runepriest",
+        "color": "&6",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "HEALING_BONUS": 0.1,
+          "ENCHANTING_EXP_GAIN": 0.15,
+          "COOLDOWN_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "mystic": {
+        "display_name": "Mystic",
+        "color": "&d",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.1,
+          "HEALING_BONUS": 0.1,
+          "DODGE_CHANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "adept": {
+        "display_name": "Adept",
+        "color": "&e",
+        "group": 8,
+        "category": "Hybrid",
+        "stats": {
+          "DAMAGE_DEALT": 0.1,
+          "ARMOR_MULTIPLIER_BONUS": 0.1,
+          "COOLDOWN_REDUCTION": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "artificer": {
+        "display_name": "Artificer",
+        "color": "&b",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "CRAFTING_TIME_REDUCTION": 0.2,
+          "ENCHANTING_QUALITY": 20,
+          "LUCK_BONUS": 0.1,
+          "COOKING_SPEED_BONUS": 0.15
+        },
+        "is_new": true
+      },
+      "jeweler": {
+        "display_name": "Jeweler",
+        "color": "&b",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "SMITHING_QUALITY_GENERAL": 25,
+          "ENCHANTING_QUALITY": 15,
+          "LUCK_BONUS": 0.15
+        },
+        "is_new": true
+      },
+      "tinker": {
+        "display_name": "Tinker",
+        "color": "&6",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "DIG_SPEED": 0.2,
+          "MINING_EXP_GAIN": 0.15,
+          "CRAFTING_TIME_REDUCTION": 0.15,
+          "DURABILITY_BONUS": 0.15
+        },
+        "is_new": true
+      },
+      "herbalist": {
+        "display_name": "Herbalist",
+        "color": "&a",
+        "group": 4,
+        "category": "Healing/Support",
+        "stats": {
+          "ALCHEMY_EXP_GAIN": 0.25,
+          "FARMING_EXP_GAIN": 0.2,
+          "FARMING_DROP_MULTIPLIER": 0.15,
+          "POISON_RESISTANCE": 0.1
+        },
+        "is_new": true
+      },
+      "skinner": {
+        "display_name": "Skinner",
+        "color": "&6",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "FARMING_DROP_MULTIPLIER": 0.2,
+          "MINING_DROP_MULTIPLIER": 0.1,
+          "LUCK_BONUS": 0.1,
+          "DURABILITY_BONUS": 0.1
+        },
+        "is_new": true
+      },
+      "lumberjack": {
+        "display_name": "Lumberjack",
+        "color": "&6",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "WOODCUTTING_EXP_GAIN": 0.3,
+          "DIG_SPEED": 0.2,
+          "MINING_EXP_GAIN": 0.1,
+          "HEALTH_BONUS": 3
+        },
+        "is_new": true
+      },
+      "mason": {
+        "display_name": "Mason",
+        "color": "&7",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "MINING_EXP_GAIN": 0.25,
+          "DIG_SPEED": 0.2,
+          "MINING_DROP_MULTIPLIER": 0.15,
+          "CRAFTING_TIME_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "weaver": {
+        "display_name": "Weaver",
+        "color": "&d",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "CRAFTING_TIME_REDUCTION": 0.2,
+          "ENCHANTING_QUALITY": 10,
+          "DURABILITY_BONUS": 0.2,
+          "LUCK_BONUS": 0.05
+        },
+        "is_new": true
+      },
+      "brewer": {
+        "display_name": "Brewer",
+        "color": "&3",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "ALCHEMY_EXP_GAIN": 0.2,
+          "ALCHEMY_QUALITY_GENERAL": 20,
+          "BREWING_SPEED_BONUS": 0.25,
+          "COOKING_SPEED_BONUS": 0.15
+        },
+        "is_new": true
+      },
+      "cartographer": {
+        "display_name": "Cartographer",
+        "color": "&e",
+        "group": 9,
+        "category": "Crafting/Gathering",
+        "stats": {
+          "LUCK_BONUS": 0.2,
+          "GLOBAL_EXP_GAIN": 0.1,
+          "FISHING_LUCK": 2,
+          "DIG_SPEED": 0.1
+        },
+        "is_new": true
+      },
+      "fate_weaver": {
+        "display_name": "Fate Weaver",
+        "color": "&d",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "LUCK_BONUS": 0.25,
+          "COOLDOWN_REDUCTION": 0.15,
+          "CRIT_CHANCE": 0.1,
+          "DODGE_CHANCE": 0.1
+        },
+        "is_new": true
+      },
+      "void_walker": {
+        "display_name": "Void Walker",
+        "color": "&5",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "DODGE_CHANCE": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -5
+        },
+        "is_new": true
+      },
+      "time_mage": {
+        "display_name": "Time Mage",
+        "color": "&e",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "COOLDOWN_REDUCTION": 0.25,
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "DODGE_CHANCE": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "dreamwalker": {
+        "display_name": "Dreamwalker",
+        "color": "&d",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "DODGE_CHANCE": 0.15,
+          "COOLDOWN_REDUCTION": 0.15,
+          "HEALTH_BONUS": -4
+        },
+        "is_new": true
+      },
+      "soul_binder": {
+        "display_name": "Soul Binder",
+        "color": "&8",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "NECROTIC_DAMAGE_DEALT": 0.25,
+          "HEALING_BONUS": 0.15,
+          "COOLDOWN_REDUCTION": 0.1,
+          "RADIANT_RESISTANCE": -0.15
+        },
+        "is_new": true
+      },
+      "starweaver": {
+        "display_name": "Starweaver",
+        "color": "&e",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "RADIANT_DAMAGE_DEALT": 0.15,
+          "CRIT_DAMAGE": 0.15,
+          "COOLDOWN_REDUCTION": 0.1
+        },
+        "is_new": true
+      },
+      "chaos_mage": {
+        "display_name": "Chaos Mage",
+        "color": "&5",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.2,
+          "FIRE_DAMAGE_DEALT": 0.1,
+          "LIGHTNING_DAMAGE_DEALT": 0.1,
+          "FREEZING_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -3
+        },
+        "is_new": true
+      },
+      "blood_mage": {
+        "display_name": "Blood Mage",
+        "color": "&4",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.25,
+          "COOLDOWN_REDUCTION": 0.2,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "HEALTH_BONUS": -8
+        },
+        "is_new": true
+      },
+      "thaumaturge": {
+        "display_name": "Thaumaturge",
+        "color": "&d",
+        "group": 10,
+        "category": "Special/Unique",
+        "stats": {
+          "MAGIC_DAMAGE_DEALT": 0.15,
+          "HEALING_BONUS": 0.2,
+          "COOLDOWN_REDUCTION": 0.15,
+          "RADIANT_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "geomancer": {
+        "display_name": "Geomancer",
+        "color": "&6",
+        "group": 3,
+        "category": "Other",
+        "stats": {
+          "BLUDGEONING_DAMAGE_DEALT": 0.2,
+          "ARMOR_MULTIPLIER_BONUS": 0.15,
+          "DAMAGE_RESISTANCE": 0.1,
+          "MAGIC_DAMAGE_DEALT": 0.1
+        },
+        "is_new": true
+      },
+      "warden_of_woods": {
+        "display_name": "Warden of Woods",
+        "color": "&2",
+        "group": 4,
+        "category": "Other",
+        "stats": {
+          "HEALING_BONUS": 0.2,
+          "MELEE_DAMAGE_DEALT": 0.1,
+          "FARMING_EXP_GAIN": 0.15,
+          "POISON_RESISTANCE": 0.15
+        },
+        "is_new": true
+      },
+      "shadow_blade": {
+        "display_name": "Shadow Blade",
+        "color": "&8",
+        "group": 6,
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "SNEAK_MOVEMENT_SPEED_BONUS": 0.2,
+          "NECROTIC_DAMAGE_DEALT": 0.1,
+          "CRIT_CHANCE": 0.1
+        },
+        "is_new": true
+      },
+      "sky_knight": {
+        "display_name": "Sky Knight",
+        "color": "&b",
+        "group": 1,
+        "category": "Other",
+        "stats": {
+          "MELEE_DAMAGE_DEALT": 0.15,
+          "RANGED_DAMAGE_DEALT": 0.1,
+          "MOVEMENT_SPEED_BONUS": 0.15,
+          "FALLING_RESISTANCE": 0.2
+        },
+        "is_new": true
+      },
+      "runesmith": {
+        "display_name": "Runesmith",
+        "color": "&6",
+        "group": 9,
+        "category": "Other",
+        "stats": {
+          "SMITHING_QUALITY_GENERAL": 25,
+          "ENCHANTING_QUALITY": 20,
+          "CRAFTING_TIME_REDUCTION": 0.15,
+          "DURABILITY_BONUS": 0.15
+        },
+        "is_new": true
+      }
+    }
+  },
+  "stats_used": {
+    "combat": [
+      "MELEE_DAMAGE_DEALT",
+      "RANGED_DAMAGE_DEALT",
+      "UNARMED_DAMAGE_DEALT",
+      "DAMAGE_DEALT",
+      "MAGIC_DAMAGE_DEALT",
+      "FIRE_DAMAGE_DEALT",
+      "FREEZING_DAMAGE_DEALT",
+      "LIGHTNING_DAMAGE_DEALT",
+      "NECROTIC_DAMAGE_DEALT",
+      "RADIANT_DAMAGE_DEALT",
+      "POISON_DAMAGE_DEALT",
+      "BLUDGEONING_DAMAGE_DEALT",
+      "EXPLOSION_DAMAGE_DEALT"
+    ],
+    "defense": [
+      "ARMOR_MULTIPLIER_BONUS",
+      "DAMAGE_RESISTANCE",
+      "MELEE_RESISTANCE",
+      "PROJECTILE_RESISTANCE",
+      "MAGIC_RESISTANCE",
+      "FIRE_RESISTANCE",
+      "FREEZING_RESISTANCE",
+      "LIGHTNING_RESISTANCE",
+      "NECROTIC_RESISTANCE",
+      "RADIANT_RESISTANCE",
+      "POISON_RESISTANCE",
+      "EXPLOSION_RESISTANCE",
+      "KNOCKBACK_RESISTANCE",
+      "BLEED_RESISTANCE",
+      "STUN_RESISTANCE"
+    ],
+    "health_movement": [
+      "HEALTH_BONUS",
+      "MOVEMENT_SPEED_BONUS",
+      "SPRINT_MOVEMENT_SPEED_BONUS",
+      "SNEAK_MOVEMENT_SPEED_BONUS",
+      "JUMP_HEIGHT_MULTIPLIER",
+      "FALLING_RESISTANCE",
+      "SCALE",
+      "DODGE_CHANCE",
+      "CRIT_CHANCE",
+      "CRIT_DAMAGE"
+    ],
+    "skills": [
+      "GLOBAL_EXP_GAIN",
+      "MINING_EXP_GAIN",
+      "WOODCUTTING_EXP_GAIN",
+      "FARMING_EXP_GAIN",
+      "FISHING_EXP_GAIN",
+      "ARCHERY_EXP_GAIN",
+      "LIGHT_WEAPONS_EXP_GAIN",
+      "HEAVY_WEAPONS_EXP_GAIN",
+      "ENCHANTING_EXP_GAIN",
+      "ALCHEMY_EXP_GAIN"
+    ],
+    "utility": [
+      "COOLDOWN_REDUCTION",
+      "HEALING_BONUS",
+      "HUNGER_SAVE_CHANCE",
+      "DURABILITY_BONUS",
+      "FARMING_DROP_MULTIPLIER",
+      "MINING_DROP_MULTIPLIER",
+      "FISHING_LUCK",
+      "FISHING_SPEED_MULTIPLIER",
+      "DIG_SPEED",
+      "LUCK_BONUS"
+    ],
+    "crafting": [
+      "SMITHING_QUALITY_GENERAL",
+      "ALCHEMY_QUALITY_GENERAL",
+      "ENCHANTING_QUALITY",
+      "BREWING_SPEED_BONUS",
+      "CRAFTING_TIME_REDUCTION",
+      "COOKING_SPEED_BONUS"
+    ]
+  }
+}

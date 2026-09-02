@@ -1,0 +1,5013 @@
+# 200 New Races for ValhallaRaces
+# Append these to the end of races.yml under the 'races:' section
+
+  fire_elemental:
+    position: 50
+    icon: BLAZE_POWDER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cFire Elemental&8]'
+    display_name: '&cFire Elemental'
+    description:
+      - '&cFire Elementals&7, beings born from living'
+      - '&7flame that roam scorched wastes.'
+      - '&7Their bodies burn all who draw near.'
+      - '&7Fire is their ally but ice undoes them.'
+      - '&8&m                                       '
+      - '&cFire Elemental &7benefit from'
+      - '&f- &a+30% &fFire Damage Dealt'
+      - '&f- &a+40% &fFire Resistance'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-25% &fFreezing Resistance'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.3
+      FIRE_RESISTANCE: 0.4
+      MELEE_DAMAGE_DEALT: 0.15
+      FREEZING_RESISTANCE: -0.25
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  water_elemental:
+    position: 51
+    icon: PRISMARINE_SHARD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&3Water Elemental&8]'
+    display_name: '&3Water Elemental'
+    description:
+      - '&3Water Elementals&7, fluid beings of living'
+      - '&7water from the deepest oceans.'
+      - '&7They freeze foes and sustain allies.'
+      - '&7Fire scorches their liquid forms.'
+      - '&8&m                                       '
+      - '&3Water Elemental &7benefit from'
+      - '&f- &a+25% &fFreezing Damage Dealt'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+15% &fMagic Resistance'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFire Resistance'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.25
+      HEALING_BONUS: 0.2
+      MAGIC_RESISTANCE: 0.15
+      FIRE_RESISTANCE: -0.2
+  earth_elemental:
+    position: 52
+    icon: STONE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Earth Elemental&8]'
+    display_name: '&6Earth Elemental'
+    description:
+      - '&6Earth Elementals&7, colossal beings of'
+      - '&7living stone and soil. Their rocky'
+      - '&7hides shrug off blows, but they'
+      - '&7are ponderous and slow.'
+      - '&8&m                                       '
+      - '&6Earth Elemental &7benefit from'
+      - '&f- &a+25% &fArmor Multiplier Bonus'
+      - '&f- &a+20% &fDamage Resistance'
+      - '&f- &a+30% &fKnockback Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fMovement Speed Bonus'
+      - '&f- &c-15% &fDodge Chance'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.25
+      DAMAGE_RESISTANCE: 0.2
+      KNOCKBACK_RESISTANCE: 0.3
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.2
+      DODGE_CHANCE: -0.15
+  air_elemental:
+    position: 53
+    icon: FEATHER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fAir Elemental&8]'
+    display_name: '&fAir Elemental'
+    description:
+      - '&fAir Elementals&7, swift invisible beings'
+      - '&7of howling wind. They dart across the'
+      - '&7battlefield instantly but their'
+      - '&7bodies are wisps of nothing.'
+      - '&8&m                                       '
+      - '&fAir Elemental &7benefit from'
+      - '&f- &a+20% &fMovement Speed Bonus'
+      - '&f- &a+20% &fSprint Movement Speed Bonus'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fRanged Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MOVEMENT_SPEED_BONUS: 0.2
+      SPRINT_MOVEMENT_SPEED_BONUS: 0.2
+      DODGE_CHANCE: 0.15
+      RANGED_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  lightning_elemental:
+    position: 54
+    icon: LIGHTNING_ROD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eLightning Elemental&8]'
+    display_name: '&eLightning Elemental'
+    description:
+      - '&eLightning Elementals&7, crackling beings'
+      - '&7of living thunder. They strike with'
+      - '&7devastating speed, but their'
+      - '&7volatile nature makes them unstable.'
+      - '&8&m                                       '
+      - '&eLightning Elemental &7benefit from'
+      - '&f- &a+30% &fLightning Damage Dealt'
+      - '&f- &a+20% &fCooldown Reduction'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+10% &fCrit Chance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fLightning Resistance'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.3
+      COOLDOWN_REDUCTION: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      CRIT_CHANCE: 0.1
+      LIGHTNING_RESISTANCE: -0.15
+      HEALTH_BONUS: -3
+  magma_lord:
+    position: 55
+    icon: MAGMA_CREAM:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Magma Lord&8]'
+    display_name: '&4Magma Lord'
+    description:
+      - '&4Magma Lords&7, towering titans of molten'
+      - '&7rock. They burn the earth beneath'
+      - '&7their feet, but cold seeps into'
+      - '&7their cores and weakens them.'
+      - '&8&m                                       '
+      - '&4Magma Lord &7benefit from'
+      - '&f- &a+25% &fFire Damage Dealt'
+      - '&f- &a+30% &fFire Resistance'
+      - '&f- &a+15% &fExplosion Damage Dealt'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFreezing Resistance'
+      - '&f- &c-15% &fMovement Speed Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.25
+      FIRE_RESISTANCE: 0.3
+      EXPLOSION_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: 5
+      FREEZING_RESISTANCE: -0.2
+      MOVEMENT_SPEED_BONUS: -0.15
+  stormborn:
+    position: 56
+    icon: TRIDENT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Stormborn&8]'
+    display_name: '&9Stormborn'
+    description:
+      - '&9Stormborn&7, children of the tempest sky.'
+      - '&7They command thunder and wind, striking'
+      - '&7from above with shocking fury,'
+      - '&7but the calm of earth unsettles them.'
+      - '&8&m                                       '
+      - '&9Stormborn &7benefit from'
+      - '&f- &a+20% &fLightning Damage Dealt'
+      - '&f- &a+20% &fRanged Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+10% &fJump Height Multiplier'
+      - '&7But suffer from'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.2
+      RANGED_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      JUMP_HEIGHT_MULTIPLIER: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -3
+  tidal_dancer:
+    position: 57
+    icon: TROPICAL_FISH:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bTidal Dancer&8]'
+    display_name: '&bTidal Dancer'
+    description:
+      - '&bTidal Dancers&7, graceful beings of the'
+      - '&7ocean currents. They heal with the'
+      - '&7tide and buff allies, but cannot'
+      - '&7endure arid lands for long.'
+      - '&8&m                                       '
+      - '&bTidal Dancer &7benefit from'
+      - '&f- &a+25% &fHealing Bonus'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+2% &fFishing Luck'
+      - '&f- &a+15% &fFishing Speed Multiplier'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMelee Damage Dealt'
+      - '&f- &c-5% &fFire Resistance'
+    stat_buffs:
+      HEALING_BONUS: 0.25
+      FREEZING_DAMAGE_DEALT: 0.15
+      FISHING_LUCK: 2
+      FISHING_SPEED_MULTIPLIER: 0.15
+      MELEE_DAMAGE_DEALT: -0.1
+      FIRE_RESISTANCE: -0.05
+  glacial:
+    position: 58
+    icon: PACKED_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bGlacial&8]'
+    display_name: '&bGlacial'
+    description:
+      - '&bGlacials&7, frozen giants from the heart'
+      - '&7of the ice age. Their bodies radiate'
+      - '&7an aura of frost, but fire'
+      - '&7melts their resolve.'
+      - '&8&m                                       '
+      - '&bGlacial &7benefit from'
+      - '&f- &a+30% &fFreezing Damage Dealt'
+      - '&f- &a+35% &fFreezing Resistance'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&f- &a+3 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-25% &fFire Resistance'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.3
+      FREEZING_RESISTANCE: 0.35
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      HEALTH_BONUS: 3
+      FIRE_RESISTANCE: -0.25
+      MOVEMENT_SPEED_BONUS: -0.1
+  volcanic:
+    position: 59
+    icon: OBSIDIAN:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Volcanic&8]'
+    display_name: '&4Volcanic'
+    description:
+      - '&4Volcanic&7, ancient beings of fire and ash.'
+      - '&7Their molten hearts grant terrifying'
+      - '&7power, but cold slows their'
+      - '&7sluggish magma-blood.'
+      - '&8&m                                       '
+      - '&4Volcanic &7benefit from'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+15% &fExplosion Damage Dealt'
+      - '&f- &a+20% &fFire Resistance'
+      - '&f- &a+4 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFreezing Resistance'
+      - '&f- &c-10% &fDodge Chance'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.2
+      EXPLOSION_DAMAGE_DEALT: 0.15
+      FIRE_RESISTANCE: 0.2
+      HEALTH_BONUS: 4
+      FREEZING_RESISTANCE: -0.2
+      DODGE_CHANCE: -0.1
+  dust_wraith:
+    position: 60
+    icon: SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eDust Wraith&8]'
+    display_name: '&eDust Wraith'
+    description:
+      - '&eDust Wraiths&7, hollow spirits of the'
+      - '&7endless desert. They scour foes with'
+      - '&7grinding sand and move unseen,'
+      - '&7but water dissolves their forms.'
+      - '&8&m                                       '
+      - '&eDust Wraith &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+15% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fFreezing Resistance'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: -4
+      FREEZING_RESISTANCE: -0.1
+  mistwalker:
+    position: 61
+    icon: GLASS_BOTTLE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Mistwalker&8]'
+    display_name: '&7Mistwalker'
+    description:
+      - '&7Mistwalkers&7, ethereal beings woven from'
+      - '&7the morning fog. They drift between'
+      - '&7worlds, but strong light'
+      - '&7dispels their shadows.'
+      - '&8&m                                       '
+      - '&7Mistwalker &7benefit from'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-10% &fRadiant Resistance'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      DODGE_CHANCE: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      RADIANT_RESISTANCE: -0.1
+      HEALTH_BONUS: -3
+  ashborn:
+    position: 62
+    icon: SUSPICIOUS_STEW:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Ashborn&8]'
+    display_name: '&8Ashborn'
+    description:
+      - '&8Ashborn&7, scorched remnants of a dead'
+      - '&7world. They wield death-magic of'
+      - '&7ashes and are immune to burning,'
+      - '&7but they are withered and frail.'
+      - '&8&m                                       '
+      - '&8Ashborn &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+30% &fFire Resistance'
+      - '&f- &a+15% &fNecrotic Resistance'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fHealing Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      FIRE_RESISTANCE: 0.3
+      NECROTIC_RESISTANCE: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: -5
+      HEALING_BONUS: -0.1
+  cinder_spark:
+    position: 63
+    icon: BLAZE_ROD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Cinder Spark&8]'
+    display_name: '&6Cinder Spark'
+    description:
+      - '&6Cinder Sparks&7, tiny but fierce beings'
+      - '&7of ember and smoke. They dart through'
+      - '&7battle in a flurry of sparks,'
+      - '&7but water extinguishes them.'
+      - '&8&m                                       '
+      - '&6Cinder Spark &7benefit from'
+      - '&f- &a+15% &fFire Damage Dealt'
+      - '&f- &a+20% &fMovement Speed Bonus'
+      - '&f- &a+15% &fCrit Chance'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-15% &fFreezing Resistance'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.2
+      CRIT_CHANCE: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: -5
+      FREEZING_RESISTANCE: -0.15
+  tempest_lord:
+    position: 64
+    icon: CONDUIT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Tempest Lord&8]'
+    display_name: '&9Tempest Lord'
+    description:
+      - '&9Tempest Lords&7, mighty rulers of the'
+      - '&7storm. They call down devastating'
+      - '&7lightning, but earth binds their fury.'
+      - '&8&m                                       '
+      - '&9Tempest Lord &7benefit from'
+      - '&f- &a+25% &fLightning Damage Dealt'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMelee Damage Dealt'
+      - '&f- &c-10% &fDig Speed'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.25
+      FREEZING_DAMAGE_DEALT: 0.15
+      KNOCKBACK_RESISTANCE: 0.2
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+      DIG_SPEED: -0.1
+  sky_sovereign:
+    position: 65
+    icon: ELYTRA:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fSky Sovereign&8]'
+    display_name: '&fSky Sovereign'
+    description:
+      - '&fSky Sovereigns&7, regal beings who dwell'
+      - '&7above the clouds. They command winds'
+      - '&7and soar, but the ground'
+      - '&7is foreign to them.'
+      - '&8&m                                       '
+      - '&fSky Sovereign &7benefit from'
+      - '&f- &a+20% &fRanged Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+30% &fFalling Resistance'
+      - '&f- &a+10% &fCrit Chance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      FALLING_RESISTANCE: 0.3
+      CRIT_CHANCE: 0.1
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  inferno_touched:
+    position: 66
+    icon: NETHERITE_INGOT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Inferno Touched&8]'
+    display_name: '&4Inferno Touched'
+    description:
+      - '&4Inferno Touched&7, mortals branded by'
+      - '&7the hells. They radiate searing heat'
+      - '&7and shrug off flame, but cold'
+      - '&7bites them to the bone.'
+      - '&8&m                                       '
+      - '&4Inferno Touched &7benefit from'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+25% &fFire Resistance'
+      - '&f- &a+10% &fMagic Damage Dealt'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFreezing Resistance'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.2
+      FIRE_RESISTANCE: 0.25
+      MAGIC_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      FREEZING_RESISTANCE: -0.2
+      HEALTH_BONUS: -3
+  void_essence:
+    position: 67
+    icon: ENDER_EYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Void Essence&8]'
+    display_name: '&5Void Essence'
+    description:
+      - '&5Void Essences&7, beings of pure nothingness'
+      - '&7between dimensions. They wield entropy'
+      - '&7and decay, but radiant light'
+      - '&7unmakes their being.'
+      - '&8&m                                       '
+      - '&5Void Essence &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-25% &fRadiant Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      RADIANT_RESISTANCE: -0.25
+      HEALTH_BONUS: -5
+  ember_knight:
+    position: 68
+    icon: BLAZE_POWDER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cEmber Knight&8]'
+    display_name: '&cEmber Knight'
+    description:
+      - '&cEmber Knights&7, warriors forged in'
+      - '&7living flame. They fight with'
+      - '&7fire-wreathed weapons, but ice'
+      - '&7shatters them.'
+      - '&8&m                                       '
+      - '&cEmber Knight &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+15% &fFire Resistance'
+      - '&f- &a+5% &fArmor Multiplier Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fFreezing Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      FIRE_DAMAGE_DEALT: 0.2
+      FIRE_RESISTANCE: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.05
+      FREEZING_RESISTANCE: -0.15
+  frost_kin:
+    position: 69
+    icon: BLUE_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bFrost-Kin&8]'
+    display_name: '&bFrost-Kin'
+    description:
+      - '&bFrost-Kin&7, beings of bitter cold.'
+      - '&7They command freezing winds and their'
+      - '&7touch numbs all it contacts,'
+      - '&7but fire melts their resolve.'
+      - '&8&m                                       '
+      - '&bFrost-Kin &7benefit from'
+      - '&f- &a+20% &fFreezing Damage Dealt'
+      - '&f- &a+25% &fFreezing Resistance'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFire Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.2
+      FREEZING_RESISTANCE: 0.25
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      FIRE_RESISTANCE: -0.2
+      HEALTH_BONUS: -5
+  ember_soul:
+    position: 70
+    icon: MAGMA_CREAM:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Ember Soul&8]'
+    display_name: '&4Ember Soul'
+    description:
+      - '&4Ember Souls&7, beings of smoldering ash'
+      - '&7and fading flame. They burn foes'
+      - '&7with residual heat, but they'
+      - '&7are slowly fading.'
+      - '&8&m                                       '
+      - '&4Ember Soul &7benefit from'
+      - '&f- &a+15% &fFire Damage Dealt'
+      - '&f- &a+10% &fMagic Damage Dealt'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+10% &fFire Resistance'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fFreezing Resistance'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      FIRE_RESISTANCE: 0.1
+      HEALTH_BONUS: -5
+      FREEZING_RESISTANCE: -0.1
+  wolf_blooded:
+    position: 71
+    icon: SPIDER_EYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Wolf-Blooded&8]'
+    display_name: '&7Wolf-Blooded'
+    description:
+      - '&7Wolf-Blooded&7, fierce pack hunters who'
+      - '&7rare strength and cunning. Their'
+      - '&7jaws rend armor, but they'
+      - '&7struggle with ranged combat.'
+      - '&8&m                                       '
+      - '&7Wolf-Blooded &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+15% &fUnarmed Damage Dealt'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+10% &fSprint Movement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      UNARMED_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      SPRINT_MOVEMENT_SPEED_BONUS: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  bear_folk:
+    position: 72
+    icon: HONEYCOMB:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Bear-Folk&8]'
+    display_name: '&6Bear-Folk'
+    description:
+      - '&6Bear-Folk&7, massive warrior-beasts of'
+      - '&7unyielding strength. They shrug off'
+      - '&7wounds and crush foes, but'
+      - '&7they are slow and clumsy.'
+      - '&8&m                                       '
+      - '&6Bear-Folk &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMovement Speed Bonus'
+      - '&f- &c-10% &fDodge Chance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      HEALTH_BONUS: 5
+      KNOCKBACK_RESISTANCE: 0.2
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      MOVEMENT_SPEED_BONUS: -0.15
+      DODGE_CHANCE: -0.1
+  hawk_kin:
+    position: 73
+    icon: FEATHER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eHawk-Kin&8]'
+    display_name: '&eHawk-Kin'
+    description:
+      - '&eHawk-Kin&7, sharp-eyed raptor folk who'
+      - '&7dive upon prey from impossible heights.'
+      - '&7Their vision is unmatched, but'
+      - '&7they are light and fragile.'
+      - '&8&m                                       '
+      - '&eHawk-Kin &7benefit from'
+      - '&f- &a+20% &fRanged Damage Dealt'
+      - '&f- &a+15% &fCrit Chance'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+25% &fFalling Resistance'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      CRIT_CHANCE: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      FALLING_RESISTANCE: 0.25
+      HEALTH_BONUS: -4
+  serpent_blooded:
+    position: 74
+    icon: POISONOUS_POTATO:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Serpent-Blooded&8]'
+    display_name: '&2Serpent-Blooded'
+    description:
+      - '&2Serpent-Blooded&7, cold-blooded hunters'
+      - '&7of the deep jungle. Their venomous'
+      - '&7bite weakens prey before the'
+      - '&7killing strike.'
+      - '&8&m                                       '
+      - '&2Serpent-Blooded &7benefit from'
+      - '&f- &a+25% &fPoison Damage Dealt'
+      - '&f- &a+30% &fPoison Resistance'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMagic Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      POISON_DAMAGE_DEALT: 0.25
+      POISON_RESISTANCE: 0.3
+      MELEE_DAMAGE_DEALT: 0.15
+      MAGIC_RESISTANCE: -0.1
+      HEALTH_BONUS: -5
+  spider_kin:
+    position: 75
+    icon: STRING:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Spider-Kin&8]'
+    display_name: '&5Spider-Kin'
+    description:
+      - '&5Spider-Kin&7, eight-limbed stalkers of'
+      - '&7the dark places. They spin webs of'
+      - '&7shadow and strike from above,'
+      - '&7but are frail of body.'
+      - '&8&m                                       '
+      - '&5Spider-Kin &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+20% &fPoison Damage Dealt'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fSneak Movement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fRadiant Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      POISON_DAMAGE_DEALT: 0.2
+      DODGE_CHANCE: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.1
+      HEALTH_BONUS: -3
+      RADIANT_RESISTANCE: -0.1
+  raven_folk:
+    position: 76
+    icon: BLACK_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Raven-Folk&8]'
+    display_name: '&8Raven-Folk'
+    description:
+      - '&8Raven-Folk&7, cunning omens of death'
+      - '&7who speak with fallen spirits.'
+      - '&7They wield dark magic, but'
+      - '&7are brittle in prolonged combat.'
+      - '&8&m                                       '
+      - '&8Raven-Folk &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+10% &fDodge Chance'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.1
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -4
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  fox_blooded:
+    position: 77
+    icon: SWEET_BERRIES:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Fox-Blooded&8]'
+    display_name: '&6Fox-Blooded'
+    description:
+      - '&6Fox-Blooded&7, cunning tricksters of'
+      - '&7the wild. Their quick wits and'
+      - '&7quicker feet carry them through'
+      - '&7danger.'
+      - '&8&m                                       '
+      - '&6Fox-Blooded &7benefit from'
+      - '&f- &a+15% &fCrit Chance'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+10% &fLuck Bonus'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      CRIT_CHANCE: 0.15
+      DODGE_CHANCE: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      LUCK_BONUS: 0.1
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  stag_folk:
+    position: 78
+    icon: GRASS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Stag-Folk&8]'
+    display_name: '&2Stag-Folk'
+    description:
+      - '&2Stag-Folk&7, noble beasts of the ancient'
+      - '&7forest. They charge with devastating'
+      - '&7horns, but they avoid'
+      - '&7the violence of war.'
+      - '&8&m                                       '
+      - '&2Stag-Folk &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+10% &fFarming Exp Gain'
+      - '&f- &a+10% &fWoodcutting Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-10% &fHeavy Weapons Exp Gain'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.15
+      FARMING_EXP_GAIN: 0.1
+      WOODCUTTING_EXP_GAIN: 0.1
+      HEAVY_WEAPONS_EXP_GAIN: -0.1
+  shark_kin:
+    position: 79
+    icon: COD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&3Shark-Kin&8]'
+    display_name: '&3Shark-Kin'
+    description:
+      - '&3Shark-Kin&7, relentless ocean predators.'
+      - '&7They tear through foes in water'
+      - '&7and on land, but they'
+      - '&7are clumsy on land.'
+      - '&8&m                                       '
+      - '&3Shark-Kin &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+25% &fBleed Resistance'
+      - '&f- &a+10% &fCrit Chance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fSneak Movement Speed Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.1
+      BLEED_RESISTANCE: 0.25
+      CRIT_CHANCE: 0.1
+      SNEAK_MOVEMENT_SPEED_BONUS: -0.15
+  lion_folk:
+    position: 80
+    icon: GOLDEN_CARROT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eLion-Folk&8]'
+    display_name: '&eLion-Folk'
+    description:
+      - '&eLion-Folk&7, regal kings of the savage'
+      - '&7savanna. Their roar stuns foes and'
+      - '&7their claws rend armor, but'
+      - '&7they fall to their own hubris.'
+      - '&8&m                                       '
+      - '&eLion-Folk &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fUnarmed Damage Dealt'
+      - '&f- &a+10% &fKnockback Resistance'
+      - '&f- &a+10% &fCrit Damage'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMagic Resistance'
+      - '&f- &c-5% &fDodge Chance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      UNARMED_DAMAGE_DEALT: 0.15
+      KNOCKBACK_RESISTANCE: 0.1
+      CRIT_DAMAGE: 0.1
+      MAGIC_RESISTANCE: -0.1
+      DODGE_CHANCE: -0.05
+  owlkin:
+    position: 81
+    icon: CLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dOwlkin&8]'
+    display_name: '&dOwlkin'
+    description:
+      - '&dOwlkin&7, silent watchers of the night.'
+      - '&7Their uncanny vision guides allies'
+      - '&7through darkness, but daylight'
+      - '&7weakens their resolve.'
+      - '&8&m                                       '
+      - '&dOwlkin &7benefit from'
+      - '&f- &a+15% &fRanged Damage Dealt'
+      - '&f- &a+15% &fCrit Chance'
+      - '&f- &a+15% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fGlobal Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.15
+      CRIT_CHANCE: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      GLOBAL_EXP_GAIN: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  raptor_kin:
+    position: 82
+    icon: MUSHROOM_STEW:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Raptor-Kin&8]'
+    display_name: '&2Raptor-Kin'
+    description:
+      - '&2Raptor-Kin&7, swift and deadly hunters'
+      - '&7of the primordial wilds. They chase'
+      - '&7down prey with tireless speed.'
+      - '&8&m                                       '
+      - '&2Raptor-Kin &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+20% &fMovement Speed Bonus'
+      - '&f- &a+10% &fCrit Chance'
+      - '&f- &a+10% &fSprint Movement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.2
+      CRIT_CHANCE: 0.1
+      SPRINT_MOVEMENT_SPEED_BONUS: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -3
+  boar_folk:
+    position: 83
+    icon: RAW_PORKCHOP:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Boar-Folk&8]'
+    display_name: '&6Boar-Folk'
+    description:
+      - '&6Boar-Folk&7, tusked bruisers of the'
+      - '&7thick forest. They charge headlong'
+      - '&7into battle, goring foes on'
+      - '&7their massive tusks.'
+      - '&8&m                                       '
+      - '&6Boar-Folk &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMovement Speed Bonus'
+      - '&f- &c-10% &fMagic Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      KNOCKBACK_RESISTANCE: 0.15
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.15
+      MAGIC_RESISTANCE: -0.1
+  bat_folk:
+    position: 84
+    icon: BAT_SPAWN_EGG:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Bat-Folk&8]'
+    display_name: '&8Bat-Folk'
+    description:
+      - '&8Bat-Folk&7, agile creatures of the deep'
+      - '&7caves. They navigate by sound and'
+      - '&7swarm foes, but they are'
+      - '&7frail in direct combat.'
+      - '&8&m                                       '
+      - '&8Bat-Folk &7benefit from'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+15% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fMining Exp Gain'
+      - '&f- &a+10% &fDig Speed'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+    stat_buffs:
+      DODGE_CHANCE: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      MINING_EXP_GAIN: 0.1
+      DIG_SPEED: 0.1
+      HEALTH_BONUS: -4
+  lupine_hunter:
+    position: 85
+    icon: LEATHER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Lupine Hunter&8]'
+    display_name: '&7Lupine Hunter'
+    description:
+      - '&7Lupine Hunters&7, lone wolves of the'
+      - '&7frozen tundra. They stalk prey'
+      - '&7with deadly patience and strike'
+      - '&7when the moment is perfect.'
+      - '&8&m                                       '
+      - '&7Lupine Hunter &7benefit from'
+      - '&f- &a+15% &fRanged Damage Dealt'
+      - '&f- &a+15% &fCrit Chance'
+      - '&f- &a+10% &fSneak Movement Speed Bonus'
+      - '&f- &a+1% &fFishing Luck'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fTotal Heavy Armor'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.15
+      CRIT_CHANCE: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.1
+      FISHING_LUCK: 1
+      HEALTH_BONUS: -3
+      TOTAL_HEAVY_ARMOR: -0.1
+  serpent_sages:
+    position: 86
+    icon: FERMENTED_SPIDER_EYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Serpent Sage&8]'
+    display_name: '&2Serpent Sage'
+    description:
+      - '&2Serpent Sages&7, wise snake-folk who'
+      - '&7master alchemy and poison craft.'
+      - '&7Their venom enhances every brew.'
+      - '&8&m                                       '
+      - '&2Serpent Sage &7benefit from'
+      - '&f- &a+20% &fAlchemy Exp Gain'
+      - '&f- &a+15% &fPoison Damage Dealt'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      ALCHEMY_EXP_GAIN: 0.2
+      POISON_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  lich:
+    position: 87
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Lich&8]'
+    display_name: '&5Lich'
+    description:
+      - '&5Liches&7, ancient sorcerers who cheated'
+      - '&7death. They wield devastating necromancy'
+      - '&7and are immune to poison, but'
+      - '&7holy light unmakes them.'
+      - '&8&m                                       '
+      - '&5Lich &7benefit from'
+      - '&f- &a+25% &fNecrotic Damage Dealt'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+20% &fCooldown Reduction'
+      - '&f- &a+50% &fPoison Resistance'
+      - '&7But suffer from'
+      - '&f- &c-30% &fRadiant Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.25
+      MAGIC_DAMAGE_DEALT: 0.2
+      COOLDOWN_REDUCTION: 0.2
+      POISON_RESISTANCE: 0.5
+      RADIANT_RESISTANCE: -0.3
+      HEALTH_BONUS: -5
+  banshee:
+    position: 88
+    icon: SOUL_SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fBanshee&8]'
+    display_name: '&fBanshee'
+    description:
+      - '&fBanshees&7, shrieking spirits of grief.'
+      - '&7Their wails shatter sanity and their'
+      - '&7icy touch freezes blood, but'
+      - '&7radiant energy burns them.'
+      - '&8&m                                       '
+      - '&fBanshee &7benefit from'
+      - '&f- &a+20% &fFreezing Damage Dealt'
+      - '&f- &a+15% &fNecrotic Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-25% &fRadiant Resistance'
+      - '&f- &c-6 &fHealth Bonus'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.2
+      NECROTIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      RADIANT_RESISTANCE: -0.25
+      HEALTH_BONUS: -6
+  revenant:
+    position: 89
+    icon: BONE_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Revenant&8]'
+    display_name: '&8Revenant'
+    description:
+      - '&8Revenants&7, undead warriors consumed by'
+      - '&7vengeance. They cannot be stopped by'
+      - '&7death and fight relentlessly,'
+      - '&7but their bodies crumble slowly.'
+      - '&8&m                                       '
+      - '&8Revenant &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+15% &fNecrotic Damage Dealt'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fHealing Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.15
+      KNOCKBACK_RESISTANCE: 0.2
+      HEALTH_BONUS: 5
+      HEALING_BONUS: -0.2
+  phantom:
+    position: 90
+    icon: PHANTOM_MEMBRANE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bPhantom&8]'
+    display_name: '&bPhantom'
+    description:
+      - '&bPhantoms&7, sleepless spirits that haunt'
+      - '&7the waking world. They slip through'
+      - '&7matter, but they are'
+      - '&7ephemeral and fragile.'
+      - '&8&m                                       '
+      - '&bPhantom &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+25% &fDodge Chance'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-6 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      DODGE_CHANCE: 0.25
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -6
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  shade:
+    position: 91
+    icon: BLACK_CANDLE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Shade&8]'
+    display_name: '&8Shade'
+    description:
+      - '&8Shades&7, darkness given form. They hide'
+      - '&7in shadows and strike when least'
+      - '&7expected, draining warmth from'
+      - '&7all they touch.'
+      - '&8&m                                       '
+      - '&8Shade &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+20% &fSneak Movement Speed Bonus'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fNecrotic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      DODGE_CHANCE: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.1
+      RADIANT_RESISTANCE: -0.15
+      HEALTH_BONUS: -3
+  specter:
+    position: 92
+    icon: GHOSTLY_GUNPOWDER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Specter&8]'
+    display_name: '&7Specter'
+    description:
+      - '&7Specters&7, restless spirits bound to'
+      - '&7the material plane. They pass through'
+      - '&7walls, but sunlight weakens them.'
+      - '&8&m                                       '
+      - '&7Specter &7benefit from'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+15% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-20% &fRadiant Resistance'
+      - '&f- &c-4 &fHealth Bonus'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      RADIANT_RESISTANCE: -0.2
+      HEALTH_BONUS: -4
+  poltergeist:
+    position: 93
+    icon: ANVIL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dPoltergeist&8]'
+    display_name: '&dPoltergeist'
+    description:
+      - '&dPoltergeists&7, chaotic spirits of rage'
+      - '&7and mischief. They hurl objects with'
+      - '&7telekinetic force, but cannot'
+      - '&7grasp solid weapons.'
+      - '&8&m                                       '
+      - '&dPoltergeist &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fExplosion Damage Dealt'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMelee Damage Dealt'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      EXPLOSION_DAMAGE_DEALT: 0.15
+      KNOCKBACK_RESISTANCE: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  ghost_kin:
+    position: 94
+    icon: WHITE_STAINED_GLASS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fGhost-Kin&8]'
+    display_name: '&fGhost-Kin'
+    description:
+      - '&fGhost-Kin&7, translucent beings caught'
+      - '&7between life and death. They drift'
+      - '&7through attacks and haunt foes.'
+      - '&8&m                                       '
+      - '&fGhost-Kin &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+10% &fFreezing Damage Dealt'
+      - '&f- &a+10% &fNecrotic Resistance'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      FREEZING_DAMAGE_DEALT: 0.1
+      NECROTIC_RESISTANCE: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  zombie_forged:
+    position: 95
+    icon: ROTTEN_FLESH:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Zombie-Forged&8]'
+    display_name: '&2Zombie-Forged'
+    description:
+      - '&2Zombie-Forged&7, reanimated corpses fused'
+      - '&7with necromantic magic. They feel no'
+      - '&7pain, but their bodies slowly'
+      - '&7decay with each battle.'
+      - '&8&m                                       '
+      - '&2Zombie-Forged &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+20% &fNecrotic Resistance'
+      - '&f- &a+10% &fKnockback Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fHealing Bonus'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      NECROTIC_RESISTANCE: 0.2
+      KNOCKBACK_RESISTANCE: 0.1
+      HEALTH_BONUS: 5
+      HEALING_BONUS: -0.15
+      MOVEMENT_SPEED_BONUS: -0.1
+  seraph:
+    position: 96
+    icon: GOLDEN_APPLE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eSeraph&8]'
+    display_name: '&eSeraph'
+    description:
+      - '&eSeraphs&7, six-winged angels of the'
+      - '&7highest heaven. Their radiance destroys'
+      - '&7evil and heals the wounded, but'
+      - '&7they burn in the presence of sin.'
+      - '&8&m                                       '
+      - '&eSeraph &7benefit from'
+      - '&f- &a+25% &fRadiant Damage Dealt'
+      - '&f- &a+25% &fHealing Bonus'
+      - '&f- &a+15% &fRadiant Resistance'
+      - '&f- &a+10% &fMagic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-20% &fNecrotic Resistance'
+      - '&f- &c-1% &fFood Bonus Spoiled'
+    stat_buffs:
+      RADIANT_DAMAGE_DEALT: 0.25
+      HEALING_BONUS: 0.25
+      RADIANT_RESISTANCE: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      NECROTIC_RESISTANCE: -0.2
+      FOOD_BONUS_SPOILED: -1
+  archon:
+    position: 97
+    icon: LIGHT_BLUE_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bArchon&8]'
+    display_name: '&bArchon'
+    description:
+      - '&bArchons&7, celestial commanders of divine'
+      - '&7justice. They smite the wicked with'
+      - '&7holy power, but cannot tolerate'
+      - '&7dark magic.'
+      - '&8&m                                       '
+      - '&bArchon &7benefit from'
+      - '&f- &a+20% &fRadiant Damage Dealt'
+      - '&f- &a+15% &fArmor Multiplier Bonus'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+10% &fKnockback Resistance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fNecrotic Damage Dealt'
+    stat_buffs:
+      RADIANT_DAMAGE_DEALT: 0.2
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      HEALING_BONUS: 0.15
+      KNOCKBACK_RESISTANCE: 0.1
+      NECROTIC_DAMAGE_DEALT: -0.15
+  demigod:
+    position: 98
+    icon: NETHERITE_INGOT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Demigod&8]'
+    display_name: '&6Demigod'
+    description:
+      - '&6Demigods&7, mortal offspring of the'
+      - '&7divine. Their godly blood grants'
+      - '&7terrifying power, but their mortal'
+      - '&7flesh cannot fully contain it.'
+      - '&8&m                                       '
+      - '&6Demigod &7benefit from'
+      - '&f- &a+15% &fDamage Dealt'
+      - '&f- &a+15% &fArmor Multiplier Bonus'
+      - '&f- &a+10% &fDamage Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fGlobal Exp Gain'
+    stat_buffs:
+      DAMAGE_DEALT: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      DAMAGE_RESISTANCE: 0.1
+      HEALTH_BONUS: 5
+      GLOBAL_EXP_GAIN: -0.15
+  solar_angel:
+    position: 99
+    icon: SUNFLOWER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eSolar Angel&8]'
+    display_name: '&eSolar Angel'
+    description:
+      - '&eSolar Angels&7, beings of pure sunlight.'
+      - '&7Their radiance burns the unholy and'
+      - '&7restores the wounded, but darkness'
+      - '&7devours their strength.'
+      - '&8&m                                       '
+      - '&eSolar Angel &7benefit from'
+      - '&f- &a+25% &fRadiant Damage Dealt'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+15% &fFire Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-20% &fNecrotic Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      RADIANT_DAMAGE_DEALT: 0.25
+      HEALING_BONUS: 0.2
+      FIRE_DAMAGE_DEALT: 0.15
+      NECROTIC_RESISTANCE: -0.2
+      HEALTH_BONUS: -5
+  lunar_kin:
+    position: 100
+    icon: CLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Lunar Kin&8]'
+    display_name: '&9Lunar Kin'
+    description:
+      - '&9Lunar Kin&7, moon-touched beings of the'
+      - '&7night sky. They grow stronger under'
+      - '&7the moon and wield silver magic,'
+      - '&7but sunlight dims their power.'
+      - '&8&m                                       '
+      - '&9Lunar Kin &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fSneak Movement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFire Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      FREEZING_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.1
+      FIRE_DAMAGE_DEALT: -0.1
+  starborn:
+    position: 101
+    icon: NETHER_STAR:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eStarborn&8]'
+    display_name: '&eStarborn'
+    description:
+      - '&eStarborn&7, beings of cosmic light who'
+      - '&7fell from the heavens. They channel'
+      - '&7the power of dying stars and'
+      - '&7weave celestial magic.'
+      - '&8&m                                       '
+      - '&eStarborn &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fRadiant Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+10% &fCrit Damage'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      RADIANT_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      CRIT_DAMAGE: 0.1
+      HEALTH_BONUS: -4
+  cherub:
+    position: 102
+    icon: POPPY:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dCherub&8]'
+    display_name: '&dCherub'
+    description:
+      - '&dCherubs&7, infant-like celestial spirits'
+      - '&7of innocence and healing. They mend'
+      - '&7wounds with a touch, but are'
+      - '&7utterly helpless in melee.'
+      - '&8&m                                       '
+      - '&dCherub &7benefit from'
+      - '&f- &a+30% &fHealing Bonus'
+      - '&f- &a+15% &fRadiant Damage Dealt'
+      - '&f- &a+20% &fRadiant Resistance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMelee Damage Dealt'
+      - '&f- &c-4 &fHealth Bonus'
+    stat_buffs:
+      HEALING_BONUS: 0.3
+      RADIANT_DAMAGE_DEALT: 0.15
+      RADIANT_RESISTANCE: 0.2
+      MELEE_DAMAGE_DEALT: -0.15
+      HEALTH_BONUS: -4
+  aasimar:
+    position: 103
+    icon: GLOW_BERRIES:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eAasimar&8]'
+    display_name: '&eAasimar'
+    description:
+      - '&eAasimars&7, mortal-born with divine blood.'
+      - '&7They channel holy power instinctively,'
+      - '&7but their mortal side holds them back.'
+      - '&8&m                                       '
+      - '&eAasimar &7benefit from'
+      - '&f- &a+15% &fRadiant Damage Dealt'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+10% &fMagic Resistance'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fNecrotic Damage Dealt'
+    stat_buffs:
+      RADIANT_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.15
+      MAGIC_RESISTANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      NECROTIC_DAMAGE_DEALT: -0.1
+  imp:
+    position: 104
+    icon: BLAZE_POWDER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Imp&8]'
+    display_name: '&4Imp'
+    description:
+      - '&4Imps&7, tiny but vicious servants of'
+      - '&7the hells. They dart about causing'
+      - '&7havoc and hurling fire, but are'
+      - '&7easily crushed underfoot.'
+      - '&8&m                                       '
+      - '&4Imp &7benefit from'
+      - '&f- &a+15% &fFire Damage Dealt'
+      - '&f- &a+20% &fCooldown Reduction'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-6 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      HEALTH_BONUS: -6
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  cambion:
+    position: 105
+    icon: NETHER_WART:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Cambion&8]'
+    display_name: '&4Cambion'
+    description:
+      - '&4Cambions&7, half-fiend mortals of dark'
+      - '&7ambition. They wield both martial and'
+      - '&7arcane prowess, but their fiendish'
+      - '&7blood repels the divine.'
+      - '&8&m                                       '
+      - '&4Cambion &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+10% &fFire Damage Dealt'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      MAGIC_DAMAGE_DEALT: 0.15
+      FIRE_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      RADIANT_RESISTANCE: -0.15
+  pit_fiend:
+    position: 106
+    icon: CHAIN_COMMAND_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Pit Fiend&8]'
+    display_name: '&4Pit Fiend'
+    description:
+      - '&4Pit Fiends&7, hulking brutes of the'
+      - '&7abyss. They crush foes with massive'
+      - '&7fists, but they are slow and'
+      - '&7dim-witted.'
+      - '&8&m                                       '
+      - '&4Pit Fiend &7benefit from'
+      - '&f- &a+25% &fMelee Damage Dealt'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fMovement Speed Bonus'
+      - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.25
+      KNOCKBACK_RESISTANCE: 0.2
+      HEALTH_BONUS: 10
+      MOVEMENT_SPEED_BONUS: -0.2
+      MAGIC_DAMAGE_DEALT: -0.1
+  balor:
+    position: 107
+    icon: FIRE_CHARGE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Balor&8]'
+    display_name: '&4Balor'
+    description:
+      - '&4Balors&7, terrifying lords of the'
+      - '&7burning hells. Their whip of fire'
+      - '&7shakes the earth, but they'
+      - '&7are massive targets.'
+      - '&8&m                                       '
+      - '&4Balor &7benefit from'
+      - '&f- &a+25% &fFire Damage Dealt'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fExplosion Damage Dealt'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMovement Speed Bonus'
+      - '&f- &c-10% &fDodge Chance'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.25
+      MELEE_DAMAGE_DEALT: 0.2
+      EXPLOSION_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: 10
+      MOVEMENT_SPEED_BONUS: -0.15
+      DODGE_CHANCE: -0.1
+  tiefling:
+    position: 108
+    icon: CRIMSON_FUNGUS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cTiefling&8]'
+    display_name: '&cTiefling'
+    description:
+      - '&cTieflings&7, mortal-descended of fiends.'
+      - '&7They wield dark magic and have'
+      - '&7unnatural charisma, but are'
+      - '&7shunned by all.'
+      - '&8&m                                       '
+      - '&cTiefling &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fFire Damage Dealt'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+10% &fLuck Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      FIRE_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      LUCK_BONUS: 0.1
+      RADIANT_RESISTANCE: -0.15
+  shadow_demon:
+    position: 109
+    icon: SHADOW_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Shadow Demon&8]'
+    display_name: '&8Shadow Demon'
+    description:
+      - '&8Shadow Demons&7, beings of pure darkness'
+      - '&7between planes. They slip through'
+      - '&7shadows, but light unmakes them.'
+      - '&8&m                                       '
+      - '&8Shadow Demon &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+20% &fSneak Movement Speed Bonus'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fNecrotic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      DODGE_CHANCE: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.1
+      RADIANT_RESISTANCE: -0.15
+      HEALTH_BONUS: -3
+  nightmare:
+    position: 110
+    icon: BLACK_HORSE_ARMOR:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Nightmare&8]'
+    display_name: '&5Nightmare'
+    description:
+      - '&5Nightmares&7, steeds of the burning hells'
+      - '&7gained sentience. They spread fear'
+      - '&7and their hooves ignite, but'
+      - '&7cold weakens them.'
+      - '&8&m                                       '
+      - '&5Nightmare &7benefit from'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+15% &fSprint Movement Speed Bonus'
+      - '&f- &a+10% &fCrit Chance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fFreezing Resistance'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      SPRINT_MOVEMENT_SPEED_BONUS: 0.15
+      CRIT_CHANCE: 0.1
+      FREEZING_RESISTANCE: -0.15
+      HEALTH_BONUS: -3
+  void_fiend:
+    position: 111
+    icon: ENDER_PEARL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Void Fiend&8]'
+    display_name: '&5Void Fiend'
+    description:
+      - '&5Void Fiends&7, entities from beyond the'
+      - '&7stars. They warp reality and drain'
+      - '&7life, but divine light destroys them.'
+      - '&8&m                                       '
+      - '&5Void Fiend &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-20% &fRadiant Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      RADIANT_RESISTANCE: -0.2
+      HEALTH_BONUS: -5
+  sprite:
+    position: 112
+    icon: DANDELION:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&aSprite&8]'
+    display_name: '&aSprite'
+    description:
+      - '&aSprites&7, tiny fae folk of mischief'
+      - '&7and wonder. They weave enchantments,'
+      - '&7but their tiny bodies are'
+      - '&7easily squashed.'
+      - '&8&m                                       '
+      - '&aSprite &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+20% &fEnchanting Exp Gain'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-6 &fHealth Bonus'
+      - '&f- &c-20% &fScale'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      ENCHANTING_EXP_GAIN: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -6
+      SCALE: -0.2
+  pixie:
+    position: 113
+    icon: OXEYE_DAISY:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dPixie&8]'
+    display_name: '&dPixie'
+    description:
+      - '&dPixies&7, radiant fae of joy and wonder.'
+      - '&7They bless allies with luck and heal'
+      - '&7wounds, but their frames'
+      - '&7are laughably weak.'
+      - '&8&m                                       '
+      - '&dPixie &7benefit from'
+      - '&f- &a+25% &fHealing Bonus'
+      - '&f- &a+15% &fLuck Bonus'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-7 &fHealth Bonus'
+      - '&f- &c-25% &fScale'
+    stat_buffs:
+      HEALING_BONUS: 0.25
+      LUCK_BONUS: 0.15
+      MAGIC_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: -7
+      SCALE: -0.25
+  centaur:
+    position: 114
+    icon: BOW:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Centaur&8]'
+    display_name: '&6Centaur'
+    description:
+      - '&6Centaurs&7, half-horse warriors of the'
+      - '&7open plains. They charge with force'
+      - '&7and fire arrows on the move,'
+      - '&7but they tire quickly.'
+      - '&8&m                                       '
+      - '&6Centaur &7benefit from'
+      - '&f- &a+15% &fRanged Damage Dealt'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+10% &fSprint Movement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fSneak Movement Speed Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.15
+      MELEE_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      SPRINT_MOVEMENT_SPEED_BONUS: 0.1
+      SNEAK_MOVEMENT_SPEED_BONUS: -0.1
+  sylph:
+    position: 115
+    icon: WHITE_WOOL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fSylph&8]'
+    display_name: '&fSylph'
+    description:
+      - '&fSylphs&7, air fae of the highest peaks.'
+      - '&7They dance on the wind and command'
+      - '&7breezes, but are fragile'
+      - '&7in close combat.'
+      - '&8&m                                       '
+      - '&fSylph &7benefit from'
+      - '&f- &a+20% &fMovement Speed Bonus'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+20% &fFalling Resistance'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MOVEMENT_SPEED_BONUS: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      FALLING_RESISTANCE: 0.2
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -4
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  gnome:
+    position: 116
+    icon: RED_MUSHROOM:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&aGnome&8]'
+    display_name: '&aGnome'
+    description:
+      - '&aGnomes&7, brilliant tinkerers of the'
+      - '&7underground. They craft ingenious'
+      - '&7devices, but their small stature'
+      - '&7limits them.'
+      - '&8&m                                       '
+      - '&aGnome &7benefit from'
+      - '&f- &a+25% &fEnchanting Exp Gain'
+      - '&f- &a+20% &fMining Exp Gain'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+10% &fLuck Bonus'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fScale'
+    stat_buffs:
+      ENCHANTING_EXP_GAIN: 0.25
+      MINING_EXP_GAIN: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      LUCK_BONUS: 0.1
+      HEALTH_BONUS: -4
+      SCALE: -0.1
+  leshy:
+    position: 117
+    icon: AZALEA:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Leshy&8]'
+    display_name: '&2Leshy'
+    description:
+      - '&2Leshys&7, ancient forest spirits who'
+      - '&7embody the wild itself. They command'
+      - '&7plants and beasts, but civilization'
+      - '&7withers their strength.'
+      - '&8&m                                       '
+      - '&2Leshy &7benefit from'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+20% &fPoison Resistance'
+      - '&f- &a+15% &fFarming Exp Gain'
+      - '&f- &a+10% &fWoodcutting Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      POISON_RESISTANCE: 0.2
+      FARMING_EXP_GAIN: 0.15
+      WOODCUTTING_EXP_GAIN: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  mushroom_folk:
+    position: 118
+    icon: RED_MUSHROOM_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cMushroom Folk&8]'
+    display_name: '&cMushroom Folk'
+    description:
+      - '&cMushroom Folk&7, spore-spreading creatures'
+      - '&7of the deep caves. They heal with'
+      - '&7fungal magic, but fire'
+      - '&7destroys them.'
+      - '&8&m                                       '
+      - '&cMushroom Folk &7benefit from'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+25% &fPoison Resistance'
+      - '&f- &a+15% &fAlchemy Exp Gain'
+      - '&f- &a+10% &fFarming Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-15% &fFire Resistance'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      POISON_RESISTANCE: 0.25
+      ALCHEMY_EXP_GAIN: 0.15
+      FARMING_EXP_GAIN: 0.1
+      FIRE_RESISTANCE: -0.15
+  treant_sprout:
+    position: 119
+    icon: OAK_SAPLING:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Treant Sprout&8]'
+    display_name: '&2Treant Sprout'
+    description:
+      - '&2Treant Sprouts&7, young tree spirits'
+      - '&7just awakening. They grow stronger'
+      - '&7over time, but are still'
+      - '&7small and fragile.'
+      - '&8&m                                       '
+      - '&2Treant Sprout &7benefit from'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+15% &fPoison Resistance'
+      - '&f- &a+10% &fFarming Exp Gain'
+      - '&f- &a+10% &fWoodcutting Exp Gain'
+      - '&f- &a+5% &fArmor Multiplier Bonus'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      HEALING_BONUS: 0.15
+      POISON_RESISTANCE: 0.15
+      FARMING_EXP_GAIN: 0.1
+      WOODCUTTING_EXP_GAIN: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.05
+      HEALTH_BONUS: -3
+  faun:
+    position: 120
+    icon: WHEAT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Faun&8]'
+    display_name: '&6Faun'
+    description:
+      - '&6Fauns&7, gentle goat-children of the'
+      - '&7meadow. They dance and play music'
+      - '&7that heals and inspires, but'
+      - '&7are terrified of warfare.'
+      - '&8&m                                       '
+      - '&6Faun &7benefit from'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+15% &fLuck Bonus'
+      - '&f- &a+10% &fFarming Exp Gain'
+      - '&f- &a+10% &fGlobal Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      LUCK_BONUS: 0.15
+      FARMING_EXP_GAIN: 0.1
+      GLOBAL_EXP_GAIN: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  merfolk:
+    position: 121
+    icon: HEART_OF_THE_SEA:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bMerfolk&8]'
+    display_name: '&bMerfolk'
+    description:
+      - '&bMerfolk&7, beautiful beings of the deep'
+      - '&7sea. They wield the power of tides'
+      - '&7and heal allies, but the dry'
+      - '&7land saps their strength.'
+      - '&8&m                                       '
+      - '&bMerfolk &7benefit from'
+      - '&f- &a+25% &fHealing Bonus'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+2% &fFishing Luck'
+      - '&f- &a+15% &fFishing Speed Multiplier'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      HEALING_BONUS: 0.25
+      FREEZING_DAMAGE_DEALT: 0.15
+      FISHING_LUCK: 2
+      FISHING_SPEED_MULTIPLIER: 0.15
+      MOVEMENT_SPEED_BONUS: -0.1
+  sea_elf:
+    position: 122
+    icon: PRISMARINE_CRYSTALS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&3Sea Elf&8]'
+    display_name: '&3Sea Elf'
+    description:
+      - '&3Sea Elves&7, ancient guardians of the'
+      - '&7ocean depths. They command water'
+      - '&7magic, but weaken far from the sea.'
+      - '&8&m                                       '
+      - '&3Sea Elf &7benefit from'
+      - '&f- &a+20% &fFreezing Damage Dealt'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+2% &fFishing Luck'
+      - '&f- &a+10% &fMagic Resistance'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFire Damage Dealt'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.2
+      HEALING_BONUS: 0.15
+      FISHING_LUCK: 2
+      MAGIC_RESISTANCE: 0.1
+      FIRE_DAMAGE_DEALT: -0.1
+  kelpie:
+    position: 123
+    icon: KELP:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Kelpie&8]'
+    display_name: '&2Kelpie'
+    description:
+      - '&2Kelpies&7, shape-shifting water spirits'
+      - '&7that drown the unwary. They lure'
+      - '&7victims with beauty and drag them'
+      - '&7to watery graves.'
+      - '&8&m                                       '
+      - '&2Kelpie &7benefit from'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+15% &fPoison Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFire Resistance'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.15
+      POISON_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      MOVEMENT_SPEED_BONUS: 0.1
+      FIRE_RESISTANCE: -0.1
+  sahuagin:
+    position: 124
+    icon: TROPICAL_FISH_BUCKET:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Sahuagin&8]'
+    display_name: '&2Sahuagin'
+    description:
+      - '&2Sahuagin&7, savage shark-warriors of the'
+      - '&7abyssal depths. They hunt in packs'
+      - '&7and their bite injects venom,'
+      - '&7but are clumsy on land.'
+      - '&8&m                                       '
+      - '&2Sahuagin &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fPoison Damage Dealt'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+15% &fBleed Resistance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fFire Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      POISON_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      BLEED_RESISTANCE: 0.15
+      FIRE_RESISTANCE: -0.15
+  triton:
+    position: 125
+    icon: CONDUIT_POWER_EFFECT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bTriton&8]'
+    display_name: '&bTriton'
+    description:
+      - '&bTritons&7, noble warriors of the deep'
+      - '&7who protect the oceans. They wield'
+      - '&7tridents of lightning and command'
+      - '&7the tides in battle.'
+      - '&8&m                                       '
+      - '&bTriton &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+15% &fLightning Damage Dealt'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&f- &a+1% &fFishing Luck'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFire Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      LIGHTNING_DAMAGE_DEALT: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      FISHING_LUCK: 1
+      FIRE_RESISTANCE: -0.1
+  deep_one:
+    position: 126
+    icon: PRISMARINE_SHARD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Deep One&8]'
+    display_name: '&5Deep One'
+    description:
+      - '&5Deep Ones&7, ancient horrors from the'
+      - '&7ocean trenches. They wield dark'
+      - '&7aquatic magic, but they weaken'
+      - '&7in sunlight.'
+      - '&8&m                                       '
+      - '&5Deep One &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      FREEZING_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.1
+      RADIANT_RESISTANCE: -0.15
+  abyssal_serpent:
+    position: 127
+    icon: PUFFERFISH:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&3Abyssal Serpent&8]'
+    display_name: '&3Abyssal Serpent'
+    description:
+      - '&3Abyssal Serpents&7, titanic sea snakes'
+      - '&7that crush ships in their coils.'
+      - '&7Their venom is legendary, but'
+      - '&7they are vulnerable to fire.'
+      - '&8&m                                       '
+      - '&3Abyssal Serpent &7benefit from'
+      - '&f- &a+25% &fPoison Damage Dealt'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFire Resistance'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      POISON_DAMAGE_DEALT: 0.25
+      MELEE_DAMAGE_DEALT: 0.2
+      FREEZING_DAMAGE_DEALT: 0.15
+      FIRE_RESISTANCE: -0.2
+      MOVEMENT_SPEED_BONUS: -0.1
+  pearl_mermaid:
+    position: 128
+    icon: HEART_OF_THE_SEA:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bPearl Mermaid&8]'
+    display_name: '&bPearl Mermaid'
+    description:
+      - '&bPearl Mermaids&7, elegant sea-dwellers'
+      - '&7with shells of pearl. Their song'
+      - '&7heals and their touch mends,'
+      - '&7but dry land withers their tails.'
+      - '&8&m                                       '
+      - '&bPearl Mermaid &7benefit from'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+2% &fFishing Luck'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMovement Speed Bonus'
+      - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      FISHING_LUCK: 2
+      MOVEMENT_SPEED_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  automaton:
+    position: 129
+    icon: IRON_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Automaton&8]'
+    display_name: '&7Automaton'
+    description:
+      - '&7Automatons&7, clockwork constructs of brass'
+      - '&7and steel. They feel no pain and never'
+      - '&7tire, but their rigid forms are'
+      - '&7slow and cannot heal naturally.'
+      - '&8&m                                       '
+      - '&7Automaton &7benefit from'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+15% &fDamage Resistance'
+      - '&f- &a+10% &fDig Speed'
+      - '&f- &a+3 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fHealing Bonus'
+      - '&f- &c-15% &fMovement Speed Bonus'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      DAMAGE_RESISTANCE: 0.15
+      DIG_SPEED: 0.1
+      HEALTH_BONUS: 3
+      HEALING_BONUS: -0.2
+      MOVEMENT_SPEED_BONUS: -0.15
+  warforged:
+    position: 130
+    icon: ANVIL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Warforged&8]'
+    display_name: '&8Warforged'
+    description:
+      - '&8Warforged&7, living weapons forged in the'
+      - '&7fires of war. They are built to fight'
+      - '&7and nothing else, but lack'
+      - '&7the creativity of living beings.'
+      - '&8&m                                       '
+      - '&8Warforged &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fArmor Multiplier Bonus'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fGlobal Exp Gain'
+      - '&f- &c-15% &fHealing Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      KNOCKBACK_RESISTANCE: 0.15
+      HEALTH_BONUS: 5
+      GLOBAL_EXP_GAIN: -0.2
+      HEALING_BONUS: -0.15
+  clockwork:
+    position: 131
+    icon: CLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Clockwork&8]'
+    display_name: '&6Clockwork'
+    description:
+      - '&6Clockwork&7, intricate mechanical beings'
+      - '&7of gears and springs. They are'
+      - '&7precision-engineered for speed,'
+      - '&7but need constant maintenance.'
+      - '&8&m                                       '
+      - '&6Clockwork &7benefit from'
+      - '&f- &a+15% &fDig Speed'
+      - '&f- &a+15% &fMining Exp Gain'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+10% &fCrafting Time Reduction'
+      - '&7But suffer from'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      DIG_SPEED: 0.15
+      MINING_EXP_GAIN: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      CRAFTING_TIME_REDUCTION: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -5
+  crystal_golem:
+    position: 132
+    icon: DIAMOND_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bCrystal Golem&8]'
+    display_name: '&bCrystal Golem'
+    description:
+      - '&bCrystal Golems&7, beings of living gemstone.'
+      - '&7Their crystalline bodies refract'
+      - '&7magic, but they shatter under'
+      - '&7repeated blows.'
+      - '&8&m                                       '
+      - '&bCrystal Golem &7benefit from'
+      - '&f- &a+25% &fMagic Resistance'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+10% &fDamage Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMovement Speed Bonus'
+      - '&f- &c-10% &fHealing Bonus'
+    stat_buffs:
+      MAGIC_RESISTANCE: 0.25
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      DAMAGE_RESISTANCE: 0.1
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.15
+      HEALING_BONUS: -0.1
+  construct:
+    position: 133
+    icon: REDSTONE_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Construct&8]'
+    display_name: '&4Construct'
+    description:
+      - '&4Constructs&7, artificial beings animated'
+      - '&7by magic and redstone. They obey'
+      - '&7orders without question but lack'
+      - '&7self-preservation.'
+      - '&8&m                                       '
+      - '&4Construct &7benefit from'
+      - '&f- &a+15% &fDamage Resistance'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&f- &a+10% &fDig Speed'
+      - '&7But suffer from'
+      - '&f- &c-20% &fGlobal Exp Gain'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      DAMAGE_RESISTANCE: 0.15
+      KNOCKBACK_RESISTANCE: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      DIG_SPEED: 0.1
+      GLOBAL_EXP_GAIN: -0.2
+      HEALTH_BONUS: -5
+  soulforged:
+    position: 134
+    icon: SOUL_SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Soulforged&8]'
+    display_name: '&8Soulforged'
+    description:
+      - '&8Soulforged&7, constructs powered by trapped'
+      - '&7souls. They wield necrotic energy and'
+      - '&7drain life, but their bound'
+      - '&7souls torment them.'
+      - '&8&m                                       '
+      - '&8Soulforged &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fArmor Multiplier Bonus'
+      - '&f- &a+10% &fKnockback Resistance'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-15% &fHealing Bonus'
+      - '&f- &c-10% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      KNOCKBACK_RESISTANCE: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      HEALING_BONUS: -0.15
+      RADIANT_RESISTANCE: -0.1
+  ogre:
+    position: 135
+    icon: IRON_AXE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Ogre&8]'
+    display_name: '&6Ogre'
+    description:
+      - '&6Ogres&7, hulking brute-kin of the'
+      - '&7wastelands. They smash through'
+      - '&7anything, but their tiny brains'
+      - '&7make them easy prey.'
+      - '&8&m                                       '
+      - '&6Ogre &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&f- &a+8 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fMagic Resistance'
+      - '&f- &c-15% &fMovement Speed Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      KNOCKBACK_RESISTANCE: 0.15
+      HEALTH_BONUS: 8
+      MAGIC_RESISTANCE: -0.2
+      MOVEMENT_SPEED_BONUS: -0.15
+  troll:
+    position: 136
+    icon: VINE_WEB:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Troll&8]'
+    display_name: '&2Troll'
+    description:
+      - '&2Trolls&7, massive regenerating brutes'
+      - '&7of the frozen mountains. Their flesh'
+      - '&7regenerates, but fire and acid'
+      - '&7are their bane.'
+      - '&8&m                                       '
+      - '&2Troll &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&f- &a+20% &fFreezing Resistance'
+      - '&7But suffer from'
+      - '&f- &c-25% &fFire Resistance'
+      - '&f- &c-15% &fMovement Speed Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.2
+      HEALTH_BONUS: 10
+      FREEZING_RESISTANCE: 0.2
+      FIRE_RESISTANCE: -0.25
+      MOVEMENT_SPEED_BONUS: -0.15
+  jotun:
+    position: 137
+    icon: BLUE_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Jotun&8]'
+    display_name: '&9Jotun'
+    description:
+      - '&9Jotuns&7, frost giants of primordial'
+      - '&7age. They wield absolute cold and'
+      - '&7their steps cause earthquakes,'
+      - '&7but fire melts them.'
+      - '&8&m                                       '
+      - '&9Jotun &7benefit from'
+      - '&f- &a+20% &fFreezing Damage Dealt'
+      - '&f- &a+25% &fFreezing Resistance'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-30% &fFire Resistance'
+      - '&f- &c-15% &fMovement Speed Bonus'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.2
+      FREEZING_RESISTANCE: 0.25
+      HEALTH_BONUS: 10
+      FIRE_RESISTANCE: -0.3
+      MOVEMENT_SPEED_BONUS: -0.15
+  cyclops:
+    position: 138
+    icon: SPYGLASS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eCyclops&8]'
+    display_name: '&eCyclops'
+    description:
+      - '&eCyclopes&7, one-eyed giants of incredible'
+      - '&7strength. Their fists crush stone,'
+      - '&7but they are clumsy and'
+      - '&7easily flanked.'
+      - '&8&m                                       '
+      - '&eCyclops &7benefit from'
+      - '&f- &a+25% &fMelee Damage Dealt'
+      - '&f- &a+20% &fBludgeoning Damage Dealt'
+      - '&f- &a+8 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fDodge Chance'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.25
+      BLUDGEONING_DAMAGE_DEALT: 0.2
+      HEALTH_BONUS: 8
+      DODGE_CHANCE: -0.15
+      MOVEMENT_SPEED_BONUS: -0.1
+  firbolg:
+    position: 139
+    icon: POPPY:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dFirbolg&8]'
+    display_name: '&dFirbolg'
+    description:
+      - '&dFirbolgs&7, gentle giant-kin of the deep'
+      - '&7forest. They protect nature with'
+      - '&7druidic magic, but distrust outsiders.'
+      - '&8&m                                       '
+      - '&dFirbolg &7benefit from'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+15% &fPoison Resistance'
+      - '&f- &a+10% &fFarming Exp Gain'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.15
+      POISON_RESISTANCE: 0.15
+      FARMING_EXP_GAIN: 0.1
+      HEALTH_BONUS: 10
+      MELEE_DAMAGE_DEALT: -0.1
+  goliath:
+    position: 140
+    icon: HEAVY_WEIGHTED_PRESSURE_PLATE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Goliath&8]'
+    display_name: '&7Goliath'
+    description:
+      - '&7Goliaths&7, towering warriors who live'
+      - '&7for the challenge. They seek the'
+      - '&7strongest foes and fight with'
+      - '&7unmatched determination.'
+      - '&8&m                                       '
+      - '&7Goliath &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&f- &a+8 &fHealth Bonus'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMagic Resistance'
+      - '&f- &c-10% &fSneak Movement Speed Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      KNOCKBACK_RESISTANCE: 0.15
+      HEALTH_BONUS: 8
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      MAGIC_RESISTANCE: -0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: -0.1
+  half_giant:
+    position: 141
+    icon: STONE_BRICKS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Half-Giant&8]'
+    display_name: '&6Half-Giant'
+    description:
+      - '&6Half-Giants&7, mortals with giant blood.'
+      - '&7They are stronger than any human'
+      - '&7and nearly impossible to push over,'
+      - '&7but they are clumsy and slow.'
+      - '&8&m                                       '
+      - '&6Half-Giant &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMovement Speed Bonus'
+      - '&f- &c-10% &fDodge Chance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      KNOCKBACK_RESISTANCE: 0.2
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.1
+      DODGE_CHANCE: -0.1
+  verdant_giant:
+    position: 142
+    icon: OAK_LOG:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Verdant Giant&8]'
+    display_name: '&2Verdant Giant'
+    description:
+      - '&2Verdant Giants&7, living mountains of'
+      - '&7earth and vegetation. They command'
+      - '&7the earth itself, but they'
+      - '&7decay without nature.'
+      - '&8&m                                       '
+      - '&2Verdant Giant &7benefit from'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+15% &fDamage Resistance'
+      - '&f- &a+20% &fPoison Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fMovement Speed Bonus'
+      - '&f- &c-10% &fDodge Chance'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      DAMAGE_RESISTANCE: 0.15
+      POISON_RESISTANCE: 0.2
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.2
+      DODGE_CHANCE: -0.1
+  stone_warden:
+    position: 143
+    icon: DEEPSLATE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Stone Warden&8]'
+    display_name: '&8Stone Warden'
+    description:
+      - '&8Stone Wardens&7, ancient guardians carved'
+      - '&7from living rock. They protect sacred'
+      - '&7places and never tire, but'
+      - '&7are slow and unyielding.'
+      - '&8&m                                       '
+      - '&8Stone Warden &7benefit from'
+      - '&f- &a+25% &fArmor Multiplier Bonus'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&f- &a+10% &fDamage Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fMovement Speed Bonus'
+      - '&f- &c-10% &fDodge Chance'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.25
+      KNOCKBACK_RESISTANCE: 0.2
+      DAMAGE_RESISTANCE: 0.1
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.2
+      DODGE_CHANCE: -0.1
+  astral:
+    position: 144
+    icon: END_CRYSTAL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dAstral&8]'
+    display_name: '&dAstral'
+    description:
+      - '&dAstrals&7, beings of pure thought in'
+      - '&7the spaces between stars. They wield'
+      - '&7cosmic power, but are alien to'
+      - '&7the material world.'
+      - '&8&m                                       '
+      - '&dAstral &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+15% &fCrit Damage'
+      - '&f- &a+10% &fLuck Bonus'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      CRIT_DAMAGE: 0.15
+      LUCK_BONUS: 0.1
+      HEALTH_BONUS: -5
+  void_touched:
+    position: 145
+    icon: ENDER_EYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Void-Touched&8]'
+    display_name: '&5Void-Touched'
+    description:
+      - '&5Void-Touched&7, mortals who gazed into'
+      - '&7the void and were forever changed.'
+      - '&7They wield entropy and shadow,'
+      - '&7but the void whispers madness.'
+      - '&8&m                                       '
+      - '&5Void-Touched &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-20% &fRadiant Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      RADIANT_RESISTANCE: -0.2
+      HEALTH_BONUS: -5
+  ethereal:
+    position: 146
+    icon: LIGHT_GRAY_STAINED_GLASS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Ethereal&8]'
+    display_name: '&7Ethereal'
+    description:
+      - '&7Ethereals&7, beings that exist partially'
+      - '&7in another dimension. They phase'
+      - '&7through attacks and deal strange'
+      - '&7otherworldly damage.'
+      - '&8&m                                       '
+      - '&7Ethereal &7benefit from'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      DODGE_CHANCE: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      MOVEMENT_SPEED_BONUS: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  planar:
+    position: 147
+    icon: END_PORTAL_FRAME:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Planar&8]'
+    display_name: '&5Planar'
+    description:
+      - '&5Planar&7, beings from other dimensions'
+      - '&7who have crossed into this world.'
+      - '&7They wield reality-warping magic,'
+      - '&7but the material plane weakens them.'
+      - '&8&m                                       '
+      - '&5Planar &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+10% &fDodge Chance'
+      - '&f- &a+10% &fCrit Damage'
+      - '&7But suffer from'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      DODGE_CHANCE: 0.1
+      CRIT_DAMAGE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -5
+  chrono:
+    position: 148
+    icon: WATCH:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eChrono&8]'
+    display_name: '&eChrono'
+    description:
+      - '&eChronos&7, beings who exist outside of'
+      - '&7time. They perceive all moments'
+      - '&7simultaneously and slow time,'
+      - '&7but they age rapidly.'
+      - '&8&m                                       '
+      - '&eChrono &7benefit from'
+      - '&f- &a+20% &fCooldown Reduction'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fCrit Chance'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      COOLDOWN_REDUCTION: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      CRIT_CHANCE: 0.15
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  rune_carved:
+    position: 149
+    icon: ANCIENT_DEBRIS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Rune-Carved&8]'
+    display_name: '&6Rune-Carved'
+    description:
+      - '&6Rune-Carved&7, beings inscribed with'
+      - '&7ancient power symbols. Each rune grants'
+      - '&7immense power, but the inscriptions'
+      - '&7burn their flesh.'
+      - '&8&m                                       '
+      - '&6Rune-Carved &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fEnchanting Exp Gain'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+10% &fCrit Damage'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      ENCHANTING_EXP_GAIN: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      CRIT_DAMAGE: 0.1
+      HEALTH_BONUS: -4
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  soul_echo:
+    position: 150
+    icon: SOUL_LANTERN:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Soul Echo&8]'
+    display_name: '&8Soul Echo'
+    description:
+      - '&8Soul Echoes&7, reflections of the dead'
+      - '&7trapped between worlds. They drain'
+      - '&7life and wield necrotic magic,'
+      - '&7but are barely tangible.'
+      - '&8&m                                       '
+      - '&8Soul Echo &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+10% &fSneak Movement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+      - '&f- &c-4 &fHealth Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      DODGE_CHANCE: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.1
+      RADIANT_RESISTANCE: -0.15
+      HEALTH_BONUS: -4
+  dream_walker:
+    position: 151
+    icon: COCOA_BEANS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dDream Walker&8]'
+    display_name: '&dDream Walker'
+    description:
+      - '&dDream Walkers&7, beings who traverse'
+      - '&7the realm of dreams. They wield'
+      - '&7illusory magic and blur the line'
+      - '&7between reality and nightmare.'
+      - '&8&m                                       '
+      - '&dDream Walker &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+10% &fCrit Chance'
+      - '&f- &a+10% &fSneak Movement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      CRIT_CHANCE: 0.1
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.1
+      HEALTH_BONUS: -4
+      MELEE_DAMAGE_DEALT: -0.1
+  aether_born:
+    position: 152
+    icon: LIGHT_GRAY_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fAether-Born&8]'
+    display_name: '&fAether-Born'
+    description:
+      - '&fAether-Born&7, beings of pure celestial'
+      - '&7energy from the highest heavens.'
+      - '&7They channel starlight and cosmic'
+      - '&7power.'
+      - '&8&m                                       '
+      - '&fAether-Born &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fRadiant Damage Dealt'
+      - '&f- &a+10% &fCrit Damage'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      RADIANT_DAMAGE_DEALT: 0.15
+      CRIT_DAMAGE: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  null_kin:
+    position: 153
+    icon: BARRIER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Null-Kin&8]'
+    display_name: '&8Null-Kin'
+    description:
+      - '&8Null-Kin&7, beings of absolute nothing.'
+      - '&7They erase existence with their touch'
+      - '&7and exist as voids, but they'
+      - '&7are the weakest of all races.'
+      - '&8&m                                       '
+      - '&8Null-Kin &7benefit from'
+      - '&f- &a+25% &fNecrotic Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-10 &fHealth Bonus'
+      - '&f- &c-20% &fArmor Multiplier Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.25
+      DODGE_CHANCE: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -10
+      ARMOR_MULTIPLIER_BONUS: -0.2
+  sand_wraith:
+    position: 154
+    icon: SANDSTONE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eSand Wraith&8]'
+    display_name: '&eSand Wraith'
+    description:
+      - '&eSand Wraiths&7, desert spirits of'
+      - '&7scorching wind. They blind foes'
+      - '&7with sand and strike when the'
+      - '&7storm obscures vision.'
+      - '&8&m                                       '
+      - '&eSand Wraith &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fFire Resistance'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFreezing Resistance'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.1
+      FIRE_RESISTANCE: 0.1
+      FREEZING_RESISTANCE: -0.1
+      HEALTH_BONUS: -3
+  iron_bound:
+    position: 155
+    icon: IRON_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Iron-Bound&8]'
+    display_name: '&7Iron-Bound'
+    description:
+      - '&7Iron-Bound&7, mortals fused with iron'
+      - '&7through ancient rituals. Their bodies'
+      - '&7are near-invulnerable but they'
+      - '&7cannot move quickly.'
+      - '&8&m                                       '
+      - '&7Iron-Bound &7benefit from'
+      - '&f- &a+25% &fArmor Multiplier Bonus'
+      - '&f- &a+20% &fDamage Resistance'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&7But suffer from'
+      - '&f- &c-25% &fMovement Speed Bonus'
+      - '&f- &c-15% &fDodge Chance'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.25
+      DAMAGE_RESISTANCE: 0.2
+      KNOCKBACK_RESISTANCE: 0.2
+      MOVEMENT_SPEED_BONUS: -0.25
+      DODGE_CHANCE: -0.15
+  blood_mage:
+    position: 156
+    icon: REDSTONE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cBlood Mage&8]'
+    display_name: '&cBlood Mage'
+    description:
+      - '&cBlood Mages&7, sorcerers who fuel their'
+      - '&7spells with their own life force.'
+      - '&7Their power is immense but their'
+      - '&7bodies are weakened.'
+      - '&8&m                                       '
+      - '&cBlood Mage &7benefit from'
+      - '&f- &a+25% &fMagic Damage Dealt'
+      - '&f- &a+20% &fCooldown Reduction'
+      - '&f- &a+15% &fNecrotic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-8 &fHealth Bonus'
+      - '&f- &c-15% &fHealing Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.25
+      COOLDOWN_REDUCTION: 0.2
+      NECROTIC_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: -8
+      HEALING_BONUS: -0.15
+  storm_caller:
+    position: 157
+    icon: CONDUIT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Storm Caller&8]'
+    display_name: '&9Storm Caller'
+    description:
+      - '&9Storm Callers&7, mortals gifted with'
+      - '&7the fury of the tempest. They call'
+      - '&7lightning and wind to their aid,'
+      - '&7but calm stillness unsettles them.'
+      - '&8&m                                       '
+      - '&9Storm Caller &7benefit from'
+      - '&f- &a+20% &fLightning Damage Dealt'
+      - '&f- &a+15% &fRanged Damage Dealt'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+10% &fCrit Chance'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.2
+      RANGED_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      CRIT_CHANCE: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  crystal_shard:
+    position: 158
+    icon: AMETHYST_SHARD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dCrystal Shard&8]'
+    display_name: '&dCrystal Shard'
+    description:
+      - '&dCrystal Shards&7, fragments of a shattered'
+      - '&7magical crystal. They refract magic'
+      - '&7and store power, but they'
+      - '&7are tiny and fragile.'
+      - '&8&m                                       '
+      - '&dCrystal Shard &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fEnchanting Exp Gain'
+      - '&f- &a+10% &fLuck Bonus'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-6 &fHealth Bonus'
+      - '&f- &c-15% &fScale'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      ENCHANTING_EXP_GAIN: 0.15
+      LUCK_BONUS: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: -6
+      SCALE: -0.15
+  twilight_elf:
+    position: 159
+    icon: CRYING_OBSIDIAN:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Twilight Elf&8]'
+    display_name: '&5Twilight Elf'
+    description:
+      - '&5Twilight Elves&7, drow who have stepped'
+      - '&7out of the darkness. They wield both'
+      - '&7light and shadow, balancing the two.'
+      - '&8&m                                       '
+      - '&5Twilight Elf &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fEnchanting Exp Gain'
+      - '&f- &a+10% &fCrit Chance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      MELEE_DAMAGE_DEALT: 0.15
+      ENCHANTING_EXP_GAIN: 0.1
+      CRIT_CHANCE: 0.1
+      HEALTH_BONUS: -3
+  dust_djinn:
+    position: 160
+    icon: SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eDust Djinn&8]'
+    display_name: '&eDust Djinn'
+    description:
+      - '&eDust Djinn&7, desert spirits of sand'
+      - '&7and mirage. They create illusions'
+      - '&7and wield scorching heat, but'
+      - '&7water dissolves their forms.'
+      - '&8&m                                       '
+      - '&eDust Djinn &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fFire Damage Dealt'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fFreezing Resistance'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      FIRE_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -5
+      FREEZING_RESISTANCE: -0.1
+  ironheart:
+    position: 161
+    icon: IRON_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Ironheart&8]'
+    display_name: '&7Ironheart'
+    description:
+      - '&7Ironhearts&7, mortals whose hearts have'
+      - '&7been replaced with living iron.'
+      - '&7They are tireless and nearlyunkillable,'
+      - '&7but cannot feel joy or pain.'
+      - '&8&m                                       '
+      - '&7Ironheart &7benefit from'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+15% &fDamage Resistance'
+      - '&f- &a+10% &fKnockback Resistance'
+      - '&f- &a+3 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fHealing Bonus'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      DAMAGE_RESISTANCE: 0.15
+      KNOCKBACK_RESISTANCE: 0.1
+      HEALTH_BONUS: 3
+      HEALING_BONUS: -0.15
+      MOVEMENT_SPEED_BONUS: -0.1
+  rune_sorcerer:
+    position: 162
+    icon: ENCHANTED_BOOK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Rune Sorcerer&8]'
+    display_name: '&5Rune Sorcerer'
+    description:
+      - '&5Rune Sorcerers&7, mages who inscribe'
+      - '&7reality-bending runes upon their flesh.'
+      - '&7Each rune grants immense power,'
+      - '&7but damages their mortal form.'
+      - '&8&m                                       '
+      - '&5Rune Sorcerer &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fEnchanting Exp Gain'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      ENCHANTING_EXP_GAIN: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  storm_spirit:
+    position: 163
+    icon: LIGHTNING_ROD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Storm Spirit&8]'
+    display_name: '&9Storm Spirit'
+    description:
+      - '&9Storm Spirits&7, living manifestations'
+      - '&7of thunderstorms. They strike with'
+      - '&7the fury of lightning and are'
+      - '&7unstoppable in their element.'
+      - '&8&m                                       '
+      - '&9Storm Spirit &7benefit from'
+      - '&f- &a+25% &fLightning Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+10% &fCrit Chance'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.25
+      MOVEMENT_SPEED_BONUS: 0.15
+      CRIT_CHANCE: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  thornweaver:
+    position: 164
+    icon: CACTUS_GREEN:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Thornweaver&8]'
+    display_name: '&2Thornweaver'
+    description:
+      - '&2Thornweavers&7, plant-mages who command'
+      - '&7thorns and brambles. They entangle'
+      - '&7foes and bleed them slowly, but'
+      - '&7fire reduces them to ash.'
+      - '&8&m                                       '
+      - '&2Thornweaver &7benefit from'
+      - '&f- &a+15% &fPoison Damage Dealt'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fHealing Bonus'
+      - '&f- &a+10% &fFarming Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFire Resistance'
+    stat_buffs:
+      POISON_DAMAGE_DEALT: 0.15
+      MELEE_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.1
+      FARMING_EXP_GAIN: 0.1
+      FIRE_RESISTANCE: -0.1
+  ember_drake:
+    position: 165
+    icon: FIRE_CHARGE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Ember Drake&8]'
+    display_name: '&4Ember Drake'
+    description:
+      - '&4Ember Drakes&7, young dragon-kin of'
+      - '&7smoldering fire. They breath flames'
+      - '&7and their scales are hot, but'
+      - '&7they are not yet full dragons.'
+      - '&8&m                                       '
+      - '&4Ember Drake &7benefit from'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fFire Resistance'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFreezing Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.2
+      MELEE_DAMAGE_DEALT: 0.15
+      FIRE_RESISTANCE: 0.1
+      FREEZING_RESISTANCE: -0.1
+      HEALTH_BONUS: -5
+  storm_dragon:
+    position: 166
+    icon: TRIDENT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Storm Dragon&8]'
+    display_name: '&9Storm Dragon'
+    description:
+      - '&9Storm Dragons&7, majestic beasts of'
+      - '&7thunder and lightning. They rule'
+      - '&7the skies and strike with'
+      - '&7devastating electrical fury.'
+      - '&8&m                                       '
+      - '&9Storm Dragon &7benefit from'
+      - '&f- &a+25% &fLightning Damage Dealt'
+      - '&f- &a+15% &fRanged Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.25
+      RANGED_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.15
+      HEALTH_BONUS: 5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  void_serpent:
+    position: 167
+    icon: DRAGON_BREATH:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Void Serpent&8]'
+    display_name: '&5Void Serpent'
+    description:
+      - '&5Void Serpents&7, serpentine entities from'
+      - '&7the spaces between worlds. They warp'
+      - '&7space and deal void damage that'
+      - '&7cannot be resisted.'
+      - '&8&m                                       '
+      - '&5Void Serpent &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fRadiant Resistance'
+      - '&f- &c-5 &fHealth Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.15
+      RADIANT_RESISTANCE: -0.2
+      HEALTH_BONUS: -5
+  iron_drake:
+    position: 168
+    icon: IRON_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Iron Drake&8]'
+    display_name: '&7Iron Drake'
+    description:
+      - '&7Iron Drakes&7, metallic dragons of'
+      - '&7unbreakable scale. They are walking'
+      - '&7fortresses of iron and steel,'
+      - '&7but they are ponderous.'
+      - '&8&m                                       '
+      - '&7Iron Drake &7benefit from'
+      - '&f- &a+25% &fArmor Multiplier Bonus'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&f- &a+15% &fDamage Resistance'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fMovement Speed Bonus'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.25
+      KNOCKBACK_RESISTANCE: 0.2
+      DAMAGE_RESISTANCE: 0.15
+      HEALTH_BONUS: 10
+      MOVEMENT_SPEED_BONUS: -0.2
+  frost_dragon:
+    position: 169
+    icon: BLUE_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bFrost Dragon&8]'
+    display_name: '&bFrost Dragon'
+    description:
+      - '&bFrost Dragons&7, ice-breathed drakes of'
+      - '&7the frozen north. Their breath'
+      - '&7freezes enemies solid and their'
+      - '&7scales resist all cold.'
+      - '&8&m                                       '
+      - '&bFrost Dragon &7benefit from'
+      - '&f- &a+25% &fFreezing Damage Dealt'
+      - '&f- &a+30% &fFreezing Resistance'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFire Resistance'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.25
+      FREEZING_RESISTANCE: 0.3
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      HEALTH_BONUS: 5
+      FIRE_RESISTANCE: -0.2
+  sandstorm_beast:
+    position: 170
+    icon: SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eSandstorm Beast&8]'
+    display_name: '&eSandstorm Beast'
+    description:
+      - '&eSandstorm Beasts&7, living hurricanes'
+      - '&7of sand and grit. They scour the'
+      - '&7desert and blind opponents, but'
+      - '&7water and ice calm their fury.'
+      - '&8&m                                       '
+      - '&eSandstorm Beast &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+10% &fFire Resistance'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFreezing Resistance'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      MELEE_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      FIRE_RESISTANCE: 0.1
+      FREEZING_RESISTANCE: -0.1
+      HEALTH_BONUS: -3
+  wild_kin:
+    position: 171
+    icon: GRASS_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Wild Kin&8]'
+    display_name: '&2Wild Kin'
+    description:
+      - '&2Wild Kin&7, primal beasts who live by'
+      - '&7the law of tooth and claw. They are'
+      - '&7at their best in the untamed'
+      - '&7wilderness.'
+      - '&8&m                                       '
+      - '&2Wild Kin &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+10% &fUnarmed Damage Dealt'
+      - '&f- &a+10% &fFarming Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMagic Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      UNARMED_DAMAGE_DEALT: 0.1
+      FARMING_EXP_GAIN: 0.1
+      MAGIC_RESISTANCE: -0.1
+  abyssal_kraken:
+    position: 172
+    icon: AXOLOTL_BUCKET:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Abyssal Kraken&8]'
+    display_name: '&5Abyssal Kraken'
+    description:
+      - '&5Abyssal Krakens&7, titanic tentacled'
+      - '&7horror from the deepest trenches.'
+      - '&7They crush ships and drag sailors'
+      - '&7to watery graves.'
+      - '&8&m                                       '
+      - '&5Abyssal Kraken &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fPoison Damage Dealt'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fFire Resistance'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      POISON_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: 10
+      KNOCKBACK_RESISTANCE: 0.15
+      FIRE_RESISTANCE: -0.15
+      MOVEMENT_SPEED_BONUS: -0.1
+  crystal_nymph:
+    position: 173
+    icon: AMETHYST_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dCrystal Nymph&8]'
+    display_name: '&dCrystal Nymph'
+    description:
+      - '&dCrystal Nymphs&7, graceful beings of'
+      - '&7living gemstone. They refract light'
+      - '&7and wield prismatic magic, but'
+      - '&7they are fragile.'
+      - '&8&m                                       '
+      - '&dCrystal Nymph &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fEnchanting Exp Gain'
+      - '&f- &a+10% &fLuck Bonus'
+      - '&f- &a+10% &fCrit Damage'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      ENCHANTING_EXP_GAIN: 0.15
+      LUCK_BONUS: 0.1
+      CRIT_DAMAGE: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  mossling:
+    position: 174
+    icon: MOSS_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Mossling&8]'
+    display_name: '&2Mossling'
+    description:
+      - '&2Mosslings&7, tiny plant creatures covered'
+      - '&7in living moss. They heal allies'
+      - '&7and grow stronger in nature,'
+      - '&7but are tiny and fragile.'
+      - '&8&m                                       '
+      - '&2Mossling &7benefit from'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+15% &fFarming Exp Gain'
+      - '&f- &a+10% &fPoison Resistance'
+      - '&7But suffer from'
+      - '&f- &c-6 &fHealth Bonus'
+      - '&f- &c-20% &fScale'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      FARMING_EXP_GAIN: 0.15
+      POISON_RESISTANCE: 0.1
+      HEALTH_BONUS: -6
+      SCALE: -0.2
+  shadow_drake:
+    position: 175
+    icon: DRAGON_BREATH:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Shadow Drake&8]'
+    display_name: '&8Shadow Drake'
+    description:
+      - '&8Shadow Drakes&7, dragons of pure darkness.'
+      - '&7They cloak themselves in shadow and'
+      - '&7strike unseen, but light reveals'
+      - '&7their presence.'
+      - '&8&m                                       '
+      - '&8Shadow Drake &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+15% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MELEE_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      DODGE_CHANCE: 0.1
+      RADIANT_RESISTANCE: -0.15
+  bone_colossus:
+    position: 176
+    icon: BONE_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Bone Colossus&8]'
+    display_name: '&7Bone Colossus'
+    description:
+      - '&7Bone Colossi&7, towering skeletons of'
+      - '&7ancient giants. They tower over'
+      - '&7battlefields and their bone clubs'
+      - '&7crush all in their path.'
+      - '&8&m                                       '
+      - '&7Bone Colossus &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fBludgeoning Damage Dealt'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMovement Speed Bonus'
+      - '&f- &c-10% &fDodge Chance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      BLUDGEONING_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: 10
+      KNOCKBACK_RESISTANCE: 0.15
+      MOVEMENT_SPEED_BONUS: -0.15
+      DODGE_CHANCE: -0.1
+  ash_knight:
+    position: 177
+    icon: NETHERITE_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Ash Knight&8]'
+    display_name: '&8Ash Knight'
+    description:
+      - '&8Ash Knights&7, scorched warriors who'
+      - '&7fight with weapons of hardened ash.'
+      - '&7They endure fire and oblivion.'
+      - '&8&m                                       '
+      - '&8Ash Knight &7benefit from'
+      - '&f- &a+20% &fFire Resistance'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&f- &a+3 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFreezing Resistance'
+    stat_buffs:
+      FIRE_RESISTANCE: 0.2
+      MELEE_DAMAGE_DEALT: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      HEALTH_BONUS: 3
+      FREEZING_RESISTANCE: -0.1
+  lava_walker:
+    position: 178
+    icon: MAGMA_CREAM:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Lava Walker&8]'
+    display_name: '&4Lava Walker'
+    description:
+      - '&4Lava Walkers&7, beings who stride across'
+      - '&7molten rock without harm. Their touch'
+      - '&7melts all they contact.'
+      - '&8&m                                       '
+      - '&4Lava Walker &7benefit from'
+      - '&f- &a+25% &fFire Damage Dealt'
+      - '&f- &a+30% &fFire Resistance'
+      - '&f- &a+5% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-20% &fFreezing Resistance'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.25
+      FIRE_RESISTANCE: 0.3
+      MOVEMENT_SPEED_BONUS: 0.05
+      HEALTH_BONUS: -3
+      FREEZING_RESISTANCE: -0.2
+  ice_witch:
+    position: 179
+    icon: PACKED_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bIce Witch&8]'
+    display_name: '&bIce Witch'
+    description:
+      - '&bIce Witches&7, crones of the frozen wastes'
+      - '&7who command bitter cold. Their hexes'
+      - '&7freeze the blood of the living.'
+      - '&8&m                                       '
+      - '&bIce Witch &7benefit from'
+      - '&f- &a+25% &fFreezing Damage Dealt'
+      - '&f- &a+20% &fFreezing Resistance'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-15% &fFire Resistance'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.25
+      FREEZING_RESISTANCE: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -3
+      FIRE_RESISTANCE: -0.15
+  plague_bearer:
+    position: 180
+    icon: ROTTEN_FLESH:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Plague Bearer&8]'
+    display_name: '&2Plague Bearer'
+    description:
+      - '&2Plague Bearers&7, diseased beings who'
+      - '&7spread sickness wherever they go.'
+      - '&7They are immune to all toxins.'
+      - '&8&m                                       '
+      - '&2Plague Bearer &7benefit from'
+      - '&f- &a+25% &fPoison Damage Dealt'
+      - '&f- &a+40% &fPoison Resistance'
+      - '&f- &a+10% &fHealing Bonus'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      POISON_DAMAGE_DEALT: 0.25
+      POISON_RESISTANCE: 0.4
+      HEALING_BONUS: 0.1
+      HEALTH_BONUS: -4
+      MELEE_DAMAGE_DEALT: -0.1
+  flamecaller:
+    position: 181
+    icon: BLAZE_POWDER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cFlamecaller&8]'
+    display_name: '&cFlamecaller'
+    description:
+      - '&cFlamecallers&7, pyromancers who summon'
+      - '&7walls of living flame. They command'
+      - '&7fire in all its forms.'
+      - '&8&m                                       '
+      - '&cFlamecaller &7benefit from'
+      - '&f- &a+30% &fFire Damage Dealt'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+10% &fMagic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-15% &fFreezing Resistance'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.3
+      COOLDOWN_REDUCTION: 0.1
+      MAGIC_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -3
+      FREEZING_RESISTANCE: -0.15
+  glacierborn:
+    position: 182
+    icon: BLUE_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bGlacierborn&8]'
+    display_name: '&bGlacierborn'
+    description:
+      - '&bGlacierborn&7, ancient ice spirits who'
+      - '&7have existed since the first winter.'
+      - '&7They bring endless cold.'
+      - '&8&m                                       '
+      - '&bGlacierborn &7benefit from'
+      - '&f- &a+30% &fFreezing Damage Dealt'
+      - '&f- &a+35% &fFreezing Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-25% &fFire Resistance'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.3
+      FREEZING_RESISTANCE: 0.35
+      HEALTH_BONUS: 5
+      FIRE_RESISTANCE: -0.25
+      MOVEMENT_SPEED_BONUS: -0.1
+  stonecaller:
+    position: 183
+    icon: STONE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Stonecaller&8]'
+    display_name: '&7Stonecaller'
+    description:
+      - '&7Stonecallers&7, geomancers who command'
+      - '&7the earth itself. They raise walls'
+      - '&7of stone and crush foes.'
+      - '&8&m                                       '
+      - '&7Stonecaller &7benefit from'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+15% &fDamage Resistance'
+      - '&f- &a+20% &fBludgeoning Damage Dealt'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMovement Speed Bonus'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      DAMAGE_RESISTANCE: 0.15
+      BLUDGEONING_DAMAGE_DEALT: 0.2
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.15
+  windrider:
+    position: 184
+    icon: FEATHER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fWindrider&8]'
+    display_name: '&fWindrider'
+    description:
+      - '&fWindriders&7, sky-dancers who ride the'
+      - '&7gales. They are fastest of all races'
+      - '&7and strike from the air.'
+      - '&8&m                                       '
+      - '&fWindrider &7benefit from'
+      - '&f- &a+25% &fMovement Speed Bonus'
+      - '&f- &a+15% &fSprint Movement Speed Bonus'
+      - '&f- &a+15% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MOVEMENT_SPEED_BONUS: 0.25
+      SPRINT_MOVEMENT_SPEED_BONUS: 0.15
+      DODGE_CHANCE: 0.15
+      HEALTH_BONUS: -4
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  thunderlord:
+    position: 185
+    icon: LIGHTNING_ROD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eThunderlord&8]'
+    display_name: '&eThunderlord'
+    description:
+      - '&eThunderlords&7, masters of the storm who'
+      - '&7command lightning at will. Their power'
+      - '&7shakes the very heavens.'
+      - '&8&m                                       '
+      - '&eThunderlord &7benefit from'
+      - '&f- &a+30% &fLightning Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+10% &fRanged Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.3
+      COOLDOWN_REDUCTION: 0.15
+      RANGED_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  ashwalker:
+    position: 186
+    icon: SUSPICIOUS_STEW:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Ashwalker&8]'
+    display_name: '&8Ashwalker'
+    description:
+      - '&8Ashwalkers&7, beings who tread upon'
+      - '&7the ashes of destroyed worlds.'
+      - '&7They wield entropy and decay.'
+      - '&8&m                                       '
+      - '&8Ashwalker &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fFire Resistance'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      FIRE_RESISTANCE: 0.15
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -3
+      RADIANT_RESISTANCE: -0.1
+  tidecaller:
+    position: 187
+    icon: TROPICAL_FISH:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&3Tidecaller&8]'
+    display_name: '&3Tidecaller'
+    description:
+      - '&3Tidecallers&7, water mages who command'
+      - '&7the oceans. They summon tsunamis'
+      - '&7and heal with ocean magic.'
+      - '&8&m                                       '
+      - '&3Tidecaller &7benefit from'
+      - '&f- &a+20% &fFreezing Damage Dealt'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+2% &fFishing Luck'
+      - '&7But suffer from'
+      - '&f- &c-10% &fFire Resistance'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.2
+      HEALING_BONUS: 0.2
+      FISHING_LUCK: 2
+      FIRE_RESISTANCE: -0.1
+  dustfiend:
+    position: 188
+    icon: SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eDustfiend&8]'
+    display_name: '&eDustfiend'
+    description:
+      - '&eDustfiends&7, desert spirits of scorching'
+      - '&7heat. They blind and burn foes with'
+      - '&7sandstorms of fire.'
+      - '&8&m                                       '
+      - '&eDustfiend &7benefit from'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+10% &fMagic Damage Dealt'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fFreezing Resistance'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.2
+      MAGIC_DAMAGE_DEALT: 0.1
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -3
+      FREEZING_RESISTANCE: -0.1
+  ember_sprite:
+    position: 189
+    icon: BLAZE_POWDER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cEmber Sprite&8]'
+    display_name: '&cEmber Sprite'
+    description:
+      - '&cEmber Sprites&7, tiny fire fae who'
+      - '&7dance through flames. They are fast'
+      - '&7and deadly despite their size.'
+      - '&8&m                                       '
+      - '&cEmber Sprite &7benefit from'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+20% &fMovement Speed Bonus'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-15% &fScale'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -5
+      SCALE: -0.15
+  frost_spirit:
+    position: 190
+    icon: PACKED_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bFrost Spirit&8]'
+    display_name: '&bFrost Spirit'
+    description:
+      - '&bFrost Spirits&7, cold elementals who'
+      - '&7numb all they touch. They freeze'
+      - '&7enemies solid with a glance.'
+      - '&8&m                                       '
+      - '&bFrost Spirit &7benefit from'
+      - '&f- &a+25% &fFreezing Damage Dealt'
+      - '&f- &a+25% &fFreezing Resistance'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-20% &fFire Resistance'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.25
+      FREEZING_RESISTANCE: 0.25
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -4
+      FIRE_RESISTANCE: -0.2
+  storm_wraith:
+    position: 191
+    icon: CONDUIT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Storm Wraith&8]'
+    display_name: '&9Storm Wraith'
+    description:
+      - '&9Storm Wraiths&7, electrical phantoms'
+      - '&7who haunt thunderclouds. They strike'
+      - '&7with shocking force from above.'
+      - '&8&m                                       '
+      - '&9Storm Wraith &7benefit from'
+      - '&f- &a+25% &fLightning Damage Dealt'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.25
+      DODGE_CHANCE: 0.15
+      MOVEMENT_SPEED_BONUS: 0.15
+      HEALTH_BONUS: -4
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  earth_shaper:
+    position: 192
+    icon: STONE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Earth Shaper&8]'
+    display_name: '&6Earth Shaper'
+    description:
+      - '&6Earth Shapers&7, geomancers who mold'
+      - '&7terrain and create stone constructs.'
+      - '&7They are sturdy and unyielding.'
+      - '&8&m                                       '
+      - '&6Earth Shaper &7benefit from'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+15% &fDamage Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&f- &a+15% &fDig Speed'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      DAMAGE_RESISTANCE: 0.15
+      HEALTH_BONUS: 5
+      DIG_SPEED: 0.15
+      MOVEMENT_SPEED_BONUS: -0.1
+  sky_dancer:
+    position: 193
+    icon: FEATHER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fSky Dancer&8]'
+    display_name: '&fSky Dancer'
+    description:
+      - '&fSky Dancers&7, graceful aerial fighters'
+      - '&7who dance through the clouds. Their'
+      - '&7elegance hides deadly precision.'
+      - '&8&m                                       '
+      - '&fSky Dancer &7benefit from'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+10% &fCrit Chance'
+      - '&f- &a+10% &fRanged Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      DODGE_CHANCE: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      CRIT_CHANCE: 0.1
+      RANGED_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -3
+  shadowcaster:
+    position: 194
+    icon: SHADOW_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Shadowcaster&8]'
+    display_name: '&8Shadowcaster'
+    description:
+      - '&8Shadowcasters&7, dark mages who wield'
+      - '&7the power of shadow. They blind foes'
+      - '&7and strike from darkness.'
+      - '&8&m                                       '
+      - '&8Shadowcaster &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+20% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fRadiant Resistance'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -3
+      RADIANT_RESISTANCE: -0.1
+  plague_doctor:
+    position: 195
+    icon: FERMENTED_SPIDER_EYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Plague Doctor&8]'
+    display_name: '&2Plague Doctor'
+    description:
+      - '&2Plague Doctors&7, scholars of disease'
+      - '&7and remedy. They brew potions that'
+      - '&7both heal and harm with equal ease.'
+      - '&8&m                                       '
+      - '&2Plague Doctor &7benefit from'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+20% &fPoison Damage Dealt'
+      - '&f- &a+20% &fAlchemy Exp Gain'
+      - '&f- &a+10% &fCooldown Reduction'
+    stat_buffs:
+      HEALING_BONUS: 0.15
+      POISON_DAMAGE_DEALT: 0.2
+      ALCHEMY_EXP_GAIN: 0.2
+      COOLDOWN_REDUCTION: 0.1
+  void_weaver:
+    position: 196
+    icon: ENDER_EYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Void Weaver&8]'
+    display_name: '&5Void Weaver'
+    description:
+      - '&5Void Weavers&7, dimensional mages who'
+      - '&7weave threads of nothing. They tear'
+      - '&7holes in reality itself.'
+      - '&8&m                                       '
+      - '&5Void Weaver &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      NECROTIC_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -4
+      RADIANT_RESISTANCE: -0.15
+  crystal_mage:
+    position: 197
+    icon: AMETHYST_SHARD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&dCrystal Mage&8]'
+    display_name: '&dCrystal Mage'
+    description:
+      - '&dCrystal Mages&7, prismatic sorcerers who'
+      - '&7channel light through gemstones.'
+      - '&7Their spells shimmer with color.'
+      - '&8&m                                       '
+      - '&dCrystal Mage &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+20% &fEnchanting Exp Gain'
+      - '&f- &a+10% &fLuck Bonus'
+      - '&f- &a+10% &fCooldown Reduction'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      ENCHANTING_EXP_GAIN: 0.2
+      LUCK_BONUS: 0.1
+      COOLDOWN_REDUCTION: 0.1
+  moon_weaver:
+    position: 198
+    icon: CLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Moon Weaver&8]'
+    display_name: '&9Moon Weaver'
+    description:
+      - '&9Moon Weavers&7, lunar mages who draw'
+      - '&7power from the moon. They grow'
+      - '&7stronger as night falls.'
+      - '&8&m                                       '
+      - '&9Moon Weaver &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+10% &fHealing Bonus'
+      - '&f- &a+10% &fDodge Chance'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      FREEZING_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.1
+      DODGE_CHANCE: 0.1
+  sunCaller:
+    position: 199
+    icon: SUNFLOWER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eSun Caller&8]'
+    display_name: '&eSun Caller'
+    description:
+      - '&eSun Callers&7, solar mages who channel'
+      - '&7the power of the sun. Their light'
+      - '&7burns the unholy.'
+      - '&8&m                                       '
+      - '&eSun Caller &7benefit from'
+      - '&f- &a+25% &fRadiant Damage Dealt'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+10% &fFire Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-15% &fNecrotic Resistance'
+    stat_buffs:
+      RADIANT_DAMAGE_DEALT: 0.25
+      HEALING_BONUS: 0.15
+      FIRE_DAMAGE_DEALT: 0.1
+      NECROTIC_RESISTANCE: -0.15
+  starCaller:
+    position: 200
+    icon: NETHER_STAR:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eStar Caller&8]'
+    display_name: '&eStar Caller'
+    description:
+      - '&eStar Callers&7, cosmic mages who channel'
+      - '&7stellar energy. Their spells rain'
+      - '&7down like falling stars.'
+      - '&8&m                                       '
+      - '&eStar Caller &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fRadiant Damage Dealt'
+      - '&f- &a+15% &fCrit Damage'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      RADIANT_DAMAGE_DEALT: 0.15
+      CRIT_DAMAGE: 0.15
+      HEALTH_BONUS: -4
+  abyss_walker:
+    position: 201
+    icon: OBSIDIAN:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Abyss Walker&8]'
+    display_name: '&5Abyss Walker'
+    description:
+      - '&5Abyss Walkers&7, void-touched warriors'
+      - '&7who stride between dimensions. They'
+      - '&7wield entropy as a weapon.'
+      - '&8&m                                       '
+      - '&5Abyss Walker &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      DODGE_CHANCE: 0.2
+      MOVEMENT_SPEED_BONUS: 0.1
+      HEALTH_BONUS: -4
+      RADIANT_RESISTANCE: -0.15
+  soul_reaper:
+    position: 202
+    icon: SOUL_SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Soul Reaper&8]'
+    display_name: '&8Soul Reaper'
+    description:
+      - '&8Soul Reapers&7, death-themed fighters who'
+      - '&7harvest souls with each kill. They'
+      - '&7grow stronger with every death.'
+      - '&8&m                                       '
+      - '&8Soul Reaper &7benefit from'
+      - '&f- &a+25% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fHealing Bonus'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-10% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.25
+      MELEE_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.1
+      HEALTH_BONUS: -3
+      RADIANT_RESISTANCE: -0.1
+  bone_weaver:
+    position: 203
+    icon: BONE_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Bone Weaver&8]'
+    display_name: '&7Bone Weaver'
+    description:
+      - '&7Bone Weavers&7, necromancers who craft'
+      - '&7weapons and armor from bone. Their'
+      - '&7creations are grotesque but powerful.'
+      - '&8&m                                       '
+      - '&7Bone Weaver &7benefit from'
+      - '&f- &a+15% &fNecrotic Damage Dealt'
+      - '&f- &a+20% &fSmithing Quality General'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+3 &fHealth Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.15
+      SMITHING_QUALITY_GENERAL: 20
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: 3
+  sand_serpent:
+    position: 204
+    icon: SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eSand Serpent&8]'
+    display_name: '&eSand Serpent'
+    description:
+      - '&eSand Serpents&7, desert snake-folk who'
+      - '&7burrow beneath the dunes. They'
+      - '&7ambush prey from below.'
+      - '&8&m                                       '
+      - '&eSand Serpent &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+20% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fPoison Damage Dealt'
+      - '&f- &a+5% &fFire Resistance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      POISON_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -3
+      FIRE_RESISTANCE: 0.05
+  tundra_wolf:
+    position: 205
+    icon: POPPED_CHORUS_FRUIT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fTundra Wolf&8]'
+    display_name: '&fTundra Wolf'
+    description:
+      - '&fTundra Wolves&7, arctic pack hunters who'
+      - '&7endure the harshest cold. They'
+      - '&7fight with icy fury and pack tactics.'
+      - '&8&m                                       '
+      - '&fTundra Wolf &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fFreezing Damage Dealt'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&f- &a+10% &fSprint Movement Speed Bonus'
+      - '&f- &a+3 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      FREEZING_DAMAGE_DEALT: 0.1
+      MOVEMENT_SPEED_BONUS: 0.1
+      SPRINT_MOVEMENT_SPEED_BONUS: 0.1
+      HEALTH_BONUS: 3
+  swamp_hag:
+    position: 206
+    icon: SLIME_BALL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Swamp Hag&8]'
+    display_name: '&2Swamp Hag'
+    description:
+      - '&2Swamp Hags&7, bog-dwelling crones who'
+      - '&7brew potions and hexes from swamp'
+      - '&7herbs. Their毒 is legendary.'
+      - '&8&m                                       '
+      - '&2Swamp Hag &7benefit from'
+      - '&f- &a+20% &fPoison Damage Dealt'
+      - '&f- &a+20% &fAlchemy Exp Gain'
+      - '&f- &a+10% &fHealing Bonus'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      POISON_DAMAGE_DEALT: 0.2
+      ALCHEMY_EXP_GAIN: 0.2
+      HEALING_BONUS: 0.1
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -3
+  sky_dragon:
+    position: 207
+    icon: ELYTRA:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bSky Dragon&8]'
+    display_name: '&bSky Dragon'
+    description:
+      - '&bSky Dragons&7, aerial dragons who rule'
+      - '&7the clouds. They rain destruction'
+      - '&7from above with impunity.'
+      - '&8&m                                       '
+      - '&bSky Dragon &7benefit from'
+      - '&f- &a+20% &fRanged Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+30% &fFalling Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      FALLING_RESISTANCE: 0.3
+      HEALTH_BONUS: 5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  iron_golem:
+    position: 208
+    icon: IRON_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Iron Golem&8]'
+    display_name: '&7Iron Golem'
+    description:
+      - '&7Iron Golems&7, living constructs of iron'
+      - '&7and magic. They protect villages'
+      - '&7and are nearly indestructible.'
+      - '&8&m                                       '
+      - '&7Iron Golem &7benefit from'
+      - '&f- &a+30% &fArmor Multiplier Bonus'
+      - '&f- &a+30% &fKnockback Resistance'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fMovement Speed Bonus'
+      - '&f- &c-15% &fDodge Chance'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.3
+      KNOCKBACK_RESISTANCE: 0.3
+      HEALTH_BONUS: 10
+      MOVEMENT_SPEED_BONUS: -0.2
+      DODGE_CHANCE: -0.15
+  dark_elf:
+    position: 209
+    icon: PURPLE_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Dark Elf&8]'
+    display_name: '&5Dark Elf'
+    description:
+      - '&5Dark Elves&7, exiled elves of the'
+      - '&7underdark. They master poison and'
+      - '&7shadow magic with deadly skill.'
+      - '&8&m                                       '
+      - '&5Dark Elf &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fPoison Damage Dealt'
+      - '&f- &a+15% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      POISON_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -3
+  high_elf:
+    position: 210
+    icon: LIGHT_BLUE_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bHigh Elf&8]'
+    display_name: '&bHigh Elf'
+    description:
+      - '&bHigh Elves&7, ancient elves of supreme'
+      - '&7magical talent. They are the most'
+      - '&7powerful spellcasters among the fey.'
+      - '&8&m                                       '
+      - '&bHigh Elf &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+25% &fEnchanting Exp Gain'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      ENCHANTING_EXP_GAIN: 0.25
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -4
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  wood_elf:
+    position: 211
+    icon: OAK_LOG:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Wood Elf&8]'
+    display_name: '&2Wood Elf'
+    description:
+      - '&2Wood Elves&7, forest-dwelling elves who'
+      - '&7are at one with nature. They excel'
+      - '&7in archery and woodcraft.'
+      - '&8&m                                       '
+      - '&2Wood Elf &7benefit from'
+      - '&f- &a+20% &fRanged Damage Dealt'
+      - '&f- &a+20% &fWoodcutting Exp Gain'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      WOODCUTTING_EXP_GAIN: 0.2
+      DODGE_CHANCE: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      HEALTH_BONUS: -3
+  sea_dwarf:
+    position: 212
+    icon: PRISMARINE_SHARD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&3Sea Dwarf&8]'
+    display_name: '&3Sea Dwarf'
+    description:
+      - '&3Sea Dwarves&7, dwarves who dwell beneath'
+      - '&7the waves. They mine underwater veins'
+      - '&7and craft tridents of great power.'
+      - '&8&m                                       '
+      - '&3Sea Dwarf &7benefit from'
+      - '&f- &a+20% &fMining Exp Gain'
+      - '&f- &a+2% &fFishing Luck'
+      - '&f- &a+10% &fMelee Damage Dealt'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&f- &a+3 &fHealth Bonus'
+    stat_buffs:
+      MINING_EXP_GAIN: 0.2
+      FISHING_LUCK: 2
+      MELEE_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      HEALTH_BONUS: 3
+  mountain_giant:
+    position: 213
+    icon: STONE_BRICKS:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Mountain Giant&8]'
+    display_name: '&7Mountain Giant'
+    description:
+      - '&7Mountain Giants&7, colossal beings who'
+      - '&7dwell in the highest peaks. They are'
+      - '&7living mountains of stone and fury.'
+      - '&8&m                                       '
+      - '&7Mountain Giant &7benefit from'
+      - '&f- &a+15 &fHealth Bonus'
+      - '&f- &a+25% &fArmor Multiplier Bonus'
+      - '&f- &a+30% &fKnockback Resistance'
+      - '&7But suffer from'
+      - '&f- &c-25% &fMovement Speed Bonus'
+      - '&f- &c-20% &fDodge Chance'
+    stat_buffs:
+      HEALTH_BONUS: 15
+      ARMOR_MULTIPLIER_BONUS: 0.25
+      KNOCKBACK_RESISTANCE: 0.3
+      MOVEMENT_SPEED_BONUS: -0.25
+      DODGE_CHANCE: -0.2
+  hill_giant:
+    position: 214
+    icon: GRASS_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Hill Giant&8]'
+    display_name: '&6Hill Giant'
+    description:
+      - '&6Hill Giants&7, large but not overly bright'
+      - '&7giants who roam the hills. They are'
+      - '&7strong but not the sharpest.'
+      - '&8&m                                       '
+      - '&6Hill Giant &7benefit from'
+      - '&f- &a+10 &fHealth Bonus'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fMovement Speed Bonus'
+      - '&f- &c-15% &fMagic Resistance'
+    stat_buffs:
+      HEALTH_BONUS: 10
+      MELEE_DAMAGE_DEALT: 0.2
+      KNOCKBACK_RESISTANCE: 0.15
+      MOVEMENT_SPEED_BONUS: -0.15
+      MAGIC_RESISTANCE: -0.15
+  fog_phantom:
+    position: 215
+    icon: GLASS_BOTTLE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Fog Phantom&8]'
+    display_name: '&7Fog Phantom'
+    description:
+      - '&7Fog Phantoms&7, misty spirits that haunt'
+      - '&7foggy moors. They drift unseen and'
+      - '&7strike when the mist is thickest.'
+      - '&8&m                                       '
+      - '&7Fog Phantom &7benefit from'
+      - '&f- &a+25% &fDodge Chance'
+      - '&f- &a+20% &fSneak Movement Speed Bonus'
+      - '&f- &a+10% &fMagic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      DODGE_CHANCE: 0.25
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      MAGIC_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -5
+      RADIANT_RESISTANCE: -0.15
+  dust_devil:
+    position: 216
+    icon: SAND:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eDust Devil&8]'
+    display_name: '&eDust Devil'
+    description:
+      - '&eDust Devils&7, whirlwind spirits of the'
+      - '&7desert. They scour foes with grit'
+      - '&7and sand, blinding all who oppose.'
+      - '&8&m                                       '
+      - '&eDust Devil &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+20% &fMovement Speed Bonus'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+5% &fFire Resistance'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      MOVEMENT_SPEED_BONUS: 0.2
+      DODGE_CHANCE: 0.15
+      HEALTH_BONUS: -4
+      FIRE_RESISTANCE: 0.05
+  magma_sprite:
+    position: 217
+    icon: MAGMA_CREAM:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Magma Sprite&8]'
+    display_name: '&4Magma Sprite'
+    description:
+      - '&4Magma Sprites&7, tiny fire spirits who'
+      - '&7dance in volcanic vents. They are'
+      - '&7fast and burn all they touch.'
+      - '&8&m                                       '
+      - '&4Magma Sprite &7benefit from'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+20% &fMovement Speed Bonus'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-15% &fScale'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -5
+      SCALE: -0.15
+  frost_fairy:
+    position: 218
+    icon: BLUE_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bFrost Fairy&8]'
+    display_name: '&bFrost Fairy'
+    description:
+      - '&bFrost Fairies&7, tiny ice fae who'
+      - '&7bring the cold. They heal allies'
+      - '&7and freeze foes with equal ease.'
+      - '&8&m                                       '
+      - '&bFrost Fairy &7benefit from'
+      - '&f- &a+15% &fFreezing Damage Dealt'
+      - '&f- &a+20% &fHealing Bonus'
+      - '&f- &a+15% &fFreezing Resistance'
+      - '&7But suffer from'
+      - '&f- &c-6 &fHealth Bonus'
+      - '&f- &c-20% &fScale'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.2
+      FREEZING_RESISTANCE: 0.15
+      HEALTH_BONUS: -6
+      SCALE: -0.2
+  shadow_fairy:
+    position: 219
+    icon: SHADOW_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Shadow Fairy&8]'
+    display_name: '&5Shadow Fairy'
+    description:
+      - '&5Shadow Fairies&7, dark fae who dwell in'
+      - '&7the shadows. They are tricksters and'
+      - '&7thieves of the highest order.'
+      - '&8&m                                       '
+      - '&5Shadow Fairy &7benefit from'
+      - '&f- &a+20% &fDodge Chance'
+      - '&f- &a+20% &fSneak Movement Speed Bonus'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-6 &fHealth Bonus'
+      - '&f- &c-20% &fScale'
+    stat_buffs:
+      DODGE_CHANCE: 0.2
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: -6
+      SCALE: -0.2
+  star_fairy:
+    position: 220
+    icon: NETHER_STAR:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eStar Fairy&8]'
+    display_name: '&eStar Fairy'
+    description:
+      - '&eStar Fairies&7, celestial fae who fell'
+      - '&7from the heavens. They wield cosmic'
+      - '&7power in their tiny frames.'
+      - '&8&m                                       '
+      - '&eStar Fairy &7benefit from'
+      - '&f- &a+20% &fMagic Damage Dealt'
+      - '&f- &a+15% &fCrit Damage'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-6 &fHealth Bonus'
+      - '&f- &c-20% &fScale'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      CRIT_DAMAGE: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -6
+      SCALE: -0.2
+  plague_witch:
+    position: 221
+    icon: FERMENTED_SPIDER_EYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Plague Witch&8]'
+    display_name: '&2Plague Witch'
+    description:
+      - '&2Plague Witches&7, crones who spread'
+      - '&7disease and decay. Their curses are'
+      - '&7unbreakable and their potions deadly.'
+      - '&8&m                                       '
+      - '&2Plague Witch &7benefit from'
+      - '&f- &a+30% &fPoison Damage Dealt'
+      - '&f- &a+20% &fAlchemy Exp Gain'
+      - '&f- &a+10% &fNecrotic Damage Dealt'
+      - '&f- &a+5% &fHealing Bonus'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      POISON_DAMAGE_DEALT: 0.3
+      ALCHEMY_EXP_GAIN: 0.2
+      NECROTIC_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -3
+      HEALING_BONUS: 0.05
+  warlock_v2:
+    position: 222
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Warlock&8]'
+    display_name: '&5Warlock'
+    description:
+      - '&5Warlocks&7, dark magic users who draw'
+      - '&7on forbidden power. Their necrotic'
+      - '&7spells are devastating.'
+      - '&8&m                                       '
+      - '&5Warlock &7benefit from'
+      - '&f- &a+25% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.25
+      COOLDOWN_REDUCTION: 0.15
+      MAGIC_DAMAGE_DEALT: 0.15
+      RADIANT_RESISTANCE: -0.15
+  demon_hunter:
+    position: 223
+    icon: NETHERITE_SWORD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Demon Hunter&8]'
+    display_name: '&4Demon Hunter'
+    description:
+      - '&4Demon Hunters&7, warriors who specialize'
+      - '&7in slaying demons and undead. They'
+      - '&7are relentless in their pursuit.'
+      - '&8&m                                       '
+      - '&4Demon Hunter &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fNecrotic Damage Dealt'
+      - '&f- &a+10% &fFire Damage Dealt'
+      - '&f- &a+10% &fDodge Chance'
+      - '&f- &a+10% &fRadiant Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.1
+      FIRE_DAMAGE_DEALT: 0.1
+      DODGE_CHANCE: 0.1
+      RADIANT_RESISTANCE: 0.1
+  vampire_hunter:
+    position: 224
+    icon: GOLDEN_SWORD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eVampire Hunter&8]'
+    display_name: '&eVampire Hunter'
+    description:
+      - '&eVampire Hunters&7, specialists in undead'
+      - '&7slaying. They carry blessed weapons'
+      - '&7and are immune to life drain.'
+      - '&8&m                                       '
+      - '&eVampire Hunter &7benefit from'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&f- &a+10% &fRadiant Damage Dealt'
+      - '&f- &a+15% &fNecrotic Resistance'
+      - '&f- &a+10% &fCrit Chance'
+      - '&f- &a+10% &fHealing Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      RADIANT_DAMAGE_DEALT: 0.1
+      NECROTIC_RESISTANCE: 0.15
+      CRIT_CHANCE: 0.1
+      HEALING_BONUS: 0.1
+  dragon_slayer:
+    position: 225
+    icon: DIAMOND_SWORD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cDragon Slayer&8]'
+    display_name: '&cDragon Slayer'
+    description:
+      - '&cDragon Slayers&7, warriors who have'
+      - '&7sworn to slay all dragons. Their'
+      - '&7weapons are forged specifically for'
+      - '&7the task.'
+      - '&8&m                                       '
+      - '&cDragon Slayer &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+20% &fCrit Damage'
+      - '&f- &a+10% &fDamage Resistance'
+      - '&f- &a+3 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-5% &fDodge Chance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      CRIT_DAMAGE: 0.2
+      DAMAGE_RESISTANCE: 0.1
+      HEALTH_BONUS: 3
+      DODGE_CHANCE: -0.05
+  undead_hunter:
+    position: 226
+    icon: IRON_SWORD:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Undead Hunter&8]'
+    display_name: '&7Undead Hunter'
+    description:
+      - '&7Undead Hunters&7, holy warriors who'
+      - '&7destroy the undead. Their radiant'
+      - '&7weapons burn all who have died.'
+      - '&8&m                                       '
+      - '&7Undead Hunter &7benefit from'
+      - '&f- &a+20% &fRadiant Damage Dealt'
+      - '&f- &a+10% &fMelee Damage Dealt'
+      - '&f- &a+20% &fNecrotic Resistance'
+      - '&f- &a+15% &fRadiant Resistance'
+    stat_buffs:
+      RADIANT_DAMAGE_DEALT: 0.2
+      MELEE_DAMAGE_DEALT: 0.1
+      NECROTIC_RESISTANCE: 0.2
+      RADIANT_RESISTANCE: 0.15
+  giant_slayer:
+    position: 227
+    icon: DIAMOND_AXE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Giant Slayer&8]'
+    display_name: '&6Giant Slayer'
+    description:
+      - '&6Giant Slayers&7, warriors specialized in'
+      - '&7bringing down massive foes. Their'
+      - '&7weapons cut through thick hide.'
+      - '&8&m                                       '
+      - '&6Giant Slayer &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fCrit Damage'
+      - '&f- &a+10% &fCrit Chance'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      CRIT_DAMAGE: 0.15
+      CRIT_CHANCE: 0.1
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -2
+  troll_kin:
+    position: 228
+    icon: VINE_WEB:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Troll-Kin&8]'
+    display_name: '&2Troll-Kin'
+    description:
+      - '&2Troll-Kin&7, lesser trolls of the deep'
+      - '&7forests. They regenerate slowly and'
+      - '&7fight with brutal strength.'
+      - '&8&m                                       '
+      - '&2Troll-Kin &7benefit from'
+      - '&f- &a+8 &fHealth Bonus'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+15% &fMelee Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFire Resistance'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      HEALTH_BONUS: 8
+      HEALING_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: 0.15
+      FIRE_RESISTANCE: -0.2
+      MOVEMENT_SPEED_BONUS: -0.1
+  orc_raider:
+    position: 229
+    icon: DIAMOND_AXE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&2Orc Raider&8]'
+    display_name: '&2Orc Raider'
+    description:
+      - '&2Orc Raiders&7, swift orc warriors who'
+      - '&7strike fast and hard. They take'
+      - '&7what they want by force and speed.'
+      - '&8&m                                       '
+      - '&2Orc Raider &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+10% &fSprint Movement Speed Bonus'
+      - '&f- &a+10% &fKnockback Resistance'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMagic Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      SPRINT_MOVEMENT_SPEED_BONUS: 0.1
+      KNOCKBACK_RESISTANCE: 0.1
+      MAGIC_RESISTANCE: -0.1
+  elven_ranger:
+    position: 230
+    icon: BOW:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bElven Ranger&8]'
+    display_name: '&bElven Ranger'
+    description:
+      - '&bElven Rangers&7, forest guardians who'
+      - '&7never miss their mark. They patrol'
+      - '&7the woodlands protecting the innocent.'
+      - '&8&m                                       '
+      - '&bElven Ranger &7benefit from'
+      - '&f- &a+25% &fRanged Damage Dealt'
+      - '&f- &a+15% &fCrit Chance'
+      - '&f- &a+10% &fDodge Chance'
+      - '&f- &a+15% &fWoodcutting Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.25
+      CRIT_CHANCE: 0.15
+      DODGE_CHANCE: 0.1
+      WOODCUTTING_EXP_GAIN: 0.15
+      HEALTH_BONUS: -2
+  dwarven_smith:
+    position: 231
+    icon: ANVIL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Dwarven Smith&8]'
+    display_name: '&6Dwarven Smith'
+    description:
+      - '&6Dwarven Smiths&7, master craftsmen of'
+      - '&7metal and stone. Their creations'
+      - '&7are of unmatched quality.'
+      - '&8&m                                       '
+      - '&6Dwarven Smith &7benefit from'
+      - '&f- &a+30% &fSmithing Quality General'
+      - '&f- &a+20% &fMining Exp Gain'
+      - '&f- &a+20% &fDurability Bonus'
+      - '&f- &a+3 &fHealth Bonus'
+    stat_buffs:
+      SMITHING_QUALITY_GENERAL: 30
+      MINING_EXP_GAIN: 0.2
+      DURABILITY_BONUS: 0.2
+      HEALTH_BONUS: 3
+  human_mage:
+    position: 232
+    icon: EXPERIENCE_BOTTLE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&aHuman Mage&8]'
+    display_name: '&aHuman Mage'
+    description:
+      - '&aHuman Mages&7, versatile spellcasters'
+      - '&7who adapt to any situation. Their'
+      - '&7raw talent compensates for lack'
+      - '&7of specialization.'
+      - '&8&m                                       '
+      - '&aHuman Mage &7benefit from'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&f- &a+15% &fEnchanting Exp Gain'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      ENCHANTING_EXP_GAIN: 0.15
+      HEALTH_BONUS: -3
+  undead_mage:
+    position: 233
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Undead Mage&8]'
+    display_name: '&7Undead Mage'
+    description:
+      - '&7Undead Mages&7, liches who have not yet'
+      - '&7achieved true immortality. They wield'
+      - '&7necromancy with growing power.'
+      - '&8&m                                       '
+      - '&7Undead Mage &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-4 &fHealth Bonus'
+      - '&f- &c-10% &fHealing Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MAGIC_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -4
+      HEALING_BONUS: -0.1
+  celestial_warrior:
+    position: 234
+    icon: GOLDEN_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&eCelestial Warrior&8]'
+    display_name: '&eCelestial Warrior'
+    description:
+      - '&eCelestial Warriors&7, divine champions'
+      - '&7who fight with holy fury. Their'
+      - '&7weapons burn with radiant light.'
+      - '&8&m                                       '
+      - '&eCelestial Warrior &7benefit from'
+      - '&f- &a+20% &fRadiant Damage Dealt'
+      - '&f- &a+10% &fMelee Damage Dealt'
+      - '&f- &a+10% &fArmor Multiplier Bonus'
+      - '&f- &a+10% &fHealing Bonus'
+    stat_buffs:
+      RADIANT_DAMAGE_DEALT: 0.2
+      MELEE_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      HEALING_BONUS: 0.1
+  abyssal_warrior:
+    position: 235
+    icon: NETHERITE_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Abyssal Warrior&8]'
+    display_name: '&4Abyssal Warrior'
+    description:
+      - '&4Abyssal Warriors&7, demons who fight'
+      - '&7in the front lines. They wield'
+      - '&7fire-wreathed weapons of destruction.'
+      - '&8&m                                       '
+      - '&4Abyssal Warrior &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+15% &fFire Damage Dealt'
+      - '&f- &a+15% &fKnockback Resistance'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fRadiant Resistance'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      FIRE_DAMAGE_DEALT: 0.15
+      KNOCKBACK_RESISTANCE: 0.15
+      HEALTH_BONUS: 5
+      RADIANT_RESISTANCE: -0.2
+  magma_golem:
+    position: 236
+    icon: MAGMA_CREAM:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&4Magma Golem&8]'
+    display_name: '&4Magma Golem'
+    description:
+      - '&4Magma Golems&7, constructs of living lava.'
+      - '&7They burn all they touch and are'
+      - '&7nearly impossible to destroy.'
+      - '&8&m                                       '
+      - '&4Magma Golem &7benefit from'
+      - '&f- &a+20% &fFire Damage Dealt'
+      - '&f- &a+30% &fFire Resistance'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+8 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fMovement Speed Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.2
+      FIRE_RESISTANCE: 0.3
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      HEALTH_BONUS: 8
+      MOVEMENT_SPEED_BONUS: -0.2
+  frost_golem:
+    position: 237
+    icon: PACKED_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bFrost Golem&8]'
+    display_name: '&bFrost Golem'
+    description:
+      - '&bFrost Golems&7, constructs of enchanted ice.'
+      - '&7They freeze all they touch and their'
+      - '&7bodies are nearly indestructible.'
+      - '&8&m                                       '
+      - '&bFrost Golem &7benefit from'
+      - '&f- &a+25% &fFreezing Damage Dealt'
+      - '&f- &a+30% &fFreezing Resistance'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+8 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fFire Resistance'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.25
+      FREEZING_RESISTANCE: 0.3
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      HEALTH_BONUS: 8
+      FIRE_RESISTANCE: -0.2
+  storm_golem:
+    position: 238
+    icon: CONDUIT:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&9Storm Golem&8]'
+    display_name: '&9Storm Golem'
+    description:
+      - '&9Storm Golems&7, constructs charged with'
+      - '&7lightning. They shock all who approach'
+      - '&7and are powered by electrical fury.'
+      - '&8&m                                       '
+      - '&9Storm Golem &7benefit from'
+      - '&f- &a+25% &fLightning Damage Dealt'
+      - '&f- &a+15% &fArmor Multiplier Bonus'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&f- &a+10% &fDodge Chance'
+      - '&f- &a+10% &fMovement Speed Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.25
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      HEALTH_BONUS: 5
+      DODGE_CHANCE: 0.1
+      MOVEMENT_SPEED_BONUS: 0.1
+  void_golem:
+    position: 239
+    icon: OBSIDIAN:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Void Golem&8]'
+    display_name: '&5Void Golem'
+    description:
+      - '&5Void Golems&7, constructs from the spaces'
+      - '&7between dimensions. They warp reality'
+      - '&7and drain life from all they touch.'
+      - '&8&m                                       '
+      - '&5Void Golem &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+20% &fArmor Multiplier Bonus'
+      - '&f- &a+8 &fHealth Bonus'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      HEALTH_BONUS: 8
+      DODGE_CHANCE: 0.1
+      RADIANT_RESISTANCE: -0.15
+  shadow_elf:
+    position: 240
+    icon: BLACK_DYE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Shadow Elf&8]'
+    display_name: '&8Shadow Elf'
+    description:
+      - '&8Shadow Elves&7, elves who dwell in'
+      - '&7perpetual darkness. They master'
+      - '&7stealth and shadow magic.'
+      - '&8&m                                       '
+      - '&8Shadow Elf &7benefit from'
+      - '&f- &a+20% &fSneak Movement Speed Bonus'
+      - '&f- &a+15% &fDodge Chance'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+10% &fMelee Damage Dealt'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      DODGE_CHANCE: 0.15
+      MAGIC_DAMAGE_DEALT: 0.15
+      MELEE_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -3
+  flame_elf:
+    position: 241
+    icon: BLAZE_POWDER:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&cFlame Elf&8]'
+    display_name: '&cFlame Elf'
+    description:
+      - '&cFlame Elves&7, elves who have embraced'
+      - '&7the power of fire. Their blades'
+      - '&7burn with eternal flame.'
+      - '&8&m                                       '
+      - '&cFlame Elf &7benefit from'
+      - '&f- &a+25% &fFire Damage Dealt'
+      - '&f- &a+10% &fMelee Damage Dealt'
+      - '&f- &a+15% &fFire Resistance'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.25
+      MELEE_DAMAGE_DEALT: 0.1
+      FIRE_RESISTANCE: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: -3
+  ice_elf:
+    position: 242
+    icon: BLUE_ICE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&bIce Elf&8]'
+    display_name: '&bIce Elf'
+    description:
+      - '&bIce Elves&7, elves of the frozen north.'
+      - '&7They wield freezing magic and their'
+      - '&7touch brings eternal winter.'
+      - '&8&m                                       '
+      - '&bIce Elf &7benefit from'
+      - '&f- &a+25% &fFreezing Damage Dealt'
+      - '&f- &a+20% &fFreezing Resistance'
+      - '&f- &a+10% &fDodge Chance'
+      - '&f- &a+10% &fMovement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.25
+      FREEZING_RESISTANCE: 0.2
+      DODGE_CHANCE: 0.1
+      MOVEMENT_SPEED_BONUS: 0.1
+      HEALTH_BONUS: -3
+  mountain_dwarf:
+    position: 243
+    icon: STONE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Mountain Dwarf&8]'
+    display_name: '&7Mountain Dwarf'
+    description:
+      - '&7Mountain Dwarves&7, the hardiest of all'
+      - '&7dwarven clans. They delve deepest'
+      - '&7and mine the richest veins.'
+      - '&8&m                                       '
+      - '&7Mountain Dwarf &7benefit from'
+      - '&f- &a+25% &fMining Exp Gain'
+      - '&f- &a+20% &fDig Speed'
+      - '&f- &a+5 &fHealth Bonus'
+      - '&f- &a+15% &fArmor Multiplier Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      MINING_EXP_GAIN: 0.25
+      DIG_SPEED: 0.2
+      HEALTH_BONUS: 5
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      MOVEMENT_SPEED_BONUS: -0.1
+  hill_dwarf:
+    position: 244
+    icon: GRASS_BLOCK:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&6Hill Dwarf&8]'
+    display_name: '&6Hill Dwarf'
+    description:
+      - '&6Hill Dwarves&7, dwarven farmers and'
+      - '&7brewers who tend the rolling hills.'
+      - '&7They are masters of ale and harvest.'
+      - '&8&m                                       '
+      - '&6Hill Dwarf &7benefit from'
+      - '&f- &a+20% &fFarming Exp Gain'
+      - '&f- &a+15% &fHealing Bonus'
+      - '&f- &a+10% &fLuck Bonus'
+      - '&f- &a+3 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-5% &fMelee Damage Dealt'
+    stat_buffs:
+      FARMING_EXP_GAIN: 0.2
+      HEALING_BONUS: 0.15
+      LUCK_BONUS: 0.1
+      HEALTH_BONUS: 3
+      MELEE_DAMAGE_DEALT: -0.05
+  deep_dwarf:
+    position: 245
+    icon: DEEPSLATE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8Deep Dwarf&8]'
+    display_name: '&8Deep Dwarf'
+    description:
+      - '&8Deep Dwarves&7, dwarves who dwell in'
+      - '&7the deepest caverns. They are adapted'
+      - '&7to total darkness and rich veins.'
+      - '&8&m                                       '
+      - '&8Deep Dwarf &7benefit from'
+      - '&f- &a+30% &fMining Exp Gain'
+      - '&f- &a+25% &fDig Speed'
+      - '&f- &a+10% &fDodge Chance'
+      - '&f- &a+3 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      MINING_EXP_GAIN: 0.3
+      DIG_SPEED: 0.25
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: 3
+      MOVEMENT_SPEED_BONUS: -0.1
+  necro_undead:
+    position: 246
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&5Necrotic Undead&8]'
+    display_name: '&5Necrotic Undead'
+    description:
+      - '&5Necrotic Undead&7, undead who have learned'
+      - '&7to channel necromantic magic. They'
+      - '&7wield death itself as a weapon.'
+      - '&8&m                                       '
+      - '&5Necrotic Undead &7benefit from'
+      - '&f- &a+25% &fNecrotic Damage Dealt'
+      - '&f- &a+30% &fNecrotic Resistance'
+      - '&f- &a+10% &fCooldown Reduction'
+      - '&f- &a+3 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.25
+      NECROTIC_RESISTANCE: 0.3
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: 3
+      RADIANT_RESISTANCE: -0.2
+  war_undead:
+    position: 247
+    icon: NETHERITE_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&8War Undead&8]'
+    display_name: '&8War Undead'
+    description:
+      - '&8War Undead&7, undead warriors raised for'
+      - '&7battle. They fight with tireless'
+      - '&7fury and know no fear.'
+      - '&8&m                                       '
+      - '&8War Undead &7benefit from'
+      - '&f- &a+20% &fMelee Damage Dealt'
+      - '&f- &a+20% &fKnockback Resistance'
+      - '&f- &a+8 &fHealth Bonus'
+      - '&7But suffer from'
+      - '&f- &c-20% &fHealing Bonus'
+      - '&f- &c-10% &fMovement Speed Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      KNOCKBACK_RESISTANCE: 0.2
+      HEALTH_BONUS: 8
+      HEALING_BONUS: -0.2
+      MOVEMENT_SPEED_BONUS: -0.1
+  spirit_undead:
+    position: 248
+    icon: SOUL_LANTERN:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&fSpirit Undead&8]'
+    display_name: '&fSpirit Undead'
+    description:
+      - '&fSpirit Undead&7, incorporeal undead who'
+      - '&7drift between the living and dead'
+      - '&7worlds. They are nearly untouchable.'
+      - '&8&m                                       '
+      - '&fSpirit Undead &7benefit from'
+      - '&f- &a+25% &fDodge Chance'
+      - '&f- &a+15% &fMagic Damage Dealt'
+      - '&f- &a+15% &fSneak Movement Speed Bonus'
+      - '&7But suffer from'
+      - '&f- &c-5 &fHealth Bonus'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      DODGE_CHANCE: 0.25
+      MAGIC_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      HEALTH_BONUS: -5
+      RADIANT_RESISTANCE: -0.15
+  wight:
+    position: 249
+    icon: BONE_MEAL:-1
+    icon_locked: BARRIER:-1
+    prefix: '&8[&7Wight&8]'
+    display_name: '&7Wight'
+    description:
+      - '&7Wights&7, gaunt undead who drain the'
+      - '&7warmth from all they touch. They are'
+      - '&7fast and relentless hunters.'
+      - '&8&m                                       '
+      - '&7Wight &7benefit from'
+      - '&f- &a+20% &fNecrotic Damage Dealt'
+      - '&f- &a+15% &fMovement Speed Bonus'
+      - '&f- &a+10% &fDodge Chance'
+      - '&7But suffer from'
+      - '&f- &c-3 &fHealth Bonus'
+      - '&f- &c-15% &fRadiant Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      MOVEMENT_SPEED_BONUS: 0.15
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -3
+      RADIANT_RESISTANCE: -0.15
