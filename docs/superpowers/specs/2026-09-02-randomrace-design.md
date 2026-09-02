@@ -210,18 +210,33 @@ permissions:
 
 ## 10. Build
 
-- Maven (`pom.xml`), Java 21 target for Paper 1.21.2.
-- ValhallaRaces dependency (compile-only) from the Athlaeos Maven repo:
-  - Repository: `https://repo.repsy.io/mvn/athlaeos/valhallammo`
-  - Artifact: `me.athlaeos:valhallaraces:2.1` (interface classes ship in this artifact;
-    `RaceManager`/`Race` are the integration points).
-- ValhallaMMO and Paper API as compile-time dependencies.
+- Maven (`pom.xml`), compile target Java 21 (Paper 1.21.2 requires Java 21 bytecode).
+- **No published ValhallaRaces artifact exists.** `github.com/Athlaeos/ValhallaRaces`
+  README documents `me.athlaeos:valhallaraces:2.1` on the repsy repo, but that artifact
+  returns HTTP 404 (verified). The repsy repo only publishes `me.athlaeos:valhallammo-*`
+  artifacts. ValhallaRaces is also **not** published to its declared distribution repo.
+  Building ValhallaRaces from source is not viable: it depends on `valhallammo-dist` and a
+  large tree of `valhallammo-paper1_21_R*:premium_*` artifacts whose resolution times out
+  (verified: network timeouts on `repo.repsy.io`), making the upstream build fragile.
+- **Resolution — compile against a stub.** RandomRace declares a compile-time-only stub of
+  exactly the ValhallaRaces API surface it calls, in the same package via a `stub/` source
+  root. The stub is used for compilation only (never shipped, never loaded):
+  - `me.athlaeos.valhallaraces.RaceManager` — `getRegisteredRaces()`, `getRace(player)`,
+    `setRace(player, race)` (and `setRace(player, null)`).
+  - `me.athlaeos.valhallaraces.Race` — `getName()`, `getDisplayName()`, `getIcon()`,
+    `getPermissionRequired()`.
+  - These signatures match the verified ValhallaRaces source (§2). At runtime the real
+    ValhallaRaces classes on the server override/back the same fully-qualified names; the
+    stub is never present in the packaged jar (`stub/` is excluded from packaging).
+- Paper API (compile-only) from the papermc repo.
 - Shade not required (no external runtime deps of our own).
+- `plugin.yml` declares `depend: [ ValhallaMMO, ValhallaRaces ]` so the server guarantees
+  the real types are loaded before RandomRace.
 
-## 11. Open Items / Assumptions
+## 11. Resolved Build Risk
 
-- Confirm the `me.athlaeos:valhallaraces:2.1` artifact actually contains the
-  `me.athlaeos.valhallaraces.RaceManager` / `Race` classes at build time. If the published
-  artifact differs from the repo source, rebuild from the pinned source (§2 reference) via
-  dependency substitution. This is the only build risk; the API surface referenced here is
-  verified from the canonical repository source.
+The §10 stub approach removes the original open item (published artifact availability).
+Required stub signatures are pinned to the verified ValhallaRaces source. If a future
+ValhallaRaces release changes any of these signatures, update the stub and recompile. The
+only remaining manual step is ensuring the deployed ValhallaRaces on the server matches
+these signatures (2.x lineage, which they do).
