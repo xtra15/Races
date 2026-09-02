@@ -18498,7 +18498,9 @@
     "- +15% Attack Speed",
     "- +10% Crit Chance",
     "But suffer from",
-    "- -10% Armor"
+    "- -10% Armor",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -18536,6 +18538,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -18555,7 +18566,10 @@
     "                                       ",
     "Warriors benefit from",
     "- +10% Armor",
-    "- +5% Melee Damage"
+    "- +5% Melee Damage",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -18575,6 +18589,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -18596,7 +18628,10 @@
     "- +15% Radiant Damage",
     "- +15% Healing",
     "- +10% Melee Damage",
-    "- +10% Armor"
+    "- +10% Armor",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -18634,6 +18669,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -18657,7 +18710,9 @@
     "- +10% Melee Damage",
     "- +15% Bleed Resistance",
     "But suffer from",
-    "- -15% Radiant Resistance"
+    "- -15% Radiant Resistance",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -18704,6 +18759,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -18725,7 +18789,10 @@
     "- +20% Magic Resistance",
     "- +10% Melee Damage",
     "- +10% Melee Resistance",
-    "- +10% KNOCKBACK Resistance"
+    "- +10% KNOCKBACK Resistance",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -18763,6 +18830,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -18786,7 +18871,9 @@
     "- +10% Sneak Speed",
     "- +10% Dodge Chance",
     "But suffer from",
-    "- -10% Armor"
+    "- -10% Armor",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -18833,6 +18920,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -18856,7 +18952,9 @@
     "- +10% Dodge Chance",
     "- +15% Movement Speed",
     "But suffer from",
-    "- -15% Armor"
+    "- -15% Armor",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -18903,6 +19001,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -18922,7 +19029,10 @@
     "                                       ",
     "Barbarians benefit from",
     "- +20% Knockback Resistance",
-    "- +10% Melee Damage"
+    "- +10% Melee Damage",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -18942,6 +19052,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -18962,7 +19090,9 @@
     "                                       ",
     "Rangers benefit from",
     "- +2 Accuracy",
-    "- +10% Ranged Damage"
+    "- +10% Ranged Damage",
+    "But suffer from",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -18982,6 +19112,15 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19003,7 +19142,10 @@
     "- +15% Melee Damage Dealt",
     "- +10% Armor Multiplier Bonus",
     "- +10% Crit Damage",
-    "- +10% Knockback Resistance"
+    "- +10% Knockback Resistance",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -19041,6 +19183,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19062,7 +19222,9 @@
     "- +15% Crit Chance",
     "- +10% Dodge Chance",
     "But suffer from",
-    "- -5% Melee Damage Dealt"
+    "- -5% Melee Damage Dealt",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -19091,6 +19253,15 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19114,7 +19285,9 @@
     "- +15% Knockback Resistance",
     "- +15% Crit Damage",
     "But suffer from",
-    "- -5% Armor Multiplier Bonus"
+    "- -5% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -19152,6 +19325,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19173,7 +19355,10 @@
     "- +10% Melee Damage Dealt",
     "- +10% Armor Multiplier Bonus",
     "- +10% Crit Chance",
-    "- +3 Health Bonus"
+    "- +3 Health Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -19211,6 +19396,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19232,7 +19435,10 @@
     "- +15% Melee Damage Dealt",
     "- +10% Ranged Damage Dealt",
     "- +10% Movement Speed Bonus",
-    "- +5% Crit Chance"
+    "- +5% Crit Chance",
+    "But suffer from",
+    "- -10% Magic Damage Dealt",
+    "- -1 Ranged Inaccuracy"
    ],
    "stats": [
     {
@@ -19270,6 +19476,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_INACCURACY",
+     "label": "Ranged Accuracy",
+     "value": -1,
+     "magnitude": 1,
+     "flat": true,
+     "percent": false,
+     "kind": "buff"
     }
    ],
    "group": 1,
@@ -19292,7 +19516,9 @@
     "- +5 Health Bonus",
     "- +10% Damage Resistance",
     "But suffer from",
-    "- -5% Movement Speed Bonus"
+    "- -5% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -19330,6 +19556,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19352,7 +19587,9 @@
     "- +15% Crit Chance",
     "- +10% Necrotic Damage Dealt",
     "But suffer from",
-    "- -3 Health Bonus"
+    "- -3 Health Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -19390,6 +19627,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19412,7 +19658,9 @@
     "- +15% Armor Multiplier Bonus",
     "- +20% Knockback Resistance",
     "But suffer from",
-    "- -15% Movement Speed Bonus"
+    "- -15% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -19450,6 +19698,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19472,7 +19729,10 @@
     "- +10% Melee Damage Dealt",
     "- +15% Dodge Chance",
     "- +10% Crit Chance",
-    "- +10% Movement Speed Bonus"
+    "- +10% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -19510,6 +19770,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19533,7 +19811,9 @@
     "- +15% Unarmed Damage Dealt",
     "- +3 Health Bonus",
     "But suffer from",
-    "- -10% Armor Multiplier Bonus"
+    "- -10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -19571,6 +19851,15 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 1,
@@ -19592,7 +19881,10 @@
     "- +15% Melee Damage Dealt",
     "- +10% Ranged Damage Dealt",
     "- +15% Movement Speed Bonus",
-    "- +20% Falling Resistance"
+    "- +20% Falling Resistance",
+    "But suffer from",
+    "- -10% Magic Damage Dealt",
+    "- -1 Ranged Inaccuracy"
    ],
    "stats": [
     {
@@ -19630,6 +19922,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_INACCURACY",
+     "label": "Ranged Accuracy",
+     "value": -1,
+     "magnitude": 1,
+     "flat": true,
+     "percent": false,
+     "kind": "buff"
     }
    ],
    "group": 1,
@@ -19650,7 +19960,10 @@
     "                                       ",
     "Alchemists benefit from",
     "- +25 Potion Quality",
-    "- +50% Brewing Speed"
+    "- +50% Brewing Speed",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -19670,6 +19983,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -19693,7 +20024,9 @@
     "- +10% Lightning Damage",
     "- +10% Cooldown Reduction",
     "But suffer from",
-    "- -10% Armor"
+    "- -10% Armor",
+    "But suffer from",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -19740,6 +20073,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -19763,7 +20105,9 @@
     "- +10% Magic Damage",
     "- +15% Cooldown Reduction",
     "But suffer from",
-    "- -15% Radiant Resistance"
+    "- -15% Radiant Resistance",
+    "But suffer from",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -19810,6 +20154,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -19831,7 +20184,10 @@
     "- +30% Healing",
     "- +15% Radiant Damage",
     "- +20% Radiant Resistance",
-    "- +10% Armor"
+    "- +10% Armor",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Knockback Resistance"
    ],
    "stats": [
     {
@@ -19869,6 +20225,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "KNOCKBACK_RESISTANCE",
+     "label": "Knockback Resistance",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -19888,7 +20262,10 @@
     "                                       ",
     "Enchanters benefit from",
     "- +25 Enchanting Quality",
-    "- +20% Enchanting Experience"
+    "- +20% Enchanting Experience",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -19908,6 +20285,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -19930,7 +20325,10 @@
     "- +20% Poison Damage",
     "- +20% Poison Resistance",
     "- +10% Unarmed Damage",
-    "- +20% Farming Experience"
+    "- +20% Farming Experience",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -19977,6 +20375,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -19999,7 +20415,10 @@
     "- +20% Lightning Resistance",
     "- +15% Freezing Damage",
     "- +10% Necrotic Damage",
-    "- +10% Cooldown Reduction"
+    "- +10% Cooldown Reduction",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20046,6 +20465,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20069,7 +20506,9 @@
     "- +10% Armor",
     "- +20% Crit Damage",
     "But suffer from",
-    "- -15% Radiant Resistance"
+    "- -15% Radiant Resistance",
+    "But suffer from",
+    "- -10% Knockback Resistance"
    ],
    "stats": [
     {
@@ -20116,6 +20555,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "KNOCKBACK_RESISTANCE",
+     "label": "Knockback Resistance",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20135,7 +20583,10 @@
     "                                       ",
     "Blacksmiths benefit from",
     "- +25 Smithing Quality",
-    "- -20% Durability Taken"
+    "- -20% Durability Taken",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20155,6 +20606,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20175,7 +20644,10 @@
     "Marksman benefit from",
     "- +20% Ranged Damage Dealt",
     "- +15% Crit Chance",
-    "- +10% Ranged Velocity Bonus"
+    "- +10% Ranged Velocity Bonus",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20204,6 +20676,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20225,7 +20715,10 @@
     "- +15% Ranged Damage Dealt",
     "- +15% Farming Drop Multiplier",
     "- +1% Fishing Luck",
-    "- +5% Crit Chance"
+    "- +5% Crit Chance",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20263,6 +20756,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20285,7 +20796,9 @@
     "- +20% Crit Damage",
     "- +15% Ranged Velocity Bonus",
     "But suffer from",
-    "- -10% Melee Damage Dealt"
+    "- -10% Melee Damage Dealt",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20323,6 +20836,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20344,7 +20866,10 @@
     "- +15% Ranged Damage Dealt",
     "- +10% Crit Chance",
     "- +10% Dodge Chance",
-    "- +10% Farming Drop Multiplier"
+    "- +10% Farming Drop Multiplier",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20382,6 +20907,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20404,7 +20947,9 @@
     "- +10% Bludgeoning Damage Dealt",
     "- +15% Crit Damage",
     "But suffer from",
-    "- -5% Movement Speed Bonus"
+    "- -5% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -20442,6 +20987,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20463,7 +21017,10 @@
     "- +10% Ranged Damage Dealt",
     "- +15% Attack Speed Bonus",
     "- +10% Movement Speed Bonus",
-    "- +5% Crit Chance"
+    "- +5% Crit Chance",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20501,6 +21058,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20521,7 +21096,10 @@
     "Arbalist benefit from",
     "- +20% Ranged Damage Dealt",
     "- +15% Crit Damage",
-    "- +5% Armor Multiplier Bonus"
+    "- +5% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Knockback Resistance"
    ],
    "stats": [
     {
@@ -20550,6 +21128,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "KNOCKBACK_RESISTANCE",
+     "label": "Knockback Resistance",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20571,7 +21167,10 @@
     "- +20% Ranged Damage Dealt",
     "- +20% Crit Chance",
     "- +10% Crit Damage",
-    "- +5% Dodge Chance"
+    "- +5% Dodge Chance",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20609,6 +21208,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20630,7 +21247,10 @@
     "- +10% Ranged Damage Dealt",
     "- +10% Melee Damage Dealt",
     "- +3 Health Bonus",
-    "- +15% Farming Drop Multiplier"
+    "- +15% Farming Drop Multiplier",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Knockback Resistance"
    ],
    "stats": [
     {
@@ -20668,6 +21288,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "KNOCKBACK_RESISTANCE",
+     "label": "Knockback Resistance",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20689,7 +21327,10 @@
     "- +10% Ranged Damage Dealt",
     "- +15% Poison Damage Dealt",
     "- +10% Crit Chance",
-    "- +10% Dig Speed"
+    "- +10% Dig Speed",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20727,6 +21368,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 2,
@@ -20746,9 +21405,30 @@
     "                                       ",
     "Miners benefit from",
     "- +30% Mining Speed",
-    "- +10% Mining Drops"
+    "- +10% Mining Drops",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
     {
      "key": "mining_miningdrops_add",
      "label": "Mining Drops",
@@ -20786,7 +21466,10 @@
     "Farmers benefit from",
     "- +3 Fishing Luck",
     "- +30% Farming Drops",
-    "- +20% Fishing Speed"
+    "- +20% Fishing Speed",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -20806,6 +21489,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     },
     {
      "key": "farming_farmingdrops_add",
@@ -20838,7 +21539,9 @@
     "- +10% Crit Chance",
     "- +15% Attack Speed",
     "But suffer from",
-    "- -10% Melee Damage"
+    "- -10% Melee Damage",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -20885,6 +21588,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -20908,7 +21620,9 @@
     "- +10% Armor",
     "- +15% Knockback Resistance",
     "But suffer from",
-    "- -10% Ranged Damage"
+    "- -10% Ranged Damage",
+    "But suffer from",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -20955,6 +21669,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -20978,7 +21701,9 @@
     "- +15% Dodge Chance",
     "- +10% Crit Chance",
     "But suffer from",
-    "- -10% Armor"
+    "- -10% Armor",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -21025,6 +21750,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21049,7 +21783,9 @@
     "- +10% Magic Damage",
     "- +15% Sneak Speed",
     "But suffer from",
-    "- -10% Melee Damage"
+    "- -10% Melee Damage",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -21105,6 +21841,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21129,7 +21874,9 @@
     "- +10% Farming Drops",
     "- +20% Woodcutting Experience",
     "But suffer from",
-    "- -10% Ranged Damage"
+    "- -10% Ranged Damage",
+    "But suffer from",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -21185,6 +21932,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21204,9 +21960,30 @@
     "                                       ",
     "Terraformers benefit from",
     "- +50% Woodcutting Drops",
-    "- +30% Woodcutting and Digging Speed"
+    "- +30% Woodcutting and Digging Speed",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
     {
      "key": "woodcutting_woodcuttingdrops_add",
      "label": "Woodcutting Drops",
@@ -21254,7 +22031,10 @@
     "- +15% Magic Damage",
     "- +10% Melee Damage",
     "- +10% Cooldown Reduction",
-    "- +10% Crit Damage"
+    "- +10% Crit Damage",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -21292,6 +22072,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21314,7 +22112,9 @@
     "- +15% Cooldown Reduction",
     "- +10% Crit Damage",
     "But suffer from",
-    "- -10% Armor Multiplier Bonus"
+    "- -10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -21352,6 +22152,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21373,7 +22182,10 @@
     "- +15% Fire Damage Dealt",
     "- +15% Freezing Damage Dealt",
     "- +15% Lightning Damage Dealt",
-    "- +10% Magic Damage Dealt"
+    "- +10% Magic Damage Dealt",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -21411,6 +22223,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21432,7 +22262,9 @@
     "- +20% Magic Damage Dealt",
     "- +20% Cooldown Reduction",
     "But suffer from",
-    "- -15% Armor Multiplier Bonus"
+    "- -15% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -21461,6 +22293,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21483,7 +22324,9 @@
     "- +20% Dodge Chance",
     "- +15% Cooldown Reduction",
     "But suffer from",
-    "- -3 Health Bonus"
+    "- -3 Health Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -21521,6 +22364,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21543,7 +22395,9 @@
     "- +15% Cooldown Reduction",
     "- +10% Healing Bonus",
     "But suffer from",
-    "- -15% Radiant Resistance"
+    "- -15% Radiant Resistance",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -21581,6 +22435,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21602,7 +22465,10 @@
     "- +20% Poison Damage Dealt",
     "- +20% Alchemy Exp Gain",
     "- +10% Cooldown Reduction",
-    "- +5% Healing Bonus"
+    "- +5% Healing Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -21640,6 +22506,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21662,7 +22546,10 @@
     "- +15% Magic Damage Dealt",
     "- +10% Melee Damage Dealt",
     "- +10% Armor Multiplier Bonus",
-    "- +5% Cooldown Reduction"
+    "- +5% Cooldown Reduction",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -21700,6 +22587,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21722,7 +22627,9 @@
     "- +10% Magic Damage Dealt",
     "- +10% Cooldown Reduction",
     "But suffer from",
-    "- -15% Freezing Resistance"
+    "- -15% Freezing Resistance",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -21760,6 +22667,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21782,7 +22698,9 @@
     "- +10% Magic Damage Dealt",
     "- +15% Freezing Resistance",
     "But suffer from",
-    "- -15% Fire Resistance"
+    "- -15% Fire Resistance",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -21820,6 +22738,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21842,7 +22769,9 @@
     "- +10% Ranged Damage Dealt",
     "- +10% Movement Speed Bonus",
     "But suffer from",
-    "- -10% Armor Multiplier Bonus"
+    "- -10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -21880,6 +22809,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21901,7 +22839,10 @@
     "- +20% Bludgeoning Damage Dealt",
     "- +15% Armor Multiplier Bonus",
     "- +10% Damage Resistance",
-    "- +10% Magic Damage Dealt"
+    "- +10% Magic Damage Dealt",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -21939,6 +22880,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 3,
@@ -21960,7 +22919,10 @@
     "- +30% Healing Bonus",
     "- +10% Radiant Damage Dealt",
     "- +15% Cooldown Reduction",
-    "- +5% Armor Multiplier Bonus"
+    "- +5% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -21998,6 +22960,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22019,7 +22999,10 @@
     "- +25% Healing Bonus",
     "- +20% Alchemy Exp Gain",
     "- +20% Alchemy Quality General",
-    "- +10% Cooldown Reduction"
+    "- +10% Cooldown Reduction",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22057,6 +23040,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22078,7 +23079,10 @@
     "- +20% Healing Bonus",
     "- +10% Melee Damage Dealt",
     "- +10% Armor Multiplier Bonus",
-    "- +10% Radiant Damage Dealt"
+    "- +10% Radiant Damage Dealt",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -1 Ranged Inaccuracy"
    ],
    "stats": [
     {
@@ -22116,6 +23120,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_INACCURACY",
+     "label": "Ranged Accuracy",
+     "value": -1,
+     "magnitude": 1,
+     "flat": true,
+     "percent": false,
+     "kind": "buff"
     }
    ],
    "group": 4,
@@ -22137,7 +23159,10 @@
     "- +20% Healing Bonus",
     "- +20% Cooldown Reduction",
     "- +15% Luck Bonus",
-    "- +5% Crit Chance"
+    "- +5% Crit Chance",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22175,6 +23200,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22196,7 +23239,10 @@
     "- +15% Healing Bonus",
     "- +10% Magic Damage Dealt",
     "- +15% Cooldown Reduction",
-    "- +10% Dodge Chance"
+    "- +10% Dodge Chance",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22234,6 +23280,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22255,7 +23319,10 @@
     "- +30% Healing Bonus",
     "- +15% Radiant Resistance",
     "- +10% Armor Multiplier Bonus",
-    "- +10% Radiant Damage Dealt"
+    "- +10% Radiant Damage Dealt",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22293,6 +23360,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22314,7 +23399,10 @@
     "- +20% Healing Bonus",
     "- +15% Necrotic Resistance",
     "- +15% Cooldown Reduction",
-    "- +10% Magic Damage Dealt"
+    "- +10% Magic Damage Dealt",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22352,6 +23440,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22373,7 +23479,10 @@
     "- +25% Healing Bonus",
     "- +10% Magic Damage Dealt",
     "- +3 Health Bonus",
-    "- +5% Armor Multiplier Bonus"
+    "- +5% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22411,6 +23520,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22434,7 +23561,9 @@
     "- +10% Armor Multiplier Bonus",
     "- +10% Cooldown Reduction",
     "But suffer from",
-    "- -3 Health Bonus"
+    "- -3 Health Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -22472,6 +23601,15 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22494,7 +23632,10 @@
     "- +25% Alchemy Exp Gain",
     "- +20% Farming Exp Gain",
     "- +15% Farming Drop Multiplier",
-    "- +10% Poison Resistance"
+    "- +10% Poison Resistance",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22532,6 +23673,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22553,7 +23712,10 @@
     "- +20% Healing Bonus",
     "- +10% Melee Damage Dealt",
     "- +15% Farming Exp Gain",
-    "- +15% Poison Resistance"
+    "- +15% Poison Resistance",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -22591,6 +23753,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 4,
@@ -22612,7 +23792,10 @@
     "- +20% Armor Multiplier Bonus",
     "- +15% Damage Resistance",
     "- +5 Health Bonus",
-    "- +15% Knockback Resistance"
+    "- +15% Knockback Resistance",
+    "But suffer from",
+    "- -5% Movement Speed Bonus",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22650,6 +23833,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MOVEMENT_SPEED_BONUS",
+     "label": "Movement Speed",
+     "value": -0.05,
+     "magnitude": 5.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -22672,7 +23873,9 @@
     "- +30% Knockback Resistance",
     "- +5 Health Bonus",
     "But suffer from",
-    "- -10% Movement Speed Bonus"
+    "- -10% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22710,6 +23913,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -22731,7 +23943,10 @@
     "- +20% Armor Multiplier Bonus",
     "- +15% Healing Bonus",
     "- +5 Health Bonus",
-    "- +10% Damage Resistance"
+    "- +10% Damage Resistance",
+    "But suffer from",
+    "- -5% Movement Speed Bonus",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22769,6 +23984,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MOVEMENT_SPEED_BONUS",
+     "label": "Movement Speed",
+     "value": -0.05,
+     "magnitude": 5.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -22791,7 +24024,9 @@
     "- +25% Knockback Resistance",
     "- +8 Health Bonus",
     "But suffer from",
-    "- -15% Movement Speed Bonus"
+    "- -15% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22829,6 +24064,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -22850,7 +24094,10 @@
     "- +20% Armor Multiplier Bonus",
     "- +15% Radiant Resistance",
     "- +10% Healing Bonus",
-    "- +3 Health Bonus"
+    "- +3 Health Bonus",
+    "But suffer from",
+    "- -5% Movement Speed Bonus",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22888,6 +24135,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "MOVEMENT_SPEED_BONUS",
+     "label": "Movement Speed",
+     "value": -0.05,
+     "magnitude": 5.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -22910,7 +24175,9 @@
     "- +20% Damage Resistance",
     "- +20% Knockback Resistance",
     "But suffer from",
-    "- -15% Movement Speed Bonus"
+    "- -15% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -22948,6 +24215,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -22970,7 +24246,9 @@
     "- +15% Damage Resistance",
     "- +5 Health Bonus",
     "But suffer from",
-    "- -10% Movement Speed Bonus"
+    "- -10% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -23008,6 +24286,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -23029,7 +24316,10 @@
     "- +20% Armor Multiplier Bonus",
     "- +20% Knockback Resistance",
     "- +10% Damage Resistance",
-    "- +3 Health Bonus"
+    "- +3 Health Bonus",
+    "But suffer from",
+    "- -5% Movement Speed Bonus",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -23067,6 +24357,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "MOVEMENT_SPEED_BONUS",
+     "label": "Movement Speed",
+     "value": -0.05,
+     "magnitude": 5.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -23089,7 +24397,9 @@
     "- +20% Armor Multiplier Bonus",
     "- +25% Knockback Resistance",
     "But suffer from",
-    "- -20% Movement Speed Bonus"
+    "- -20% Movement Speed Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -23127,6 +24437,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 5,
@@ -23150,7 +24469,9 @@
     "- +15% Dodge Chance",
     "- +10% Crit Chance",
     "But suffer from",
-    "- -10% Armor Multiplier Bonus"
+    "- -10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23197,6 +24518,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23218,7 +24548,10 @@
     "- +20% Sneak Movement Speed Bonus",
     "- +15% Crit Chance",
     "- +10% Dodge Chance",
-    "- +10% Melee Damage Dealt"
+    "- +10% Melee Damage Dealt",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23256,6 +24589,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23277,7 +24628,10 @@
     "- +15% Melee Damage Dealt",
     "- +10% Necrotic Damage Dealt",
     "- +20% Sneak Movement Speed Bonus",
-    "- +10% Crit Chance"
+    "- +10% Crit Chance",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23315,6 +24669,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23337,7 +24709,9 @@
     "- +20% Crit Chance",
     "- +15% Crit Damage",
     "But suffer from",
-    "- -3 Health Bonus"
+    "- -3 Health Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -23375,6 +24749,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23397,7 +24780,9 @@
     "- +15% Crit Chance",
     "- +15% Bleed Damage",
     "But suffer from",
-    "- -10% Armor Multiplier Bonus"
+    "- -10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23435,6 +24820,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23456,7 +24850,10 @@
     "- +20% Dodge Chance",
     "- +20% Sneak Movement Speed Bonus",
     "- +10% Crit Chance",
-    "- +10% Magic Damage Dealt"
+    "- +10% Magic Damage Dealt",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23494,6 +24891,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23515,7 +24930,10 @@
     "- +15% Melee Damage Dealt",
     "- +15% Sneak Movement Speed Bonus",
     "- +15% Dodge Chance",
-    "- +10% Crit Damage"
+    "- +10% Crit Damage",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23553,6 +24971,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23575,7 +25011,9 @@
     "- +20% Crit Chance",
     "- +15% Sneak Movement Speed Bonus",
     "But suffer from",
-    "- -3 Health Bonus"
+    "- -3 Health Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -23613,6 +25051,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23634,7 +25081,10 @@
     "- +15% Crit Chance",
     "- +15% Dodge Chance",
     "- +10% Poison Damage Dealt",
-    "- +15% Luck Bonus"
+    "- +15% Luck Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23672,6 +25122,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23693,7 +25161,10 @@
     "- +15% Magic Damage Dealt",
     "- +15% Sneak Movement Speed Bonus",
     "- +15% Dodge Chance",
-    "- +10% Crit Chance"
+    "- +10% Crit Chance",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23731,6 +25202,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23752,7 +25241,10 @@
     "- +15% Melee Damage Dealt",
     "- +20% Sneak Movement Speed Bonus",
     "- +10% Necrotic Damage Dealt",
-    "- +10% Crit Chance"
+    "- +10% Crit Chance",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -23790,6 +25282,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 6,
@@ -23811,7 +25321,10 @@
     "- +10% Melee Damage Dealt",
     "- +5 Health Bonus",
     "- +10% Dodge Chance",
-    "- +15% Farming Drop Multiplier"
+    "- +15% Farming Drop Multiplier",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -23849,6 +25362,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 7,
@@ -23870,7 +25401,10 @@
     "- +20% Necrotic Damage Dealt",
     "- +5 Health Bonus",
     "- +15% Knockback Resistance",
-    "- +10% Armor Multiplier Bonus"
+    "- +10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -23908,6 +25442,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 7,
@@ -23929,7 +25481,10 @@
     "- +5 Health Bonus",
     "- +15% Armor Multiplier Bonus",
     "- +10% Damage Resistance",
-    "- +10% Magic Damage Dealt"
+    "- +10% Magic Damage Dealt",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -5% Movement Speed Bonus"
    ],
    "stats": [
     {
@@ -23967,6 +25522,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MOVEMENT_SPEED_BONUS",
+     "label": "Movement Speed",
+     "value": -0.05,
+     "magnitude": 5.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 7,
@@ -23989,7 +25562,10 @@
     "- +3 Health Bonus",
     "- +10% Armor Multiplier Bonus",
     "- +10% Damage Resistance",
-    "- +10% Crit Chance"
+    "- +10% Crit Chance",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -24027,6 +25603,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 7,
@@ -24048,7 +25642,10 @@
     "- +15% Melee Damage Dealt",
     "- +5 Health Bonus",
     "- +10% Armor Multiplier Bonus",
-    "- +15% Knockback Resistance"
+    "- +15% Knockback Resistance",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -24086,6 +25683,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 7,
@@ -24107,7 +25722,10 @@
     "- +10% Damage Dealt",
     "- +10% Damage Resistance",
     "- +10% Cooldown Reduction",
-    "- +3 Health Bonus"
+    "- +3 Health Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -10% Magic Damage Dealt"
    ],
    "stats": [
     {
@@ -24145,6 +25763,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MAGIC_DAMAGE_DEALT",
+     "label": "Magic Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 7,
@@ -24167,7 +25803,9 @@
     "- +15% Cooldown Reduction",
     "- +10% Necrotic Damage Dealt",
     "But suffer from",
-    "- -10% Armor Multiplier Bonus"
+    "- -10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24205,6 +25843,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 7,
@@ -24226,7 +25873,10 @@
     "- +15% Necrotic Damage Dealt",
     "- +15% Magic Damage Dealt",
     "- +15% Cooldown Reduction",
-    "- +3 Health Bonus"
+    "- +3 Health Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -5% Movement Speed Bonus"
    ],
    "stats": [
     {
@@ -24264,6 +25914,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MOVEMENT_SPEED_BONUS",
+     "label": "Movement Speed",
+     "value": -0.05,
+     "magnitude": 5.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 7,
@@ -24285,7 +25953,10 @@
     "- +10% Melee Damage Dealt",
     "- +10% Magic Damage Dealt",
     "- +15% Dodge Chance",
-    "- +10% Cooldown Reduction"
+    "- +10% Cooldown Reduction",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24323,6 +25994,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24344,7 +26033,10 @@
     "- +15% Melee Damage Dealt",
     "- +10% Magic Damage Dealt",
     "- +10% Crit Chance",
-    "- +5% Cooldown Reduction"
+    "- +5% Cooldown Reduction",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24382,6 +26074,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24403,7 +26113,9 @@
     "- +10% Melee Damage Dealt",
     "- +10% Armor Multiplier Bonus",
     "- +10% Magic Damage Dealt",
-    "- +3 Health Bonus"
+    "- +3 Health Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24441,6 +26153,15 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24462,7 +26183,10 @@
     "- +15% Melee Damage Dealt",
     "- +10% Necrotic Damage Dealt",
     "- +10% Cooldown Reduction",
-    "- +10% Healing Bonus"
+    "- +10% Healing Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24500,6 +26224,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24521,7 +26263,10 @@
     "- +15% Ranged Damage Dealt",
     "- +10% Magic Damage Dealt",
     "- +10% Crit Chance",
-    "- +10% Crit Damage"
+    "- +10% Crit Damage",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -24559,6 +26304,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24580,7 +26343,10 @@
     "- +15% Healing Bonus",
     "- +10% Melee Damage Dealt",
     "- +10% Radiant Damage Dealt",
-    "- +10% Armor Multiplier Bonus"
+    "- +10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt",
+    "- -2 Health Bonus"
    ],
    "stats": [
     {
@@ -24618,6 +26384,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -2,
+     "magnitude": 2,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24639,7 +26423,9 @@
     "- +10% Melee Damage Dealt",
     "- +10% Necrotic Damage Dealt",
     "- +5 Health Bonus",
-    "- +10% Armor Multiplier Bonus"
+    "- +10% Armor Multiplier Bonus",
+    "But suffer from",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24677,6 +26463,15 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24698,7 +26493,10 @@
     "- +15% Magic Damage Dealt",
     "- +10% Healing Bonus",
     "- +15% Enchanting Exp Gain",
-    "- +10% Cooldown Reduction"
+    "- +10% Cooldown Reduction",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -24736,6 +26534,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24757,7 +26573,10 @@
     "- +10% Magic Damage Dealt",
     "- +10% Healing Bonus",
     "- +15% Dodge Chance",
-    "- +10% Cooldown Reduction"
+    "- +10% Cooldown Reduction",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -24795,6 +26614,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24816,7 +26653,10 @@
     "- +10% Damage Dealt",
     "- +10% Armor Multiplier Bonus",
     "- +10% Cooldown Reduction",
-    "- +3 Health Bonus"
+    "- +3 Health Bonus",
+    "But suffer from",
+    "- -10% Melee Damage Dealt",
+    "- -10% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24854,6 +26694,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 8,
@@ -24875,7 +26733,10 @@
     "- +20% Crafting Time Reduction",
     "- +20% Enchanting Quality",
     "- +10% Luck Bonus",
-    "- +15% Cooking Speed Bonus"
+    "- +15% Cooking Speed Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24913,6 +26774,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -24933,7 +26812,10 @@
     "Jeweler benefit from",
     "- +25% Smithing Quality General",
     "- +15% Enchanting Quality",
-    "- +15% Luck Bonus"
+    "- +15% Luck Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -24962,6 +26844,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -24983,7 +26883,10 @@
     "- +20% Dig Speed",
     "- +15% Mining Exp Gain",
     "- +15% Crafting Time Reduction",
-    "- +15% Durability Bonus"
+    "- +15% Durability Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -25021,6 +26924,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -25042,7 +26963,10 @@
     "- +20% Farming Drop Multiplier",
     "- +10% Mining Drop Multiplier",
     "- +10% Luck Bonus",
-    "- +10% Durability Bonus"
+    "- +10% Durability Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -25080,6 +27004,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -25101,7 +27043,10 @@
     "- +30% Woodcutting Exp Gain",
     "- +20% Dig Speed",
     "- +10% Mining Exp Gain",
-    "- +3 Health Bonus"
+    "- +3 Health Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -25139,6 +27084,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -25160,7 +27123,10 @@
     "- +25% Mining Exp Gain",
     "- +20% Dig Speed",
     "- +15% Mining Drop Multiplier",
-    "- +10% Crafting Time Reduction"
+    "- +10% Crafting Time Reduction",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -25198,6 +27164,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -25219,7 +27203,10 @@
     "- +20% Crafting Time Reduction",
     "- +10% Enchanting Quality",
     "- +20% Durability Bonus",
-    "- +5% Luck Bonus"
+    "- +5% Luck Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -25257,6 +27244,24 @@
      "flat": true,
      "percent": false,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -25278,7 +27283,10 @@
     "- +20% Alchemy Exp Gain",
     "- +20% Alchemy Quality General",
     "- +25% Brewing Speed Bonus",
-    "- +15% Cooking Speed Bonus"
+    "- +15% Cooking Speed Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -25316,6 +27324,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -25337,7 +27363,10 @@
     "- +20% Luck Bonus",
     "- +10% Global Exp Gain",
     "- +2% Fishing Luck",
-    "- +10% Dig Speed"
+    "- +10% Dig Speed",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -25375,6 +27404,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -25396,7 +27443,10 @@
     "- +25% Smithing Quality General",
     "- +20% Enchanting Quality",
     "- +15% Crafting Time Reduction",
-    "- +15% Durability Bonus"
+    "- +15% Durability Bonus",
+    "But suffer from",
+    "- -15% Melee Damage Dealt",
+    "- -15% Ranged Damage Dealt"
    ],
    "stats": [
     {
@@ -25434,6 +27484,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "RANGED_DAMAGE_DEALT",
+     "label": "Ranged Damage",
+     "value": -0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 9,
@@ -25455,7 +27523,10 @@
     "- +25% Luck Bonus",
     "- +15% Cooldown Reduction",
     "- +10% Crit Chance",
-    "- +10% Dodge Chance"
+    "- +10% Dodge Chance",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -25493,6 +27564,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
@@ -25515,7 +27604,9 @@
     "- +20% Dodge Chance",
     "- +15% Cooldown Reduction",
     "But suffer from",
-    "- -5 Health Bonus"
+    "- -5 Health Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -25553,6 +27644,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
@@ -25575,7 +27675,9 @@
     "- +15% Magic Damage Dealt",
     "- +10% Dodge Chance",
     "But suffer from",
-    "- -3 Health Bonus"
+    "- -3 Health Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -25613,6 +27715,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
@@ -25635,7 +27746,9 @@
     "- +15% Dodge Chance",
     "- +15% Cooldown Reduction",
     "But suffer from",
-    "- -4 Health Bonus"
+    "- -4 Health Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -25673,6 +27786,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
@@ -25695,7 +27817,9 @@
     "- +15% Healing Bonus",
     "- +10% Cooldown Reduction",
     "But suffer from",
-    "- -15% Radiant Resistance"
+    "- -15% Radiant Resistance",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -25733,6 +27857,15 @@
      "flat": false,
      "percent": true,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
@@ -25754,7 +27887,10 @@
     "- +20% Magic Damage Dealt",
     "- +15% Radiant Damage Dealt",
     "- +15% Crit Damage",
-    "- +10% Cooldown Reduction"
+    "- +10% Cooldown Reduction",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -25792,6 +27928,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
@@ -25815,7 +27969,9 @@
     "- +10% Lightning Damage Dealt",
     "- +10% Freezing Damage Dealt",
     "But suffer from",
-    "- -3 Health Bonus"
+    "- -3 Health Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -25862,6 +28018,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
@@ -25885,7 +28050,9 @@
     "- +20% Cooldown Reduction",
     "- +10% Necrotic Damage Dealt",
     "But suffer from",
-    "- -8 Health Bonus"
+    "- -8 Health Bonus",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus"
    ],
    "stats": [
     {
@@ -25923,6 +28090,15 @@
      "flat": true,
      "percent": false,
      "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
@@ -25944,7 +28120,10 @@
     "- +15% Magic Damage Dealt",
     "- +20% Healing Bonus",
     "- +15% Cooldown Reduction",
-    "- +10% Radiant Damage Dealt"
+    "- +10% Radiant Damage Dealt",
+    "But suffer from",
+    "- -10% Armor Multiplier Bonus",
+    "- -10% Melee Damage Dealt"
    ],
    "stats": [
     {
@@ -25982,6 +28161,24 @@
      "flat": false,
      "percent": true,
      "kind": "buff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
     }
    ],
    "group": 10,
