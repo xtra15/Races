@@ -793,6 +793,258 @@ button {
   flex-wrap: wrap;
 }
 
+/* ---- classes grouped sections ------------------------------------------- */
+
+.group-section {
+  margin-bottom: var(--sp-7);
+}
+
+.group-head {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin: 0 0 var(--sp-4);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--sp-4);
+}
+
+/* ---- enchantments ------------------------------------------------------ */
+
+.enchant-card .card-stripe {
+  background: linear-gradient(90deg, var(--brass-dim), var(--brass-bright)) !important;
+}
+
+.enchant-meta {
+  display: flex;
+  gap: var(--sp-3);
+  justify-content: center;
+  margin-top: auto;
+}
+
+.meta-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--bone);
+}
+
+.meta-cell em {
+  font-style: normal;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bone-faint);
+}
+
+.chip {
+  display: inline-block;
+  padding: 3px 9px;
+  margin: 2px 3px 2px 0;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--bone-dim);
+  background: var(--ink-2);
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+}
+
+.enchant-detail {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.detail-row {
+  display: flex;
+  gap: var(--sp-4);
+  padding: var(--sp-2) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  flex: 0 0 150px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--bone-faint);
+  padding-top: 2px;
+}
+
+.detail-val {
+  color: var(--bone);
+  font-size: 15px;
+}
+
+/* ---- combos chart ------------------------------------------------------ */
+
+.combo-chart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  padding: var(--sp-6) 0;
+}
+
+.combo-row {
+  display: grid;
+  grid-template-columns: 56px 1fr 80px;
+  align-items: center;
+  gap: var(--sp-4);
+}
+
+.combo-rank {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--brass);
+  text-align: center;
+}
+
+.combo-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.combo-name {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+.combo-race {
+  font-family: var(--font-display);
+  font-size: 19px;
+  color: var(--bone);
+}
+
+.combo-classes {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--bone-faint);
+  letter-spacing: 0.04em;
+}
+
+.combo-bar {
+  height: 14px;
+  background: var(--ink-3);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.combo-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--brass-dim), var(--brass-bright));
+  border-radius: 999px;
+}
+
+.combo-score {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  color: var(--brass-bright);
+  text-align: right;
+}
+
+.combo-note {
+  font-size: 13.5px;
+  color: var(--bone-faint);
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto var(--sp-8);
+}
+
+/* ---- getting started --------------------------------------------------- */
+
+.start-video {
+  padding: var(--sp-6) 0;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background: var(--ink-2);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius);
+}
+
+.start-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  max-width: 760px;
+  margin: 0 auto var(--sp-8);
+  padding-top: var(--sp-2);
+}
+
+.step {
+  display: flex;
+  gap: var(--sp-5);
+  padding: var(--sp-5);
+  background: linear-gradient(180deg, var(--ink-3), var(--ink-2));
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+
+.step-num {
+  font-family: var(--font-display);
+  font-size: 34px;
+  line-height: 1;
+  color: var(--brass);
+  flex: none;
+}
+
+.step h2 {
+  font-size: 20px;
+  color: var(--bone);
+  margin-bottom: var(--sp-2);
+}
+
+.step p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--bone-dim);
+}
+
+.step code {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--brass-bright);
+  background: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1px 6px;
+}
+
 /* ---- responsive ------------------------------------------------------- */
 
 @media (max-width: 760px) {
@@ -811,6 +1063,19 @@ button {
   .page-hero { padding-top: var(--sp-6); }
 
   .modal { max-height: calc(100dvh - 24px); }
+
+  .combo-row {
+    grid-template-columns: 40px 1fr 64px;
+    gap: var(--sp-2);
+  }
+
+  .combo-rank { font-size: 22px; }
+
+  .step {
+    flex-direction: column;
+    gap: var(--sp-3);
+    padding: var(--sp-4);
+  }
 }
 
 /* ---- reduced motion --------------------------------------------------- */

@@ -46,6 +46,26 @@ public class ClassPoolManager {
         return WeightedPicker.pick(random, candidates, this::weightFor);
     }
 
+    public static final int TOTAL_GROUPS = 10;
+
+    public List<Integer> eligibleGroups(Player player, String playerRace, java.util.Set<Integer> skip) {
+        List<Integer> out = new ArrayList<>();
+        for (int g = 1; g <= TOTAL_GROUPS; g++) {
+            if (skip != null && skip.contains(g)) continue;
+            if (!candidatesFor(g, player, playerRace).isEmpty()) out.add(g);
+        }
+        return out;
+    }
+
+    public List<Integer> pickRandomGroups(Random random, int count, Player player, String playerRace, java.util.Set<Integer> skip) {
+        List<Integer> eligible = eligibleGroups(player, playerRace, skip);
+        List<Integer> chosen = new ArrayList<>();
+        while (!eligible.isEmpty() && chosen.size() < count) {
+            chosen.add(eligible.remove(random.nextInt(eligible.size())));
+        }
+        return chosen;
+    }
+
     public double weightFor(Class c) {
         if (plugin == null) return 1.0;
         double w = plugin.getConfig().getDouble("class-weights." + c.getName(), 1.0);

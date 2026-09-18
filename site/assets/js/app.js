@@ -6,7 +6,8 @@
   "use strict";
 
   const DATA_URL = "assets/data/data.json";
-  let DATASET = null;
+  const ENCHANT_URL = "assets/data/enchantments.json";
+  const COMBO_URL = "assets/data/combos.json";
 
   const el = (sel, root = document) => root.querySelector(sel);
   const els = (sel, root = document) => Array.from(root.querySelectorAll(sel));
@@ -119,32 +120,59 @@
       </button>`;
   }
 
-  function renderGrid(container, items, type) {
+  function renderGrid(container, items, type, { sections = false } = {}) {
+    if (sections) {
+      let html = "";
+      const groups = [...new Set(items.map((i) => i.group).filter(Boolean))].sort((a, b) => a - b);
+      for (const g of groups) {
+        const label = (items.find((i) => i.group === g) || {}).group_name || ("Group " + g);
+        html += `<div class="group-section">
+          <h2 class="group-head">${g ? `Group ${g} · ` : ""}${label}</h2>
+          <div class="group-grid">`;
+        for (const it of items.filter((i) => i.group === g)) {
+          html += cardFor(it, type);
+        }
+        html += `</div></div>`;
+      }
+      container.innerHTML = html;
+      return;
+    }
     container.innerHTML = items.map((it) => cardFor(it, type)).join("");
   }
 
   /* ---- search + filter state ---- */
 
-  function applyFilters({ grid, items, type, searchInput, activeFilter }) {
+  function applyFilters({ grid, items, type, searchInput, activeFilter, match }) {
     const q = (searchInput ? searchInput.value : "").trim().toLowerCase();
     const cards = els(".card", grid);
 
     for (const card of cards) {
       const key = card.dataset.key;
       const item = items.find((i) => i.key === key);
-      const matchesSearch =
-        !q ||
-        card.dataset.search.includes(q) ||
-        item.stats.some((s) => s.label.toLowerCase().includes(q));
-
-      const inGroup = !activeFilter || String(item.group) === activeFilter;
-      const show = matchesSearch && inGroup;
+      let show = true;
+      if (match) {
+        show = match({ item, card, q, activeFilter });
+      } else {
+        const matchesSearch =
+          !q ||
+          card.dataset.search.includes(q) ||
+          item.stats.some((s) => s.label.toLowerCase().includes(q));
+        const inGroup = !activeFilter || String(item.group) === activeFilter;
+        show = matchesSearch && inGroup;
+      }
       card.style.display = show ? "" : "none";
     }
 
+    // Collapse empty group sections (classes grouped view)
+    for (const sec of els(".group-section", grid)) {
+      const any = els(".card", sec).some((c) => c.style.display !== "none");
+      sec.style.display = any ? "" : "none";
+    }
+
     const visible = cards.filter((c) => c.style.display !== "none").length;
-    el(".live-count", grid.closest("[data-page]")) &&
-      (el(".live-count", grid.closest("[data-page]")).textContent = `${visible} / ${items.length}`);
+    const pageNode = grid.closest("[data-page]");
+    const countEl = pageNode ? el(".live-count", pageNode) : null;
+    if (countEl) countEl.textContent = `${visible} / ${items.length}`;
 
     let node = el(".no-results", grid.parentElement);
     if (visible === 0) {
@@ -163,6 +191,91 @@
     } else if (node) {
       node.remove();
     }
+  }
+
+  /* ---- enchant rendering ---- */
+
+  function enchantChips(arr) {
+    return arr && arr.length ? arr.map((s) => `<span class="chip">${s}</span>`).join(" ") : "";
+  }
+
+  function enchantCardFor(en) {
+    return `
+      <button class="card enchant-card" data-key="${en.key}" data-type="enchant"
+        data-search="${(en.name + " " + en.category + " " + en.summary).toLowerCase()}">
+        <span class="card-stripe" style="background:linear-gradient(90deg,var(--brass),var(--brass-bright));height:3px;display:block;border-radius:0"></span>
+        <div class="card-top">
+          <span class="card-kind">Enchantment</span>
+          <span class="card-group">${en.category}</span>
+        </div>
+        <div class="card-icon">${iconSVG(en.key)}</div>
+        <h3 class="card-name">${en.name}</h3>
+        <p class="card-blurb">${en.summary}</p>
+        <div class="enchant-meta">
+          <span class="meta-cell"><em>Max</em>${en.max_level}</span>
+          <span class="meta-cell"><em>Weight</em>${en.weight}</span>
+        </div>
+      </button>`;
+  }
+
+  function openEnchantModal(en) {
+    lastFocus = document.activeElement;
+    const scrim = document.createElement("div");
+    scrim.className = "modal-scrim";
+    scrim.innerHTML = `
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" aria-label="Close">✕
+          <svg><path d="M6 6 L18 18 M18 6 L6 18"/></svg>
+        </button>
+        <div class="modal-hero">
+          <div class="modal-icon">${iconSVG(en.key, 132)}</div>
+          <div>
+            <div class="modal-prefix">${en.category}</div>
+            <h2 class="modal-title" id="modal-title">${en.name}</h2>
+            <div class="modal-kind">Enchantment</div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <p class="modal-flavor">${en.summary}</p>
+          <div class="enchant-detail">
+            <div class="detail-row"><span class="detail-label">Max Level</span><span class="detail-val">${en.max_level}</span></div>
+            <div class="detail-row"><span class="detail-label">Weight</span><span class="detail-val">${en.weight}</span></div>
+            ${en.incompatible && en.incompatible.length ? `<div class="detail-row"><span class="detail-label">Incompatible With</span><span class="detail-val">${enchantChips(en.incompatible)}</span></div>` : ""}
+            ${en.primary && en.primary.length ? `<div class="detail-row"><span class="detail-label">Primary Items</span><span class="detail-val">${enchantChips(en.primary)}</span></div>` : ""}
+            ${en.secondary && en.secondary.length ? `<div class="detail-row"><span class="detail-label">Secondary Items</span><span class="detail-val">${enchantChips(en.secondary)}</span></div>` : ""}
+          </div>
+        </div>
+      </section>`;
+
+    document.body.appendChild(scrim);
+    document.body.classList.add("modal-open");
+
+    const modal = el(".modal", scrim);
+    const closeBtn = el(".modal-close", scrim);
+
+    function close() {
+      scrim.remove();
+      document.body.classList.remove("modal-open");
+      document.removeEventListener("keydown", onKey);
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    function onKey(e) {
+      if (e.key === "Escape") close();
+      if (e.key === "Tab") {
+        const focusables = els("button, [href], input", modal).filter((n) => !n.disabled);
+        if (focusables.length === 0) return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    }
+
+    scrim.addEventListener("click", (e) => { if (e.target === scrim) close(); });
+    closeBtn.addEventListener("click", close);
+    document.addEventListener("keydown", onKey);
+    closeBtn.focus();
   }
 
   /* ---- modal ---- */
@@ -267,15 +380,25 @@
 
   /* ---- boot ---- */
 
+  const _cache = {};
+
   async function loadData() {
-    if (DATASET) return DATASET;
+    if (_cache[DATA_URL]) return _cache[DATA_URL];
     const res = await fetch(DATA_URL);
     if (!res.ok) throw new Error(`Failed to load ${DATA_URL}: ${res.status}`);
-    DATASET = await res.json();
-    return DATASET;
+    _cache[DATA_URL] = await res.json();
+    return _cache[DATA_URL];
   }
 
-  async function bootPage() {
+  async function loadJSON(url) {
+    if (_cache[url]) return _cache[url];
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
+    _cache[url] = await res.json();
+    return _cache[url];
+  }
+
+  async function bootGrid() {
     const page = document.body.dataset.page;
     if (page !== "race" && page !== "class") return;
 
@@ -286,7 +409,7 @@
       const ds = await loadData();
       const items = page === "race" ? ds.races : ds.classes;
 
-      renderGrid(container, items, page);
+      renderGrid(container, items, page, { sections: page === "class" });
 
       container.addEventListener("click", (e) => {
         const card = e.target.closest(".card");
@@ -300,7 +423,6 @@
 
       const state = { activeFilter: null };
 
-      // Build group filter buttons dynamically from the dataset
       if (page === "class" && filtersHost) {
         const groups = [...new Set(items.map((i) => i.group).filter(Boolean))].sort((a, b) => a - b);
         filtersHost.innerHTML = groups.map((g) => {
@@ -334,13 +456,120 @@
         }
       }
 
-      // populate stat chips for bootstrap
       const countEl = el(".page-hero-count");
       if (countEl) countEl.textContent = `${items.length} entries · ${items.filter((i) => i.stats.some((s) => s.kind === "debuff")).length} bear curses`;
       reapply();
     } catch (err) {
       el(".grid").innerHTML =
         `<div class="no-results">Data failed to load. Run <span class="mono">site/scripts/build_data.py</span> to regenerate.</div>`;
+      console.error(err);
+    }
+  }
+
+  async function bootEnchants() {
+    if (document.body.dataset.page !== "enchant") return;
+
+    const container = el(".grid");
+    if (!container) return;
+
+    try {
+      const ds = await loadJSON(ENCHANT_URL);
+      const items = ds.enchantments;
+
+      container.innerHTML = items.map((en) => enchantCardFor(en)).join("");
+
+      const searchInput = el(".search input");
+      const filtersHost = el("#category-filters") || el(".filters");
+      const state = { activeFilter: null };
+
+      const categories = [...new Set(items.map((i) => i.category))];
+      if (filtersHost) {
+        filtersHost.innerHTML = categories.map((c) =>
+          `<button class="filter-btn" data-filter="${c}" aria-pressed="false">${c}</button>`).join("");
+      }
+
+      const filterBtns = els(".filter-btn");
+
+      function reapply() {
+        applyFilters({
+          grid: container, items, type: "enchant", searchInput, activeFilter: state.activeFilter,
+          match: ({ item, card, q, activeFilter }) => {
+            let ok = true;
+            if (q) {
+              ok = card.dataset.search.includes(q) ||
+                item.incompatible.some((s) => s.toLowerCase().includes(q)) ||
+                item.primary.some((s) => s.toLowerCase().includes(q)) ||
+                item.secondary.some((s) => s.toLowerCase().includes(q));
+            }
+            if (ok && activeFilter) ok = item.category === activeFilter;
+            return ok;
+          },
+        });
+      }
+
+      container.addEventListener("click", (e) => {
+        const card = e.target.closest(".card");
+        if (!card) return;
+        const en = items.find((i) => i.key === card.dataset.key);
+        if (en) openEnchantModal(en);
+      });
+
+      if (searchInput) searchInput.addEventListener("input", reapply);
+
+      if (filterBtns.length) {
+        for (const btn of filterBtns) {
+          btn.addEventListener("click", () => {
+            const val = btn.dataset.filter || null;
+            state.activeFilter = state.activeFilter === val ? null : val;
+            for (const b of filterBtns) b.setAttribute("aria-pressed", "false");
+            btn.setAttribute("aria-pressed", String(state.activeFilter === val || (val === null && state.activeFilter === null)));
+            if (state.activeFilter === null) for (const b of filterBtns) b.setAttribute("aria-pressed", "false");
+            reapply();
+          });
+        }
+      }
+
+      const countEl = el(".page-hero-count");
+      if (countEl) countEl.textContent = `${items.length} enchantments`;
+      reapply();
+    } catch (err) {
+      el(".grid").innerHTML =
+        `<div class="no-results">Enchant data failed to load. Run <span class="mono">site/scripts/build_enchantments.py</span> to regenerate.</div>`;
+      console.error(err);
+    }
+  }
+
+  async function bootCombos() {
+    if (document.body.dataset.page !== "combos") return;
+
+    const chart = el(".combo-chart");
+    if (!chart) return;
+
+    try {
+      const ds = await loadJSON(COMBO_URL);
+      const combos = ds.combos;
+      if (!combos || !combos.length) {
+        chart.innerHTML = `<div class="no-results">No combos computed. Run <span class="mono">site/scripts/build_combos.py</span>.</div>`;
+        return;
+      }
+      const max = combos[0].score || 1;
+      chart.innerHTML = combos.map((c) => {
+        const pct = Math.max((c.score / max) * 100, 4);
+        return `
+          <div class="combo-row">
+            <div class="combo-rank">#${c.rank}</div>
+            <div class="combo-main">
+              <div class="combo-name">
+                <span class="combo-race">${c.race_name}</span>
+                <span class="combo-classes">${c.class_names.join(" · ")}</span>
+              </div>
+              <div class="combo-bar"><span class="combo-fill" style="width:${pct}%"></span></div>
+            </div>
+            <div class="combo-score">${c.score}</div>
+          </div>`;
+      }).join("");
+    } catch (err) {
+      chart.innerHTML = `<div class="no-results">Combo data failed to load. Run <span class="mono">site/scripts/build_combos.py</span>.</div>`;
       console.error(err);
     }
   }
@@ -365,9 +594,11 @@
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", () => { bootHome(); bootPage(); });
+    document.addEventListener("DOMContentLoaded", () => { bootHome(); bootGrid(); bootEnchants(); bootCombos(); });
   } else {
     bootHome();
-    bootPage();
+    bootGrid();
+    bootEnchants();
+    bootCombos();
   }
 })();

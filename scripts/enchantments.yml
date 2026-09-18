@@ -1,0 +1,746 @@
+# ExcellentEnchants compiled data — source for site/assets/data/enchantments.json
+# Categories: Armor, Bow, Tool, Fishing, Weapon, Universal
+# Fields: name, category, summary, max_level, incompatible (list), primary (list), secondary (list), weight
+# Compiled from https://nightexpressdev.com/excellentenchants/enchantments/list/
+
+enchantments:
+  # ---------- Armor ----------
+  cold_steel:
+    name: Cold Steel
+    category: Armor
+    summary: Applies Mining Fatigue effect to the attacker.
+    max_level: III
+    incompatible: []
+    primary: [Chestplate]
+    secondary: [Elytra]
+    weight: 5
+  darkness_cloak:
+    name: Darkness Cloak
+    category: Armor
+    summary: Applies Darkness effect to the attacker.
+    max_level: III
+    incompatible: []
+    primary: [Chestplate]
+    secondary: [Elytra]
+    weight: 10
+  dragon_heart:
+    name: Dragon Heart
+    category: Armor
+    summary: Grants passive Health Boost effect.
+    max_level: V
+    incompatible: []
+    primary: [Chestplate]
+    secondary: [Elytra]
+    weight: 2
+  elemental_protection:
+    name: Elemental Protection
+    category: Armor
+    summary: Reduces potion and elemental damage.
+    max_level: IV
+    incompatible: []
+    primary: [Helmet, Chestplate, Leggings, Boots]
+    secondary: []
+    weight: 10
+  fire_shield:
+    name: Fire Shield
+    category: Armor
+    summary: Ignites the attacker.
+    max_level: IV
+    incompatible: []
+    primary: [Chestplate]
+    secondary: [Elytra]
+    weight: 2
+  flame_walker:
+    name: Flame Walker
+    category: Armor
+    summary: Ability to walk on lava, immunity to magma damage.
+    max_level: II
+    incompatible: [Frost Walker]
+    primary: [Boots]
+    secondary: []
+    weight: 1
+  hardened:
+    name: Hardened
+    category: Armor
+    summary: Grants Resistance effect on receiving damage.
+    max_level: II
+    incompatible: []
+    primary: [Chestplate]
+    secondary: [Elytra]
+    weight: 5
+  ice_shield:
+    name: Ice Shield
+    category: Armor
+    summary: Freezes and slows down the attacker.
+    max_level: III
+    incompatible: []
+    primary: [Chestplate]
+    secondary: [Elytra]
+    weight: 10
+  jumping:
+    name: Jumping
+    category: Armor
+    summary: Grants Jump Boost effect.
+    max_level: II
+    incompatible: []
+    primary: [Boots]
+    secondary: []
+    weight: 2
+  kamikadze:
+    name: Kamikadze
+    category: Armor
+    summary: Creates an explosion on death.
+    max_level: III
+    incompatible: []
+    primary: [Chestplate]
+    secondary: [Elytra]
+    weight: 5
+  lightweight:
+    name: Lightweight
+    category: Armor
+    summary: Allows you to safely jump on turtle eggs, farmlands and big dripleaf.
+    max_level: I
+    incompatible: []
+    primary: [Boots]
+    secondary: []
+    weight: 10
+  night_vision:
+    name: Night Vision
+    category: Armor
+    summary: Grants Night Vision effect.
+    max_level: I
+    incompatible: []
+    primary: [Helmet]
+    secondary: []
+    weight: 1
+  rebound:
+    name: Rebound
+    category: Armor
+    summary: Gives the effect of landing on a Slime Block.
+    max_level: I
+    incompatible: [Feather Falling]
+    primary: [Boots]
+    secondary: []
+    weight: 2
+  regrowth:
+    name: Regrowth
+    category: Armor
+    summary: Restores certain amount of hearts over the time.
+    max_level: IV
+    incompatible: []
+    primary: [Chestplate]
+    secondary: [Elytra]
+    weight: 2
+  saturation:
+    name: Saturation
+    category: Armor
+    summary: Restores certain amount of food over the time.
+    max_level: II
+    incompatible: []
+    primary: [Helmet]
+    secondary: []
+    weight: 2
+  speed:
+    name: Speed
+    category: Armor
+    summary: Grants Speed effect.
+    max_level: II
+    incompatible: []
+    primary: [Boots]
+    secondary: []
+    weight: 2
+  stopping_force:
+    name: Stopping Force
+    category: Armor
+    summary: Reduces Knockback when getting damage.
+    max_level: III
+    incompatible: []
+    primary: [Leggings]
+    secondary: []
+    weight: 5
+  water_breathing:
+    name: Water Breathing
+    category: Armor
+    summary: Grants Water Breathing effect.
+    max_level: I
+    incompatible: []
+    primary: [Helmet]
+    secondary: []
+    weight: 1
+
+  # ---------- Bow ----------
+  bomber:
+    name: Bomber
+    category: Bow
+    summary: Shoots TNT instead of arrows.
+    max_level: III
+    incompatible: [Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 1
+  confusing_arrows:
+    name: Confusing Arrows
+    category: Bow
+    summary: Applies Nausea effect on arrows.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 10
+  darkness_arrows:
+    name: Darkness Arrows
+    category: Bow
+    summary: Applies Darkness effect on arrows.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 10
+  dragonfire_arrows:
+    name: Dragonfire Arrows
+    category: Bow
+    summary: Applies Dragon's Breath effect on arrows.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 2
+  electrified_arrows:
+    name: Electrified Arrows
+    category: Bow
+    summary: Summons Lightning on hit.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 5
+  ender_bow:
+    name: Ender Bow
+    category: Bow
+    summary: Shoots Ender Pearls instead of arrows.
+    max_level: I
+    incompatible: [Bomber, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 1
+  explosive_arrows:
+    name: Explosive Arrows
+    category: Bow
+    summary: Arrows explode on hit.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 5
+  flare:
+    name: Flare
+    category: Bow
+    summary: Places a Torch where arrow land.
+    max_level: I
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 5
+  ghast:
+    name: Ghast
+    category: Bow
+    summary: Shoots Fireball instead of arrows.
+    max_level: I
+    incompatible: [Bomber, Ender Bow]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 1
+  hover:
+    name: Hover
+    category: Bow
+    summary: Applies Levitation effect on arrows.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 10
+  lingering:
+    name: Lingering
+    category: Bow
+    summary: Arrows with a lingering effect on hit.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 2
+  poisoned_arrows:
+    name: Poisoned Arrows
+    category: Bow
+    summary: Applies Poison effect on arrows.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 5
+  sniper:
+    name: Sniper
+    category: Bow
+    summary: Increases projectile speed.
+    max_level: II
+    incompatible: []
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 10
+  vampiric_arrows:
+    name: Vampiric Arrows
+    category: Bow
+    summary: Restores health on hit.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 2
+  withered_arrows:
+    name: Withered Arrows
+    category: Bow
+    summary: Applies Wither effect on arrows.
+    max_level: III
+    incompatible: [Bomber, Ender Bow, Ghast]
+    primary: [Bow]
+    secondary: [Crossbow]
+    weight: 5
+
+  # ---------- Tool ----------
+  blast_mining:
+    name: Blast Mining
+    category: Tool
+    summary: Mines blocks with explosions.
+    max_level: V
+    incompatible: [Tunnel, Veinminer]
+    primary: [Pickaxe]
+    secondary: []
+    weight: 2
+  glass_breaker:
+    name: Glass Breaker
+    category: Tool
+    summary: Breaks glass instantly.
+    max_level: I
+    incompatible: []
+    primary: [Pickaxe, Axe, Shovel]
+    secondary: [Hoe, Shears]
+    weight: 10
+  haste:
+    name: Haste
+    category: Tool
+    summary: Applies Haste effect on mining.
+    max_level: III
+    incompatible: []
+    primary: [Pickaxe, Axe, Shovel]
+    secondary: [Hoe, Shears]
+    weight: 2
+  lucky_miner:
+    name: Lucky Miner
+    category: Tool
+    summary: Produces more XP from mined blocks.
+    max_level: III
+    incompatible: []
+    primary: [Pickaxe]
+    secondary: []
+    weight: 5
+  replanter:
+    name: Replanter
+    category: Tool
+    summary: Replants crops on harvest or right-click.
+    max_level: I
+    incompatible: []
+    primary: [Hoe]
+    secondary: []
+    weight: 1
+  silk_chest:
+    name: Silk Chest
+    category: Tool
+    summary: Drops chests that keep their content.
+    max_level: I
+    incompatible: []
+    primary: [Axe]
+    secondary: [Pickaxe, Shovel, Hoe]
+    weight: 1
+  silk_spawner:
+    name: Silk Spawner
+    category: Tool
+    summary: Chance to obtain a Monster Spawner.
+    max_level: I
+    incompatible: [Smelter]
+    primary: [Pickaxe]
+    secondary: []
+    weight: 1
+  smelter:
+    name: Smelter
+    category: Tool
+    summary: Smelt dropped items according to their recipes.
+    max_level: V
+    incompatible: [Silk Touch, Silk Spawner]
+    primary: [Pickaxe, Axe, Shovel]
+    secondary: [Hoe, Shears]
+    weight: 5
+  telekinesis:
+    name: Telekinesis
+    category: Tool
+    summary: Moves all block loot directly to inventory.
+    max_level: I
+    incompatible: []
+    primary: [Pickaxe, Axe, Shovel, Hoe]
+    secondary: [Shears]
+    weight: 1
+  treefeller:
+    name: Treefeller
+    category: Tool
+    summary: Cuts down an entire tree.
+    max_level: I
+    incompatible: []
+    primary: [Axe]
+    secondary: []
+    weight: 2
+  tunnel:
+    name: Tunnel
+    category: Tool
+    summary: Mines 1x2, 2x2, 3x3 area.
+    max_level: III
+    incompatible: [Veinminer, Blast Mining]
+    primary: [Pickaxe]
+    secondary: [Axe, Shovel, Hoe]
+    weight: 1
+  veinminer:
+    name: Veinminer
+    category: Tool
+    summary: Mines the whole ore vein at once.
+    max_level: III
+    incompatible: [Tunnel, Blast Mining]
+    primary: [Pickaxe]
+    secondary: []
+    weight: 1
+
+  # ---------- Fishing ----------
+  auto_reel:
+    name: Auto Reel
+    category: Fishing
+    summary: Automatically reels in a hook on bite.
+    max_level: 1
+    incompatible: []
+    primary: [Fishing Rod]
+    secondary: []
+    weight: 1
+  curse_of_drowned:
+    name: Curse of Drowned
+    category: Fishing
+    summary: Chance to fish up a Drowned.
+    max_level: 3
+    incompatible: []
+    primary: [Fishing Rod]
+    secondary: []
+    weight: 5
+  double_catch:
+    name: Double Catch
+    category: Fishing
+    summary: Increases amount of caught item by x2.
+    max_level: 3
+    incompatible: []
+    primary: [Fishing Rod]
+    secondary: []
+    weight: 2
+  river_master:
+    name: River Master
+    category: Fishing
+    summary: Increases casting distance.
+    max_level: 5
+    incompatible: []
+    primary: [Fishing Rod]
+    secondary: []
+    weight: 10
+  seasoned_angler:
+    name: Seasoned Angler
+    category: Fishing
+    summary: Increases amount of gained XP.
+    max_level: 3
+    incompatible: []
+    primary: [Fishing Rod]
+    secondary: []
+    weight: 5
+  survivalist:
+    name: Survivalist
+    category: Fishing
+    summary: Automatically cooks fish if what is caught is raw.
+    max_level: 1
+    incompatible: []
+    primary: [Fishing Rod]
+    secondary: []
+    weight: 2
+
+  # ---------- Weapon ----------
+  bane_of_netherspawn:
+    name: Bane of Netherspawn
+    category: Weapon
+    summary: Increases damage to nether mobs.
+    max_level: V
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 10
+  blindness:
+    name: Blindness
+    category: Weapon
+    summary: Applies Blindness effect on target.
+    max_level: II
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 10
+  confusion:
+    name: Confusion
+    category: Weapon
+    summary: Applies Nausea effect on target.
+    max_level: II
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 10
+  cure:
+    name: Cure
+    category: Weapon
+    summary: Cures Zombified Piglins and Zombie Villagers on kill.
+    max_level: III
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 10
+  curse_of_death:
+    name: Curse of Death
+    category: Weapon
+    summary: If you kill a player, you have a chance of dying too.
+    max_level: III
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 2
+  cutter:
+    name: Cutter
+    category: Weapon
+    summary: Damages and drops target's armor.
+    max_level: III
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 2
+  decapitator:
+    name: Decapitator
+    category: Weapon
+    summary: Allows to obtain target's head.
+    max_level: II
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 2
+  double_strike:
+    name: Double Strike
+    category: Weapon
+    summary: Increases damage by twice.
+    max_level: II
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 1
+  exhaust:
+    name: Exhaust
+    category: Weapon
+    summary: Applies Hunger effect on target.
+    max_level: IV
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 10
+  ice_aspect:
+    name: Ice Aspect
+    category: Weapon
+    summary: Freezes and applies Slowness on target.
+    max_level: III
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 10
+  infernus:
+    name: Infernus
+    category: Weapon
+    summary: Tridents sets targets on fire.
+    max_level: III
+    incompatible: []
+    primary: [Trident]
+    secondary: []
+    weight: 10
+  nimble:
+    name: Nimble
+    category: Weapon
+    summary: Moves entity's drops directly to inventory.
+    max_level: I
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 2
+  paralyze:
+    name: Paralyze
+    category: Weapon
+    summary: Applies Mining Fatigue effect on target.
+    max_level: V
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 5
+  rage:
+    name: Rage
+    category: Weapon
+    summary: Grants Strength effect in combat.
+    max_level: II
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 5
+  rocket:
+    name: Rocket
+    category: Weapon
+    summary: Launches target into the space.
+    max_level: III
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 5
+  swiper:
+    name: Swiper
+    category: Weapon
+    summary: Steals player's XP.
+    max_level: III
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 2
+  temper:
+    name: Temper
+    category: Weapon
+    summary: Damage increases the more the less health you have.
+    max_level: V
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 1
+  thrifty:
+    name: Thrifty
+    category: Weapon
+    summary: Drops mob's Spawn Egg.
+    max_level: III
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 2
+  thunder:
+    name: Thunder
+    category: Weapon
+    summary: Summons Lightning on target with extra damage.
+    max_level: V
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 5
+  vampire:
+    name: Vampire
+    category: Weapon
+    summary: Steals target's health.
+    max_level: III
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 2
+  venom:
+    name: Venom
+    category: Weapon
+    summary: Applies Poison effect on target.
+    max_level: II
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 10
+  village_defender:
+    name: Village Defender
+    category: Weapon
+    summary: Increases damage to Illagers.
+    max_level: V
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 10
+  wisdom:
+    name: Wisdom
+    category: Weapon
+    summary: Produces more XP from mobs.
+    max_level: V
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 5
+  wither:
+    name: Wither
+    category: Weapon
+    summary: Applies Wither effect on target.
+    max_level: II
+    incompatible: []
+    primary: [Sword]
+    secondary: [Axe]
+    weight: 5
+
+  # ---------- Universal ----------
+  curse_of_breaking:
+    name: Curse of Breaking
+    category: Universal
+    summary: Takes more durability points on use.
+    max_level: III
+    incompatible: [Unbreaking]
+    primary: [Pickaxe, Axe, Shovel, Hoe, Sword, Bow, Crossbow, Shears, Helmet, Chestplate, Leggings, Boots, Elytra, Shield, Fishing Rod, Trident, Mace]
+    secondary: []
+    weight: 10
+  curse_of_fragility:
+    name: Curse of Fragility
+    category: Universal
+    summary: Prevents item from being grindstoned or anviled.
+    max_level: I
+    incompatible: []
+    primary: [Pickaxe, Axe, Shovel, Hoe, Sword, Bow, Crossbow, Shears, Helmet, Chestplate, Leggings, Boots, Elytra, Shield, Fishing Rod, Trident, Mace]
+    secondary: []
+    weight: 10
+  curse_of_mediocrity:
+    name: Curse of Mediocrity
+    category: Universal
+    summary: Disenchants block's and mob's loot.
+    max_level: III
+    incompatible: []
+    primary: [Sword, Axe, Bow, Crossbow, Trident, Mace]
+    secondary: [Pickaxe, Shovel, Hoe, Shears]
+    weight: 5
+  curse_of_misfortune:
+    name: Curse of Misfortune
+    category: Universal
+    summary: Reduces block's and mob's loot to zero.
+    max_level: III
+    incompatible: [Fortune, Looting]
+    primary: [Pickaxe, Axe, Shovel, Hoe, Sword, Bow, Crossbow, Shears, Trident, Mace]
+    secondary: []
+    weight: 5
+  restore:
+    name: Restore
+    category: Universal
+    summary: Saves item from breaking once.
+    max_level: III
+    incompatible: []
+    primary: [Pickaxe, Axe, Shovel, Hoe, Sword, Bow, Crossbow, Shears, Helmet, Chestplate, Leggings, Boots, Elytra, Shield, Fishing Rod, Trident, Mace]
+    secondary: []
+    weight: 2
+  soulbound:
+    name: Soulbound
+    category: Universal
+    summary: Prevents item from being dropped upon death.
+    max_level: I
+    incompatible: [Curse of Vanishing]
+    primary: [Pickaxe, Axe, Shovel, Hoe, Sword, Bow, Crossbow, Shears, Helmet, Chestplate, Leggings, Boots, Elytra, Shield, Fishing Rod, Trident, Mace]
+    secondary: []
+    weight: 2

@@ -6056,4 +6056,31 @@ races:
       DODGE_CHANCE: 0.1
       HEALTH_BONUS: -3
       RADIANT_RESISTANCE: -0.15
+  ares:
+    position: 250 # Position in racepicker GUI
+    icon: NETHERITE_AXE:-1 # Icon in racepicker GUI
+    icon_locked: BARRIER:-1 # Icon in racepicker GUI if another race has already been selected
+    prefix: '&8[&cAres&8]' # Chat race prefix
+    display_name: '&cAres' # Display name in racepicker GUI
+    description: # Lore in racepicker GUI
+      - '&cAres&7, the god of war incarnate, a'
+      - '&7blur of bronze and blood. No blade'
+      - '&7can touch him, yet every wound he'
+      - '&7takes cuts to the bone'
+      - '&8&m                                       '
+      - '&cAres &7benefits from'
+      - '&f- &c+70% &fDodge Chance'
+      - '&f- &c+15% &fMovement Speed'
+      - '&f- &c+10% &fMelee Damage'
+      - '&7But suffers from'
+      - '&f- &c-5 &fMaximum Health'
+      - '&f- &c-10% &fArmor Effectiveness'
+      - '&f- &c-20% &fSize'
+    stat_buffs: # Stat buffs the race provides
+      DODGE_CHANCE: 0.7
+      MOVEMENT_SPEED_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      SCALE: -0.2
 
