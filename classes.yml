@@ -1,0 +1,3270 @@
+confirm_button_type: STRUCTURE_VOID:-1
+confirm_button_name: '&aConfirm'
+confirm_button_lore: []
+confirm_button_position: 40
+
+classes:
+  warrior:
+    group: 1 # a player can pick 1 class from each group. If you got 3 classes with the same group number, the player can pick one of them
+    position: 10
+    icon: IRON_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cWarrior'
+    description:
+    - '&cWarriors &7are opportunistic fighters,'
+    - '&7who prefer the safety of light blades'
+    - '&7and heavy protection.'
+    - '&8&m                                       '
+    - '&cWarriors &7benefit from'
+    - '&f- &c+10% &fArmor'
+    - '&f- &c+5% &fMelee Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.05 # 10% extra melee damage dealt
+      ARMOR_MULTIPLIER_BONUS: 0.1 # Armor is 10% more effective
+    # race_filter: # This is just an example of how you can limit certain classes to certain races, and potentially make different classes per race
+    #   - human
+    #   - dwarf
+    #   - elf
+    # commands: # This is mostly just an example of how you can execute commands when a race/class is unlocked
+    #   - minecraft:experience add %player% 1 points
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  barbarian:
+    group: 1
+    position: 19
+    icon: IRON_AXE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cBarbarian'
+    description:
+    - '&cBarbarians &7are relentless fighters,'
+    - '&7who prefer to decimate their foes'
+    - '&7through sheer strength and brute force.'
+    - '&8&m                                       '
+    - '&cBarbarians &7benefit from'
+    - '&f- &c+20% &fKnockback Resistance'
+    - '&f- &c+10% &fMelee Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      KNOCKBACK_RESISTANCE: 0.2
+      MELEE_DAMAGE_DEALT: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  ranger:
+    group: 1
+    position: 28
+    icon: BOW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cRanger'
+    description:
+    - '&cRangers &7are stealthy assassins,'
+    - '&7who prefer not to fight close ranged at'
+    - '&7all and instead take out their foes at'
+    - '&7a safe distance.'
+    - '&8&m                                       '
+    - '&cRangers &7benefit from'
+    - '&f- &c+2 &fAccuracy'
+    - '&f- &c+10% &fRanged Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      RANGED_INACCURACY: -2
+      RANGED_DAMAGE_DEALT: 0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  alchemist:
+    group: 2
+    position: 13
+    icon: BREWING_STAND:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dAlchemist'
+    description:
+    - '&dAlchemists &7are fantastic chemists,'
+    - '&7able to transmute materials into others,'
+    - '&7melt their enemies with potions, and'
+    - '&7assist their party with healing and buffs.'
+    - '&8&m                                       '
+    - '&dAlchemists &7benefit from'
+    - '&f- &d+25 &fPotion Quality'
+    - '&f- &d+50% &fBrewing Speed'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      ALCHEMY_QUALITY_GENERAL: 25
+      ALCHEMY_BREW_SPEED: 0.5
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  enchanter:
+    group: 2
+    position: 22
+    icon: ENCHANTMENT_TABLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bEnchanter'
+    description:
+    - '&bEnchanters &7are scholars of magic,'
+    - '&7able to imbue items with spells to'
+    - '&7enhance their strengths.'
+    - '&8&m                                       '
+    - '&bEnchanters &7benefit from'
+    - '&f- &b+25 &fEnchanting Quality'
+    - '&f- &b+20% &fEnchanting Experience'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      ENCHANTING_QUALITY: 25
+      ENCHANTING_VANILLA_EXP_GAIN: 0.2
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  blacksmith:
+    group: 2
+    position: 31
+    icon: ANVIL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&aBlacksmith'
+    description:
+    - '&aBlacksmiths &7are experts of metal,'
+    - '&7creating more durable tools and armor'
+    - '&7and razor sharp, well balanced blades.'
+    - '&8&m                                       '
+    - '&aBlacksmiths &7benefit from'
+    - '&f- &a+25 &fSmithing Quality'
+    - '&f- &a-20% &fDurability Taken'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      SMITHING_QUALITY_GENERAL: 25
+      DURABILITY_BONUS: 0.2
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  miner:
+    group: 3
+    position: 16
+    icon: IRON_PICKAXE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eMiner'
+    description:
+    - '&eMiners &7delve deep into the earth,'
+    - '&7looking for riches, and serve as the'
+    - '&7backbone of industry.'
+    - '&8&m                                       '
+    - '&eMiners &7benefit from'
+    - '&f- &e+30% &fMining Speed'
+    - '&f- &e+10% &fMining Drops'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    perk_rewards:
+      mining_miningdrops_add: 0.1
+      mining_miningspeedbonus_add: 0.3
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  farmer:
+    group: 3
+    position: 25
+    icon: IRON_HOE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eFarmer-Fisherman'
+    description:
+    - '&eFarmers &7live a calm, simple life'
+    - '&7providing their cities with food'
+    - '&7and ocean treasures.'
+    - '&8&m                                       '
+    - '&eFarmers &7benefit from'
+    - '&f- &e+3 &fFishing Luck'
+    - '&f- &e+30% &fFarming Drops'
+    - '&f- &e+20% &fFishing Speed'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      FISHING_LUCK: 3
+      FISHING_SPEED_MULTIPLIER: 0.2
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+    perk_rewards:
+      farming_farmingdrops_add: 0.3
+  terraformer:
+    group: 3
+    position: 34
+    icon: IRON_SHOVEL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eTerraformer'
+    description:
+    - '&eTerraformers &7construct, shape, and'
+    - '&7maintain the world around them.'
+    - '&7Most suitable for the creative types.'
+    - '&8&m                                       '
+    - '&eTerraformers &7benefit from'
+    - '&f- &e+50% &fWoodcutting Drops'
+    - '&f- &e+30% &fWoodcutting and Digging Speed'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    perk_rewards:
+      woodcutting_woodcuttingdrops_add: 0.5
+      woodcutting_woodcuttingspeedbonus_add: 0.3
+      digging_diggingspeedbonus_add: 0.3
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  berserker:
+    group: 1
+    position: 9
+    icon: NETHERITE_AXE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cBerserker'
+    description:
+    - '&cBerserkers &7are furious dual-wielding'
+    - '&7warriors who trade defense for raw,'
+    - '&7unceasing offense.'
+    - '&8&m                                       '
+    - '&cBerserkers &7benefit from'
+    - '&f- &c+15% &fMelee Damage'
+    - '&f- &c+15% &fAttack Speed'
+    - '&f- &c+10% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      ATTACK_SPEED_BONUS: 0.15
+      CRIT_CHANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  paladin:
+    group: 1
+    position: 11
+    icon: SHIELD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&ePaladin'
+    description:
+    - '&ePaladins &7are holy knights, wielding'
+    - '&7radiant power to smite evil and shield'
+    - '&7their allies in battle.'
+    - '&8&m                                       '
+    - '&ePaladins &7benefit from'
+    - '&f- &e+15% &fRadiant Damage'
+    - '&f- &e+15% &fHealing'
+    - '&f- &e+10% &fMelee Damage'
+    - '&f- &e+10% &fArmor'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      RADIANT_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  death_knight:
+    group: 1
+    position: 12
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Death Knight'
+    description:
+    - '&8Death Knights &7are dark undead warriors'
+    - '&7who feast on the life force of their foes'
+    - '&7and shrug off the pain of the grave.'
+    - '&8&m                                       '
+    - '&8Death Knights &7benefit from'
+    - '&f- &8+15% &fNecrotic Damage'
+    - '&f- &8+20% &fNecrotic Resistance'
+    - '&f- &8+10% &fMelee Damage'
+    - '&f- &8+15% &fBleed Resistance'
+    - '&7But suffer from'
+    - '&f- &c-15% &fRadiant Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.15
+      NECROTIC_RESISTANCE: 0.2
+      MELEE_DAMAGE_DEALT: 0.1
+      BLEED_RESISTANCE: 0.15
+      RADIANT_RESISTANCE: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  spellbreaker:
+    group: 1
+    position: 14
+    icon: IRON_BARS:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Spellbreaker'
+    description:
+    - '&5Spellbreakers &7are dark-elven hunters of'
+    - '&7mages, who shatter enemy spells and turn'
+    - '&7magic back upon its caster.'
+    - '&8&m                                       '
+    - '&5Spellbreakers &7benefit from'
+    - '&f- &5+20% &fMagic Resistance'
+    - '&f- &5+10% &fMelee Damage'
+    - '&f- &5+10% &fMelee Resistance'
+    - '&f- &5+10% &fKNOCKBACK Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      MAGIC_RESISTANCE: 0.2
+      MELEE_DAMAGE_DEALT: 0.1
+      MELEE_RESISTANCE: 0.1
+      KNOCKBACK_RESISTANCE: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  assassin:
+    group: 1
+    position: 15
+    icon: WOODEN_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Assassin'
+    description:
+    - '&7Assassins &7are stealthy killers who slip'
+    - '&7behind enemy lines and end targets with'
+    - '&7a single precise strike.'
+    - '&8&m                                       '
+    - '&7Assassins &7benefit from'
+    - '&f- &7+15% &fMelee Damage'
+    - '&f- &7+15% &fCrit Chance'
+    - '&f- &7+10% &fSneak Speed'
+    - '&f- &7+10% &fDodge Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      CRIT_CHANCE: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.1
+      DODGE_CHANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  monk:
+    group: 1
+    position: 17
+    icon: GOLDEN_HELMET:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eMonk'
+    description:
+    - '&eMonks &7are unarmed martial artists whose'
+    - '&7bodies are their only weapons, flowing'
+    - '&7past blows with preternatural grace.'
+    - '&8&m                                       '
+    - '&eMonks &7benefit from'
+    - '&f- &e+25% &fUnarmed Damage'
+    - '&f- &e+10% &fMelee Damage'
+    - '&f- &e+10% &fDodge Chance'
+    - '&f- &e+15% &fMovement Speed'
+    - '&7But suffer from'
+    - '&f- &c-15% &fArmor'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      UNARMED_DAMAGE_DEALT: 0.25
+      MELEE_DAMAGE_DEALT: 0.1
+      DODGE_CHANCE: 0.1
+      MOVEMENT_SPEED_BONUS: 0.15
+      ARMOR_MULTIPLIER_BONUS: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  mage:
+    group: 2
+    position: 18
+    icon: BLAZE_ROD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bMage'
+    description:
+    - '&bMages &7are pure spellcasters who bend'
+    - '&4fire &band lightning to their will,'
+    - '&7unleashing devastating arcane power.'
+    - '&8&m                                       '
+    - '&bMages &7benefit from'
+    - '&f- &b+20% &fMagic Damage'
+    - '&f- &b+15% &fFire Damage'
+    - '&f- &b+10% &fLightning Damage'
+    - '&f- &b+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      FIRE_DAMAGE_DEALT: 0.15
+      LIGHTNING_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  warlock:
+    group: 2
+    position: 20
+    icon: ENDER_EYE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Warlock'
+    description:
+    - '&5Warlocks &7are dark magic users who draw'
+    - '&7on forbidden power, dealing ruinous'
+    - '&7necrotic and poison damage to foes.'
+    - '&8&m                                       '
+    - '&5Warlocks &7benefit from'
+    - '&f- &5+20% &fNecrotic Damage'
+    - '&f- &5+15% &fPoison Damage'
+    - '&f- &5+10% &fMagic Damage'
+    - '&f- &5+15% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-15% &fRadiant Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      POISON_DAMAGE_DEALT: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.15
+      RADIANT_RESISTANCE: -0.15
+      MELEE_DAMAGE_DEALT: -0.1
+  cleric:
+    group: 2
+    position: 21
+    icon: GOLDEN_APPLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eCleric'
+    description:
+    - '&eClerics &7are devoted healers and support,'
+    - '&7mending wounds and shielding their allies'
+    - '&7from harm with divine grace.'
+    - '&8&m                                       '
+    - '&eClerics &7benefit from'
+    - '&f- &e+30% &fHealing'
+    - '&f- &e+15% &fRadiant Damage'
+    - '&f- &e+20% &fRadiant Resistance'
+    - '&f- &e+10% &fArmor'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fKnockback Resistance'
+    stat_buffs:
+      HEALING_BONUS: 0.3
+      RADIANT_DAMAGE_DEALT: 0.15
+      RADIANT_RESISTANCE: 0.2
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+      KNOCKBACK_RESISTANCE: -0.1
+  druid:
+    group: 2
+    position: 23
+    icon: OAK_LEAVES:-1
+    icon_locked: BARRIER:-1
+    display_name: '&2Druid'
+    description:
+    - '&2Druids &7are nature shapeshifters who call'
+    - '&7on the power of the wild, healing wounds'
+    - '&7and poisoning their enemies.'
+    - '&8&m                                       '
+    - '&2Druids &7benefit from'
+    - '&f- &2+15% &fHealing'
+    - '&f- &2+20% &fPoison Damage'
+    - '&f- &2+20% &fPoison Resistance'
+    - '&f- &2+10% &fUnarmed Damage'
+    - '&f- &2+20% &fFarming Experience'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      HEALING_BONUS: 0.15
+      POISON_DAMAGE_DEALT: 0.2
+      POISON_RESISTANCE: 0.2
+      UNARMED_DAMAGE_DEALT: 0.1
+      FARMING_EXP_GAIN: 0.2
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  shaman:
+    group: 2
+    position: 24
+    icon: TOTEM_OF_UNDYING:-1
+    icon_locked: BARRIER:-1
+    display_name: '&3Shaman'
+    description:
+    - '&3Shamans &7are spirit mediums who command'
+    - '&7elemental and lightning forces and channel'
+    - '&7the souls of the fallen.'
+    - '&8&m                                       '
+    - '&3Shamans &7benefit from'
+    - '&f- &3+20% &fLightning Damage'
+    - '&f- &3+20% &fLightning Resistance'
+    - '&f- &3+15% &fFreezing Damage'
+    - '&f- &3+10% &fNecrotic Damage'
+    - '&f- &3+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.2
+      LIGHTNING_RESISTANCE: 0.2
+      FREEZING_DAMAGE_DEALT: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  void_knight:
+    group: 2
+    position: 26
+    icon: OBSIDIAN:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Void Knight'
+    description:
+    - '&5Void Knights &7are dimensional warriors'
+    - '&7who harness the power of the empty void,'
+    - '&7tearing at reality itself with each blow.'
+    - '&8&m                                       '
+    - '&5Void Knights &7benefit from'
+    - '&f- &5+15% &fNecrotic Damage'
+    - '&f- &5+15% &fMelee Damage'
+    - '&f- &5+10% &fArmor'
+    - '&f- &5+20% &fCrit Damage'
+    - '&7But suffer from'
+    - '&f- &c-15% &fRadiant Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fKnockback Resistance'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.15
+      MELEE_DAMAGE_DEALT: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      CRIT_DAMAGE: 0.2
+      RADIANT_RESISTANCE: -0.15
+      KNOCKBACK_RESISTANCE: -0.1
+  gunslinger:
+    group: 3
+    position: 27
+    icon: CROSSBOW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Gunslinger'
+    description:
+    - '&6Gunslingers &7are ranged specialists who'
+    - '&7quick-draw and lay down devastating'
+    - '&7suppressive fire from a distance.'
+    - '&8&m                                       '
+    - '&6Gunslingers &7benefit from'
+    - '&f- &6+25% &fRanged Damage'
+    - '&f- &6+15% &fRanged Velocity'
+    - '&f- &6+10% &fCrit Chance'
+    - '&f- &6+15% &fAttack Speed'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.25
+      RANGED_VELOCITY_BONUS: 0.15
+      CRIT_CHANCE: 0.1
+      ATTACK_SPEED_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  samurai:
+    group: 3
+    position: 29
+    icon: NETHERITE_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cSamurai'
+    description:
+    - '&cSamurai &7are disciplined katana-wielding'
+    - '&7warriors who strike with unerring precision'
+    - '&7and honor-bound focus.'
+    - '&8&m                                       '
+    - '&cSamurai &7benefit from'
+    - '&f- &c+15% &fMelee Damage'
+    - '&f- &c+15% &fCrit Chance'
+    - '&f- &c+10% &fArmor'
+    - '&f- &c+15% &fKnockback Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage'
+    - '&7But suffer from'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      CRIT_CHANCE: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      KNOCKBACK_RESISTANCE: 0.15
+      RANGED_DAMAGE_DEALT: -0.1
+      HEALTH_BONUS: -2
+  ninja:
+    group: 3
+    position: 30
+    icon: IRON_INGOT:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Ninja'
+    description:
+    - '&8Ninjas &7are masters of stealth and'
+    - '&7throwing weapons who strike from the'
+    - '&7shadows and vanish without a trace.'
+    - '&8&m                                       '
+    - '&8Ninjas &7benefit from'
+    - '&f- &8+15% &fMelee Damage'
+    - '&f- &8+20% &fSneak Speed'
+    - '&f- &8+15% &fDodge Chance'
+    - '&f- &8+10% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      DODGE_CHANCE: 0.15
+      CRIT_CHANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  bard:
+    group: 3
+    position: 32
+    icon: NOTE_BLOCK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dBard'
+    description:
+    - '&dBards &7are versatile performers who lift'
+    - '&7their allies, inspire great deeds, and'
+    - '&7weave luck and song into battle.'
+    - '&8&m                                       '
+    - '&dBards &7benefit from'
+    - '&f- &d+15% &fCooldown Reduction'
+    - '&f- &d+10% &fHealing'
+    - '&f- &d+15% &fLuck'
+    - '&f- &d+10% &fMagic Damage'
+    - '&f- &d+15% &fSneak Speed'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      COOLDOWN_REDUCTION: 0.15
+      HEALING_BONUS: 0.1
+      LUCK_BONUS: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  warden:
+    group: 3
+    position: 33
+    icon: SHIELD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&2Warden'
+    description:
+    - '&2Wardens &7are defensive guardians of the'
+    - '&7wild, standing firm between their allies'
+    - '&7and the forces that threaten them.'
+    - '&8&m                                       '
+    - '&2Wardens &7benefit from'
+    - '&f- &2+15% &fArmor'
+    - '&f- &2+15% &fDamage Resistance'
+    - '&f- &2+20% &fPoison Resistance'
+    - '&f- &2+10% &fFarming Drops'
+    - '&f- &2+20% &fWoodcutting Experience'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      DAMAGE_RESISTANCE: 0.15
+      POISON_RESISTANCE: 0.2
+      FARMING_DROP_MULTIPLIER: 0.1
+      WOODCUTTING_EXP_GAIN: 0.2
+      RANGED_DAMAGE_DEALT: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  spellblade:
+    group: 3
+    position: 35
+    icon: DIAMOND_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bSpellblade'
+    description:
+    - '&bSpellblades &7are hybrids of steel and'
+    - '&7sorcery, weaving devastating magic into'
+    - '&7every blow of their enchanted blade.'
+    - '&8&m                                       '
+    - '&bSpellblades &7benefit from'
+    - '&f- &b+15% &fMagic Damage'
+    - '&f- &b+10% &fMelee Damage'
+    - '&f- &b+10% &fCooldown Reduction'
+    - '&f- &b+10% &fCrit Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      MELEE_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      CRIT_DAMAGE: 0.1
+
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  champion:
+    group: 1
+    position: 50
+    icon: DIAMOND_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cChampion'
+    description:
+    - '&cChampions&7, noble warriors who lead'
+    - '&7the charge. They fight with honor'
+    - '&7and inspire allies with their courage.'
+    - '&8&m                                       '
+    - '&cChampion &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fCrit Damage'
+    - '&f- &a+10% &fKnockback Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      CRIT_DAMAGE: 0.1
+      KNOCKBACK_RESISTANCE: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  duelist:
+    group: 1
+    position: 51
+    icon: GOLDEN_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eDuelist'
+    description:
+    - '&eDuellists&7, masters of single combat.'
+    - '&7They parry and riposte with deadly'
+    - '&7precision, but fight alone.'
+    - '&8&m                                       '
+    - '&eDuelist &7benefit from'
+    - '&f- &a+15% &fCrit Chance'
+    - '&f- &a+10% &fDodge Chance'
+    - '&7But suffer from'
+    - '&f- &c-5% &fMelee Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: -0.05
+      CRIT_CHANCE: 0.15
+      DODGE_CHANCE: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  marauder:
+    group: 1
+    position: 52
+    icon: NETHERITE_AXE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&4Marauder'
+    description:
+    - '&4Marauders&7, ruthless raiders who take'
+    - '&7what they want by force. They deal'
+    - '&7devastating blows and steal from'
+    - '&7the fallen.'
+    - '&8&m                                       '
+    - '&4Marauder &7benefit from'
+    - '&f- &a+20% &fMelee Damage Dealt'
+    - '&f- &a+15% &fKnockback Resistance'
+    - '&f- &a+15% &fCrit Damage'
+    - '&7But suffer from'
+    - '&f- &c-5% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      KNOCKBACK_RESISTANCE: 0.15
+      CRIT_DAMAGE: 0.15
+      ARMOR_MULTIPLIER_BONUS: -0.05
+      RANGED_DAMAGE_DEALT: -0.1
+  gladiator:
+    group: 1
+    position: 53
+    icon: CHAINMAIL_HELMET:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Gladiator'
+    description:
+    - '&6Gladiators&7, arena champions who fight'
+    - '&7for glory. They are versatile fighters'
+    - '&7with strong offense and defense.'
+    - '&8&m                                       '
+    - '&6Gladiator &7benefit from'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fCrit Chance'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      CRIT_CHANCE: 0.1
+      HEALTH_BONUS: 3
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  lancer:
+    group: 1
+    position: 54
+    icon: TRIDENT:-1
+    icon_locked: BARRIER:-1
+    display_name: '&9Lancer'
+    description:
+    - '&9Lancers&7, mounted warriors who charge'
+    - '&7with devastating force. Their reach'
+    - '&7and speed make them deadly.'
+    - '&8&m                                       '
+    - '&9Lancer &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+10% &fRanged Damage Dealt'
+    - '&f- &a+10% &fMovement Speed Bonus'
+    - '&f- &a+5% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    - '&f- &c-1 &fRanged Inaccuracy'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      RANGED_DAMAGE_DEALT: 0.1
+      MOVEMENT_SPEED_BONUS: 0.1
+      CRIT_CHANCE: 0.05
+      MAGIC_DAMAGE_DEALT: -0.1
+      RANGED_INACCURACY: -1
+  warmonger:
+    group: 1
+    position: 55
+    icon: BLAZE_ROD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&4Warmonger'
+    description:
+    - '&4Warmongers&7, bloodthirsty warriors who'
+    - '&7feed on battle. They grow stronger'
+    - '&7as they fight, becoming unstoppable.'
+    - '&8&m                                       '
+    - '&4Warmonger &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&f- &a+10% &fDamage Resistance'
+    - '&7But suffer from'
+    - '&f- &c-5% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: 5
+      DAMAGE_RESISTANCE: 0.1
+      MOVEMENT_SPEED_BONUS: -0.05
+      RANGED_DAMAGE_DEALT: -0.1
+  reaper:
+    group: 1
+    position: 56
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Reaper'
+    description:
+    - '&8Reapers&7, death-themed fighters who'
+    - '&7harvest souls with each kill. They'
+    - '&7are feared on the battlefield.'
+    - '&8&m                                       '
+    - '&8Reaper &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+15% &fCrit Chance'
+    - '&f- &a+10% &fNecrotic Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      CRIT_CHANCE: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -3
+      RANGED_DAMAGE_DEALT: -0.1
+  juggernaut:
+    group: 1
+    position: 57
+    icon: SHIELD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Juggernaut'
+    description:
+    - '&7Juggernauts&7, unstoppable forces of'
+    - '&7destruction. They shrug off blows'
+    - '&7and keep advancing, but are slow.'
+    - '&8&m                                       '
+    - '&7Juggernaut &7benefit from'
+    - '&f- &a+8 &fHealth Bonus'
+    - '&f- &a+15% &fArmor Multiplier Bonus'
+    - '&f- &a+20% &fKnockback Resistance'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALTH_BONUS: 8
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      KNOCKBACK_RESISTANCE: 0.2
+      MOVEMENT_SPEED_BONUS: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  blade_dancer:
+    group: 1
+    position: 58
+    icon: DIAMOND_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dBlade Dancer'
+    description:
+    - '&dBlade Dancers&7, graceful warriors who'
+    - '&7turn combat into a deadly dance.'
+    - '&7They weave between foes with'
+    - '&7lethal elegance.'
+    - '&8&m                                       '
+    - '&dBlade Dancer &7benefit from'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+15% &fDodge Chance'
+    - '&f- &a+10% &fCrit Chance'
+    - '&f- &a+10% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.1
+      DODGE_CHANCE: 0.15
+      CRIT_CHANCE: 0.1
+      MOVEMENT_SPEED_BONUS: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  pit_fighter:
+    group: 1
+    position: 59
+    icon: RAW_BEEF:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cPit Fighter'
+    description:
+    - '&cPit Fighters&7, brawlers who fight with'
+    - '&7raw power and dirty tactics.'
+    - '&7They deal massive damage but'
+    - '&7take hits to give them.'
+    - '&8&m                                       '
+    - '&cPit Fighter &7benefit from'
+    - '&f- &a+20% &fMelee Damage Dealt'
+    - '&f- &a+15% &fUnarmed Damage Dealt'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      UNARMED_DAMAGE_DEALT: 0.15
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: 3
+      RANGED_DAMAGE_DEALT: -0.1
+  marksman:
+    group: 2
+    position: 60
+    icon: BOW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eMarksman'
+    description:
+    - '&eMarksmen&7, expert archers who never'
+    - '&7miss their mark. Their arrows fly'
+    - '&7true and strike with deadly force.'
+    - '&8&m                                       '
+    - '&eMarksman &7benefit from'
+    - '&f- &a+20% &fRanged Damage Dealt'
+    - '&f- &a+15% &fCrit Chance'
+    - '&f- &a+10% &fRanged Velocity Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      CRIT_CHANCE: 0.15
+      RANGED_VELOCITY_BONUS: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  hunter:
+    group: 2
+    position: 61
+    icon: ARROW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&aHunter'
+    description:
+    - '&aHunters&7, wilderness trackers who use'
+    - '&7bows and traps. They are masters'
+    - '&7of the hunt and the harvest.'
+    - '&8&m                                       '
+    - '&aHunter &7benefit from'
+    - '&f- &a+15% &fRanged Damage Dealt'
+    - '&f- &a+15% &fFarming Drop Multiplier'
+    - '&f- &a+1% &fFishing Luck'
+    - '&f- &a+5% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.15
+      FARMING_DROP_MULTIPLIER: 0.15
+      FISHING_LUCK: 1
+      CRIT_CHANCE: 0.05
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  sniper:
+    group: 2
+    position: 62
+    icon: SPECTRAL_ARROW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Sniper'
+    description:
+    - '&8Snipers&7, patient killers who strike'
+    - '&7from extreme range. One shot, one'
+    - '&7kill is their motto.'
+    - '&8&m                                       '
+    - '&8Sniper &7benefit from'
+    - '&f- &a+25% &fRanged Damage Dealt'
+    - '&f- &a+20% &fCrit Damage'
+    - '&f- &a+15% &fRanged Velocity Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.25
+      CRIT_DAMAGE: 0.2
+      RANGED_VELOCITY_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  falconer:
+    group: 2
+    position: 63
+    icon: FEATHER:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Falconer'
+    description:
+    - '&6Falconers&7, bird-masters who fight'
+    - '&7alongside their avian companions.'
+    - '&7Their birds distract and wound foes.'
+    - '&8&m                                       '
+    - '&6Falconer &7benefit from'
+    - '&f- &a+15% &fRanged Damage Dealt'
+    - '&f- &a+10% &fCrit Chance'
+    - '&f- &a+10% &fDodge Chance'
+    - '&f- &a+10% &fFarming Drop Multiplier'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.15
+      CRIT_CHANCE: 0.1
+      DODGE_CHANCE: 0.1
+      FARMING_DROP_MULTIPLIER: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  ballistae:
+    group: 2
+    position: 64
+    icon: CROSSBOW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Ballistae'
+    description:
+    - '&7Ballistae&7, heavy ranged specialists'
+    - '&7who wield massive crossbows. They'
+    - '&7pierce armor with ease.'
+    - '&8&m                                       '
+    - '&7Ballistae &7benefit from'
+    - '&f- &a+20% &fRanged Damage Dealt'
+    - '&f- &a+10% &fBludgeoning Damage Dealt'
+    - '&f- &a+15% &fCrit Damage'
+    - '&7But suffer from'
+    - '&f- &c-5% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      BLUDGEONING_DAMAGE_DEALT: 0.1
+      CRIT_DAMAGE: 0.15
+      MOVEMENT_SPEED_BONUS: -0.05
+      MELEE_DAMAGE_DEALT: -0.1
+  slinger:
+    group: 2
+    position: 65
+    icon: STRING:-1
+    icon_locked: BARRIER:-1
+    display_name: '&aSlinger'
+    description:
+    - '&aSlings&7, quick-draw fighters who use'
+    - '&7slings and thrown weapons. They'
+    - '&7attack rapidly and move fast.'
+    - '&8&m                                       '
+    - '&aSlinger &7benefit from'
+    - '&f- &a+10% &fRanged Damage Dealt'
+    - '&f- &a+15% &fAttack Speed Bonus'
+    - '&f- &a+10% &fMovement Speed Bonus'
+    - '&f- &a+5% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.1
+      ATTACK_SPEED_BONUS: 0.15
+      MOVEMENT_SPEED_BONUS: 0.1
+      CRIT_CHANCE: 0.05
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  arbalist:
+    group: 2
+    position: 66
+    icon: CROSSBOW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Arbalist'
+    description:
+    - '&8Arbalists&7, crossbow experts who fire'
+    - '&7heavy bolts with devastating force.'
+    - '&7They can punch through any shield.'
+    - '&8&m                                       '
+    - '&8Arbalist &7benefit from'
+    - '&f- &a+20% &fRanged Damage Dealt'
+    - '&f- &a+15% &fCrit Damage'
+    - '&f- &a+5% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fKnockback Resistance'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      CRIT_DAMAGE: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.05
+      MELEE_DAMAGE_DEALT: -0.1
+      KNOCKBACK_RESISTANCE: -0.1
+  sharpshooter:
+    group: 2
+    position: 67
+    icon: SPECTRAL_ARROW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eSharpshooter'
+    description:
+    - '&eSharpshooters&7, legendary marksmen whose'
+    - '&7accuracy is supernatural. They hit'
+    - '&7weak spots with every shot.'
+    - '&8&m                                       '
+    - '&eSharpshooter &7benefit from'
+    - '&f- &a+20% &fRanged Damage Dealt'
+    - '&f- &a+20% &fCrit Chance'
+    - '&f- &a+10% &fCrit Damage'
+    - '&f- &a+5% &fDodge Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      CRIT_CHANCE: 0.2
+      CRIT_DAMAGE: 0.1
+      DODGE_CHANCE: 0.05
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  beastmaster:
+    group: 2
+    position: 68
+    icon: LEAD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Beastmaster'
+    description:
+    - '&6Beastmasters&7, warriors who fight alongside'
+    - '&7tamed beasts. Their animal companions'
+    - '&7amplify their power in battle.'
+    - '&8&m                                       '
+    - '&6Beastmaster &7benefit from'
+    - '&f- &a+10% &fRanged Damage Dealt'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&f- &a+15% &fFarming Drop Multiplier'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fKnockback Resistance'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.1
+      MELEE_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: 3
+      FARMING_DROP_MULTIPLIER: 0.15
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      KNOCKBACK_RESISTANCE: -0.1
+  trapper:
+    group: 2
+    position: 69
+    icon: STRING:-1
+    icon_locked: BARRIER:-1
+    display_name: '&2Trapper'
+    description:
+    - '&2Trappers&7, cunning hunters who use'
+    - '&7traps and snares. They control the'
+    - '&7battlefield and bleed foes slowly.'
+    - '&8&m                                       '
+    - '&2Trapper &7benefit from'
+    - '&f- &a+10% &fRanged Damage Dealt'
+    - '&f- &a+15% &fPoison Damage Dealt'
+    - '&f- &a+10% &fCrit Chance'
+    - '&f- &a+10% &fDig Speed'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.1
+      POISON_DAMAGE_DEALT: 0.15
+      CRIT_CHANCE: 0.1
+      DIG_SPEED: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  sorcerer:
+    group: 3
+    position: 70
+    icon: BLAZE_ROD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bSorcerer'
+    description:
+    - '&bSorcerers&7, raw magical talent who'
+    - '&7wield immense arcane power. They'
+    - '&7devastate foes with pure magic.'
+    - '&8&m                                       '
+    - '&bSorcerer &7benefit from'
+    - '&f- &a+25% &fMagic Damage Dealt'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+10% &fCrit Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.25
+      COOLDOWN_REDUCTION: 0.15
+      CRIT_DAMAGE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  elementalist:
+    group: 3
+    position: 71
+    icon: MAGMA_CREAM:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eElementalist'
+    description:
+    - '&eElementalists&7, mages who command all'
+    - '&7elements. They shift between fire,'
+    - '&7ice, and lightning at will.'
+    - '&8&m                                       '
+    - '&eElementalist &7benefit from'
+    - '&f- &a+15% &fFire Damage Dealt'
+    - '&f- &a+15% &fFreezing Damage Dealt'
+    - '&f- &a+15% &fLightning Damage Dealt'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.15
+      FREEZING_DAMAGE_DEALT: 0.15
+      LIGHTNING_DAMAGE_DEALT: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  conjurer:
+    group: 3
+    position: 72
+    icon: EXPERIENCE_BOTTLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dConjurer'
+    description:
+    - '&dConjurers&7, mages who summon and create'
+    - '&7magical constructs. They bend reality'
+    - '&7to their will with devastating power.'
+    - '&8&m                                       '
+    - '&dConjurer &7benefit from'
+    - '&f- &a+20% &fMagic Damage Dealt'
+    - '&f- &a+20% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-15% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      COOLDOWN_REDUCTION: 0.2
+      ARMOR_MULTIPLIER_BONUS: -0.15
+      MELEE_DAMAGE_DEALT: -0.1
+  illusionist:
+    group: 3
+    position: 73
+    icon: PHANTOM_MEMBRANE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&fIllusionist'
+    description:
+    - '&fIllusionists&7, masters of deception and'
+    - '&7misdirection. They confuse foes and'
+    - '&7strike from impossible angles.'
+    - '&8&m                                       '
+    - '&fIllusionist &7benefit from'
+    - '&f- &a+15% &fMagic Damage Dealt'
+    - '&f- &a+20% &fDodge Chance'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  necromancer:
+    group: 3
+    position: 74
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Necromancer'
+    description:
+    - '&8Necromancers&7, dark mages who command'
+    - '&7the dead. They raise undead armies'
+    - '&7and drain the life from foes.'
+    - '&8&m                                       '
+    - '&8Necromancer &7benefit from'
+    - '&f- &a+25% &fNecrotic Damage Dealt'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+10% &fHealing Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fRadiant Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.25
+      COOLDOWN_REDUCTION: 0.15
+      HEALING_BONUS: 0.1
+      RADIANT_RESISTANCE: -0.15
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  witch:
+    group: 3
+    position: 75
+    icon: FERMENTED_SPIDER_EYE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Witch'
+    description:
+    - '&5Witches&7, crafters of potions and curses.'
+    - '&7They brew devastating concoctions'
+    - '&7and hex their enemies.'
+    - '&8&m                                       '
+    - '&5Witch &7benefit from'
+    - '&f- &a+20% &fPoison Damage Dealt'
+    - '&f- &a+20% &fAlchemy Exp Gain'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&f- &a+5% &fHealing Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      POISON_DAMAGE_DEALT: 0.2
+      ALCHEMY_EXP_GAIN: 0.2
+      COOLDOWN_REDUCTION: 0.1
+      HEALING_BONUS: 0.05
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  battle_mage:
+    group: 3
+    position: 76
+    icon: DIAMOND_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&9Battle Mage'
+    description:
+    - '&9Battle Mages&7, warriors who combine'
+    - '&7steel and sorcery. They fight in'
+    - '&7the thick of battle with magic'
+    - '&7and blade alike.'
+    - '&8&m                                       '
+    - '&9Battle Mage &7benefit from'
+    - '&f- &a+15% &fMagic Damage Dealt'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+5% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      MELEE_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      COOLDOWN_REDUCTION: 0.05
+      RANGED_DAMAGE_DEALT: -0.1
+      HEALTH_BONUS: -2
+  pyromancer:
+    group: 3
+    position: 77
+    icon: BLAZE_POWDER:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cPyromancer'
+    description:
+    - '&cPyromancers&7, fire mages of terrible'
+    - '&7power. They immolate foes and create'
+    - '&7walls of flame.'
+    - '&8&m                                       '
+    - '&cPyromancer &7benefit from'
+    - '&f- &a+30% &fFire Damage Dealt'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-15% &fFreezing Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      FIRE_DAMAGE_DEALT: 0.3
+      MAGIC_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      FREEZING_RESISTANCE: -0.15
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  cryomancer:
+    group: 3
+    position: 78
+    icon: PACKED_ICE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bCryomancer'
+    description:
+    - '&bCryomancers&7, ice mages who freeze'
+    - '&7all they touch. They control the'
+    - '&7battlefield with walls of ice.'
+    - '&8&m                                       '
+    - '&bCryomancer &7benefit from'
+    - '&f- &a+30% &fFreezing Damage Dealt'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+15% &fFreezing Resistance'
+    - '&7But suffer from'
+    - '&f- &c-15% &fFire Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      FREEZING_DAMAGE_DEALT: 0.3
+      MAGIC_DAMAGE_DEALT: 0.1
+      FREEZING_RESISTANCE: 0.15
+      FIRE_RESISTANCE: -0.15
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  storm_caller:
+    group: 3
+    position: 79
+    icon: CONDUIT:-1
+    icon_locked: BARRIER:-1
+    display_name: '&9Stormcaller'
+    description:
+    - '&9Stormcallers&7, lightning mages who'
+    - '&7call down the fury of the heavens.'
+    - '&7Their storms devastate all foes.'
+    - '&8&m                                       '
+    - '&9Stormcaller &7benefit from'
+    - '&f- &a+30% &fLightning Damage Dealt'
+    - '&f- &a+10% &fRanged Damage Dealt'
+    - '&f- &a+10% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      LIGHTNING_DAMAGE_DEALT: 0.3
+      RANGED_DAMAGE_DEALT: 0.1
+      MOVEMENT_SPEED_BONUS: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  sage:
+    group: 4
+    position: 80
+    icon: GOLDEN_APPLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eSage'
+    description:
+    - '&eSages&7, wise healers who command'
+    - '&7restorative magic. They mend wounds'
+    - '&7and provide wisdom to allies.'
+    - '&8&m                                       '
+    - '&eSage &7benefit from'
+    - '&f- &a+30% &fHealing Bonus'
+    - '&f- &a+10% &fRadiant Damage Dealt'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+5% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.3
+      RADIANT_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.05
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  apothecary:
+    group: 4
+    position: 81
+    icon: BREWING_STAND:-1
+    icon_locked: BARRIER:-1
+    display_name: '&aApothecary'
+    description:
+    - '&aApothecaries&7, potion masters who heal'
+    - '&7with alchemical brews. Their potions'
+    - '&7are stronger and more potent.'
+    - '&8&m                                       '
+    - '&aApothecary &7benefit from'
+    - '&f- &a+25% &fHealing Bonus'
+    - '&f- &a+20% &fAlchemy Exp Gain'
+    - '&f- &a+20% &fAlchemy Quality General'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.25
+      ALCHEMY_EXP_GAIN: 0.2
+      ALCHEMY_QUALITY_GENERAL: 20
+      COOLDOWN_REDUCTION: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  battle_medic:
+    group: 4
+    position: 82
+    icon: REDSTONE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cBattle Medic'
+    description:
+    - '&cBattle Medics&7, combat healers who'
+    - '&7fight on the front lines. They'
+    - '&7heal allies while dealing damage.'
+    - '&8&m                                       '
+    - '&cBattle Medic &7benefit from'
+    - '&f- &a+20% &fHealing Bonus'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fRadiant Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-1 &fRanged Inaccuracy'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      MELEE_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      RADIANT_DAMAGE_DEALT: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      RANGED_INACCURACY: -1
+  oracle:
+    group: 4
+    position: 83
+    icon: EYE_OF_ENDER:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dOracle'
+    description:
+    - '&dOracles&7, seers who glimpse the future.'
+    - '&7They guide allies with prescient'
+    - '&7knowledge and divine power.'
+    - '&8&m                                       '
+    - '&dOracle &7benefit from'
+    - '&f- &a+20% &fHealing Bonus'
+    - '&f- &a+20% &fCooldown Reduction'
+    - '&f- &a+15% &fLuck Bonus'
+    - '&f- &a+5% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      COOLDOWN_REDUCTION: 0.2
+      LUCK_BONUS: 0.15
+      CRIT_CHANCE: 0.05
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  chanter:
+    group: 4
+    position: 84
+    icon: NOTE_BLOCK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bChanter'
+    description:
+    - '&bChanters&7, speakers of power words.'
+    - '&7Their chants buff allies and weaken'
+    - '&7foes with arcane resonance.'
+    - '&8&m                                       '
+    - '&bChanter &7benefit from'
+    - '&f- &a+15% &fHealing Bonus'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+10% &fDodge Chance'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.15
+      DODGE_CHANCE: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  priest:
+    group: 4
+    position: 85
+    icon: GOLDEN_APPLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&ePriest'
+    description:
+    - '&ePriests&7, devout healers who channel'
+    - '&7divine power. Their prayers mend'
+    - '&7wounds and shield allies from harm.'
+    - '&8&m                                       '
+    - '&ePriest &7benefit from'
+    - '&f- &a+30% &fHealing Bonus'
+    - '&f- &a+15% &fRadiant Resistance'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fRadiant Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.3
+      RADIANT_RESISTANCE: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      RADIANT_DAMAGE_DEALT: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  spirit_walker:
+    group: 4
+    position: 86
+    icon: TOTEM_OF_UNDYING:-1
+    icon_locked: BARRIER:-1
+    display_name: '&3Spirit Walker'
+    description:
+    - '&3Spirit Walkers&7, shamans who walk between'
+    - '&7the living and spirit worlds. They'
+    - '&7heal with spirit magic.'
+    - '&8&m                                       '
+    - '&3Spirit Walker &7benefit from'
+    - '&f- &a+20% &fHealing Bonus'
+    - '&f- &a+15% &fNecrotic Resistance'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      NECROTIC_RESISTANCE: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  life_binder:
+    group: 4
+    position: 87
+    icon: HEART_OF_THE_SEA:-1
+    icon_locked: BARRIER:-1
+    display_name: '&aLife Binder'
+    description:
+    - '&aLife Binders&7, mages of vital energy.'
+    - '&7They tether life force and redirect'
+    - '&7it to heal or harm.'
+    - '&8&m                                       '
+    - '&aLife Binder &7benefit from'
+    - '&f- &a+25% &fHealing Bonus'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&f- &a+5% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.25
+      MAGIC_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: 3
+      ARMOR_MULTIPLIER_BONUS: 0.05
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  confessor:
+    group: 4
+    position: 88
+    icon: BOOK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Confessor'
+    description:
+    - '&7Confessors&7, spiritual advisors who'
+    - '&7absorb the pain of others. They'
+    - '&7sacrifice their own health to'
+    - '&7heal allies.'
+    - '&8&m                                       '
+    - '&7Confessor &7benefit from'
+    - '&f- &a+35% &fHealing Bonus'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    stat_buffs:
+      HEALING_BONUS: 0.35
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+  sentinel:
+    group: 5
+    position: 89
+    icon: SHIELD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eSentinel'
+    description:
+    - '&eSentinels&7, watchful guardians who'
+    - '&7protect allies at all costs. They'
+    - '&7are the bulwark against evil.'
+    - '&8&m                                       '
+    - '&eSentinel &7benefit from'
+    - '&f- &a+20% &fArmor Multiplier Bonus'
+    - '&f- &a+15% &fDamage Resistance'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&f- &a+15% &fKnockback Resistance'
+    - '&7But suffer from'
+    - '&f- &c-5% &fMovement Speed Bonus'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      DAMAGE_RESISTANCE: 0.15
+      HEALTH_BONUS: 5
+      KNOCKBACK_RESISTANCE: 0.15
+      MOVEMENT_SPEED_BONUS: -0.05
+      RANGED_DAMAGE_DEALT: -0.1
+  bulwark:
+    group: 5
+    position: 90
+    icon: SHIELD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Bulwark'
+    description:
+    - '&7Bulwarks&7, immovable walls of defense.'
+    - '&7They stand firm against any assault'
+    - '&7and cannot be moved.'
+    - '&8&m                                       '
+    - '&7Bulwark &7benefit from'
+    - '&f- &a+25% &fArmor Multiplier Bonus'
+    - '&f- &a+30% &fKnockback Resistance'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.25
+      KNOCKBACK_RESISTANCE: 0.3
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  guardian:
+    group: 5
+    position: 91
+    icon: IRON_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eGuardian'
+    description:
+    - '&eGuardians&7, devoted protectors who'
+    - '&7shield the weak. Their defensive'
+    - '&7magic makes them nearly unkillable.'
+    - '&8&m                                       '
+    - '&eGuardian &7benefit from'
+    - '&f- &a+20% &fArmor Multiplier Bonus'
+    - '&f- &a+15% &fHealing Bonus'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&f- &a+10% &fDamage Resistance'
+    - '&7But suffer from'
+    - '&f- &c-5% &fMovement Speed Bonus'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      HEALING_BONUS: 0.15
+      HEALTH_BONUS: 5
+      DAMAGE_RESISTANCE: 0.1
+      MOVEMENT_SPEED_BONUS: -0.05
+      RANGED_DAMAGE_DEALT: -0.1
+  fortress:
+    group: 5
+    position: 92
+    icon: STONE_BRICKS:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Fortress'
+    description:
+    - '&8Fortresses&7, living walls of stone and'
+    - '&7steel. They absorb tremendous damage'
+    - '&7and barely flinch.'
+    - '&8&m                                       '
+    - '&8Fortress &7benefit from'
+    - '&f- &a+30% &fArmor Multiplier Bonus'
+    - '&f- &a+25% &fKnockback Resistance'
+    - '&f- &a+8 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.3
+      KNOCKBACK_RESISTANCE: 0.25
+      HEALTH_BONUS: 8
+      MOVEMENT_SPEED_BONUS: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  aegis:
+    group: 5
+    position: 93
+    icon: GOLDEN_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eAegis'
+    description:
+    - '&eAegis&7, holy shield-bearers who combine'
+    - '&7defense with divine power. Their'
+    - '&7shields glow with sacred energy.'
+    - '&8&m                                       '
+    - '&eAegis &7benefit from'
+    - '&f- &a+20% &fArmor Multiplier Bonus'
+    - '&f- &a+15% &fRadiant Resistance'
+    - '&f- &a+10% &fHealing Bonus'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-5% &fMovement Speed Bonus'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      RADIANT_RESISTANCE: 0.15
+      HEALING_BONUS: 0.1
+      HEALTH_BONUS: 3
+      MOVEMENT_SPEED_BONUS: -0.05
+      RANGED_DAMAGE_DEALT: -0.1
+  stone_warden:
+    group: 5
+    position: 94
+    icon: DEEPSLATE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Stone Warden'
+    description:
+    - '&7Stone Wardens&7, earth-bound guardians'
+    - '&7who draw power from the ground. They'
+    - '&7are nearly impossible to topple.'
+    - '&8&m                                       '
+    - '&7Stone Warden &7benefit from'
+    - '&f- &a+25% &fArmor Multiplier Bonus'
+    - '&f- &a+20% &fDamage Resistance'
+    - '&f- &a+20% &fKnockback Resistance'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.25
+      DAMAGE_RESISTANCE: 0.2
+      KNOCKBACK_RESISTANCE: 0.2
+      MOVEMENT_SPEED_BONUS: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  ironclad:
+    group: 5
+    position: 95
+    icon: IRON_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Ironclad'
+    description:
+    - '&7Ironclad&7, warriors wrapped in layers'
+    - '&7of iron. They shrug off blows that'
+    - '&7would fell lesser fighters.'
+    - '&8&m                                       '
+    - '&7Ironclad &7benefit from'
+    - '&f- &a+20% &fArmor Multiplier Bonus'
+    - '&f- &a+15% &fDamage Resistance'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      DAMAGE_RESISTANCE: 0.15
+      HEALTH_BONUS: 5
+      MOVEMENT_SPEED_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  phalanx:
+    group: 5
+    position: 96
+    icon: SHIELD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&ePhalanx'
+    description:
+    - '&ePhalanx&7, formation fighters who are'
+    - '&7stronger together. Their defensive'
+    - '&7coordination makes them formidable.'
+    - '&8&m                                       '
+    - '&ePhalanx &7benefit from'
+    - '&f- &a+20% &fArmor Multiplier Bonus'
+    - '&f- &a+20% &fKnockback Resistance'
+    - '&f- &a+10% &fDamage Resistance'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-5% &fMovement Speed Bonus'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      KNOCKBACK_RESISTANCE: 0.2
+      DAMAGE_RESISTANCE: 0.1
+      HEALTH_BONUS: 3
+      MOVEMENT_SPEED_BONUS: -0.05
+      RANGED_DAMAGE_DEALT: -0.1
+  colossus:
+    group: 5
+    position: 97
+    icon: NETHERITE_CHESTPLATE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&4Colossus'
+    description:
+    - '&4Colossi&7, towering defensive warriors'
+    - '&7of incredible endurance. They absorb'
+    - '&7punishment meant for armies.'
+    - '&8&m                                       '
+    - '&4Colossus &7benefit from'
+    - '&f- &a+10 &fHealth Bonus'
+    - '&f- &a+20% &fArmor Multiplier Bonus'
+    - '&f- &a+25% &fKnockback Resistance'
+    - '&7But suffer from'
+    - '&f- &c-20% &fMovement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      HEALTH_BONUS: 10
+      ARMOR_MULTIPLIER_BONUS: 0.2
+      KNOCKBACK_RESISTANCE: 0.25
+      MOVEMENT_SPEED_BONUS: -0.2
+      RANGED_DAMAGE_DEALT: -0.1
+  shadow:
+    group: 6
+    position: 98
+    icon: BLACK_DYE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Shadow'
+    description:
+    - '&8Shadows&7, masters of stealth who strike'
+    - '&7from the darkness. They deal lethal'
+    - '&7damage before vanishing.'
+    - '&8&m                                       '
+    - '&8Shadow &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+25% &fSneak Movement Speed Bonus'
+    - '&f- &a+15% &fDodge Chance'
+    - '&f- &a+10% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.25
+      DODGE_CHANCE: 0.15
+      CRIT_CHANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  infiltrator:
+    group: 6
+    position: 99
+    icon: LEATHER_HELMET:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Infiltrator'
+    description:
+    - '&7Infiltrators&7, spies who slip past any'
+    - '&7defense. They are experts of disguise'
+    - '&7and deadly ambush.'
+    - '&8&m                                       '
+    - '&7Infiltrator &7benefit from'
+    - '&f- &a+20% &fSneak Movement Speed Bonus'
+    - '&f- &a+15% &fCrit Chance'
+    - '&f- &a+10% &fDodge Chance'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      CRIT_CHANCE: 0.15
+      DODGE_CHANCE: 0.1
+      MELEE_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  nightblade:
+    group: 6
+    position: 100
+    icon: NETHERITE_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Nightblade'
+    description:
+    - '&5Nightblades&7, warriors of shadow and'
+    - '&7steel. They fight with dark magic'
+    - '&7infused in every strike.'
+    - '&8&m                                       '
+    - '&5Nightblade &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+10% &fNecrotic Damage Dealt'
+    - '&f- &a+20% &fSneak Movement Speed Bonus'
+    - '&f- &a+10% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.1
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      CRIT_CHANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  whisper:
+    group: 6
+    position: 101
+    icon: STRING:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Whisper'
+    description:
+    - '&7Whispers&7, silent killers who leave no'
+    - '&7trace. Their strikes are precise and'
+    - '&7utterly deadly.'
+    - '&8&m                                       '
+    - '&7Whisper &7benefit from'
+    - '&f- &a+25% &fSneak Movement Speed Bonus'
+    - '&f- &a+20% &fCrit Chance'
+    - '&f- &a+15% &fCrit Damage'
+    - '&7But suffer from'
+    - '&f- &c-3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.25
+      CRIT_CHANCE: 0.2
+      CRIT_DAMAGE: 0.15
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  cutthroat:
+    group: 6
+    position: 102
+    icon: GOLDEN_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&cCutthroat'
+    description:
+    - '&cCutthroats&7, ruthless assassins who'
+    - '&7fight dirty. They deal massive'
+    - '&7damage in close quarters.'
+    - '&8&m                                       '
+    - '&cCutthroat &7benefit from'
+    - '&f- &a+20% &fMelee Damage Dealt'
+    - '&f- &a+15% &fCrit Chance'
+    - '&f- &a+15% &fBleed Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.2
+      CRIT_CHANCE: 0.15
+      BLEED_DAMAGE: 0.15
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  phantom:
+    group: 6
+    position: 103
+    icon: PHANTOM_MEMBRANE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&fPhantom'
+    description:
+    - '&fPhantoms&7, ghost-like assassins who'
+    - '&7seem to disappear. They strike from'
+    - '&7nowhere and vanish instantly.'
+    - '&8&m                                       '
+    - '&fPhantom &7benefit from'
+    - '&f- &a+20% &fDodge Chance'
+    - '&f- &a+20% &fSneak Movement Speed Bonus'
+    - '&f- &a+10% &fCrit Chance'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      DODGE_CHANCE: 0.2
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      CRIT_CHANCE: 0.1
+      MAGIC_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  renegade:
+    group: 6
+    position: 104
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Renegade'
+    description:
+    - '&8Renegades&7, outlaws who fight outside'
+    - '&7the law. They use every dirty trick'
+    - '&7to gain the upper hand.'
+    - '&8&m                                       '
+    - '&8Renegade &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+15% &fSneak Movement Speed Bonus'
+    - '&f- &a+15% &fDodge Chance'
+    - '&f- &a+10% &fCrit Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      DODGE_CHANCE: 0.15
+      CRIT_DAMAGE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  deadeye:
+    group: 6
+    position: 105
+    icon: SPECTRAL_ARROW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eDeadeye'
+    description:
+    - '&eDeadeyes&7, ranged assassins who strike'
+    - '&7from the shadows. Their shots never'
+    - '&7miss and always find the heart.'
+    - '&8&m                                       '
+    - '&eDeadeye &7benefit from'
+    - '&f- &a+20% &fRanged Damage Dealt'
+    - '&f- &a+20% &fCrit Chance'
+    - '&f- &a+15% &fSneak Movement Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.2
+      CRIT_CHANCE: 0.2
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  scoundrel:
+    group: 6
+    position: 106
+    icon: TRIPWIRE_HOOK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&aScoundrel'
+    description:
+    - '&aScoundrels&7, rogues who use traps and'
+    - '&7tricks. They control the battlefield'
+    - '&7with cunning and treachery.'
+    - '&8&m                                       '
+    - '&aScoundrel &7benefit from'
+    - '&f- &a+15% &fCrit Chance'
+    - '&f- &a+15% &fDodge Chance'
+    - '&f- &a+10% &fPoison Damage Dealt'
+    - '&f- &a+15% &fLuck Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      CRIT_CHANCE: 0.15
+      DODGE_CHANCE: 0.15
+      POISON_DAMAGE_DEALT: 0.1
+      LUCK_BONUS: 0.15
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  trickster:
+    group: 6
+    position: 107
+    icon: SLIME_BALL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dTrickster'
+    description:
+    - '&dTricksters&7, magical rogues who combine'
+    - '&7spell and stealth. They confound foes'
+    - '&7with illusions and backstab.'
+    - '&8&m                                       '
+    - '&dTrickster &7benefit from'
+    - '&f- &a+15% &fMagic Damage Dealt'
+    - '&f- &a+15% &fSneak Movement Speed Bonus'
+    - '&f- &a+15% &fDodge Chance'
+    - '&f- &a+10% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.15
+      DODGE_CHANCE: 0.15
+      CRIT_CHANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  beast_tamer:
+    group: 7
+    position: 108
+    icon: LEAD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Beast Tamer'
+    description:
+    - '&6Beast Tamers&7, masters who command'
+    - '&7wild creatures. Their animal allies'
+    - '&7fight alongside them in battle.'
+    - '&8&m                                       '
+    - '&6Beast Tamer &7benefit from'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&f- &a+10% &fDodge Chance'
+    - '&f- &a+15% &fFarming Drop Multiplier'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: 5
+      DODGE_CHANCE: 0.1
+      FARMING_DROP_MULTIPLIER: 0.15
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  undead_commander:
+    group: 7
+    position: 109
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Undead Commander'
+    description:
+    - '&8Undead Commanders&7, necromancers who lead'
+    - '&7armies of the dead. They raise'
+    - '&7fallen foes to fight for them.'
+    - '&8&m                                       '
+    - '&8Undead Commander &7benefit from'
+    - '&f- &a+20% &fNecrotic Damage Dealt'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&f- &a+15% &fKnockback Resistance'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.2
+      HEALTH_BONUS: 5
+      KNOCKBACK_RESISTANCE: 0.15
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  golemancer:
+    group: 7
+    position: 110
+    icon: IRON_BLOCK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Golemancer'
+    description:
+    - '&7Golemancers&7, mages who create and'
+    - '&7command stone and iron golems. Their'
+    - '&7constructs are formidable defenders.'
+    - '&8&m                                       '
+    - '&7Golemancer &7benefit from'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&f- &a+15% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fDamage Resistance'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-5% &fMovement Speed Bonus'
+    stat_buffs:
+      HEALTH_BONUS: 5
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      DAMAGE_RESISTANCE: 0.1
+      MAGIC_DAMAGE_DEALT: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      MOVEMENT_SPEED_BONUS: -0.05
+  banneret:
+    group: 7
+    position: 111
+    icon: BANNER:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eBanneret'
+    description:
+    - '&eBannerets&7, rallying commanders who'
+    - '&7inspire allies with their presence.'
+    - '&7Their battle cries strengthen the'
+    - '&7entire party.'
+    - '&8&m                                       '
+    - '&eBanneret &7benefit from'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fDamage Resistance'
+    - '&f- &a+10% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      HEALTH_BONUS: 3
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      DAMAGE_RESISTANCE: 0.1
+      CRIT_CHANCE: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  warlord:
+    group: 7
+    position: 112
+    icon: NETHERITE_AXE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&4Warlord'
+    description:
+    - '&4Warlords&7, military leaders who dominate'
+    - '&7the battlefield. They boost ally'
+    - '&7morale and crush enemy resolve.'
+    - '&8&m                                       '
+    - '&4Warlord &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+15% &fKnockback Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      HEALTH_BONUS: 5
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      KNOCKBACK_RESISTANCE: 0.15
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  commander:
+    group: 7
+    position: 113
+    icon: GOLDEN_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eCommander'
+    description:
+    - '&eCommanders&7, strategic leaders who'
+    - '&7coordinate allied forces. Their tactical'
+    - '&7brilliance turns the tide of battle.'
+    - '&8&m                                       '
+    - '&eCommander &7benefit from'
+    - '&f- &a+10% &fDamage Dealt'
+    - '&f- &a+10% &fDamage Resistance'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    stat_buffs:
+      DAMAGE_DEALT: 0.1
+      DAMAGE_RESISTANCE: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: 3
+      RANGED_DAMAGE_DEALT: -0.1
+      MAGIC_DAMAGE_DEALT: -0.1
+  ritualist:
+    group: 7
+    position: 114
+    icon: ENCHANTMENT_TABLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Ritualist'
+    description:
+    - '&5Ritualists&7, mages who summon powerful'
+    - '&7entities through dark ceremonies.'
+    - '&7Their rituals grant immense power.'
+    - '&8&m                                       '
+    - '&5Ritualist &7benefit from'
+    - '&f- &a+20% &fMagic Damage Dealt'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+10% &fNecrotic Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  binder:
+    group: 7
+    position: 115
+    icon: LEAD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Binder'
+    description:
+    - '&8Binders&7, mages who chain and control'
+    - '&7entities. They bind spirits to their'
+    - '&7will and force them to fight.'
+    - '&8&m                                       '
+    - '&8Binder &7benefit from'
+    - '&f- &a+15% &fNecrotic Damage Dealt'
+    - '&f- &a+15% &fMagic Damage Dealt'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-5% &fMovement Speed Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.15
+      MAGIC_DAMAGE_DEALT: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: 3
+      RANGED_DAMAGE_DEALT: -0.1
+      MOVEMENT_SPEED_BONUS: -0.05
+  spellthief:
+    group: 8
+    position: 116
+    icon: DIAMOND_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Spellthief'
+    description:
+    - '&5Spellthieves&7, rogues who steal and use'
+    - '&7enemy magic. They combine spell'
+    - '&7and blade with deadly efficiency.'
+    - '&8&m                                       '
+    - '&5Spellthief &7benefit from'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+15% &fDodge Chance'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.1
+      MAGIC_DAMAGE_DEALT: 0.1
+      DODGE_CHANCE: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  blade_mage:
+    group: 8
+    position: 117
+    icon: DIAMOND_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&9Blade Mage'
+    description:
+    - '&9Blade Mages&7, warriors who infuse their'
+    - '&7weapons with magic. Each strike'
+    - '&7carries both steel and sorcery.'
+    - '&8&m                                       '
+    - '&9Blade Mage &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+10% &fCrit Chance'
+    - '&f- &a+5% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      CRIT_CHANCE: 0.1
+      COOLDOWN_REDUCTION: 0.05
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  runic_warrior:
+    group: 8
+    position: 118
+    icon: ENCHANTED_BOOK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Runic Warrior'
+    description:
+    - '&6Runic Warriors&7, fighters inscribed with'
+    - '&7battle runes. Their runes grant'
+    - '&7both offensive and defensive power.'
+    - '&8&m                                       '
+    - '&6Runic Warrior &7benefit from'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      MAGIC_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: 3
+      RANGED_DAMAGE_DEALT: -0.1
+  hexblade:
+    group: 8
+    position: 119
+    icon: WITHER_SKELETON_SKULL:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Hexblade'
+    description:
+    - '&5Hexblades&7, warriors who channel curses'
+    - '&7through their blades. They weaken'
+    - '&7foes with dark enchantments.'
+    - '&8&m                                       '
+    - '&5Hexblade &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+10% &fNecrotic Damage Dealt'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&f- &a+10% &fHealing Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      NECROTIC_DAMAGE_DEALT: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      HEALING_BONUS: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  arcane_archer:
+    group: 8
+    position: 120
+    icon: BOW:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bArcane Archer'
+    description:
+    - '&bArcane Archers&7, mages who enchant their'
+    - '&7arrows with spells. Each shot carries'
+    - '&7devastating magical force.'
+    - '&8&m                                       '
+    - '&bArcane Archer &7benefit from'
+    - '&f- &a+15% &fRanged Damage Dealt'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+10% &fCrit Chance'
+    - '&f- &a+10% &fCrit Damage'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      RANGED_DAMAGE_DEALT: 0.15
+      MAGIC_DAMAGE_DEALT: 0.1
+      CRIT_CHANCE: 0.1
+      CRIT_DAMAGE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  battle_cleric:
+    group: 8
+    position: 121
+    icon: GOLDEN_APPLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eBattle Cleric'
+    description:
+    - '&eBattle Clerics&7, holy warriors who fight'
+    - '&7and heal in equal measure. They'
+    - '&7are versatile front-line support.'
+    - '&8&m                                       '
+    - '&eBattle Cleric &7benefit from'
+    - '&f- &a+15% &fHealing Bonus'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+10% &fRadiant Damage Dealt'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      HEALING_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: 0.1
+      RADIANT_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+      HEALTH_BONUS: -2
+  spirit_knight:
+    group: 8
+    position: 122
+    icon: TOTEM_OF_UNDYING:-1
+    icon_locked: BARRIER:-1
+    display_name: '&3Spirit Knight'
+    description:
+    - '&3Spirit Knights&7, warriors empowered by'
+    - '&7ancestral spirits. They fight with'
+    - '&7otherworldly strength and resilience.'
+    - '&8&m                                       '
+    - '&3Spirit Knight &7benefit from'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+10% &fNecrotic Damage Dealt'
+    - '&f- &a+5 &fHealth Bonus'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.1
+      NECROTIC_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: 5
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  runepriest:
+    group: 8
+    position: 123
+    icon: ENCHANTED_BOOK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Runepriest'
+    description:
+    - '&6Runepriests&7, mages who inscribe runes'
+    - '&7of power. Their rune magic enhances'
+    - '&7all aspects of combat.'
+    - '&8&m                                       '
+    - '&6Runepriest &7benefit from'
+    - '&f- &a+15% &fMagic Damage Dealt'
+    - '&f- &a+10% &fHealing Bonus'
+    - '&f- &a+15% &fEnchanting Exp Gain'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.1
+      ENCHANTING_EXP_GAIN: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  mystic:
+    group: 8
+    position: 124
+    icon: EXPERIENCE_BOTTLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dMystic'
+    description:
+    - '&dMystics&7, spiritual warriors who channel'
+    - '&7inner power. They achieve transcendence'
+    - '&7through meditation and combat.'
+    - '&8&m                                       '
+    - '&dMystic &7benefit from'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&f- &a+10% &fHealing Bonus'
+    - '&f- &a+15% &fDodge Chance'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.1
+      HEALING_BONUS: 0.1
+      DODGE_CHANCE: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  adept:
+    group: 8
+    position: 125
+    icon: DIAMOND_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eAdept'
+    description:
+    - '&eAdepts&7, versatile fighters who master'
+    - '&7multiple disciplines. They adapt to'
+    - '&7any situation with ease.'
+    - '&8&m                                       '
+    - '&eAdept &7benefit from'
+    - '&f- &a+10% &fDamage Dealt'
+    - '&f- &a+10% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: 0.1
+      COOLDOWN_REDUCTION: 0.1
+      HEALTH_BONUS: 3
+      MELEE_DAMAGE_DEALT: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  artificer:
+    group: 9
+    position: 126
+    icon: CRAFTING_TABLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bArtificer'
+    description:
+    - '&bArtificers&7, magical craftsmen who create'
+    - '&7enchanted items and devices. Their'
+    - '&7creations are of superior quality.'
+    - '&8&m                                       '
+    - '&bArtificer &7benefit from'
+    - '&f- &a+20% &fCrafting Time Reduction'
+    - '&f- &a+20% &fEnchanting Quality'
+    - '&f- &a+10% &fLuck Bonus'
+    - '&f- &a+15% &fCooking Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      CRAFTING_TIME_REDUCTION: 0.2
+      ENCHANTING_QUALITY: 20
+      LUCK_BONUS: 0.1
+      COOKING_SPEED_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  jeweler:
+    group: 9
+    position: 127
+    icon: DIAMOND:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bJeweler'
+    description:
+    - '&bJewelers&7, masters of precious stones'
+    - '&7and metals. They craft items of'
+    - '&7unmatched beauty and power.'
+    - '&8&m                                       '
+    - '&bJeweler &7benefit from'
+    - '&f- &a+25% &fSmithing Quality General'
+    - '&f- &a+15% &fEnchanting Quality'
+    - '&f- &a+15% &fLuck Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      SMITHING_QUALITY_GENERAL: 25
+      ENCHANTING_QUALITY: 15
+      LUCK_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  tinker:
+    group: 9
+    position: 128
+    icon: REDSTONE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Tinker'
+    description:
+    - '&6Tinkerers&7, inventors who create useful'
+    - '&7gadgets and improve existing tools.'
+    - '&7They make everything work better.'
+    - '&8&m                                       '
+    - '&6Tinker &7benefit from'
+    - '&f- &a+20% &fDig Speed'
+    - '&f- &a+15% &fMining Exp Gain'
+    - '&f- &a+15% &fCrafting Time Reduction'
+    - '&f- &a+15% &fDurability Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      DIG_SPEED: 0.2
+      MINING_EXP_GAIN: 0.15
+      CRAFTING_TIME_REDUCTION: 0.15
+      DURABILITY_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  herbalist:
+    group: 4
+    position: 129
+    icon: OXEYE_DAISY:-1
+    icon_locked: BARRIER:-1
+    display_name: '&aHerbalist'
+    description:
+    - '&aHerbalists&7, plant experts who brew'
+    - '&7potions and remedies from gathered'
+    - '&7herbs. Their knowledge of nature is'
+    - '&7unmatched.'
+    - '&8&m                                       '
+    - '&aHerbalist &7benefit from'
+    - '&f- &a+25% &fAlchemy Exp Gain'
+    - '&f- &a+20% &fFarming Exp Gain'
+    - '&f- &a+15% &fFarming Drop Multiplier'
+    - '&f- &a+10% &fPoison Resistance'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      ALCHEMY_EXP_GAIN: 0.25
+      FARMING_EXP_GAIN: 0.2
+      FARMING_DROP_MULTIPLIER: 0.15
+      POISON_RESISTANCE: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.1
+  skinner:
+    group: 9
+    position: 130
+    icon: LEATHER:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Skinner'
+    description:
+    - '&6Skinners&7, experts of animal hides'
+    - '&7and leather. They harvest resources'
+    - '&7from beasts with practiced skill.'
+    - '&8&m                                       '
+    - '&6Skinner &7benefit from'
+    - '&f- &a+20% &fFarming Drop Multiplier'
+    - '&f- &a+10% &fMining Drop Multiplier'
+    - '&f- &a+10% &fLuck Bonus'
+    - '&f- &a+10% &fDurability Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      FARMING_DROP_MULTIPLIER: 0.2
+      MINING_DROP_MULTIPLIER: 0.1
+      LUCK_BONUS: 0.1
+      DURABILITY_BONUS: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  lumberjack:
+    group: 9
+    position: 131
+    icon: WOODEN_AXE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Lumberjack'
+    description:
+    - '&6Lumberjacks&7, masters of the forest who'
+    - '&7fell trees with incredible speed. They'
+    - '&7are the backbone of construction.'
+    - '&8&m                                       '
+    - '&6Lumberjack &7benefit from'
+    - '&f- &a+30% &fWoodcutting Exp Gain'
+    - '&f- &a+20% &fDig Speed'
+    - '&f- &a+10% &fMining Exp Gain'
+    - '&f- &a+3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      WOODCUTTING_EXP_GAIN: 0.3
+      DIG_SPEED: 0.2
+      MINING_EXP_GAIN: 0.1
+      HEALTH_BONUS: 3
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  mason:
+    group: 9
+    position: 132
+    icon: STONE_PICKAXE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&7Mason'
+    description:
+    - '&7Masons&7, stone experts who shape rock'
+    - '&7with ease. Their crafting skill is'
+    - '&7unmatched in masonry.'
+    - '&8&m                                       '
+    - '&7Mason &7benefit from'
+    - '&f- &a+25% &fMining Exp Gain'
+    - '&f- &a+20% &fDig Speed'
+    - '&f- &a+15% &fMining Drop Multiplier'
+    - '&f- &a+10% &fCrafting Time Reduction'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      MINING_EXP_GAIN: 0.25
+      DIG_SPEED: 0.2
+      MINING_DROP_MULTIPLIER: 0.15
+      CRAFTING_TIME_REDUCTION: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  weaver:
+    group: 9
+    position: 133
+    icon: STRING:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dWeaver'
+    description:
+    - '&dWeavers&7, textile artists who create'
+    - '&7fine clothing and armor. Their crafted'
+    - '&7garments are of superior quality.'
+    - '&8&m                                       '
+    - '&dWeaver &7benefit from'
+    - '&f- &a+20% &fCrafting Time Reduction'
+    - '&f- &a+10% &fEnchanting Quality'
+    - '&f- &a+20% &fDurability Bonus'
+    - '&f- &a+5% &fLuck Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      CRAFTING_TIME_REDUCTION: 0.2
+      ENCHANTING_QUALITY: 10
+      DURABILITY_BONUS: 0.2
+      LUCK_BONUS: 0.05
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  brewer:
+    group: 9
+    position: 134
+    icon: BREWING_STAND:-1
+    icon_locked: BARRIER:-1
+    display_name: '&3Brewer'
+    description:
+    - '&3Brewers&7, masters of fermentation and'
+    - '&7alchemy. They create potent brews'
+    - '&7that enhance all who drink them.'
+    - '&8&m                                       '
+    - '&3Brewer &7benefit from'
+    - '&f- &a+20% &fAlchemy Exp Gain'
+    - '&f- &a+20% &fAlchemy Quality General'
+    - '&f- &a+25% &fBrewing Speed Bonus'
+    - '&f- &a+15% &fCooking Speed Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      ALCHEMY_EXP_GAIN: 0.2
+      ALCHEMY_QUALITY_GENERAL: 20
+      BREWING_SPEED_BONUS: 0.25
+      COOKING_SPEED_BONUS: 0.15
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  cartographer:
+    group: 9
+    position: 135
+    icon: MAP:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eCartographer'
+    description:
+    - '&eCartographers&7, mapmakers who chart the'
+    - '&7unknown. Their knowledge of the world'
+    - '&7grants exploration advantages.'
+    - '&8&m                                       '
+    - '&eCartographer &7benefit from'
+    - '&f- &a+20% &fLuck Bonus'
+    - '&f- &a+10% &fGlobal Exp Gain'
+    - '&f- &a+2% &fFishing Luck'
+    - '&f- &a+10% &fDig Speed'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      LUCK_BONUS: 0.2
+      GLOBAL_EXP_GAIN: 0.1
+      FISHING_LUCK: 2
+      DIG_SPEED: 0.1
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15
+  fate_weaver:
+    group: 10
+    position: 136
+    icon: CLOCK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dFate Weaver'
+    description:
+    - '&dFate Weavers&7, mages who manipulate the'
+    - '&7threads of destiny. They alter'
+    - '&7probabilities and bend luck.'
+    - '&8&m                                       '
+    - '&dFate Weaver &7benefit from'
+    - '&f- &a+25% &fLuck Bonus'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+10% &fCrit Chance'
+    - '&f- &a+10% &fDodge Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      LUCK_BONUS: 0.25
+      COOLDOWN_REDUCTION: 0.15
+      CRIT_CHANCE: 0.1
+      DODGE_CHANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  void_walker:
+    group: 10
+    position: 137
+    icon: OBSIDIAN:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Void Walker'
+    description:
+    - '&5Void Walkers&7, dimensional travelers who'
+    - '&7harness the power of the void. They'
+    - '&7warp reality itself.'
+    - '&8&m                                       '
+    - '&5Void Walker &7benefit from'
+    - '&f- &a+20% &fMagic Damage Dealt'
+    - '&f- &a+20% &fDodge Chance'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-5 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      DODGE_CHANCE: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -5
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  time_mage:
+    group: 10
+    position: 138
+    icon: CLOCK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eTime Mage'
+    description:
+    - '&eTime Mages&7, chronomancers who slow and'
+    - '&7hasten time. They control the pace'
+    - '&7of battle with temporal magic.'
+    - '&8&m                                       '
+    - '&eTime Mage &7benefit from'
+    - '&f- &a+25% &fCooldown Reduction'
+    - '&f- &a+15% &fMagic Damage Dealt'
+    - '&f- &a+10% &fDodge Chance'
+    - '&7But suffer from'
+    - '&f- &c-3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      COOLDOWN_REDUCTION: 0.25
+      MAGIC_DAMAGE_DEALT: 0.15
+      DODGE_CHANCE: 0.1
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  dreamwalker:
+    group: 10
+    position: 139
+    icon: COCOA_BEANS:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dDreamwalker'
+    description:
+    - '&dDreamwalkers&7, beings who traverse the'
+    - '&7realm of dreams. They wield illusory'
+    - '&7magic and blur reality.'
+    - '&8&m                                       '
+    - '&dDreamwalker &7benefit from'
+    - '&f- &a+20% &fMagic Damage Dealt'
+    - '&f- &a+15% &fDodge Chance'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-4 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      DODGE_CHANCE: 0.15
+      COOLDOWN_REDUCTION: 0.15
+      HEALTH_BONUS: -4
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  soul_binder:
+    group: 10
+    position: 140
+    icon: SOUL_LANTERN:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Soul Binder'
+    description:
+    - '&8Soul Binders&7, mages who bind and'
+    - '&7manipulate souls. They drain life'
+    - '&7force and weaponize it against foes.'
+    - '&8&m                                       '
+    - '&8Soul Binder &7benefit from'
+    - '&f- &a+25% &fNecrotic Damage Dealt'
+    - '&f- &a+15% &fHealing Bonus'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-15% &fRadiant Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      NECROTIC_DAMAGE_DEALT: 0.25
+      HEALING_BONUS: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      RADIANT_RESISTANCE: -0.15
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  starweaver:
+    group: 10
+    position: 141
+    icon: NETHER_STAR:-1
+    icon_locked: BARRIER:-1
+    display_name: '&eStarweaver'
+    description:
+    - '&eStarweavers&7, cosmic mages who channel'
+    - '&7the power of stars. Their spells'
+    - '&7are woven from starlight.'
+    - '&8&m                                       '
+    - '&eStarweaver &7benefit from'
+    - '&f- &a+20% &fMagic Damage Dealt'
+    - '&f- &a+15% &fRadiant Damage Dealt'
+    - '&f- &a+15% &fCrit Damage'
+    - '&f- &a+10% &fCooldown Reduction'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      RADIANT_DAMAGE_DEALT: 0.15
+      CRIT_DAMAGE: 0.15
+      COOLDOWN_REDUCTION: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  chaos_mage:
+    group: 10
+    position: 142
+    icon: DRAGON_BREATH:-1
+    icon_locked: BARRIER:-1
+    display_name: '&5Chaos Mage'
+    description:
+    - '&5Chaos Mages&7, wild sorcerers who channel'
+    - '&7pure entropy. Their spells are'
+    - '&7unpredictable but devastating.'
+    - '&8&m                                       '
+    - '&5Chaos Mage &7benefit from'
+    - '&f- &a+20% &fMagic Damage Dealt'
+    - '&f- &a+10% &fFire Damage Dealt'
+    - '&f- &a+10% &fLightning Damage Dealt'
+    - '&f- &a+10% &fFreezing Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-3 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.2
+      FIRE_DAMAGE_DEALT: 0.1
+      LIGHTNING_DAMAGE_DEALT: 0.1
+      FREEZING_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -3
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  blood_mage:
+    group: 10
+    position: 143
+    icon: REDSTONE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&4Blood Mage'
+    description:
+    - '&4Blood Mages&7, dark sorcerers who fuel'
+    - '&7spells with their own life force.'
+    - '&7Their power has no limits,'
+    - '&7but their bodies pay the price.'
+    - '&8&m                                       '
+    - '&4Blood Mage &7benefit from'
+    - '&f- &a+25% &fMagic Damage Dealt'
+    - '&f- &a+20% &fCooldown Reduction'
+    - '&f- &a+10% &fNecrotic Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-8 &fHealth Bonus'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.25
+      COOLDOWN_REDUCTION: 0.2
+      NECROTIC_DAMAGE_DEALT: 0.1
+      HEALTH_BONUS: -8
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  thaumaturge:
+    group: 10
+    position: 144
+    icon: ENCHANTED_GOLDEN_APPLE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&dThaumaturge'
+    description:
+    - '&dThaumaturges&7, miracle workers who'
+    - '&7bend the laws of nature. Their'
+    - '&7miracles can heal or destroy.'
+    - '&8&m                                       '
+    - '&dThaumaturge &7benefit from'
+    - '&f- &a+15% &fMagic Damage Dealt'
+    - '&f- &a+20% &fHealing Bonus'
+    - '&f- &a+15% &fCooldown Reduction'
+    - '&f- &a+10% &fRadiant Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    stat_buffs:
+      MAGIC_DAMAGE_DEALT: 0.15
+      HEALING_BONUS: 0.2
+      COOLDOWN_REDUCTION: 0.15
+      RADIANT_DAMAGE_DEALT: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      MELEE_DAMAGE_DEALT: -0.1
+  geomancer:
+    group: 3
+    position: 145
+    icon: STONE:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Geomancer'
+    description:
+    - '&6Geomancers&7, earth mages who command'
+    - '&7stone and soil. They create barriers'
+    - '&7and crush foes with the earth.'
+    - '&8&m                                       '
+    - '&6Geomancer &7benefit from'
+    - '&f- &a+20% &fBludgeoning Damage Dealt'
+    - '&f- &a+15% &fArmor Multiplier Bonus'
+    - '&f- &a+10% &fDamage Resistance'
+    - '&f- &a+10% &fMagic Damage Dealt'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMelee Damage Dealt'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    stat_buffs:
+      BLUDGEONING_DAMAGE_DEALT: 0.2
+      ARMOR_MULTIPLIER_BONUS: 0.15
+      DAMAGE_RESISTANCE: 0.1
+      MAGIC_DAMAGE_DEALT: 0.1
+      MELEE_DAMAGE_DEALT: -0.1
+      RANGED_DAMAGE_DEALT: -0.1
+  warden_of_woods:
+    group: 4
+    position: 146
+    icon: OAK_LEAVES:-1
+    icon_locked: BARRIER:-1
+    display_name: '&2Warden of Woods'
+    description:
+    - '&2Wardens of the Woods&7, nature guardians'
+    - '&7who protect the ancient forests.'
+    - '&7They heal and fight with equal skill.'
+    - '&8&m                                       '
+    - '&2Warden of Woods &7benefit from'
+    - '&f- &a+20% &fHealing Bonus'
+    - '&f- &a+10% &fMelee Damage Dealt'
+    - '&f- &a+15% &fFarming Exp Gain'
+    - '&f- &a+15% &fPoison Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fRanged Damage Dealt'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    stat_buffs:
+      HEALING_BONUS: 0.2
+      MELEE_DAMAGE_DEALT: 0.1
+      FARMING_EXP_GAIN: 0.15
+      POISON_RESISTANCE: 0.15
+      RANGED_DAMAGE_DEALT: -0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+  shadow_blade:
+    group: 6
+    position: 147
+    icon: NETHERITE_SWORD:-1
+    icon_locked: BARRIER:-1
+    display_name: '&8Shadow Blade'
+    description:
+    - '&8Shadow Blades&7, rogues who fuse shadow'
+    - '&7magic with bladework. They cut through'
+    - '&7reality itself with each strike.'
+    - '&8&m                                       '
+    - '&8Shadow Blade &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+20% &fSneak Movement Speed Bonus'
+    - '&f- &a+10% &fNecrotic Damage Dealt'
+    - '&f- &a+10% &fCrit Chance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fArmor Multiplier Bonus'
+    - '&f- &c-2 &fHealth Bonus'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      SNEAK_MOVEMENT_SPEED_BONUS: 0.2
+      NECROTIC_DAMAGE_DEALT: 0.1
+      CRIT_CHANCE: 0.1
+      ARMOR_MULTIPLIER_BONUS: -0.1
+      HEALTH_BONUS: -2
+  sky_knight:
+    group: 1
+    position: 148
+    icon: ELYTRA:-1
+    icon_locked: BARRIER:-1
+    display_name: '&bSky Knight'
+    description:
+    - '&bSky Knights&7, aerial warriors who fight'
+    - '&7on the wing. They dive-bomb foes'
+    - '&7with devastating force.'
+    - '&8&m                                       '
+    - '&bSky Knight &7benefit from'
+    - '&f- &a+15% &fMelee Damage Dealt'
+    - '&f- &a+10% &fRanged Damage Dealt'
+    - '&f- &a+15% &fMovement Speed Bonus'
+    - '&f- &a+20% &fFalling Resistance'
+    - '&7But suffer from'
+    - '&f- &c-10% &fMagic Damage Dealt'
+    - '&f- &c-1 &fRanged Inaccuracy'
+    stat_buffs:
+      MELEE_DAMAGE_DEALT: 0.15
+      RANGED_DAMAGE_DEALT: 0.1
+      MOVEMENT_SPEED_BONUS: 0.15
+      FALLING_RESISTANCE: 0.2
+      MAGIC_DAMAGE_DEALT: -0.1
+      RANGED_INACCURACY: -1
+  runesmith:
+    group: 9
+    position: 149
+    icon: ENCHANTED_BOOK:-1
+    icon_locked: BARRIER:-1
+    display_name: '&6Runesmith'
+    description:
+    - '&6Runesmiths&7, magical blacksmiths who'
+    - '&7inscribe runes into their creations.'
+    - '&7Their items glow with arcane power.'
+    - '&8&m                                       '
+    - '&6Runesmith &7benefit from'
+    - '&f- &a+25% &fSmithing Quality General'
+    - '&f- &a+20% &fEnchanting Quality'
+    - '&f- &a+15% &fCrafting Time Reduction'
+    - '&f- &a+15% &fDurability Bonus'
+    - '&7But suffer from'
+    - '&f- &c-15% &fMelee Damage Dealt'
+    - '&f- &c-15% &fRanged Damage Dealt'
+    stat_buffs:
+      SMITHING_QUALITY_GENERAL: 25
+      ENCHANTING_QUALITY: 20
+      CRAFTING_TIME_REDUCTION: 0.15
+      DURABILITY_BONUS: 0.15
+
+      MELEE_DAMAGE_DEALT: -0.15
+      RANGED_DAMAGE_DEALT: -0.15

@@ -1,62 +1,55 @@
-# ValhallaRaces — Project
+# Races — ValhallaRaces Compendium
 
-Local project folder for the ValhallaRaces plugin configuration and companion website.
+A static website + Minecraft plugin configuration for a ValhallaRaces server with **227 races** and **127 classes**.
 
-## Structure
+## Contents
 
-```
-ValhallaRaces/
-├── plugin/            # Minecraft server config (deploy to plugins/ValhallaRaces/)
-│   ├── races.yml      #   227 races (stats, lore)
-│   ├── classes.yml    #   127 classes across 10 groups
-│   └── config.yml     #   server options (pick_race/pick_class, menu)
-├── site/              # Companion website (static, no build step)
-│   ├── index.html     #   Home
-│   ├── races.html     #   Races compendium
-│   ├── classes.html   #   Classes compendium
-│   └── assets/        #   CSS, JS, SVG icons, data.json
-└── scripts/           # Generators and builders
-    ├── build_data.py          # Regenerates site/assets/data/data.json from plugin/*.yml
-    ├── generate_content.py    # Generated the 200 races + 100 classes
-    ├── merge_website.py       # One-off: merged new entries into website data
-    └── gen_icons.py           # One-off: generated placeholder icon slots
-```
+| Path | Purpose |
+|------|---------|
+| `races.yml` | ValhallaRaces config — all 227 races (stat buffs/debuffs, lore) |
+| `classes.yml` | ValhallaRaces config — all 127 classes across 10 groups |
+| `assets/` | Website assets (CSS, JS, SVG icons, data) |
+| `scripts/build_data.py` | Regenerates `assets/data/data.json` from the YAML configs |
 
-## Deploying to the server
+## Files to deploy to the Minecraft server
 
-Copy `plugin/races.yml` and `plugin/classes.yml` into your server's
-`plugins/ValhallaRaces/` folder (alongside the existing `config.yml`).
+Copy `races.yml` and `classes.yml` into your server's `plugins/ValhallaRaces/` folder alongside the existing `config.yml`.
 
-## Rebuilding website data
+## Rebuilding the website data
 
-Edits to `plugin/races.yml` or `plugin/classes.yml` won't show on the site until the
-data is rebuilt:
+From the repo root:
 
 ```bash
 python scripts/build_data.py
 ```
 
-This reads `plugin/races.yml` / `plugin/classes.yml` and writes
-`site/assets/data/data.json`.
+This reads `races.yml` / `classes.yml` and writes `assets/data/data.json` (used by the site).
 
-## Running the website locally
+## Serving the website
 
-Serve the `site/` folder with any static file server:
+Any static file server works, e.g.:
 
 ```bash
-python -m http.server 8080 --directory site
+python -m http.server 8080 --directory .
 ```
 
 Then open `http://localhost:8080/races.html` and `http://localhost:8080/classes.html`.
 
 ## Icons
 
-Icons are line-art monogram glyphs generated automatically by `app.js` for every
-entry. The 54 original races/classes use hand-drawn SVGs listed in `ICONS._custom`
-in `site/assets/js/icons.js`. To use a custom SVG for an entry, add its key to
-`_custom` and give it an SVG body (format in `site/assets/ICON_FORMAT.md`).
+`assets/js/icons.js` ships 54 hand-drawn sigil SVGs (the original races/classes) plus an `_custom` list marking which keys are hand-drawn. Every key **not** in `_custom` automatically falls back to a **monogram letter glyph** (two-letter initials in a brass frame) rendered by `app.js` — so all 354 entries always display a clean, on-theme mark with zero extra work.
 
-## GitHub
+To replace a monogram with a hand-drawn SVG:
+1. Add the key to the `_custom` array in `icons.js`.
+2. Give that key an SVG entry (see the format in `assets/ICON_FORMAT.md`).
 
-The website + configs are also published to `github.com/xtra15/Races` (repo root
-layout with `races.yml`/`classes.yml` at root and the site files at root).
+## Group structure
+
+Classes are split across 10 groups; a player picks **one** class per group:
+
+- 1 Warrior · 2 Specialist · 3 Adept · 4 Healer · 5 Guardian
+- 6 Shadow · 7 Warlord · 8 Mystic · 9 Artisan · 10 Weaver
+
+## Roadmap
+
+- Random race/class assignment on player join (dedicated plugin, planned).
