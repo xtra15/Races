@@ -18479,6 +18479,84 @@
      "kind": "debuff"
     }
    ]
+  },
+  {
+   "key": "ares",
+   "name": "Ares",
+   "prefix": "[Ares]",
+   "icon": "NETHERITE_AXE:-1",
+   "position": 250,
+   "description": [
+    "Ares, the god of war incarnate, a",
+    "blur of bronze and blood. No blade",
+    "can touch him, yet every wound he",
+    "takes cuts to the bone",
+    "                                       ",
+    "Ares benefits from",
+    "- +70% Dodge Chance",
+    "- +15% Movement Speed",
+    "- +10% Melee Damage",
+    "But suffers from",
+    "- -5 Maximum Health",
+    "- -10% Armor Effectiveness",
+    "- -20% Size"
+   ],
+   "stats": [
+    {
+     "key": "DODGE_CHANCE",
+     "label": "Dodge Chance",
+     "value": 0.7,
+     "magnitude": 70.0,
+     "flat": false,
+     "percent": true,
+     "kind": "buff"
+    },
+    {
+     "key": "MOVEMENT_SPEED_BONUS",
+     "label": "Movement Speed",
+     "value": 0.15,
+     "magnitude": 15.0,
+     "flat": false,
+     "percent": true,
+     "kind": "buff"
+    },
+    {
+     "key": "MELEE_DAMAGE_DEALT",
+     "label": "Melee Damage",
+     "value": 0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "buff"
+    },
+    {
+     "key": "HEALTH_BONUS",
+     "label": "Maximum Health",
+     "value": -5,
+     "magnitude": 5,
+     "flat": true,
+     "percent": false,
+     "kind": "debuff"
+    },
+    {
+     "key": "ARMOR_MULTIPLIER_BONUS",
+     "label": "Armor Effectiveness",
+     "value": -0.1,
+     "magnitude": 10.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    },
+    {
+     "key": "SCALE",
+     "label": "Size",
+     "value": -0.2,
+     "magnitude": 20.0,
+     "flat": false,
+     "percent": true,
+     "kind": "debuff"
+    }
+   ]
   }
  ],
  "classes": [

@@ -13,6 +13,15 @@ const ICONS = {
           <circle cx="30" cy="31" r="2"/>
           <path d="M46 30 L52 27 M46 33 L52 31"/>`,
 
+  ares:
+    `<path d="M20 52 C20 33 24 19 32 19 C40 19 44 33 44 52"/>
+          <path d="M32 19 C32 11 28 7 21 6 C26 4 33 7 34 14"/>
+          <path d="M32 19 C31 13 29 10 26 8" opacity=".5"/>
+          <path d="M25 40 H39"/>
+          <path d="M32 40 V52"/>
+          <path d="M24 44 C25 48 27 50 30 51"/>
+          <path d="M40 44 C39 48 37 50 34 51"/>`,
+
   kitsune:
     `<path d="M20 26 L16 10 L30 16 M44 26 L48 10 L34 16"/>
           <path d="M16 26 C16 40 22 46 32 46 C42 46 48 40 48 26 C44 32 40 30 32 30 C24 30 20 32 16 26 Z"/>
@@ -1698,7 +1707,8 @@ const ICONS = {
     "warrior","barbarian","ranger","alchemist","enchanter","blacksmith","miner",
     "farmer","terraformer","berserker","paladin","death_knight","spellbreaker",
     "assassin","monk","mage","warlock","cleric","druid","shaman","void_knight",
-    "gunslinger","samurai","ninja","bard","warden","spellblade"
+    "gunslinger","samurai","ninja","bard","warden","spellblade",
+    "ares"
   ],
 };
 
